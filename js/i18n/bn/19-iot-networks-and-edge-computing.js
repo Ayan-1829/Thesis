@@ -2,9 +2,6 @@
 I18N_BN_ADD({
 "IoT, Networks and Edge Computing": "IoT, Network ও Edge Computing",
 "IoT systems, energy efficiency, edge AI, wireless and mobile networks, SDN and network measurement; simulation versus testbeds, metrics such as latency, delivery ratio and energy, tools, venues and thesis ideas.": "IoT system, শক্তি-দক্ষতা, edge AI, wireless ও mobile network, SDN ও network পরিমাপ; simulation বনাম testbed, latency, delivery ratio ও শক্তির মতো metric, tool, venue ও থিসিস ধারণা।",
-"A flood sensor that reports a rising river ten minutes late, or whose battery dies in a month, is worse than no sensor at all.": "যে বন্যা-sensor নদীর পানি বাড়ার খবর দশ মিনিট দেরিতে দেয়, বা যার battery এক মাসে শেষ হয়, তা কোনো sensor না থাকার চেয়েও খারাপ।",
-"Networking and IoT research is about real constraints — delay, bandwidth, energy, cost — measured carefully in simulation and on real devices. Local problems in agriculture, water and transport are a natural fit.": "Networking ও IoT গবেষণা বাস্তব সীমাবদ্ধতা নিয়ে — বিলম্ব, bandwidth, শক্তি, খরচ — simulation ও বাস্তব device-এ সাবধানে মাপা। কৃষি, পানি ও পরিবহনের স্থানীয় সমস্যা এর স্বাভাবিক ক্ষেত্র।",
-"This chapter introduces networking, IoT and edge computing research: methods, tools, metrics, venues and ideas.": "এই অধ্যায় networking, IoT ও edge computing গবেষণা পরিচিত করায়: পদ্ধতি, tool, metric, venue ও ধারণা।",
 "In this chapter": "এই অধ্যায়ে",
 "Select a section to jump to it.": "কোনো অংশে যেতে সেটি বাছুন।",
 "The field": "ক্ষেত্রটি",
@@ -214,5 +211,8 @@ I18N_BN_ADD({
 "ML on microcontrollers.": "Microcontroller-এ ML।",
 "How networks are run.": "Network কীভাবে চালানো হয়।",
 "Programmable networks.": "Programmable network।",
-"Latency, loss, throughput in practice.": "বাস্তবে latency, loss, throughput।"
+"Latency, loss, throughput in practice.": "বাস্তবে latency, loss, throughput।",
+"A flood sensor that warns the village ten minutes after the water arrives is not a sensor. It is a very expensive diary.": "যে বন্যা-sensor পানি আসার দশ মিনিট পরে গ্রামকে সতর্ক করে, তা sensor নয়। তা একটি খুব দামি ডায়েরি।",
+"Networking and IoT research is about real limits — delay, bandwidth, energy, cost — measured in simulation and on real devices. Agriculture, water and transport give many local problems to solve.": "networking আর IoT গবেষণা আসল সীমাবদ্ধতা নিয়ে — delay, bandwidth, শক্তি, খরচ — যা simulation আর আসল device-এ মাপা হয়। কৃষি, পানি আর পরিবহন সমাধান করার মতো অনেক স্থানীয় সমস্যা দেয়।",
+"This chapter introduces networking, IoT and edge computing research: methods, tools, metrics, venues and ideas.": "এই chapter networking, IoT আর edge computing গবেষণার পরিচয় দেয়: পদ্ধতি, tool, metric, প্রকাশের স্থান আর ধারণা।"
 });

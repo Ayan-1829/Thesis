@@ -2,9 +2,6 @@
 I18N_BN_ADD({
 "Data Science, Data Mining and Information Retrieval": "Data Science, Data Mining ও Information Retrieval",
 "Clustering, association rules, recommender systems, search and ranking, anomaly detection, forecasting and graph mining; the CRISP-DM process, datasets, metrics, tools, venues and thesis ideas.": "Clustering, association rule, recommender system, search ও ranking, anomaly detection, forecasting ও graph mining; CRISP-DM প্রক্রিয়া, dataset, metric, tool, venue ও থিসিস ধারণা।",
-"Every organisation has data. Few know what is in it, and fewer can trust what they find.": "প্রতিটি প্রতিষ্ঠানের data আছে। খুব কম জন জানে তাতে কী আছে, আর আরও কম জন যা পায় তাতে আস্থা রাখতে পারে।",
-"Data-science research turns raw data into reliable knowledge: patterns that hold up, rankings that serve users, forecasts that are tested honestly. Local data — sales, health, agriculture, transport — gives many good thesis questions.": "Data-science গবেষণা কাঁচা data-কে নির্ভরযোগ্য জ্ঞানে পরিণত করে: টেকসই প্যাটার্ন, ব্যবহারকারীর কাজে লাগা ranking, সৎভাবে পরীক্ষিত পূর্বাভাস। স্থানীয় data — বিক্রয়, স্বাস্থ্য, কৃষি, পরিবহন — অনেক ভালো থিসিস প্রশ্ন দেয়।",
-"This chapter covers data mining, recommender systems and information retrieval, with the methods, data, metrics and venues.": "এই অধ্যায়ে আছে data mining, recommender system ও information retrieval, পদ্ধতি, data, metric ও venue-সহ।",
 "In this chapter": "এই অধ্যায়ে",
 "Select a section to jump to it.": "কোনো অংশে যেতে সেটি বাছুন।",
 "The field": "ক্ষেত্রটি",
@@ -207,5 +204,8 @@ I18N_BN_ADD({
 "What the user means.": "ব্যবহারকারী কী বোঝাতে চান।",
 "Suggesting items.": "Item সুপারিশ।",
 "Learn from similar users.": "অনুরূপ ব্যবহারকারী থেকে শেখা।",
-"Networks of users and items.": "ব্যবহারকারী ও item-এর network।"
+"Networks of users and items.": "ব্যবহারকারী ও item-এর network।",
+"A shop owner has ten years of sales records on a dusty hard drive. “There must be gold in here,” he says. There is — mixed with a lot of sand.": "একজন দোকানদারের ধুলো-জমা hard drive-এ দশ বছরের বিক্রির হিসাব। “এখানে নিশ্চয়ই সোনা আছে,” তিনি বলেন। আছে — অনেক বালির সঙ্গে মেশানো।",
+"Data-science research turns raw data into knowledge you can trust: patterns that hold up, rankings that serve users and forecasts tested honestly. Local data — sales, health, agriculture, transport — is full of good questions.": "data science গবেষণা কাঁচা data-কে এমন জ্ঞানে বদলায়, যার ওপর ভরসা করা যায়: টেকসই pattern, ব্যবহারকারীর কাজে লাগা ranking আর সৎভাবে পরীক্ষিত পূর্বাভাস। স্থানীয় data — বিক্রি, স্বাস্থ্য, কৃষি, পরিবহন — ভালো প্রশ্নে ভরা।",
+"This chapter covers data mining, recommender systems and information retrieval.": "এই chapter-এ আছে data mining, recommender system আর information retrieval।"
 });

@@ -2,9 +2,6 @@
 I18N_BN_ADD({
 "Writing the Literature Review": "Literature Review লেখা",
 "The purpose of a literature review, synthesis instead of summary, organising by theme, method or time, comparison tables, stating the research gap, writing well, and systematic versus narrative reviews.": "Literature review-এর উদ্দেশ্য, সারসংক্ষেপের বদলে সংশ্লেষণ, বিষয়, পদ্ধতি বা সময় অনুযায়ী সাজানো, তুলনামূলক table, গবেষণার ফাঁক বলা, ভালোভাবে লেখা, এবং systematic বনাম narrative review।",
-"Thirty paragraphs, each starting “X et al. proposed…”. Examiners call this an annotated bibliography, not a literature review.": "ত্রিশটি অনুচ্ছেদ, প্রতিটি শুরু “X et al. প্রস্তাব করেছেন…” দিয়ে। পরীক্ষকেরা একে annotated bibliography বলেন, literature review নয়।",
-"A literature review is an argument: here is what the field knows, here is how it fits together, and here is the piece that is missing — which my thesis supplies.": "Literature review একটি যুক্তি: ক্ষেত্রটি যা জানে তা এই, সেগুলো এভাবে মেলে, এবং এই অংশটি অনুপস্থিত — যা আমার থিসিস পূরণ করে।",
-"This chapter shows how to turn your notes and literature matrix into that argument.": "এই অধ্যায় দেখায় কীভাবে আপনার নোট ও literature matrix-কে সেই যুক্তিতে পরিণত করবেন।",
 "In this chapter": "এই অধ্যায়ে",
 "Select a section to jump to it.": "কোনো অংশে যেতে সেটি বাছুন।",
 "Purpose": "উদ্দেশ্য",
@@ -170,5 +167,8 @@ I18N_BN_ADD({
 "Sections that group and compare the work.": "কাজগুলো দলবদ্ধ ও তুলনা করা অনুচ্ছেদ।",
 "The few papers nearest to your thesis, compared in a table.": "আপনার থিসিসের সবচেয়ে কাছের কয়েকটি paper, একটি table-এ তুলনা করা।",
 "What has not been done, and why it matters.": "কী করা হয়নি, এবং কেন তা গুরুত্বপূর্ণ।",
-"How your thesis fills the gap.": "আপনার থিসিস কীভাবে ফাঁকটি পূরণ করে।"
+"How your thesis fills the gap.": "আপনার থিসিস কীভাবে ফাঁকটি পূরণ করে।",
+"Thirty paragraphs, each starting “X et al. proposed…”. The examiner sighs: “This is a shopping list, not a literature review.”": "ত্রিশটি অনুচ্ছেদ, প্রতিটি শুরু “X et al. proposed…” দিয়ে। examiner দীর্ঘশ্বাস ফেলেন: “এটা বাজারের ফর্দ, literature review নয়।”",
+"A literature review is an argument: here is what the field knows, here is how it fits together, and here is the missing piece — which my thesis supplies.": "literature review একটি যুক্তি: এই ক্ষেত্রটি যা জানে, তা কীভাবে একসঙ্গে মেলে, আর কোন টুকরোটি নেই — যা আমার thesis জোগায়।",
+"This chapter shows how to turn your notes and literature matrix into that argument.": "এই chapter দেখায় আপনার নোট আর literature matrix-কে কীভাবে সেই যুক্তিতে রূপ দেবেন।"
 });

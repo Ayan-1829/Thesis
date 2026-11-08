@@ -7,6 +7,6 @@
   <circle cx="44" cy="37" r="8.2" fill="#4338A0" stroke="#F59A6B" stroke-width="3.4"/>
   <path d="M49.8 43 L56 49.5" stroke="#F59A6B" stroke-width="4" stroke-linecap="round"/>
   </g>
-  <text x="78" y="27" font-family="'Bricolage Grotesque',system-ui,sans-serif" font-weight="700" font-size="14" letter-spacing="1.4" fill="#4A4566">UNDERGRADUATE RESEARCH</text>
-  <text x="77" y="53" font-family="'Bricolage Grotesque',system-ui,sans-serif" font-weight="800" font-size="28" fill="#C2410C">Thesis</text>
+  <text x="78" y="27" font-family="Georgia,'Times New Roman',serif" font-weight="700" font-size="14" letter-spacing="1.4" fill="#4A4566">UNDERGRADUATE RESEARCH</text>
+  <text x="77" y="53" font-family="Georgia,'Times New Roman',serif" font-weight="800" font-size="28" fill="#C2410C">Thesis</text>
 </svg>

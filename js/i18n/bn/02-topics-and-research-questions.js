@@ -2,9 +2,6 @@
 I18N_BN_ADD({
 "Choosing a Topic and Research Questions": "বিষয় ও গবেষণা প্রশ্ন বাছাই",
 "Where topics come from, narrowing an area to a problem and a research question, the FINER check, hypotheses and objectives, scoping the work, and getting the topic agreed.": "বিষয় কোথা থেকে আসে, একটি ক্ষেত্রকে সমস্যা ও গবেষণা প্রশ্নে সংকুচিত করা, FINER যাচাই, hypothesis ও উদ্দেশ্য, কাজের scope ঠিক করা এবং বিষয় অনুমোদন করানো।",
-"“I want to do something with AI.” Every supervisor hears this. It is an interest, not a thesis.": "“আমি AI নিয়ে কিছু করতে চাই।” প্রত্যেক supervisor এটি শোনেন। এটি একটি আগ্রহ, থিসিস নয়।",
-"A thesis needs a question narrow enough to answer in a year, with data you can get and a result you can measure. The choice of topic decides more about your thesis than anything you do later.": "একটি থিসিসের দরকার এমন সংকীর্ণ প্রশ্ন যার উত্তর এক বছরে দেওয়া যায়, যে data পাওয়া যায় এবং যে ফলাফল মাপা যায়। পরে আপনি যা-ই করুন, বিষয় বাছাই থিসিসের ওপর তার চেয়ে বেশি প্রভাব ফেলে।",
-"This chapter turns an interest into a precise research question, and shows how to check it before you commit.": "এই অধ্যায় একটি আগ্রহকে একটি নির্ভুল গবেষণা প্রশ্নে রূপান্তর করে, এবং প্রতিশ্রুতিবদ্ধ হওয়ার আগে কীভাবে যাচাই করবেন তা দেখায়।",
 "In this chapter": "এই অধ্যায়ে",
 "Select a section to jump to it.": "কোনো অংশে যেতে সেটি বাছুন।",
 "Finding a topic": "বিষয় খোঁজা",
@@ -226,5 +223,8 @@ I18N_BN_ADD({
 "What is difficult or missing: models fail on code-mixed social-media comments.": "কী কঠিন বা অনুপস্থিত: code-mixed social-media মন্তব্যে model ব্যর্থ হয়।",
 "What exactly you will find out, with data, method, comparison and outcome.": "আপনি ঠিক কী জানবেন, data, পদ্ধতি, তুলনা ও ফলাফলসহ।",
 "A testable prediction (optional for exploratory or design studies).": "একটি পরীক্ষাযোগ্য পূর্বাভাস (অনুসন্ধানমূলক বা design গবেষণায় ঐচ্ছিক)।",
-"The concrete steps that answer the question.": "যে বাস্তব ধাপগুলো প্রশ্নের উত্তর দেয়।"
+"The concrete steps that answer the question.": "যে বাস্তব ধাপগুলো প্রশ্নের উত্তর দেয়।",
+"“Sir, I want to do something with AI.” The supervisor smiles; it is the fifth time this week. It is an interest, not a thesis.": "“স্যার, আমি AI নিয়ে কিছু করতে চাই।” supervisor হাসেন; এই সপ্তাহে এটা পঞ্চমবার। এটা একটা আগ্রহ, thesis নয়।",
+"A thesis needs a question narrow enough to answer in a year, with data you can get and a result you can measure. The topic decides more about your thesis than anything you do later.": "thesis-এর দরকার এমন একটি প্রশ্ন, যা এক বছরে উত্তর দেওয়ার মতো সংকীর্ণ, যার data পাওয়া যায় আর ফল মাপা যায়। পরে আপনি যা-ই করুন, topic তার চেয়ে বেশি কিছু ঠিক করে দেয়।",
+"This chapter turns an interest into a precise research question and shows how to test it before you commit.": "এই chapter একটি আগ্রহকে একটি নির্দিষ্ট research question-এ রূপ দেয় আর প্রতিশ্রুতিবদ্ধ হওয়ার আগে তা কীভাবে যাচাই করবেন দেখায়।"
 });

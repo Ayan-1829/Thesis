@@ -2,9 +2,6 @@
 I18N_BN_ADD({
 "Computer Vision and Image Processing": "Computer Vision ও Image Processing",
 "Image processing and computer vision tasks — classification, detection, segmentation, OCR, restoration, video — with CNNs and vision transformers, datasets, metrics, tools, venues and thesis ideas.": "Image processing ও computer vision-এর task — শ্রেণিবিন্যাস, detection, segmentation, OCR, পুনরুদ্ধার, video — CNN ও vision transformer, dataset, metric, tool, venue ও থিসিস ধারণাসহ।",
-"A model reaches 99% on plant-disease photos taken in a lab. On a farmer’s phone in the field, it drops to 60%.": "একটি model lab-এ তোলা গাছের রোগের ছবিতে 99% পায়। মাঠে একজন কৃষকের phone-এ তা নেমে আসে 60%-এ।",
-"That gap — between benchmark images and the real world — is where much of the useful vision research for local problems lies. Closing or even measuring it well makes a strong thesis.": "সেই ফাঁক — benchmark ছবি ও বাস্তব পৃথিবীর মাঝে — স্থানীয় সমস্যার জন্য অনেক উপকারী vision গবেষণার জায়গা। এটি কমানো, এমনকি ভালোভাবে মাপাও একটি শক্তিশালী থিসিস তৈরি করে।",
-"This chapter introduces image processing and computer vision: tasks, methods, data, evaluation and ideas.": "এই অধ্যায় image processing ও computer vision পরিচিত করায়: task, পদ্ধতি, data, মূল্যায়ন ও ধারণা।",
 "In this chapter": "এই অধ্যায়ে",
 "Select a section to jump to it.": "কোনো অংশে যেতে সেটি বাছুন।",
 "The field": "ক্ষেত্রটি",
@@ -207,5 +204,8 @@ I18N_BN_ADD({
 "Reading text in images.": "ছবিতে লেখা পড়া।",
 "Motion and depth.": "গতি ও গভীরতা।",
 "Follow objects; recognise actions.": "বস্তু অনুসরণ; কাজ চেনা।",
-"Reconstruct shape and distance.": "আকৃতি ও দূরত্ব পুনর্গঠন।"
+"Reconstruct shape and distance.": "আকৃতি ও দূরত্ব পুনর্গঠন।",
+"A model scores 99% on plant-disease photos taken in a lab. On a farmer’s cracked phone, under the afternoon sun in the field, it scores 60%.": "ল্যাবে তোলা গাছের রোগের ছবিতে একটি model পায় 99%। মাঠে বিকেলের রোদে, একজন কৃষকের ফাটা ফোনে, পায় 60%।",
+"That gap between benchmark images and the real world is where much useful vision research for local problems lies. Closing it, or even measuring it well, makes a strong thesis.": "benchmark ছবি আর বাস্তব জগতের সেই ফাঁকেই রয়েছে স্থানীয় সমস্যার জন্য অনেক কাজের vision গবেষণা। এটি কমানো, বা এমনকি ভালোভাবে মাপাও, একটি শক্তিশালী thesis।",
+"This chapter introduces image processing and computer vision: tasks, methods, data, evaluation and ideas.": "এই chapter image processing আর computer vision-এর পরিচয় দেয়: কাজ, পদ্ধতি, data, মূল্যায়ন আর ধারণা।"
 });

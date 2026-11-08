@@ -2,9 +2,6 @@
 I18N_BN_ADD({
 "Searching the Literature": "সাহিত্য অনুসন্ধান",
 "Where to search (Google Scholar, Semantic Scholar, IEEE Xplore, ACM, arXiv, DBLP, PubMed), building Boolean search strings, filters, snowballing, getting full text legally and keeping a search log.": "কোথায় খুঁজবেন (Google Scholar, Semantic Scholar, IEEE Xplore, ACM, arXiv, DBLP, PubMed), Boolean search string তৈরি, filter, snowballing, বৈধভাবে পূর্ণ লেখা পাওয়া এবং একটি search log রাখা।",
-"You spend three months building a method — then find a paper from last year that did exactly the same, and did it better.": "আপনি তিন মাস ধরে একটি পদ্ধতি তৈরি করলেন — তারপর দেখলেন গত বছরের একটি paper হুবহু একই কাজ করেছে, এবং আরও ভালোভাবে।",
-"A systematic search prevents that, and gives you the datasets, baselines and metrics you need. It also shows examiners that your claim of novelty is based on evidence.": "একটি পদ্ধতিগত অনুসন্ধান তা ঠেকায়, এবং আপনার প্রয়োজনীয় dataset, baseline ও metric দেয়। এটি পরীক্ষকদেরও দেখায় যে আপনার নতুনত্বের দাবি প্রমাণভিত্তিক।",
-"This chapter shows where to search, how to write search strings, how to follow citations and how to record what you did.": "এই অধ্যায় দেখায় কোথায় খুঁজবেন, কীভাবে search string লিখবেন, কীভাবে উদ্ধৃতি অনুসরণ করবেন এবং যা করলেন তা কীভাবে লিপিবদ্ধ রাখবেন।",
 "In this chapter": "এই অধ্যায়ে",
 "Select a section to jump to it.": "কোনো অংশে যেতে সেটি বাছুন।",
 "Where to search": "কোথায় খুঁজবেন",
@@ -185,5 +182,8 @@ I18N_BN_ADD({
 "Follow references backward and “Cited by” forward from the best papers.": "সেরা paper থেকে reference পিছনে ও “Cited by” সামনে অনুসরণ করুন।",
 "A strong, recent paper close to your question.": "আপনার প্রশ্নের কাছাকাছি একটি শক্তিশালী, সাম্প্রতিক paper।",
 "Found in the seed’s reference list (backward snowballing).": "Seed-এর reference তালিকায় পাওয়া (পিছনের snowballing)।",
-"Found with “Cited by” in Google Scholar or Semantic Scholar (forward snowballing).": "Google Scholar বা Semantic Scholar-এ “Cited by” দিয়ে পাওয়া (সামনের snowballing)।"
+"Found with “Cited by” in Google Scholar or Semantic Scholar (forward snowballing).": "Google Scholar বা Semantic Scholar-এ “Cited by” দিয়ে পাওয়া (সামনের snowballing)।",
+"Three months into your brilliant new method, you find a paper from last year that did exactly the same thing. Better. With a nicer figure.": "আপনার দুর্দান্ত নতুন পদ্ধতির তিন মাস পর আপনি গত বছরের একটি paper খুঁজে পান, যা হুবহু একই কাজ করেছে। আরও ভালোভাবে। আরও সুন্দর figure সহ।",
+"A systematic search prevents that heartbreak and hands you the datasets, baselines and metrics you need. It also shows examiners that your claim of novelty rests on evidence.": "একটি পদ্ধতিগত search সেই হৃদয়ভঙ্গ ঠেকায়, আর আপনার দরকারি dataset, baseline আর metric হাতে তুলে দেয়। এটি examiner-দেরও দেখায় যে আপনার নতুনত্বের দাবি প্রমাণের ওপর দাঁড়িয়ে।",
+"This chapter shows where to search, how to write search strings, how to follow citations and how to record what you did.": "এই chapter দেখায় কোথায় খুঁজবেন, search string কীভাবে লিখবেন, citation কীভাবে অনুসরণ করবেন আর যা করলেন তা কীভাবে লিখে রাখবেন।"
 });

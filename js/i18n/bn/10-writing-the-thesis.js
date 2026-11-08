@@ -2,9 +2,6 @@
 I18N_BN_ADD({
 "Writing the Thesis": "থিসিস লেখা",
 "Thesis structure and front matter, writing the introduction, methodology, results and discussion, the abstract, academic style, figures and tables, LaTeX, references and the writing and feedback process.": "থিসিসের কাঠামো ও প্রারম্ভিক অংশ, ভূমিকা, methodology, ফলাফল ও আলোচনা লেখা, abstract, একাডেমিক শৈলী, figure ও table, LaTeX, reference এবং লেখা ও feedback-এর প্রক্রিয়া।",
-"Excellent experiments, poorly written, read as a weak thesis. Examiners can only judge what they can understand.": "চমৎকার experiment, দুর্বলভাবে লেখা, একটি দুর্বল থিসিস হিসেবে পড়া হয়। পরীক্ষকেরা শুধু যা বুঝতে পারেন তা-ই বিচার করতে পারেন।",
-"Writing is not a final step: it is how you organise your thinking and show your evidence. A clear structure, a strong introduction and well-explained results can lift a thesis by a whole grade.": "লেখা শেষ ধাপ নয়: এটি দিয়েই আপনি চিন্তা সাজান ও প্রমাণ দেখান। স্পষ্ট কাঠামো, শক্তিশালী ভূমিকা ও ভালোভাবে ব্যাখ্যা করা ফলাফল একটি থিসিসকে পুরো এক গ্রেড ওপরে তুলতে পারে।",
-"This chapter covers the structure of each chapter, the abstract, academic style, figures, LaTeX and references, and a writing process that finishes on time.": "এই অধ্যায়ে আছে প্রতিটি অধ্যায়ের কাঠামো, abstract, একাডেমিক শৈলী, figure, LaTeX ও reference, এবং সময়মতো শেষ করার মতো লেখার প্রক্রিয়া।",
 "In this chapter": "এই অধ্যায়ে",
 "Select a section to jump to it.": "কোনো অংশে যেতে সেটি বাছুন।",
 "Structure": "কাঠামো",
@@ -197,5 +194,8 @@ I18N_BN_ADD({
 "Narrowest: exactly what you did.": "সবচেয়ে সংকীর্ণ: আপনি ঠিক কী করেছেন।",
 "Narrow: what you found.": "সংকীর্ণ: আপনি কী পেয়েছেন।",
 "Widens: what it means, compared with earlier work, limitations.": "প্রসারিত হয়: এর অর্থ কী, আগের কাজের তুলনায়, সীমাবদ্ধতা।",
-"Broad again: answers, implications, future work.": "আবার বিস্তৃত: উত্তর, তাৎপর্য, ভবিষ্যৎ কাজ।"
+"Broad again: answers, implications, future work.": "আবার বিস্তৃত: উত্তর, তাৎপর্য, ভবিষ্যৎ কাজ।",
+"Excellent experiments, explained in tangled sentences, read like a weak thesis. Examiners can only grade what they can understand — and they often read it late at night, tired.": "চমৎকার experiment, জট পাকানো বাক্যে ব্যাখ্যা করলে, দুর্বল thesis-এর মতো পড়ায়। examiner শুধু ততটুকুই মূল্যায়ন করতে পারেন যতটা বোঝেন — আর তাঁরা প্রায়ই পড়েন গভীর রাতে, ক্লান্ত অবস্থায়।",
+"Writing is how you organise your thinking and show your evidence. A clear structure, a strong introduction and well-explained results can lift a thesis by a whole grade.": "লেখার মাধ্যমেই আপনি চিন্তা সাজান আর প্রমাণ দেখান। স্পষ্ট কাঠামো, শক্তিশালী introduction আর ভালোভাবে ব্যাখ্যা করা ফল একটি thesis-কে পুরো এক grade ওপরে তুলতে পারে।",
+"This chapter covers structure, the abstract, academic style, figures, LaTeX, references and a writing process that finishes on time.": "এই chapter-এ আছে কাঠামো, abstract, একাডেমিক লেখার ধরন, figure, LaTeX, reference আর সময়মতো শেষ হওয়া লেখার প্রক্রিয়া।"
 });

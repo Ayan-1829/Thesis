@@ -2,9 +2,6 @@
 I18N_BN_ADD({
 "What a Thesis Is and How It Works": "থিসিস কী এবং কীভাবে কাজ করে",
 "Research versus development, the contributions a thesis can make, kinds of research, the research cycle, working with a supervisor, planning the year and what examiners look for.": "গবেষণা বনাম development, একটি থিসিস কী অবদান রাখতে পারে, গবেষণার ধরন, গবেষণা চক্র, supervisor-এর সাথে কাজ, বছরের পরিকল্পনা এবং পরীক্ষকরা কী দেখেন।",
-"Two students build the same face-recognition app. One gets a project grade; the other writes a thesis that is cited by others. What is the difference?": "দুজন শিক্ষার্থী একই face-recognition app তৈরি করে। একজন project-এর grade পায়; অন্যজন এমন একটি থিসিস লেখে যা অন্যরা উদ্ধৃত করে। পার্থক্য কী?",
-"The second student asked a question — <i>does the app still work for faces with masks, and why not?</i> — measured it fairly against existing methods, and explained the answer. That is research.": "দ্বিতীয় শিক্ষার্থী একটি প্রশ্ন করেছিল — <i>মাস্ক-পরা মুখে কি app-টি এখনো কাজ করে, আর না করলে কেন?</i> — বিদ্যমান পদ্ধতিগুলোর সাথে ন্যায্যভাবে মেপেছিল এবং উত্তরটি ব্যাখ্যা করেছিল। এটাই গবেষণা।",
-"This chapter explains what a thesis is, what it can contribute, how the year usually runs, and how to work with your supervisor so you finish on time.": "এই অধ্যায় ব্যাখ্যা করে থিসিস কী, এটি কী অবদান রাখতে পারে, বছরটি সাধারণত কীভাবে চলে, এবং কীভাবে supervisor-এর সাথে কাজ করলে সময়মতো শেষ করা যায়।",
 "In this chapter": "এই অধ্যায়ে",
 "Select a section to jump to it.": "কোনো অংশে যেতে সেটি বাছুন।",
 "What research is": "গবেষণা কী",
@@ -275,5 +272,8 @@ I18N_BN_ADD({
 "Plan how you will answer: data, method, baselines, metrics (chapter 7).": "কীভাবে উত্তর দেবেন তার পরিকল্পনা করুন: data, পদ্ধতি, baseline, metric (অধ্যায় 7)।",
 "Collect the evidence carefully and reproducibly (chapter 8).": "যত্ন সহকারে ও পুনরুৎপাদনযোগ্যভাবে প্রমাণ সংগ্রহ করুন (অধ্যায় 8)।",
 "Decide what the evidence shows and how sure you are: statistics, ablation, errors.": "প্রমাণ কী দেখায় এবং আপনি কতটা নিশ্চিত তা ঠিক করুন: পরিসংখ্যান, ablation, ভুল।",
-"Explain it so others can check and build on it (chapters 10–11). New questions start the next loop.": "এমনভাবে ব্যাখ্যা করুন যাতে অন্যরা যাচাই করে এর ওপর কাজ করতে পারে (অধ্যায় 10–11)। নতুন প্রশ্ন পরের চক্র শুরু করে।"
+"Explain it so others can check and build on it (chapters 10–11). New questions start the next loop.": "এমনভাবে ব্যাখ্যা করুন যাতে অন্যরা যাচাই করে এর ওপর কাজ করতে পারে (অধ্যায় 10–11)। নতুন প্রশ্ন পরের চক্র শুরু করে।",
+"Two students build the same face-recognition app. One gets a B on the project. The other writes a thesis that other researchers cite. The code was almost identical.": "দুজন ছাত্র একই face-recognition app বানায়। একজন project-এ পায় B। অন্যজন লেখে এমন একটি thesis, যা অন্য গবেষকেরা cite করেন। কোড প্রায় একই ছিল।",
+"The second student asked a question — <i>does it still work for faces with masks, and why not?</i> — measured it fairly against existing methods and explained the answer. That is research.": "দ্বিতীয় ছাত্র একটি প্রশ্ন করেছিল — <i>মাস্ক পরা মুখেও কি এটি কাজ করে, আর না করলে কেন?</i> — বিদ্যমান পদ্ধতির সঙ্গে ন্যায্যভাবে মেপেছিল আর উত্তরটি ব্যাখ্যা করেছিল। এটাই গবেষণা।",
+"This chapter explains what a thesis is, what it contributes, how the year runs and how to work with your supervisor.": "এই chapter ব্যাখ্যা করে thesis কী, এটি কী অবদান রাখে, বছরটি কীভাবে চলে আর supervisor-এর সঙ্গে কীভাবে কাজ করবেন।"
 });

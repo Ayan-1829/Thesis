@@ -2,9 +2,6 @@
 I18N_BN_ADD({
 "Presenting, Defending and Publishing": "উপস্থাপন, প্রতিরক্ষা ও প্রকাশনা",
 "Proposal, progress and final presentations, slides that work, rehearsing, viva questions and how to answer them, posters, choosing a conference or journal, peer review and releasing code and data.": "Proposal, অগ্রগতি ও চূড়ান্ত উপস্থাপনা, কার্যকর slide, অনুশীলন, viva-র প্রশ্ন ও তার উত্তর দেওয়ার উপায়, poster, conference বা journal বাছাই, peer review এবং code ও data প্রকাশ।",
-"Fifteen minutes and a few questions decide how a year of work is judged.": "পনেরো মিনিট আর কয়েকটি প্রশ্ন ঠিক করে এক বছরের কাজ কীভাবে বিচার হবে।",
-"A defence is not an exam on facts; it is a conversation in which you show that you understand your work, its strengths and its limits. Good slides and honest answers make that easy.": "প্রতিরক্ষা তথ্যের পরীক্ষা নয়; এটি একটি কথোপকথন যেখানে আপনি দেখান যে আপনি আপনার কাজ, তার শক্তি ও সীমা বোঝেন। ভালো slide ও সৎ উত্তর এটিকে সহজ করে।",
-"This chapter prepares you for presentations, the viva and the next step — turning the thesis into a published paper.": "এই অধ্যায় আপনাকে উপস্থাপনা, viva এবং পরের ধাপের জন্য প্রস্তুত করে — থিসিসকে একটি প্রকাশিত paper-এ পরিণত করা।",
 "In this chapter": "এই অধ্যায়ে",
 "Select a section to jump to it.": "কোনো অংশে যেতে সেটি বাছুন।",
 "Presenting": "উপস্থাপন",
@@ -189,5 +186,8 @@ I18N_BN_ADD({
 "Usually 2–4 experts review the paper.": "সাধারণত 2–4 জন বিশেষজ্ঞ paper-টি review করেন।",
 "Accept, minor revision, major revision or reject.": "গ্রহণ, ছোট সংশোধন, বড় সংশোধন বা প্রত্যাখ্যান।",
 "Prepare the camera-ready version.": "Camera-ready version প্রস্তুত করুন।",
-"Address every comment; write a point-by-point response.": "প্রতিটি মন্তব্য সম্বোধন করুন; বিষয় ধরে ধরে উত্তর লিখুন।"
+"Address every comment; write a point-by-point response.": "প্রতিটি মন্তব্য সম্বোধন করুন; বিষয় ধরে ধরে উত্তর লিখুন।",
+"One year of work. Fifteen minutes of slides. Then a professor leans forward and says, “Just one small question…”": "এক বছরের কাজ। পনেরো মিনিটের slide। তারপর একজন অধ্যাপক সামনে ঝুঁকে বলেন, “শুধু একটা ছোট্ট প্রশ্ন…”",
+"A defence is not a quiz on facts; it is a conversation in which you show that you understand your work, its strengths and its limits. Good slides and honest answers make it easy.": "defence তথ্যের কুইজ নয়; এটি একটি কথোপকথন, যেখানে আপনি দেখান যে নিজের কাজ, তার শক্তি আর সীমাবদ্ধতা বোঝেন। ভালো slide আর সৎ উত্তর একে সহজ করে।",
+"This chapter prepares you for the presentation, the viva and turning your thesis into a published paper.": "এই chapter আপনাকে প্রস্তুত করে presentation, viva আর thesis-কে প্রকাশিত paper-এ রূপ দেওয়ার জন্য।"
 });

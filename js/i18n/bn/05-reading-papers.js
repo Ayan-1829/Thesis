@@ -2,9 +2,6 @@
 I18N_BN_ADD({
 "Reading Papers and Managing Notes": "Paper পড়া ও নোট ব্যবস্থাপনা",
 "How a paper is built, the three-pass reading method, questions to ask, reading results critically, one-paper summaries, the literature matrix, reference managers and getting through hard papers.": "একটি paper কীভাবে গঠিত, তিন-ধাপে পড়ার পদ্ধতি, পড়ার সময় প্রশ্ন, ফলাফল সমালোচনামূলকভাবে পড়া, এক-paper সারসংক্ষেপ, literature matrix, reference manager এবং কঠিন paper পার হওয়া।",
-"You read a 12-page paper from start to end, carefully, for three hours. A week later you remember almost nothing.": "আপনি 12 পৃষ্ঠার একটি paper শুরু থেকে শেষ পর্যন্ত, যত্নসহ, তিন ঘণ্টা ধরে পড়লেন। এক সপ্তাহ পরে প্রায় কিছুই মনে নেই।",
-"Researchers do not read papers like novels. They read in passes, with questions, and they write notes they can use later. That is how they cover dozens of papers without drowning.": "গবেষকেরা উপন্যাসের মতো paper পড়েন না। তাঁরা কয়েক ধাপে, প্রশ্ন নিয়ে পড়েন এবং পরে কাজে লাগানোর মতো নোট লেখেন। এভাবেই তাঁরা ডুবে না গিয়ে কয়েক ডজন paper পড়েন।",
-"This chapter gives you a reading method, a note template and a literature matrix — the raw material of your literature review.": "এই অধ্যায় আপনাকে একটি পড়ার পদ্ধতি, একটি নোট template ও একটি literature matrix দেয় — আপনার literature review-এর কাঁচামাল।",
 "In this chapter": "এই অধ্যায়ে",
 "Select a section to jump to it.": "কোনো অংশে যেতে সেটি বাছুন।",
 "Reading strategy": "পড়ার কৌশল",
@@ -178,5 +175,8 @@ I18N_BN_ADD({
 "Mark quotes so they are never mistaken for your words.": "উদ্ধৃতি চিহ্নিত করুন যাতে কখনো আপনার নিজের লেখা বলে ভুল না হয়।",
 "A quick scan of the whole paper.": "পুরো paper-এর দ্রুত স্ক্যান।",
 "Understand the content, not every detail.": "বিষয়বস্তু বুঝুন, প্রতিটি খুঁটিনাটি নয়।",
-"Only for the few papers your thesis builds on.": "শুধু সেই কয়েকটি paper-এর জন্য যার ওপর আপনার থিসিস দাঁড়িয়ে।"
+"Only for the few papers your thesis builds on.": "শুধু সেই কয়েকটি paper-এর জন্য যার ওপর আপনার থিসিস দাঁড়িয়ে।",
+"You read a 12-page paper carefully, word by word, for three hours. A week later, all you remember is that Figure 2 was blue.": "আপনি একটি 12 পৃষ্ঠার paper তিন ঘণ্টা ধরে মনোযোগ দিয়ে, শব্দে শব্দে পড়লেন। এক সপ্তাহ পর মনে আছে শুধু Figure 2 নীল ছিল।",
+"Researchers don’t read papers like novels. They read in passes, with questions, and write notes they can use later — that is how they get through dozens of papers without drowning.": "গবেষকেরা উপন্যাসের মতো paper পড়েন না। তাঁরা কয়েক দফায়, প্রশ্ন নিয়ে পড়েন, আর এমন নোট লেখেন যা পরে কাজে লাগে — এভাবেই তাঁরা ডুবে না গিয়ে ডজন ডজন paper পার হন।",
+"This chapter gives you a reading method, a note template and a literature matrix.": "এই chapter আপনাকে দেয় একটি পড়ার পদ্ধতি, একটি নোটের ছাঁচ আর একটি literature matrix।"
 });

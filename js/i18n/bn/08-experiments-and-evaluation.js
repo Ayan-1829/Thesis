@@ -2,9 +2,6 @@
 I18N_BN_ADD({
 "Experiments, Statistics and Reproducibility": "Experiment, পরিসংখ্যান ও পুনরুৎপাদনযোগ্যতা",
 "Preparing data, train/validation/test splits and cross-validation, data leakage, running and logging experiments, metrics from the confusion matrix, significance tests, ablation and error analysis, presenting results and reproducibility.": "Data প্রস্তুতি, train/validation/test split ও cross-validation, data leakage, experiment চালানো ও লিপিবদ্ধ করা, confusion matrix থেকে metric, significance test, ablation ও error analysis, ফলাফল উপস্থাপন এবং পুনরুৎপাদনযোগ্যতা।",
-"Two months of work: your model is 0.4% better than the baseline. Your examiner asks: “Would it still be better with a different random seed?” You do not know.": "দুই মাসের কাজ: আপনার model baseline-এর চেয়ে 0.4% ভালো। পরীক্ষক জিজ্ঞেস করলেন: “অন্য random seed-এ কি এখনো ভালো হবে?” আপনি জানেন না।",
-"Experiments are only as convincing as their setup: clean splits, no leakage, several runs, the right metrics and a test of whether differences are real.": "Experiment ততটাই বিশ্বাসযোগ্য যতটা তার বিন্যাস: পরিষ্কার split, leakage নেই, একাধিক run, সঠিক metric এবং পার্থক্যগুলো বাস্তব কিনা তার পরীক্ষা।",
-"This chapter turns “I trained a model” into “I can show, with evidence, that the method works — and why”.": "এই অধ্যায় “আমি একটি model train করেছি”-কে রূপান্তর করে “আমি প্রমাণসহ দেখাতে পারি যে পদ্ধতিটি কাজ করে — এবং কেন”-তে।",
 "In this chapter": "এই অধ্যায়ে",
 "Select a section to jump to it.": "কোনো অংশে যেতে সেটি বাছুন।",
 "Avoiding leakage": "Leakage এড়ানো",
@@ -183,5 +180,8 @@ I18N_BN_ADD({
 "It shows what each part contributes.": "এটি দেখায় প্রতিটি অংশ কী অবদান রাখে।",
 "The model learns from this part.": "Model এই অংশ থেকে শেখে।",
 "For tuning and choosing models.": "Tuning ও model বাছাইয়ের জন্য।",
-"Used once, at the end.": "একবার, শেষে ব্যবহৃত।"
+"Used once, at the end.": "একবার, শেষে ব্যবহৃত।",
+"Two months of work: your model beats the baseline by 0.4%. The examiner asks: “Would it still win with a different random seed?” You check. It doesn’t.": "দুই মাসের কাজ: আপনার model baseline-কে 0.4% হারায়। examiner জিজ্ঞেস করেন: “আরেকটি random seed-এও কি জিতবে?” আপনি পরীক্ষা করেন। জেতে না।",
+"Experiments are only as convincing as their setup: clean splits, no leakage, several runs, the right metrics and a test of whether differences are real.": "experiment ততটুকুই বিশ্বাসযোগ্য, যতটা তার আয়োজন: পরিষ্কার split, কোনো leakage নয়, কয়েকবার চালানো, সঠিক metric আর পার্থক্য সত্যি কি না তার পরীক্ষা।",
+"This chapter turns “I trained a model” into “I can show, with evidence, that the method works — and why”.": "এই chapter “আমি একটি model train করেছি”-কে বদলে দেয় “আমি প্রমাণসহ দেখাতে পারি যে পদ্ধতিটি কাজ করে — আর কেন”-তে।"
 });

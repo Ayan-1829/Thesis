@@ -2,9 +2,6 @@
 I18N_BN_ADD({
 "Designing Your Methodology": "আপনার Methodology নকশা",
 "Choosing a research design, the experimental pipeline, describing a proposed method, choosing baselines and metrics, threats to validity and writing the research proposal.": "Research design বাছাই, experimental pipeline, প্রস্তাবিত পদ্ধতির বর্ণনা, baseline ও metric বাছাই, validity-র হুমকি এবং research proposal লেখা।",
-"Your model reaches 94% accuracy. Is that good? Compared with what, on which data, measured how — and would it be 94% again tomorrow?": "আপনার model 94% accuracy পেয়েছে। এটা কি ভালো? কিসের তুলনায়, কোন data-তে, কীভাবে মাপা — আর কাল কি আবার 94% হবে?",
-"A methodology answers these questions before you start, so that your result means something. Without it, even a correct result cannot convince an examiner.": "Methodology শুরুর আগেই এই প্রশ্নগুলোর উত্তর দেয়, যাতে আপনার ফলাফল অর্থবহ হয়। এটি ছাড়া সঠিক ফলাফলও একজন পরীক্ষককে বিশ্বাস করাতে পারে না।",
-"This chapter shows how to design a study: choose a design, describe your method, pick fair baselines and the right metrics, and anticipate threats to validity.": "এই অধ্যায় দেখায় কীভাবে একটি গবেষণা নকশা করবেন: একটি design বাছাই, আপনার পদ্ধতির বর্ণনা, ন্যায্য baseline ও সঠিক metric বাছাই, এবং validity-র হুমকি আগে থেকে ভাবা।",
 "In this chapter": "এই অধ্যায়ে",
 "Select a section to jump to it.": "কোনো অংশে যেতে সেটি বাছুন।",
 "Designs": "Design",
@@ -211,5 +208,8 @@ I18N_BN_ADD({
 "Cleaning and transforms — the same for every method.": "পরিষ্কার ও রূপান্তর — প্রতিটি পদ্ধতির জন্য একই।",
 "What is new, described fully.": "কী নতুন, পূর্ণভাবে বর্ণিত।",
 "Metrics, several runs, statistics, ablation, error analysis.": "Metric, একাধিক run, পরিসংখ্যান, ablation, error analysis।",
-"Trivial, classic, state-of-the-art and ablations — tuned equally.": "তুচ্ছ, ক্লাসিক, state-of-the-art ও ablation — সমানভাবে tune করা।"
+"Trivial, classic, state-of-the-art and ablations — tuned equally.": "তুচ্ছ, ক্লাসিক, state-of-the-art ও ablation — সমানভাবে tune করা।",
+"“My model gets 94% accuracy!” The examiner asks: “Compared with what, on which data, and would it be 94% tomorrow?” The room goes quiet.": "“আমার model 94% accuracy পায়!” examiner জিজ্ঞেস করেন: “কীসের তুলনায়, কোন data-তে, আর কালও কি 94% হবে?” ঘর নিশ্চুপ।",
+"A methodology answers those questions before you start, so that your result means something. Without it, even a correct result cannot convince anyone.": "একটি methodology শুরুর আগেই এই প্রশ্নগুলোর উত্তর দেয়, যাতে আপনার ফলের একটি অর্থ থাকে। এটি ছাড়া সঠিক ফলও কাউকে বিশ্বাস করাতে পারে না।",
+"This chapter shows how to choose a design, describe your method, pick fair baselines and metrics, and anticipate threats to validity.": "এই chapter দেখায় কীভাবে একটি design বাছবেন, পদ্ধতি বর্ণনা করবেন, ন্যায্য baseline ও metric বাছবেন, আর validity-র হুমকি আগে থেকে ভাববেন।"
 });

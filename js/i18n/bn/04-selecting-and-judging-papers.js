@@ -2,9 +2,6 @@
 I18N_BN_ADD({
 "Selecting and Judging Papers": "Paper বাছাই ও মূল্যায়ন",
 "Screening search results in stages with inclusion and exclusion criteria, the PRISMA flow, judging venues (CORE ranks, journal quartiles, predatory venues) and judging the quality of a paper itself.": "Inclusion ও exclusion মানদণ্ড দিয়ে ধাপে ধাপে অনুসন্ধানের ফলাফল যাচাই, PRISMA flow, venue মূল্যায়ন (CORE rank, journal quartile, predatory venue) এবং paper-এর নিজের মান মূল্যায়ন।",
-"Your search returned 1,800 results. You have a month. Which 30 do you read?": "আপনার অনুসন্ধানে 1,800টি ফলাফল এসেছে। হাতে এক মাস। কোন 30টি পড়বেন?",
-"Selecting papers is a skill: screening in stages with written criteria, judging where a paper was published, and judging the paper itself. Done well, it saves weeks and protects your thesis from weak or fake sources.": "Paper বাছাই একটি দক্ষতা: লিখিত মানদণ্ডে ধাপে ধাপে যাচাই, paper কোথায় প্রকাশিত তা বিচার, এবং paper-টিকেই বিচার। ভালোভাবে করলে এটি সপ্তাহের পর সপ্তাহ বাঁচায় এবং থিসিসকে দুর্বল বা ভুয়া উৎস থেকে রক্ষা করে।",
-"This chapter turns a long list of results into a short list you can trust and defend.": "এই অধ্যায় ফলাফলের একটি দীর্ঘ তালিকাকে এমন একটি ছোট তালিকায় পরিণত করে যার ওপর আপনি ভরসা করতে ও যুক্তি দিতে পারেন।",
 "In this chapter": "এই অধ্যায়ে",
 "Select a section to jump to it.": "কোনো অংশে যেতে সেটি বাছুন।",
 "Screening": "যাচাই",
@@ -205,5 +202,8 @@ I18N_BN_ADD({
 "verify the paper exists and says that": "paper-টি আছে এবং সেটি তা বলে কিনা যাচাই করা",
 "ignore all AI": "সব AI উপেক্ষা করা",
 "cite the chatbot": "chatbot-কে উদ্ধৃত করা",
-"AI tools can invent references; always verify.": "AI tool reference বানিয়ে দিতে পারে; সবসময় যাচাই করুন।"
+"AI tools can invent references; always verify.": "AI tool reference বানিয়ে দিতে পারে; সবসময় যাচাই করুন।",
+"Your search returned 1,800 papers. You have one month and a limited supply of tea. You cannot read them all — and you shouldn’t.": "আপনার search ফেরত দিয়েছে 1,800টি paper। হাতে এক মাস আর সীমিত চা। সব পড়া সম্ভব নয় — আর উচিতও নয়।",
+"Screening in stages with written criteria, judging the venue and judging the paper itself turns a mountain into a reading list. Done well, it saves weeks and keeps weak or fake sources out of your thesis.": "লিখিত মানদণ্ড দিয়ে ধাপে ধাপে বাছাই, প্রকাশের স্থান যাচাই আর paper-টিকে নিজে যাচাই করা একটি পাহাড়কে একটি পাঠ-তালিকায় বদলে দেয়। ভালোভাবে করলে সপ্তাহের পর সপ্তাহ বাঁচে, আর দুর্বল বা ভুয়া উৎস thesis থেকে দূরে থাকে।",
+"This chapter turns a long list of results into a short list you can trust and defend.": "এই chapter ফলাফলের একটি লম্বা তালিকাকে এমন ছোট তালিকায় বদলায়, যার ওপর ভরসা করা আর যার পক্ষে যুক্তি দেওয়া যায়।"
 });

@@ -2,9 +2,6 @@
 I18N_BN_ADD({
 "Research Ethics and Integrity": "গবেষণা নৈতিকতা ও সততা",
 "Fabrication, falsification and plagiarism; quoting, paraphrasing and citing; using AI tools responsibly; consent and privacy in research with people; data licences; fairness and harm; authorship.": "জালিয়াতি (fabrication), বিকৃতি (falsification) ও plagiarism; উদ্ধৃতি, নিজের ভাষায় লেখা ও citation; দায়িত্বশীলভাবে AI tool ব্যবহার; মানুষ নিয়ে গবেষণায় সম্মতি ও গোপনীয়তা; data licence; ন্যায্যতা ও ক্ষতি; লেখকত্ব।",
-"A thesis is submitted with excellent results. A year later someone finds the test set was used for tuning, and two paragraphs were copied from a blog.": "চমৎকার ফলাফলসহ একটি থিসিস জমা হলো। এক বছর পর কেউ দেখল test set tuning-এ ব্যবহৃত হয়েছিল, এবং দুটি অনুচ্ছেদ একটি blog থেকে কপি করা।",
-"Ethics is not a form to sign at the end; it shapes how you collect data, run experiments, use AI tools and write. Most problems are not deliberate cheating but shortcuts and carelessness.": "নৈতিকতা শেষে সই করার একটি ফর্ম নয়; এটি ঠিক করে আপনি কীভাবে data সংগ্রহ করেন, experiment চালান, AI tool ব্যবহার করেন ও লেখেন। বেশিরভাগ সমস্যা ইচ্ছাকৃত প্রতারণা নয়, বরং শর্টকাট ও অসাবধানতা।",
-"This chapter lists the rules that protect you, your participants and the trust in your results.": "এই অধ্যায় সেই নিয়মগুলো তালিকা করে যা আপনাকে, আপনার অংশগ্রহণকারীদের এবং আপনার ফলাফলের প্রতি আস্থাকে রক্ষা করে।",
 "In this chapter": "এই অধ্যায়ে",
 "Select a section to jump to it.": "কোনো অংশে যেতে সেটি বাছুন।",
 "Integrity": "সততা",
@@ -185,5 +182,8 @@ I18N_BN_ADD({
 "impossible": "অসম্ভব",
 "reusing your own earlier text without citing it": "উদ্ধৃতি ছাড়া নিজের আগের লেখা পুনঃব্যবহার",
 "citing yourself": "নিজেকে উদ্ধৃত করা",
-"Cite your earlier work when you reuse it.": "নিজের আগের কাজ পুনঃব্যবহার করলে উদ্ধৃত করুন।"
+"Cite your earlier work when you reuse it.": "নিজের আগের কাজ পুনঃব্যবহার করলে উদ্ধৃত করুন।",
+"A thesis is submitted with excellent results. A year later, someone notices that the test set was used for tuning and two paragraphs came from a blog. The degree suddenly feels very nervous.": "চমৎকার ফল নিয়ে একটি thesis জমা পড়ে। এক বছর পর কেউ লক্ষ করে, test set tuning-এ ব্যবহার হয়েছিল আর দুটি অনুচ্ছেদ এসেছিল একটি blog থেকে। ডিগ্রিটা হঠাৎ খুব নার্ভাস।",
+"Ethics is not a form signed at the end; it shapes how you collect data, run experiments, use AI tools and write. Most problems are not deliberate cheating but shortcuts and carelessness.": "নৈতিকতা শেষে সই করা কোনো ফর্ম নয়; এটি ঠিক করে আপনি কীভাবে data সংগ্রহ করবেন, experiment চালাবেন, AI tool ব্যবহার করবেন আর লিখবেন। বেশিরভাগ সমস্যা ইচ্ছাকৃত প্রতারণা নয়, বরং শর্টকাট আর অসাবধানতা।",
+"This chapter lists the rules that protect you, your participants and the trust in your results.": "এই chapter সেই নিয়মগুলো তালিকা করে, যা আপনাকে, আপনার অংশগ্রহণকারীদের আর আপনার ফলের প্রতি আস্থাকে রক্ষা করে।"
 });

@@ -2,9 +2,6 @@
 I18N_BN_ADD({
 "Artificial Intelligence and Generative AI": "Artificial Intelligence ও Generative AI",
 "Search, planning, reasoning, reinforcement learning, LLMs, retrieval-augmented generation and agents; evaluating AI systems reliably; tools, venues, thesis ideas and how to start.": "Search, planning, reasoning, reinforcement learning, LLM, retrieval-augmented generation ও agent; AI system নির্ভরযোগ্যভাবে মূল্যায়ন; tool, venue, থিসিস ধারণা এবং কীভাবে শুরু করবেন।",
-"“My thesis is a ChatGPT-based chatbot.” What exactly is the research question?": "“আমার থিসিস একটি ChatGPT-ভিত্তিক chatbot।” গবেষণা প্রশ্নটি ঠিক কী?",
-"Generative AI made AI theses popular — and made it easy to build demos that answer no question. Good AI research measures reliability, compares methods fairly and explains failures.": "Generative AI, AI থিসিসকে জনপ্রিয় করেছে — এবং কোনো প্রশ্নের উত্তর না দেওয়া demo বানানো সহজ করেছে। ভালো AI গবেষণা নির্ভরযোগ্যতা মাপে, পদ্ধতিগুলোর ন্যায্য তুলনা করে এবং ব্যর্থতা ব্যাখ্যা করে।",
-"This chapter covers classical AI (search, planning, reasoning) and modern generative AI, with the evaluation habits that make results credible.": "এই অধ্যায়ে আছে ক্লাসিক্যাল AI (search, planning, reasoning) ও আধুনিক generative AI, সেই মূল্যায়ন-অভ্যাসসহ যা ফলাফলকে বিশ্বাসযোগ্য করে।",
 "In this chapter": "এই অধ্যায়ে",
 "Select a section to jump to it.": "কোনো অংশে যেতে সেটি বাছুন।",
 "The field": "ক্ষেত্রটি",
@@ -223,5 +220,8 @@ I18N_BN_ADD({
 "Models that produce text, images and code.": "যে model লেখা, ছবি ও code তৈরি করে।",
 "Large language models.": "Large language model।",
 "Answers grounded in retrieved documents.": "উদ্ধার করা নথিতে ভিত্তি করা উত্তর।",
-"Hallucination, bias, misuse.": "Hallucination, পক্ষপাত, অপব্যবহার।"
+"Hallucination, bias, misuse.": "Hallucination, পক্ষপাত, অপব্যবহার।",
+"“My thesis is a ChatGPT chatbot.” “Lovely. What is the research question?” “…It chats.”": "“আমার thesis একটি ChatGPT chatbot।” “চমৎকার। research question কী?” “…এটা chat করে।”",
+"Generative AI made it easy to build impressive demos that answer no question. Good AI research measures reliability, compares methods fairly and explains the failures.": "Generative AI এমন চোখধাঁধানো demo বানানো সহজ করে দিয়েছে, যা কোনো প্রশ্নের উত্তর দেয় না। ভালো AI গবেষণা নির্ভরযোগ্যতা মাপে, পদ্ধতিগুলোর ন্যায্য তুলনা করে আর ব্যর্থতা ব্যাখ্যা করে।",
+"This chapter covers classical AI (search, planning, reasoning) and modern generative AI, with evaluation habits that make results credible.": "এই chapter-এ আছে ক্লাসিক AI (search, planning, reasoning) আর আধুনিক generative AI, সঙ্গে এমন মূল্যায়নের অভ্যাস যা ফলকে বিশ্বাসযোগ্য করে।"
 });
