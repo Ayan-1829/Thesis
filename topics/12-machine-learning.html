@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Machine Learning – Chapter 12 | Thesis: Undergraduate Research Guide</title>
+<meta name="description" content="What ML research studies, typical problems (few labels, robustness, efficiency, fairness), key methods, datasets, evaluation, tools, venues, thesis ideas and how to get started. Interactive slides, tools, worked examples and a quiz: chapter 12 of a free guide to doing a computer science thesis.">
+<meta name="keywords" content="machine learning thesis, machine learning research topics, ML datasets, overfitting, cross validation, gradient boosting, deep learning, transfer learning, fairness in machine learning, NeurIPS ICML ICLR">
+<meta name="author" content="Thesis Research Guide">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#4338A0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E0C1A" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://ayan-1829.github.io/Thesis/topics/12-machine-learning.html">
+<link rel="icon" type="image/svg+xml" href="../img/logo-mark.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16.png">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Thesis (Undergraduate Research)">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Machine Learning – Chapter 12 | Thesis: Undergraduate Research Guide">
+<meta property="og:description" content="What ML research studies, typical problems (few labels, robustness, efficiency, fairness), key methods, datasets, evaluation, tools, venues, thesis ideas and how to get started. Interactive slides, tools, worked examples and a quiz: chapter 12 of a free guide to doing a computer science thesis.">
+<meta property="og:url" content="https://ayan-1829.github.io/Thesis/topics/12-machine-learning.html">
+<meta property="og:image" content="https://ayan-1829.github.io/Thesis/img/og/12-machine-learning.png?v=2">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Machine Learning – Chapter 12 | Thesis: Undergraduate Research Guide">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Machine Learning – Chapter 12 | Thesis: Undergraduate Research Guide">
+<meta name="twitter:description" content="What ML research studies, typical problems (few labels, robustness, efficiency, fairness), key methods, datasets, evaluation, tools, venues, thesis ideas and how to get started. Interactive slides, tools, worked examples and a quiz: chapter 12 of a free guide to doing a computer science thesis.">
+<meta name="twitter:image" content="https://ayan-1829.github.io/Thesis/img/og/12-machine-learning.png?v=2">
+<meta name="twitter:image:alt" content="Machine Learning – Chapter 12 | Thesis: Undergraduate Research Guide">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "Machine Learning", "description": "What ML research studies, typical problems (few labels, robustness, efficiency, fairness), key methods, datasets, evaluation, tools, venues, thesis ideas and how to get started.", "position": 12, "educationalLevel": "Undergraduate", "learningResourceType": "Lecture slides", "inLanguage": "en", "isAccessibleForFree": true, "teaches": ["ML research asks how to learn more accurately, from less data, robustly, efficiently and fairly.", "Know classical models, neural networks, unsupervised, transfer and self-supervised learning.", "Use public repositories (UCI, OpenML, Hugging Face, Kaggle) or local data; describe and split it carefully.", "Evaluate with the right metrics, cross-validation, several seeds and strong baselines.", "Top venues: NeurIPS, ICML, ICLR (plus AAAI, IJCAI, KDD); start with workshops and regional conferences.", "Start by reproducing one paper’s main result."], "keywords": "machine learning thesis, machine learning research topics, ML datasets, overfitting, cross validation, gradient boosting, deep learning, transfer learning, fairness in machine learning, NeurIPS ICML ICLR", "url": "https://ayan-1829.github.io/Thesis/topics/12-machine-learning.html", "image": "https://ayan-1829.github.io/Thesis/img/og/12-machine-learning.png", "isPartOf": {"@type": "Course", "name": "Thesis: Undergraduate Research in Computer Science", "url": "https://ayan-1829.github.io/Thesis/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Thesis", "item": "https://ayan-1829.github.io/Thesis/"}, {"@type": "ListItem", "position": 2, "name": "Chapter 12: Machine Learning", "item": "https://ayan-1829.github.io/Thesis/topics/12-machine-learning.html"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Mono:wght@400;500;600&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="deck-page">
+<div class="sr-only" id="live" aria-live="polite"></div>
+<header class="deck-bar">
+  <a class="home-link" href="../index.html" aria-label="Home: all chapters"><img src="../img/logo-mark.svg" alt="" width="26" height="26"><span>Home</span></a>
+  <div class="deck-title"><span class="badge">12</span><span>Machine Learning</span></div>
+  <div class="deck-actions">
+    <button type="button" class="btn sm" id="btn-menu" aria-expanded="false" aria-controls="slide-menu" aria-label="Slides"><svg class="btn-ic" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><rect x="3" y="4.5" width="18" height="3" rx="1"></rect><rect x="3" y="10.5" width="18" height="3" rx="1"></rect><rect x="3" y="16.5" width="18" height="3" rx="1"></rect></svg><span>Slides</span></button>
+    <button type="button" class="btn sm" id="btn-theme" aria-pressed="false" aria-label="Toggle dark mode"><svg class="btn-ic" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"></path></svg><span>Dark mode</span></button>
+    <button type="button" class="btn sm" id="btn-fs" aria-pressed="false" aria-label="Full screen"><svg class="btn-ic" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"></path></svg><span>Full screen</span></button>
+  </div>
+</header>
+<div class="deck-progress"><i id="progress-fill"></i></div>
+<main class="deck" id="deck">
+<section class="slide title-slide" data-title="Machine Learning" aria-label="Machine Learning" tabindex="-1"><div class="slide-inner">
+<span class="topic-art" data-art="12" aria-hidden="true"></span>
+<span class="badge big">12</span>
+<p class="kicker">Chapter 12 of 21 · Part B · Research fields</p>
+<h1>Machine Learning</h1>
+<p class="lead">What ML research studies, typical problems (few labels, robustness, efficiency, fairness), key methods, datasets, evaluation, tools, venues, thesis ideas and how to get started.</p>
+<div class="row"><a class="btn pri" href="#s=2">Start</a><a class="btn" href="../index.html">All chapters</a></div>
+</div></section>
+<section class="slide " data-title="Why this matters" aria-label="Why this matters" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Before we start</p><h2>Why this matters</h2><div class="hook"><p class="q">Almost every computer science field now uses machine learning. Few students learn how to do ML research properly.</p><p>An ML thesis is not “I trained a model and got 95%”. It is a careful question about learning — with fair baselines, honest evaluation and analysis of why it works.</p><p>This chapter maps the field, its methods, data and venues, and gives you thesis ideas at three levels.</p></div>
+</div></section>
+<section class="slide " data-title="In this chapter" aria-label="In this chapter" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Outline · chapter 12</p><h2>In this chapter</h2><p class="muted">Select a section to jump to it.</p><ol class="outline-list"><li><a href="#s=4">The field</a></li><li><a href="#s=6">Methods</a></li><li><a href="#s=10">Data and evaluation</a></li><li><a href="#s=12">Tools and venues</a></li><li><a href="#s=14">Thesis ideas</a></li></ol>
+</div></section>
+<section class="slide " data-title="What machine learning research studies" aria-label="What machine learning research studies" tabindex="-1"><div style="zoom:0.98;" class="slide-inner">
+<p class="kicker">Part 1 of 12</p><h2>What machine learning research studies</h2><p><b>Machine learning</b> (ML) studies algorithms that learn patterns from data and improve with experience, instead of following hand-written rules. Research asks how to learn <b>more accurately</b>, from <b>less data</b>, <b>faster</b>, more <b>robustly</b> and more <b>fairly</b> — and why methods work.</p><p class="small muted">Rest on a branch of the map for a description.</p><figure class="fig" data-fig="map-ml"></figure>
+</div></section>
+<section class="slide " data-title="Typical research problems" aria-label="Typical research problems" tabindex="-1"><div class="slide-inner">
+<p class="kicker">The field</p><h2>Typical research problems</h2><div class="scrollx"><table class="doc"><thead><tr><th>Problem</th><th>Example thesis question</th></tr></thead><tbody><tr><td>Learning from little labelled data</td><td>Does semi-supervised learning with 10% labels match full supervision on a local dataset?</td></tr><tr><td>Generalisation and robustness</td><td>How much does accuracy drop under distribution shift (new hospital, new season), and which method reduces it?</td></tr><tr><td>Efficiency</td><td>Can knowledge distillation make a model 5× smaller with less than 1 point loss?</td></tr><tr><td>Imbalanced and noisy data</td><td>Which loss or sampling strategy works best when the rare class is 2% of the data?</td></tr><tr><td>Interpretability</td><td>Do SHAP explanations agree with domain experts on which features matter?</td></tr><tr><td>Fairness</td><td>Does a credit model treat applicants from different regions equally, and can re-weighting fix it?</td></tr><tr><td>Tabular and time-series prediction</td><td>Do gradient-boosted trees beat deep models for crop-yield forecasting?</td></tr></tbody></table></div>
+</div></section>
+<section class="slide " data-title="The ML research pipeline" aria-label="The ML research pipeline" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 3 of 12</p><h2>The ML research pipeline</h2><ol class="steps"><li><b>Problem</b><span>task, inputs, outputs, metric</span></li><li><b>Data</b><span>collect, clean, split</span></li><li><b>Baselines</b><span>simple models first</span></li><li><b>Model</b><span>the proposed idea</span></li><li><b>Tuning</b><span>on validation data only</span></li><li><b>Evaluation</b><span>test once, several seeds</span></li><li><b>Analysis</b><span>ablation, errors, fairness</span></li></ol><p>Most ML theses fail at the edges of this pipeline — leaky splits, untuned baselines, one random seed — not in the model. Chapter 8 covers these in detail.</p>
+</div></section>
+<section class="slide " data-title="Key methods to know" aria-label="Key methods to know" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Methods</p><h2>Key methods to know</h2><div class="tgrid"><div class="tcard"><h4>Classical models</h4><p>Linear and logistic regression, SVMs, decision trees, random forests, gradient boosting (XGBoost, LightGBM) — still the best for many tabular problems.</p></div><div class="tcard"><h4>Neural networks</h4><p>MLPs, CNNs for grids (images), RNNs and transformers for sequences; trained with gradient descent and back-propagation.</p></div><div class="tcard"><h4>Unsupervised learning</h4><p>Clustering (k-means, DBSCAN), dimensionality reduction (PCA, t-SNE, UMAP), autoencoders.</p></div><div class="tcard"><h4>Self-supervised and transfer learning</h4><p>Pre-train on unlabelled data, then fine-tune — the default for images and text today.</p></div></div>
+</div></section>
+<section class="slide " data-title="Key methods to know (cont.)" aria-label="Key methods to know (cont.)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Methods</p><h2>Key methods to know (cont.)</h2><div class="tgrid"><div class="tcard"><h4>Ensembles and regularisation</h4><p>Bagging, boosting, dropout, weight decay, early stopping: ways to reduce overfitting.</p></div><div class="tcard"><h4>Explainability</h4><p>Feature importance, SHAP, LIME, saliency maps — to understand and debug predictions.</p></div></div>
+</div></section>
+<section class="slide " data-title="Popular models in machine learning" aria-label="Popular models in machine learning" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Methods</p><h2>Popular models in machine learning</h2><div class="scrollx"><table class="doc"><thead><tr><th>Model</th><th>What it is</th><th>Typical use</th></tr></thead><tbody><tr><td>Logistic regression, SVM</td><td>linear classifiers; SVMs with kernels</td><td>first baselines; small or text data</td></tr><tr><td>Random forest</td><td>many decision trees voting</td><td>robust tabular baseline, feature importance</td></tr><tr><td>XGBoost, LightGBM, CatBoost</td><td>gradient-boosted trees</td><td>the strongest choice for most tabular data</td></tr><tr><td>MLP</td><td>a plain feed-forward neural network</td><td>deep-learning baseline for tables</td></tr><tr><td>TabPFN</td><td>a transformer pretrained to classify small tables in one pass</td><td>small tabular datasets (thousands of rows)</td></tr><tr><td>Transformer</td><td>attention-based sequence model</td><td>text, time series, and the basis of most modern models</td></tr><tr><td>k-means, DBSCAN, Isolation Forest</td><td>clustering and anomaly detection</td><td>unlabelled data, outliers</td></tr></tbody></table></div><div class="callout">Always include a gradient-boosting model when your data is a table: in many studies it still beats deep models.</div>
+</div></section>
+<section class="slide " data-title="Overfitting, live" aria-label="Overfitting, live" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Interactive</p><h2>Overfitting, live</h2><div data-demo="overfit"></div>
+</div></section>
+<section class="slide " data-title="Datasets" aria-label="Datasets" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 7 of 12</p><h2>Datasets</h2><div class="scrollx"><table class="doc"><thead><tr><th>Source</th><th>What you find</th></tr></thead><tbody><tr><td><a href="https://archive.ics.uci.edu" target="_blank" rel="noopener">UCI ML Repository</a></td><td>hundreds of classic tabular datasets</td></tr><tr><td><a href="https://www.openml.org" target="_blank" rel="noopener">OpenML</a></td><td>datasets with benchmark results from many algorithms</td></tr><tr><td><a href="https://www.kaggle.com/datasets" target="_blank" rel="noopener">Kaggle Datasets</a></td><td>competition and community datasets (check the licence and quality)</td></tr><tr><td><a href="https://huggingface.co/datasets" target="_blank" rel="noopener">Hugging Face Datasets</a></td><td>text, image, audio datasets with loaders</td></tr><tr><td><a href="https://datasetsearch.research.google.com" target="_blank" rel="noopener">Google Dataset Search</a></td><td>search engine across repositories</td></tr><tr><td>Government open data</td><td>e.g. agriculture, weather, health statistics — good for local problems</td></tr></tbody></table></div>
+</div></section>
+<section class="slide " data-title="Evaluation" aria-label="Evaluation" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Data and evaluation</p><h2>Evaluation</h2><div class="cols "><div><div class="scrollx"><table class="doc"><thead><tr><th>Task</th><th>Metrics</th></tr></thead><tbody><tr><td>Classification</td><td>accuracy, macro-F1, AUC-ROC, AUC-PR</td></tr><tr><td>Regression</td><td>MAE, RMSE, R²</td></tr><tr><td>Clustering</td><td>silhouette, adjusted Rand index</td></tr><tr><td>Calibration</td><td>expected calibration error</td></tr><tr><td>Efficiency</td><td>parameters, latency, memory</td></tr></tbody></table></div></div><div><ul><li>Use <b>k-fold cross-validation</b> for small data.</li><li>Report mean ± sd over seeds or folds.</li><li>Compare with strong, tuned baselines — including gradient boosting for tabular data.</li><li>Test on a second dataset or a later time period for robustness.</li></ul></div></div>
+</div></section>
+<section class="slide " data-title="Tools" aria-label="Tools" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 9 of 12</p><h2>Tools</h2><div class="tgrid"><div class="tcard"><h4>scikit-learn</h4><p>Classical ML, pipelines, cross-validation and metrics.</p></div><div class="tcard"><h4>PyTorch</h4><p>The main deep-learning framework in research.</p></div><div class="tcard"><h4>XGBoost / LightGBM</h4><p>Gradient boosting for tabular data.</p></div><div class="tcard"><h4>Weights &amp; Biases / MLflow</h4><p>Tracking experiments.</p></div><div class="tcard"><h4>Google Colab / Kaggle Notebooks</h4><p>Free GPUs for small and medium experiments.</p></div><div class="tcard"><h4>SHAP</h4><p>Explaining model predictions.</p></div></div>
+</div></section>
+<section class="slide " data-title="Where ML research is published" aria-label="Where ML research is published" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Tools and venues</p><h2>Where ML research is published</h2><div class="scrollx"><table class="doc"><thead><tr><th>Type</th><th>Venues</th></tr></thead><tbody><tr><td>Top conferences</td><td>NeurIPS, ICML, ICLR</td></tr><tr><td>Broad AI conferences</td><td>AAAI, IJCAI</td></tr><tr><td>Applied ML and data</td><td>KDD, ECML-PKDD, ICDM</td></tr><tr><td>Journals</td><td>JMLR, IEEE TPAMI, IEEE TNNLS, Machine Learning (Springer), Pattern Recognition</td></tr><tr><td>Good first venues</td><td>workshops at the big conferences; regional IEEE conferences</td></tr></tbody></table></div><p class="small muted">Check the current rank of any venue on the CORE portal and SCImago before submitting.</p>
+</div></section>
+<section class="slide " data-title="Thesis ideas" aria-label="Thesis ideas" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 11 of 12</p><h2>Thesis ideas</h2><div class="ideas"><div class="idea starter"><span class="lvl">Starter</span><b>Benchmark ML models on a local tabular dataset</b><p>Compare logistic regression, random forest, XGBoost and an MLP on, for example, crop yield or student performance data, with proper CV and SHAP analysis.</p></div><div class="idea standard"><span class="lvl">Standard</span><b>Learning with few labels</b><p>Measure how semi-supervised or self-training methods perform as labelled data shrinks from 100% to 5%.</p></div><div class="idea standard"><span class="lvl">Standard</span><b>Robustness to distribution shift</b><p>Train on one year or region, test on another; evaluate domain-adaptation methods.</p></div><div class="idea standard"><span class="lvl">Standard</span><b>Fairness audit</b><p>Measure group fairness metrics of a public model and test a mitigation method.</p></div><div class="idea ambitious"><span class="lvl">Ambitious</span><b>Efficient models for edge devices</b><p>Distil or quantise a model to run on a phone; measure accuracy, latency and energy.</p></div></div>
+</div></section>
+<section class="slide " data-title="Getting started in four weeks" aria-label="Getting started in four weeks" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Thesis ideas</p><h2>Getting started in four weeks</h2><ol class="steps"><li><b>Week 1</b><span>refresh the basics: linear models, overfitting, cross-validation; reproduce one tutorial</span></li><li><b>Week 2</b><span>pick a dataset; build a scikit-learn baseline end to end</span></li><li><b>Week 3</b><span>read 5 recent papers on your problem; note their baselines and metrics</span></li><li><b>Week 4</b><span>reproduce one paper’s main number; write a one-page idea</span></li></ol><div class="callout warn">Pitfalls: tuning on the test set, accuracy on imbalanced data, one random seed, comparing with untuned baselines, ignoring simple models.</div>
+</div></section>
+<section class="slide " data-title="Worked example 1" aria-label="Worked example 1" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 1 of 2</p><h2>Worked example 1</h2><div class="ex"><div class="qq">A student’s random forest gets 99% accuracy predicting loan default; 3% of loans default. What do you check?</div><details class="reveal"><summary>Show the solution</summary><div class="ans">Class imbalance (a model predicting “no default” always scores 97%), leakage (features recorded after the default, such as “collection calls”), the split (same customer in train and test). Report recall, precision and AUC-PR for the default class.</div></details></div>
+</div></section>
+<section class="slide " data-title="Worked example 2" aria-label="Worked example 2" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 2 of 2</p><h2>Worked example 2</h2><div class="ex"><div class="qq">Turn “use deep learning for crop yield prediction” into a research question.</div><details class="reveal"><summary>Show the solution</summary><div class="ans">“Do LSTM models using weekly weather data predict district-level rice yield more accurately (lower MAE) than gradient-boosted trees using seasonal aggregates, when tested on a held-out recent year?”</div></details></div>
+</div></section>
+<section class="slide " data-title="Practice (1 of 2)" aria-label="Practice (1 of 2)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Practice</p><h2>Practice (1 of 2)</h2><p class="muted">Try each one yourself first, then check the answer.</p><div class="ex"><div class="qq">1. Name four typical ML research problems.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Learning from few labels, robustness to distribution shift, efficiency, imbalanced/noisy data, interpretability, fairness.</div></details></div><div class="ex"><div class="qq">2. What is overfitting and how do you detect it?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">The model fits the training data (including noise) but generalises poorly; training error is low while validation error is high or rising.</div></details></div><div class="ex"><div class="qq">3. Which model family should always be a baseline for tabular data?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Gradient-boosted trees (XGBoost, LightGBM) — and a simple linear model.</div></details></div>
+</div></section>
+<section class="slide " data-title="Practice (2 of 2)" aria-label="Practice (2 of 2)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Practice</p><h2>Practice (2 of 2)</h2><p class="muted">Try each one yourself first, then check the answer.</p><div class="ex"><div class="qq">4. Why use k-fold cross-validation?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">With small data, it uses every example for testing once, giving a more reliable estimate with a variance.</div></details></div><div class="ex"><div class="qq">5. Name three top ML conferences.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">NeurIPS, ICML, ICLR.</div></details></div><div class="ex"><div class="qq">6. What is transfer learning?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Reusing a model pre-trained on a large dataset and fine-tuning it on the target task.</div></details></div>
+</div></section>
+<section class="slide " data-title="Quiz" aria-label="Quiz" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Check yourself</p><h2>Quiz</h2><div><div class="quiz-host" data-quiz-key="th12"></div><script type="application/json" class="quiz-json">[{"q": "Training error falls, validation error rises. This is…", "o": ["underfitting", "overfitting", "leakage", "calibration"], "a": 1, "w": "The model memorises the training data."}, {"q": "For tabular data a strong baseline is…", "o": ["gradient boosting", "a GAN", "BLEU", "a CNN only"], "a": 0, "w": "XGBoost/LightGBM are hard to beat on tables."}, {"q": "SHAP is used for…", "o": ["explaining predictions", "collecting data", "formatting LaTeX", "clustering"], "a": 0, "w": "It attributes a prediction to features."}, {"q": "Training on 2020 data and testing on 2024 data checks…", "o": ["robustness to shift over time", "spelling", "GPU speed", "nothing"], "a": 0, "w": "A temporal split tests generalisation to the future."}, {"q": "Which is a top ML conference?", "o": ["ICLR", "ICSE", "CHI", "SIGCOMM"], "a": 0, "w": "ICLR, NeurIPS and ICML are the top ML venues."}, {"q": "Knowledge distillation aims to…", "o": ["make a smaller model mimic a larger one", "label data", "remove bias", "encrypt data"], "a": 0, "w": "A student model learns from a teacher model."}]</script></div>
+</div></section>
+<section class="slide " data-title="Further learning" aria-label="Further learning" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Resources</p><h2>Further learning</h2><p class="muted">Hand-picked material to go deeper. Links open in a new tab.</p><div class="res-grid"><a class="res" href="https://cs229.stanford.edu" target="_blank" rel="noopener noreferrer"><small>Course</small><b>Stanford CS229: Machine Learning ↗</b><span>Lecture notes covering the core theory.</span></a><a class="res book" href="https://d2l.ai" target="_blank" rel="noopener noreferrer"><small>Book</small><b>Dive into Deep Learning ↗</b><span>Free interactive deep-learning book with code.</span></a><a class="res" href="https://course.fast.ai" target="_blank" rel="noopener noreferrer"><small>Course</small><b>fast.ai Practical Deep Learning ↗</b><span>Top-down, hands-on deep learning.</span></a><a class="res" href="https://scikit-learn.org/stable/user_guide.html" target="_blank" rel="noopener noreferrer"><small>Docs</small><b>scikit-learn user guide ↗</b><span>Models, pipelines, evaluation.</span></a><a class="res" href="https://www.openml.org" target="_blank" rel="noopener noreferrer"><small>Data</small><b>OpenML ↗</b><span>Datasets with benchmark results.</span></a><a class="res" href="https://huggingface.co/papers" target="_blank" rel="noopener noreferrer"><small>Code</small><b>Hugging Face Papers ↗</b><span>Trending ML papers with code.</span></a><div class="res book"><small>Book</small><b>Pattern Recognition and Machine Learning — C. Bishop</b><span>Springer, 2006. The classic probabilistic view of ML.</span></div></div>
+</div></section>
+<section class="slide " data-title="Summary" aria-label="Summary" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Summary</p><h2>Summary</h2><ul class="sumlist"><li>ML research asks how to learn more accurately, from less data, robustly, efficiently and fairly.</li><li>Know classical models, neural networks, unsupervised, transfer and self-supervised learning.</li><li>Use public repositories (UCI, OpenML, Hugging Face, Kaggle) or local data; describe and split it carefully.</li><li>Evaluate with the right metrics, cross-validation, several seeds and strong baselines.</li><li>Top venues: NeurIPS, ICML, ICLR (plus AAAI, IJCAI, KDD); start with workshops and regional conferences.</li><li>Start by reproducing one paper’s main result.</li></ul><div class="nextcard"><a class="btn pri" href="13-ai-and-generative-ai.html">Next: Artificial Intelligence and Generative AI</a><a class="btn" href="../practice.html#t12">More practice</a><a class="btn" href="../resources.html#t12">All resources</a><a class="btn" href="../index.html">All chapters</a></div>
+</div></section>
+</main>
+<footer class="deck-foot">
+  <button type="button" class="btn" id="prev">Previous</button>
+  <span class="counter" id="counter">1 / 23</span>
+  <button type="button" class="btn pri" id="next">Next</button>
+</footer>
+<aside id="slide-menu" hidden aria-label="Slide list"><div class="menu-head"><h3>Slides in this chapter</h3><button type="button" id="btn-menu-close" class="menu-close" aria-label="Close slide list">&#10005;</button></div></aside>
+<noscript><p style="padding:20px">This lesson needs JavaScript for the slides and the interactive tools.</p></noscript>
+<script src="../js/core.js"></script>
+<script src="../js/art.js"></script>
+<script src="../js/diagram.js"></script>
+<script src="../js/figs.js"></script>
+<script src="../js/latex.js"></script>
+<script src="../js/demos.js"></script>
+<script src="../js/quiz.js"></script>
+<script src="../js/page.js"></script>
+<script>window.DP_TOPIC = {"id": 12, "prev": "11-presenting-defending-publishing.html", "next": "13-ai-and-generative-ai.html"};</script>
+<script>mountPage();</script>
+<script src="../js/slides.js"></script>
+<script src="../js/annotate.js"></script>
+<script src="../js/lang.js"></script>
+<script src="../js/analytics.js"
+        data-endpoint="https://analytics-proxy.ayansarkar1829.workers.dev"
+        data-project="Thesis Research Guide"></script>
+<script src="../js/course-events.js"></script>
+</body>
+</html>

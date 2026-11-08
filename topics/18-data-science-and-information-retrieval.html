@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data Science, Data Mining and Information Retrieval – Chapter 18 | Thesis: Undergraduate Research Guide</title>
+<meta name="description" content="Clustering, association rules, recommender systems, search and ranking, anomaly detection, forecasting and graph mining; the CRISP-DM process, datasets, metrics, tools, venues and thesis ideas. Interactive slides, tools, worked examples and a quiz: chapter 18 of a free guide to doing a computer science thesis.">
+<meta name="keywords" content="data science thesis, data mining research, information retrieval, recommender systems, clustering, k-means, search ranking, BM25, time series forecasting, anomaly detection, KDD SIGIR RecSys">
+<meta name="author" content="Thesis Research Guide">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#4338A0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E0C1A" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://ayan-1829.github.io/Thesis/topics/18-data-science-and-information-retrieval.html">
+<link rel="icon" type="image/svg+xml" href="../img/logo-mark.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16.png">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Thesis (Undergraduate Research)">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Data Science, Data Mining and Information Retrieval – Chapter 18 | Thesis: Undergraduate Research Guide">
+<meta property="og:description" content="Clustering, association rules, recommender systems, search and ranking, anomaly detection, forecasting and graph mining; the CRISP-DM process, datasets, metrics, tools, venues and thesis ideas. Interactive slides, tools, worked examples and a quiz: chapter 18 of a free guide to doing a computer science thesis.">
+<meta property="og:url" content="https://ayan-1829.github.io/Thesis/topics/18-data-science-and-information-retrieval.html">
+<meta property="og:image" content="https://ayan-1829.github.io/Thesis/img/og/18-data-science-and-information-retrieval.png?v=2">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Data Science, Data Mining and Information Retrieval – Chapter 18 | Thesis: Undergraduate Research Guide">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Data Science, Data Mining and Information Retrieval – Chapter 18 | Thesis: Undergraduate Research Guide">
+<meta name="twitter:description" content="Clustering, association rules, recommender systems, search and ranking, anomaly detection, forecasting and graph mining; the CRISP-DM process, datasets, metrics, tools, venues and thesis ideas. Interactive slides, tools, worked examples and a quiz: chapter 18 of a free guide to doing a computer science thesis.">
+<meta name="twitter:image" content="https://ayan-1829.github.io/Thesis/img/og/18-data-science-and-information-retrieval.png?v=2">
+<meta name="twitter:image:alt" content="Data Science, Data Mining and Information Retrieval – Chapter 18 | Thesis: Undergraduate Research Guide">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "Data Science, Data Mining and Information Retrieval", "description": "Clustering, association rules, recommender systems, search and ranking, anomaly detection, forecasting and graph mining; the CRISP-DM process, datasets, metrics, tools, venues and thesis ideas.", "position": 18, "educationalLevel": "Undergraduate", "learningResourceType": "Lecture slides", "inLanguage": "en", "isAccessibleForFree": true, "teaches": ["Data science discovers patterns; information retrieval finds and ranks relevant items.", "Follow CRISP-DM, with a research question and baselines at the modelling step.", "Methods: clustering, association rules, recommenders, BM25 and dense retrieval, forecasting, anomaly and graph mining.", "Evaluate with task metrics (silhouette, nDCG, MRR, MAE) and time-aware splits.", "Interpret results for decision makers: clusters and patterns must make sense.", "Venues: KDD, ICDM, CIKM, SIGIR, WWW, WSDM, RecSys."], "keywords": "data science thesis, data mining research, information retrieval, recommender systems, clustering, k-means, search ranking, BM25, time series forecasting, anomaly detection, KDD SIGIR RecSys", "url": "https://ayan-1829.github.io/Thesis/topics/18-data-science-and-information-retrieval.html", "image": "https://ayan-1829.github.io/Thesis/img/og/18-data-science-and-information-retrieval.png", "isPartOf": {"@type": "Course", "name": "Thesis: Undergraduate Research in Computer Science", "url": "https://ayan-1829.github.io/Thesis/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Thesis", "item": "https://ayan-1829.github.io/Thesis/"}, {"@type": "ListItem", "position": 2, "name": "Chapter 18: Data Science, Data Mining and Information Retrieval", "item": "https://ayan-1829.github.io/Thesis/topics/18-data-science-and-information-retrieval.html"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Mono:wght@400;500;600&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="deck-page">
+<div class="sr-only" id="live" aria-live="polite"></div>
+<header class="deck-bar">
+  <a class="home-link" href="../index.html" aria-label="Home: all chapters"><img src="../img/logo-mark.svg" alt="" width="26" height="26"><span>Home</span></a>
+  <div class="deck-title"><span class="badge">18</span><span>Data Science, Data Mining and Information Retrieval</span></div>
+  <div class="deck-actions">
+    <button type="button" class="btn sm" id="btn-menu" aria-expanded="false" aria-controls="slide-menu" aria-label="Slides"><svg class="btn-ic" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><rect x="3" y="4.5" width="18" height="3" rx="1"></rect><rect x="3" y="10.5" width="18" height="3" rx="1"></rect><rect x="3" y="16.5" width="18" height="3" rx="1"></rect></svg><span>Slides</span></button>
+    <button type="button" class="btn sm" id="btn-theme" aria-pressed="false" aria-label="Toggle dark mode"><svg class="btn-ic" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"></path></svg><span>Dark mode</span></button>
+    <button type="button" class="btn sm" id="btn-fs" aria-pressed="false" aria-label="Full screen"><svg class="btn-ic" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"></path></svg><span>Full screen</span></button>
+  </div>
+</header>
+<div class="deck-progress"><i id="progress-fill"></i></div>
+<main class="deck" id="deck">
+<section class="slide title-slide" data-title="Data Science, Data Mining and Information Retrieval" aria-label="Data Science, Data Mining and Information Retrieval" tabindex="-1"><div class="slide-inner">
+<span class="topic-art" data-art="18" aria-hidden="true"></span>
+<span class="badge big">18</span>
+<p class="kicker">Chapter 18 of 21 · Part B · Research fields</p>
+<h1>Data Science, Data Mining and Information Retrieval</h1>
+<p class="lead">Clustering, association rules, recommender systems, search and ranking, anomaly detection, forecasting and graph mining; the CRISP-DM process, datasets, metrics, tools, venues and thesis ideas.</p>
+<div class="row"><a class="btn pri" href="#s=2">Start</a><a class="btn" href="../index.html">All chapters</a></div>
+</div></section>
+<section class="slide " data-title="Why this matters" aria-label="Why this matters" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Before we start</p><h2>Why this matters</h2><div class="hook"><p class="q">Every organisation has data. Few know what is in it, and fewer can trust what they find.</p><p>Data-science research turns raw data into reliable knowledge: patterns that hold up, rankings that serve users, forecasts that are tested honestly. Local data — sales, health, agriculture, transport — gives many good thesis questions.</p><p>This chapter covers data mining, recommender systems and information retrieval, with the methods, data, metrics and venues.</p></div>
+</div></section>
+<section class="slide " data-title="In this chapter" aria-label="In this chapter" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Outline · chapter 18</p><h2>In this chapter</h2><p class="muted">Select a section to jump to it.</p><ol class="outline-list"><li><a href="#s=4">The field</a></li><li><a href="#s=6">Methods</a></li><li><a href="#s=10">Data and evaluation</a></li><li><a href="#s=12">Tools and venues</a></li><li><a href="#s=14">Thesis ideas</a></li></ol>
+</div></section>
+<section class="slide " data-title="What data science research studies" aria-label="What data science research studies" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 1 of 12</p><h2>What data science research studies</h2><p><b>Data science and data mining</b> discover useful patterns in large datasets: clusters, associations, anomalies, trends and predictions. <b>Information retrieval</b> (IR) finds and ranks relevant items — web pages, products, documents — and powers search engines and recommender systems.</p><p class="small muted">Rest on a branch of the map for a description.</p><figure class="fig" data-fig="map-data"></figure>
+</div></section>
+<section class="slide " data-title="Typical research problems" aria-label="Typical research problems" tabindex="-1"><div class="slide-inner">
+<p class="kicker">The field</p><h2>Typical research problems</h2><div class="scrollx"><table class="doc"><thead><tr><th>Area</th><th>Example thesis question</th></tr></thead><tbody><tr><td>Clustering and segmentation</td><td>Which customer segments emerge from a local e-commerce dataset, and are they stable over time?</td></tr><tr><td>Recommender systems</td><td>Does adding review text improve book recommendations for users with few ratings (cold start)?</td></tr><tr><td>Search and ranking</td><td>How well do neural retrievers rank Bangla news for user queries compared with BM25?</td></tr><tr><td>Anomaly detection</td><td>Can unusual electricity-meter readings reveal theft or faults?</td></tr><tr><td>Time-series forecasting</td><td>Which model forecasts daily dengue cases best from weather and past cases?</td></tr><tr><td>Graph mining</td><td>Can community detection on a co-authorship network reveal research groups?</td></tr><tr><td>Data quality and visual analytics</td><td>How do missing-data methods change conclusions from a health survey?</td></tr></tbody></table></div>
+</div></section>
+<section class="slide " data-title="The data-mining process (CRISP-DM)" aria-label="The data-mining process (CRISP-DM)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 3 of 12</p><h2>The data-mining process (CRISP-DM)</h2><div class="cols "><div><ol class="steps"><li><b>Business understanding</b><span>what decision will the result support?</span></li><li><b>Data understanding</b><span>explore, visualise, check quality</span></li><li><b>Data preparation</b><span>clean, join, engineer features</span></li><li><b>Modelling</b><span>try several methods</span></li><li><b>Evaluation</b><span>against the goal, not only a metric</span></li><li><b>Deployment</b><span>report, dashboard or system</span></li></ol></div><div><p class="small">CRISP-DM is the most widely used process model for data projects. For a thesis, add a clear research question and a comparison with baselines at the modelling step.</p></div></div>
+</div></section>
+<section class="slide " data-title="Key methods to know" aria-label="Key methods to know" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Methods</p><h2>Key methods to know</h2><div class="tgrid"><div class="tcard"><h4>Exploratory analysis</h4><p>Summaries, distributions, correlations and visualisation before any model.</p></div><div class="tcard"><h4>Clustering</h4><p>k-means, hierarchical clustering, DBSCAN; choosing k with the elbow or silhouette.</p></div><div class="tcard"><h4>Association rules</h4><p>Apriori, FP-growth: “customers who buy X also buy Y”.</p></div><div class="tcard"><h4>Recommendation</h4><p>Collaborative filtering, matrix factorisation, neural and sequence-aware recommenders.</p></div><div class="tcard"><h4>Retrieval and ranking</h4><p>BM25, dense retrieval with embeddings, learning to rank, re-ranking.</p></div><div class="tcard"><h4>Time series and anomalies</h4><p>ARIMA, Prophet, gradient boosting with lags; isolation forest, autoencoders.</p></div></div>
+</div></section>
+<section class="slide " data-title="Popular models in data science and IR" aria-label="Popular models in data science and IR" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Methods</p><h2>Popular models in data science and IR</h2><div class="scrollx"><table class="doc"><thead><tr><th>Model</th><th>What it is</th><th>Typical use</th></tr></thead><tbody><tr><td>k-means, DBSCAN, HDBSCAN</td><td>clustering algorithms</td><td>segmentation, grouping, exploration</td></tr><tr><td>Apriori, FP-growth</td><td>frequent-pattern mining</td><td>association rules, market baskets</td></tr><tr><td>BM25</td><td>classic ranking function</td><td>the retrieval baseline every IR study needs</td></tr><tr><td>DPR, ColBERT, BGE / E5 embeddings</td><td>dense neural retrievers</td><td>semantic search, RAG</td></tr><tr><td>Cross-encoder re-rankers (monoBERT, monoT5)</td><td>score query–document pairs together</td><td>second-stage re-ranking</td></tr><tr><td>Matrix factorisation (ALS), LightGCN</td><td>collaborative-filtering models</td><td>recommendations from interactions</td></tr><tr><td>SASRec, two-tower models</td><td>sequential and scalable recommenders</td><td>next-item and large-scale recommendation</td></tr><tr><td>ARIMA, Prophet, Temporal Fusion Transformer, N-BEATS</td><td>forecasting models</td><td>sales, demand, disease forecasting</td></tr></tbody></table></div><div class="callout">Strong old baselines (BM25, ARIMA, popularity) often beat new models on small data — report them.</div>
+</div></section>
+<section class="slide " data-title="k-means step by step" aria-label="k-means step by step" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Interactive</p><h2>k-means step by step</h2><div data-demo="kmeans"></div>
+</div></section>
+<section class="slide " data-title="Datasets" aria-label="Datasets" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 7 of 12</p><h2>Datasets</h2><div class="scrollx"><table class="doc"><thead><tr><th>Dataset</th><th>Use</th></tr></thead><tbody><tr><td><a href="https://grouplens.org/datasets/movielens/" target="_blank" rel="noopener">MovieLens</a></td><td>recommender systems</td></tr><tr><td>MS MARCO, BEIR</td><td>retrieval and ranking benchmarks</td></tr><tr><td><a href="https://www.kaggle.com/datasets" target="_blank" rel="noopener">Kaggle</a></td><td>e-commerce, finance and public-data sets (check quality)</td></tr><tr><td>UCI / OpenML</td><td>tabular and time-series data</td></tr><tr><td>Open government data</td><td>local statistics: agriculture, health, transport, education</td></tr><tr><td>SNAP (Stanford)</td><td>large network datasets for graph mining</td></tr></tbody></table></div>
+</div></section>
+<section class="slide " data-title="Evaluation" aria-label="Evaluation" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Data and evaluation</p><h2>Evaluation</h2><div class="cols "><div><div class="scrollx"><table class="doc"><thead><tr><th>Task</th><th>Metrics</th></tr></thead><tbody><tr><td>Clustering</td><td>silhouette, Davies–Bouldin; adjusted Rand index if labels exist</td></tr><tr><td>Recommendation</td><td>precision@k, recall@k, nDCG, hit rate; coverage, diversity</td></tr><tr><td>Retrieval</td><td>MRR, nDCG@10, recall@100</td></tr><tr><td>Forecasting</td><td>MAE, RMSE, MAPE on a rolling time split</td></tr><tr><td>Anomaly detection</td><td>precision/recall at the alert budget</td></tr></tbody></table></div></div><div><ul><li>Clusters need <b>interpretation</b>: describe each with real features.</li><li>Split recommender data by time to avoid using the future.</li><li>Compare with simple baselines: most-popular items, BM25, last-value forecast.</li></ul></div></div>
+</div></section>
+<section class="slide " data-title="Tools" aria-label="Tools" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 9 of 12</p><h2>Tools</h2><div class="tgrid"><div class="tcard"><h4>pandas / Polars</h4><p>Data manipulation.</p></div><div class="tcard"><h4>scikit-learn</h4><p>Clustering, anomaly detection, pipelines.</p></div><div class="tcard"><h4>Matplotlib / Plotly / Seaborn</h4><p>Visualisation.</p></div><div class="tcard"><h4>Apache Spark</h4><p>Data too large for one machine.</p></div><div class="tcard"><h4>Pyserini / FAISS</h4><p>Retrieval: BM25 and dense vector search.</p></div><div class="tcard"><h4>RecBole / implicit</h4><p>Recommender-system libraries.</p></div></div>
+</div></section>
+<section class="slide " data-title="Where this research is published" aria-label="Where this research is published" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Tools and venues</p><h2>Where this research is published</h2><div class="scrollx"><table class="doc"><thead><tr><th>Type</th><th>Venues</th></tr></thead><tbody><tr><td>Data mining</td><td>KDD, ICDM, SDM, PAKDD, CIKM</td></tr><tr><td>Web and IR</td><td>SIGIR, WWW (The Web Conference), WSDM, ECIR</td></tr><tr><td>Recommender systems</td><td>RecSys</td></tr><tr><td>Journals</td><td>IEEE TKDE, Data Mining and Knowledge Discovery, ACM TOIS, Information Processing &amp; Management</td></tr></tbody></table></div>
+</div></section>
+<section class="slide " data-title="Thesis ideas" aria-label="Thesis ideas" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 11 of 12</p><h2>Thesis ideas</h2><div class="ideas"><div class="idea starter"><span class="lvl">Starter</span><b>Customer or student segmentation</b><p>Cluster a real dataset, validate clusters, and describe them for decision makers.</p></div><div class="idea standard"><span class="lvl">Standard</span><b>Cold-start recommendation</b><p>Combine content features with collaborative filtering for new users or items; evaluate with a time split.</p></div><div class="idea standard"><span class="lvl">Standard</span><b>Bangla search</b><p>Build a test collection of Bangla queries and compare BM25 with dense retrievers.</p></div><div class="idea standard"><span class="lvl">Standard</span><b>Disease or demand forecasting</b><p>Forecast weekly cases or sales with weather and holidays; compare statistical and ML models.</p></div><div class="idea ambitious"><span class="lvl">Ambitious</span><b>Graph anomaly detection</b><p>Detect fraud rings in a transaction graph with graph neural networks.</p></div></div>
+</div></section>
+<section class="slide " data-title="Getting started in four weeks" aria-label="Getting started in four weeks" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Thesis ideas</p><h2>Getting started in four weeks</h2><ol class="steps"><li><b>Week 1</b><span>pandas and visualisation refresher; CRISP-DM</span></li><li><b>Week 2</b><span>explore a dataset: quality report and 10 plots</span></li><li><b>Week 3</b><span>read 5 recent KDD/SIGIR/RecSys papers on your task</span></li><li><b>Week 4</b><span>baseline with a time-aware split; one-page idea</span></li></ol><div class="callout warn">Pitfalls: skipping exploratory analysis, random splits of time-ordered data, uninterpretable clusters, comparing only against weak baselines, ignoring data quality.</div>
+</div></section>
+<section class="slide " data-title="Worked example 1" aria-label="Worked example 1" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 1 of 2</p><h2>Worked example 1</h2><div class="ex"><div class="qq">You cluster 5,000 customers with k-means and get 4 clusters. How do you make this research rather than a demo?</div><details class="reveal"><summary>Show the solution</summary><div class="ans">Justify k (silhouette, elbow, stability across seeds), describe each cluster with its feature profile, check stability over time (e.g. two years), compare with another method (hierarchical, GMM), and test whether the segments predict something useful (churn, spending) better than a baseline segmentation.</div></details></div>
+</div></section>
+<section class="slide " data-title="Worked example 2" aria-label="Worked example 2" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 2 of 2</p><h2>Worked example 2</h2><div class="ex"><div class="qq">A recommender is evaluated by randomly hiding 20% of ratings. What is wrong?</div><details class="reveal"><summary>Show the solution</summary><div class="ans">Random hiding lets the model use future interactions to predict past ones. Split by time (train on earlier interactions, test on later ones) to match real use.</div></details></div>
+</div></section>
+<section class="slide " data-title="Practice (1 of 2)" aria-label="Practice (1 of 2)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Practice</p><h2>Practice (1 of 2)</h2><p class="muted">Try each one yourself first, then check the answer.</p><div class="ex"><div class="qq">1. Name the six phases of CRISP-DM.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Business understanding, data understanding, data preparation, modelling, evaluation, deployment.</div></details></div><div class="ex"><div class="qq">2. How do you choose k in k-means?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Elbow method on within-cluster error, silhouette score, stability across runs, and interpretability.</div></details></div><div class="ex"><div class="qq">3. What is BM25?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">A classic ranking function scoring documents by term frequency, inverse document frequency and document length — a strong retrieval baseline.</div></details></div>
+</div></section>
+<section class="slide " data-title="Practice (2 of 2)" aria-label="Practice (2 of 2)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Practice</p><h2>Practice (2 of 2)</h2><p class="muted">Try each one yourself first, then check the answer.</p><div class="ex"><div class="qq">4. Name two metrics for ranking quality.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">nDCG, MRR (also precision@k, recall@k).</div></details></div><div class="ex"><div class="qq">5. What is the cold-start problem?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Recommending for new users or items with little or no interaction history.</div></details></div><div class="ex"><div class="qq">6. Name two data-mining and two IR venues.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Data mining: KDD, ICDM (also SDM, PAKDD, CIKM). IR: SIGIR, WWW (also WSDM, ECIR, RecSys).</div></details></div>
+</div></section>
+<section class="slide " data-title="Quiz" aria-label="Quiz" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Check yourself</p><h2>Quiz</h2><div><div class="quiz-host" data-quiz-key="th18"></div><script type="application/json" class="quiz-json">[{"q": "k-means alternates between…", "o": ["assigning points to nearest centroids and moving centroids", "sorting and searching", "encrypting and decrypting", "training and testing"], "a": 0, "w": "Assignment and update steps until stable."}, {"q": "nDCG evaluates…", "o": ["ranking quality", "image overlap", "clustering speed", "translation"], "a": 0, "w": "It rewards relevant items near the top."}, {"q": "Apriori finds…", "o": ["association rules", "shortest paths", "image edges", "hash collisions"], "a": 0, "w": "Frequent itemsets and rules like X → Y."}, {"q": "For forecasting, the split must be…", "o": ["random", "by time", "by colour", "by file size"], "a": 1, "w": "Never train on the future."}, {"q": "RecSys is a venue for…", "o": ["recommender systems", "robotics", "cryptography", "compilers"], "a": 0, "w": "The ACM conference on recommender systems."}, {"q": "The first step of any data project is…", "o": ["deep learning", "understanding the problem and the data", "deployment", "writing the abstract"], "a": 1, "w": "CRISP-DM starts with the goal and exploration."}]</script></div>
+</div></section>
+<section class="slide " data-title="Further learning" aria-label="Further learning" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Resources</p><h2>Further learning</h2><p class="muted">Hand-picked material to go deeper. Links open in a new tab.</p><div class="res-grid"><a class="res book" href="http://www.mmds.org" target="_blank" rel="noopener noreferrer"><small>Book</small><b>Mining of Massive Datasets — Leskovec, Rajaraman &amp; Ullman ↗</b><span>Free book: similarity, clustering, recommendation, graphs.</span></a><a class="res book" href="https://nlp.stanford.edu/IR-book/" target="_blank" rel="noopener noreferrer"><small>Book</small><b>Introduction to Information Retrieval — Manning, Raghavan &amp; Schütze ↗</b><span>Free online IR textbook.</span></a><a class="res" href="https://grouplens.org/datasets/movielens/" target="_blank" rel="noopener noreferrer"><small>Data</small><b>MovieLens ↗</b><span>Standard recommender datasets.</span></a><a class="res" href="https://snap.stanford.edu/data/" target="_blank" rel="noopener noreferrer"><small>Data</small><b>SNAP datasets ↗</b><span>Large network datasets.</span></a><a class="res" href="https://www.kaggle.com/learn" target="_blank" rel="noopener noreferrer"><small>Course</small><b>Kaggle Learn ↗</b><span>Short practical courses on pandas, visualisation and ML.</span></a><a class="res" href="https://github.com/castorini/pyserini" target="_blank" rel="noopener noreferrer"><small>Tool</small><b>Pyserini ↗</b><span>Reproducible retrieval baselines (BM25, dense).</span></a></div>
+</div></section>
+<section class="slide " data-title="Summary" aria-label="Summary" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Summary</p><h2>Summary</h2><ul class="sumlist"><li>Data science discovers patterns; information retrieval finds and ranks relevant items.</li><li>Follow CRISP-DM, with a research question and baselines at the modelling step.</li><li>Methods: clustering, association rules, recommenders, BM25 and dense retrieval, forecasting, anomaly and graph mining.</li><li>Evaluate with task metrics (silhouette, nDCG, MRR, MAE) and time-aware splits.</li><li>Interpret results for decision makers: clusters and patterns must make sense.</li><li>Venues: KDD, ICDM, CIKM, SIGIR, WWW, WSDM, RecSys.</li></ul><div class="nextcard"><a class="btn pri" href="19-iot-networks-and-edge-computing.html">Next: IoT, Networks and Edge Computing</a><a class="btn" href="../practice.html#t18">More practice</a><a class="btn" href="../resources.html#t18">All resources</a><a class="btn" href="../index.html">All chapters</a></div>
+</div></section>
+</main>
+<footer class="deck-foot">
+  <button type="button" class="btn" id="prev">Previous</button>
+  <span class="counter" id="counter">1 / 22</span>
+  <button type="button" class="btn pri" id="next">Next</button>
+</footer>
+<aside id="slide-menu" hidden aria-label="Slide list"><div class="menu-head"><h3>Slides in this chapter</h3><button type="button" id="btn-menu-close" class="menu-close" aria-label="Close slide list">&#10005;</button></div></aside>
+<noscript><p style="padding:20px">This lesson needs JavaScript for the slides and the interactive tools.</p></noscript>
+<script src="../js/core.js"></script>
+<script src="../js/art.js"></script>
+<script src="../js/diagram.js"></script>
+<script src="../js/figs.js"></script>
+<script src="../js/latex.js"></script>
+<script src="../js/demos.js"></script>
+<script src="../js/quiz.js"></script>
+<script src="../js/page.js"></script>
+<script>window.DP_TOPIC = {"id": 18, "prev": "17-biomedical-and-health-informatics.html", "next": "19-iot-networks-and-edge-computing.html"};</script>
+<script>mountPage();</script>
+<script src="../js/slides.js"></script>
+<script src="../js/annotate.js"></script>
+<script src="../js/lang.js"></script>
+<script src="../js/analytics.js"
+        data-endpoint="https://analytics-proxy.ayansarkar1829.workers.dev"
+        data-project="Thesis Research Guide"></script>
+<script src="../js/course-events.js"></script>
+</body>
+</html>

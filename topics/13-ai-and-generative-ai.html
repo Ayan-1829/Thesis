@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Artificial Intelligence and Generative AI – Chapter 13 | Thesis: Undergraduate Research Guide</title>
+<meta name="description" content="Search, planning, reasoning, reinforcement learning, LLMs, retrieval-augmented generation and agents; evaluating AI systems reliably; tools, venues, thesis ideas and how to start. Interactive slides, tools, worked examples and a quiz: chapter 13 of a free guide to doing a computer science thesis.">
+<meta name="keywords" content="artificial intelligence thesis, generative AI research, large language models, LLM evaluation, hallucination, retrieval augmented generation, RAG, LoRA fine-tuning, AI agents, A* search, reinforcement learning, AAAI IJCAI">
+<meta name="author" content="Thesis Research Guide">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#4338A0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E0C1A" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://ayan-1829.github.io/Thesis/topics/13-ai-and-generative-ai.html">
+<link rel="icon" type="image/svg+xml" href="../img/logo-mark.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16.png">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Thesis (Undergraduate Research)">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Artificial Intelligence and Generative AI – Chapter 13 | Thesis: Undergraduate Research Guide">
+<meta property="og:description" content="Search, planning, reasoning, reinforcement learning, LLMs, retrieval-augmented generation and agents; evaluating AI systems reliably; tools, venues, thesis ideas and how to start. Interactive slides, tools, worked examples and a quiz: chapter 13 of a free guide to doing a computer science thesis.">
+<meta property="og:url" content="https://ayan-1829.github.io/Thesis/topics/13-ai-and-generative-ai.html">
+<meta property="og:image" content="https://ayan-1829.github.io/Thesis/img/og/13-ai-and-generative-ai.png?v=2">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Artificial Intelligence and Generative AI – Chapter 13 | Thesis: Undergraduate Research Guide">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Artificial Intelligence and Generative AI – Chapter 13 | Thesis: Undergraduate Research Guide">
+<meta name="twitter:description" content="Search, planning, reasoning, reinforcement learning, LLMs, retrieval-augmented generation and agents; evaluating AI systems reliably; tools, venues, thesis ideas and how to start. Interactive slides, tools, worked examples and a quiz: chapter 13 of a free guide to doing a computer science thesis.">
+<meta name="twitter:image" content="https://ayan-1829.github.io/Thesis/img/og/13-ai-and-generative-ai.png?v=2">
+<meta name="twitter:image:alt" content="Artificial Intelligence and Generative AI – Chapter 13 | Thesis: Undergraduate Research Guide">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "Artificial Intelligence and Generative AI", "description": "Search, planning, reasoning, reinforcement learning, LLMs, retrieval-augmented generation and agents; evaluating AI systems reliably; tools, venues, thesis ideas and how to start.", "position": 13, "educationalLevel": "Undergraduate", "learningResourceType": "Lecture slides", "inLanguage": "en", "isAccessibleForFree": true, "teaches": ["AI includes search, planning, reasoning, agents, reinforcement learning and generative models — not only ML.", "Generative-AI theses need fixed model versions, private test sets, several runs and human evaluation.", "Know RAG, LoRA fine-tuning, tool-using agents and classical search such as A*.", "Watch for benchmark contamination and unvalidated LLM-as-judge scores.", "Venues: AAAI, IJCAI, NeurIPS, ICML, ICLR, ACL/EMNLP, ICAPS, AAMAS.", "A good AI thesis measures or improves something well defined — not a demo."], "keywords": "artificial intelligence thesis, generative AI research, large language models, LLM evaluation, hallucination, retrieval augmented generation, RAG, LoRA fine-tuning, AI agents, A* search, reinforcement learning, AAAI IJCAI", "url": "https://ayan-1829.github.io/Thesis/topics/13-ai-and-generative-ai.html", "image": "https://ayan-1829.github.io/Thesis/img/og/13-ai-and-generative-ai.png", "isPartOf": {"@type": "Course", "name": "Thesis: Undergraduate Research in Computer Science", "url": "https://ayan-1829.github.io/Thesis/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Thesis", "item": "https://ayan-1829.github.io/Thesis/"}, {"@type": "ListItem", "position": 2, "name": "Chapter 13: Artificial Intelligence and Generative AI", "item": "https://ayan-1829.github.io/Thesis/topics/13-ai-and-generative-ai.html"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Mono:wght@400;500;600&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="deck-page">
+<div class="sr-only" id="live" aria-live="polite"></div>
+<header class="deck-bar">
+  <a class="home-link" href="../index.html" aria-label="Home: all chapters"><img src="../img/logo-mark.svg" alt="" width="26" height="26"><span>Home</span></a>
+  <div class="deck-title"><span class="badge">13</span><span>Artificial Intelligence and Generative AI</span></div>
+  <div class="deck-actions">
+    <button type="button" class="btn sm" id="btn-menu" aria-expanded="false" aria-controls="slide-menu" aria-label="Slides"><svg class="btn-ic" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><rect x="3" y="4.5" width="18" height="3" rx="1"></rect><rect x="3" y="10.5" width="18" height="3" rx="1"></rect><rect x="3" y="16.5" width="18" height="3" rx="1"></rect></svg><span>Slides</span></button>
+    <button type="button" class="btn sm" id="btn-theme" aria-pressed="false" aria-label="Toggle dark mode"><svg class="btn-ic" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"></path></svg><span>Dark mode</span></button>
+    <button type="button" class="btn sm" id="btn-fs" aria-pressed="false" aria-label="Full screen"><svg class="btn-ic" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"></path></svg><span>Full screen</span></button>
+  </div>
+</header>
+<div class="deck-progress"><i id="progress-fill"></i></div>
+<main class="deck" id="deck">
+<section class="slide title-slide" data-title="Artificial Intelligence and Generative AI" aria-label="Artificial Intelligence and Generative AI" tabindex="-1"><div class="slide-inner">
+<span class="topic-art" data-art="13" aria-hidden="true"></span>
+<span class="badge big">13</span>
+<p class="kicker">Chapter 13 of 21 · Part B · Research fields</p>
+<h1>Artificial Intelligence and Generative AI</h1>
+<p class="lead">Search, planning, reasoning, reinforcement learning, LLMs, retrieval-augmented generation and agents; evaluating AI systems reliably; tools, venues, thesis ideas and how to start.</p>
+<div class="row"><a class="btn pri" href="#s=2">Start</a><a class="btn" href="../index.html">All chapters</a></div>
+</div></section>
+<section class="slide " data-title="Why this matters" aria-label="Why this matters" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Before we start</p><h2>Why this matters</h2><div class="hook"><p class="q">“My thesis is a ChatGPT-based chatbot.” What exactly is the research question?</p><p>Generative AI made AI theses popular — and made it easy to build demos that answer no question. Good AI research measures reliability, compares methods fairly and explains failures.</p><p>This chapter covers classical AI (search, planning, reasoning) and modern generative AI, with the evaluation habits that make results credible.</p></div>
+</div></section>
+<section class="slide " data-title="In this chapter" aria-label="In this chapter" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Outline · chapter 13</p><h2>In this chapter</h2><p class="muted">Select a section to jump to it.</p><ol class="outline-list"><li><a href="#s=4">The field</a></li><li><a href="#s=6">Methods</a></li><li><a href="#s=10">Data and evaluation</a></li><li><a href="#s=12">Tools and venues</a></li><li><a href="#s=14">Thesis ideas</a></li></ol>
+</div></section>
+<section class="slide " data-title="What AI research studies" aria-label="What AI research studies" tabindex="-1"><div style="zoom:0.93;" class="slide-inner">
+<p class="kicker">Part 1 of 12</p><h2>What AI research studies</h2><p><b>Artificial intelligence</b> builds systems that perceive, reason, plan, learn and act. Machine learning is one part; AI also covers <b>search and planning</b>, <b>knowledge representation and reasoning</b>, <b>agents</b>, and today <b>generative AI</b> — large language models (LLMs) and image generators — with their evaluation and safety.</p><p class="small muted">Rest on a branch of the map for a description.</p><figure class="fig" data-fig="map-ai"></figure>
+</div></section>
+<section class="slide " data-title="Typical research problems" aria-label="Typical research problems" tabindex="-1"><div class="slide-inner">
+<p class="kicker">The field</p><h2>Typical research problems</h2><div class="scrollx"><table class="doc"><thead><tr><th>Problem</th><th>Example thesis question</th></tr></thead><tbody><tr><td>Reliability of LLMs</td><td>How often does an LLM give wrong answers (hallucinate) on Bangla university-regulation questions, and does retrieval-augmented generation (RAG) reduce it?</td></tr><tr><td>LLM evaluation</td><td>Do automatic metrics agree with human judgement for summaries of Bangla news?</td></tr><tr><td>Agents and tool use</td><td>Can an LLM agent with a calculator and a database answer multi-step questions more accurately than the LLM alone?</td></tr><tr><td>Search and planning</td><td>Which heuristic gives the fastest optimal routes for delivery robots on a campus map?</td></tr><tr><td>Knowledge graphs</td><td>Does adding a medical knowledge graph improve question answering about drug interactions?</td></tr><tr><td>Explainable and trustworthy AI</td><td>Do users trust a recommendation more with a counterfactual explanation, and is the trust justified?</td></tr><tr><td>Small, efficient models</td><td>How well does a 1–3B-parameter open model, fine-tuned with LoRA, perform compared with a large API model on a narrow task?</td></tr></tbody></table></div>
+</div></section>
+<section class="slide " data-title="Generative AI research, carefully" aria-label="Generative AI research, carefully" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 3 of 12</p><h2>Generative AI research, carefully</h2><div class="cols "><div><ul><li>Prefer <b>open models</b> (e.g. Llama, Qwen, Mistral, Gemma families) you can run and fine-tune: results are reproducible.</li><li>If you use an API model, record the <b>exact model version and date</b>; outputs change over time.</li><li>Fix prompts, decoding settings (temperature) and run several times.</li><li>Build a <b>test set</b> with reference answers, written before you look at the outputs.</li><li>Combine automatic scores with <b>human evaluation</b> using a rubric and two raters.</li></ul></div><div><div class="callout">A strong LLM thesis is a careful <b>measurement</b> or a clear <b>improvement</b> on a well-defined task — not a demo of a chatbot.</div></div></div>
+</div></section>
+<section class="slide " data-title="Key methods to know" aria-label="Key methods to know" tabindex="-1"><div style="zoom:0.92;" class="slide-inner">
+<p class="kicker">Methods</p><h2>Key methods to know</h2><div class="tgrid"><div class="tcard"><h4>Search</h4><p>BFS, DFS, uniform-cost, A* with heuristics; local search; adversarial search (minimax).</p></div><div class="tcard"><h4>Planning and reasoning</h4><p>STRIPS/PDDL planners, constraint satisfaction, logic and probabilistic reasoning, Bayesian networks.</p></div><div class="tcard"><h4>Reinforcement learning</h4><p>Agents learning from rewards: Q-learning, policy gradients; also used to align LLMs (RLHF).</p></div><div class="tcard"><h4>Transformers and LLMs</h4><p>Pre-training, instruction tuning, prompting, in-context learning.</p></div><div class="tcard"><h4>Adapting LLMs</h4><p>Retrieval-augmented generation (RAG), fine-tuning with LoRA/QLoRA, tool use and agents.</p></div><div class="tcard"><h4>Trustworthy AI</h4><p>Explainability, uncertainty, robustness, fairness and safety evaluation.</p></div></div>
+</div></section>
+<section class="slide " data-title="Popular models in AI and generative AI" aria-label="Popular models in AI and generative AI" tabindex="-1"><div style="zoom:0.95;" class="slide-inner">
+<p class="kicker">Methods</p><h2>Popular models in AI and generative AI</h2><div class="scrollx"><table class="doc"><thead><tr><th>Model family</th><th>What it is</th><th>Typical use</th></tr></thead><tbody><tr><td>GPT, Claude, Gemini</td><td>large commercial LLMs, used through an API</td><td>strong reference systems; record the exact version and date</td></tr><tr><td>Llama, Qwen, Mistral, Gemma, DeepSeek</td><td>open-weight LLM families in many sizes</td><td>run locally, fine-tune with LoRA, reproducible research</td></tr><tr><td>Reasoning models (e.g. DeepSeek-R1, OpenAI o-series)</td><td>LLMs trained to think step by step before answering</td><td>maths, code and multi-step problems</td></tr><tr><td>Embedding models (e.g. BGE, E5, sentence-transformers)</td><td>turn text into vectors</td><td>the retrieval step of RAG, semantic search</td></tr><tr><td>DQN, PPO</td><td>reinforcement-learning algorithms</td><td>agents in games and simulations; PPO is also used to align LLMs</td></tr><tr><td>AlphaZero, MuZero</td><td>search + learned value networks</td><td>planning in games; a classic example of search plus learning</td></tr><tr><td>A*, MCTS</td><td>classical search algorithms</td><td>path-finding, planning, game play</td></tr></tbody></table></div><div class="callout">Model versions change every few months: name the family and the exact version you used, and prefer open models for reproducible results.</div>
+</div></section>
+<section class="slide " data-title="Search in action: BFS versus A*" aria-label="Search in action: BFS versus A*" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Interactive</p><h2>Search in action: BFS versus A*</h2><div data-demo="astar"></div>
+</div></section>
+<section class="slide " data-title="Data and benchmarks" aria-label="Data and benchmarks" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 7 of 12</p><h2>Data and benchmarks</h2><div class="scrollx"><table class="doc"><thead><tr><th>Kind</th><th>Examples</th></tr></thead><tbody><tr><td>Reasoning and knowledge</td><td>MMLU, GSM8K (maths word problems), ARC, HellaSwag</td></tr><tr><td>Question answering</td><td>SQuAD, Natural Questions; build your own for local documents</td></tr><tr><td>Agents</td><td>WebArena, SWE-bench, tool-use benchmarks</td></tr><tr><td>Planning</td><td>International Planning Competition domains (PDDL)</td></tr><tr><td>Reinforcement learning</td><td>Gymnasium (formerly OpenAI Gym) environments</td></tr><tr><td>Bangla / multilingual</td><td>translated or native benchmarks — often missing: a gap you can fill</td></tr></tbody></table></div><p class="small">Beware <b>contamination</b>: popular benchmarks may be in a model’s training data. A new, private test set is often more convincing.</p>
+</div></section>
+<section class="slide " data-title="Evaluating AI systems" aria-label="Evaluating AI systems" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Data and evaluation</p><h2>Evaluating AI systems</h2><div class="cols "><div><div class="scrollx"><table class="doc"><thead><tr><th>What</th><th>How</th></tr></thead><tbody><tr><td>Correctness</td><td>exact match, F1 against reference answers</td></tr><tr><td>Faithfulness of RAG</td><td>is every claim supported by the retrieved text?</td></tr><tr><td>Generation quality</td><td>human rating with a rubric; LLM-as-judge only with validation</td></tr><tr><td>Agents</td><td>task success rate, steps, cost</td></tr><tr><td>Search / planning</td><td>solution cost, nodes expanded, time</td></tr><tr><td>Safety</td><td>refusals, harmful outputs, jailbreak success rate</td></tr></tbody></table></div></div><div><ul><li>Report variance across runs and prompts.</li><li>Measure inter-rater agreement for human evaluation.</li><li>Report cost and latency — they matter in practice.</li></ul></div></div>
+</div></section>
+<section class="slide " data-title="Tools" aria-label="Tools" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 9 of 12</p><h2>Tools</h2><div class="tgrid"><div class="tcard"><h4>Hugging Face Transformers</h4><p>Load, run and fine-tune open models.</p></div><div class="tcard"><h4>PEFT / LoRA</h4><p>Fine-tune large models on a single GPU.</p></div><div class="tcard"><h4>Ollama / llama.cpp</h4><p>Run open models locally.</p></div><div class="tcard"><h4>Vector databases</h4><p>FAISS, Chroma — the retrieval part of RAG.</p></div><div class="tcard"><h4>Gymnasium</h4><p>Reinforcement-learning environments.</p></div><div class="tcard"><h4>Evaluation harnesses</h4><p>lm-evaluation-harness, Stanford HELM.</p></div></div>
+</div></section>
+<section class="slide " data-title="Where AI research is published" aria-label="Where AI research is published" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Tools and venues</p><h2>Where AI research is published</h2><div class="scrollx"><table class="doc"><thead><tr><th>Type</th><th>Venues</th></tr></thead><tbody><tr><td>Broad AI</td><td>AAAI, IJCAI, ECAI</td></tr><tr><td>ML and LLMs</td><td>NeurIPS, ICML, ICLR</td></tr><tr><td>Language models</td><td>ACL, EMNLP, NAACL (see chapter 14)</td></tr><tr><td>Planning and agents</td><td>ICAPS, AAMAS</td></tr><tr><td>Journals</td><td>Artificial Intelligence (Elsevier), JAIR, IEEE TPAMI, ACM Computing Surveys</td></tr><tr><td>Good first venues</td><td>conference workshops; regional IEEE conferences</td></tr></tbody></table></div>
+</div></section>
+<section class="slide " data-title="Thesis ideas" aria-label="Thesis ideas" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 11 of 12</p><h2>Thesis ideas</h2><div class="ideas"><div class="idea starter"><span class="lvl">Starter</span><b>Hallucination audit</b><p>Build a 300-question test set on a local topic and measure how often several open LLMs answer wrongly or invent facts.</p></div><div class="idea standard"><span class="lvl">Standard</span><b>RAG for university documents</b><p>Retrieval-augmented question answering over course rules or policies; compare retrievers and measure faithfulness.</p></div><div class="idea standard"><span class="lvl">Standard</span><b>LoRA fine-tuning a small model</b><p>Fine-tune a small open model for a narrow task (e.g. Bangla FAQ) and compare with a large model by accuracy and cost.</p></div><div class="idea starter"><span class="lvl">Starter</span><b>Heuristic search for real maps</b><p>Compare A* heuristics for routing on an OpenStreetMap graph of Dhaka.</p></div><div class="idea ambitious"><span class="lvl">Ambitious</span><b>Tool-using agents</b><p>An agent that uses a calculator, a database and search; measure task success and failure modes.</p></div></div>
+</div></section>
+<section class="slide " data-title="Getting started in four weeks" aria-label="Getting started in four weeks" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Thesis ideas</p><h2>Getting started in four weeks</h2><ol class="steps"><li><b>Week 1</b><span>AIMA chapters on search and agents; a Hugging Face tutorial</span></li><li><b>Week 2</b><span>run an open model locally; try prompting on your task</span></li><li><b>Week 3</b><span>build a small test set with reference answers</span></li><li><b>Week 4</b><span>measure two models on it; write a one-page idea</span></li></ol><div class="callout warn">Pitfalls: evaluating on examples you looked at while designing prompts, unrecorded model versions, one run per prompt, trusting LLM-as-judge without checking it against humans.</div>
+</div></section>
+<section class="slide " data-title="Worked example 1" aria-label="Worked example 1" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 1 of 2</p><h2>Worked example 1</h2><div class="ex"><div class="qq">Turn “a chatbot for our department” into a research question.</div><details class="reveal"><summary>Show the solution</summary><div class="ans">“Does retrieval-augmented generation over the department’s official documents reduce unsupported answers of an open 8B-parameter LLM, compared with the LLM alone, on 300 student questions with reference answers?” — task, method, comparison and metric are now defined.</div></details></div>
+</div></section>
+<section class="slide " data-title="Worked example 2" aria-label="Worked example 2" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 2 of 2</p><h2>Worked example 2</h2><div class="ex"><div class="qq">Your LLM scores 92% on a public benchmark released two years ago. Why be careful?</div><details class="reveal"><summary>Show the solution</summary><div class="ans">The benchmark may be in the model’s training data (contamination), so the score may reflect memorisation. Test on a new, private set written after the model’s training cut-off, or check for overlap.</div></details></div>
+</div></section>
+<section class="slide " data-title="Practice (1 of 2)" aria-label="Practice (1 of 2)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Practice</p><h2>Practice (1 of 2)</h2><p class="muted">Try each one yourself first, then check the answer.</p><div class="ex"><div class="qq">1. Name four areas of AI beyond machine learning.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Search and planning; knowledge representation and reasoning; agents and multi-agent systems; natural language and vision; reinforcement learning; generative AI.</div></details></div><div class="ex"><div class="qq">2. Why prefer open models for a thesis?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">They can be run and fine-tuned locally, versions are fixed, results are reproducible and data stays private.</div></details></div><div class="ex"><div class="qq">3. What is RAG?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Retrieval-augmented generation: retrieve relevant documents for a question and give them to the LLM so it answers from them.</div></details></div>
+</div></section>
+<section class="slide " data-title="Practice (2 of 2)" aria-label="Practice (2 of 2)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Practice</p><h2>Practice (2 of 2)</h2><p class="muted">Try each one yourself first, then check the answer.</p><div class="ex"><div class="qq">4. Why does A* expand fewer nodes than BFS?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">It uses a heuristic estimate of the remaining cost to explore promising nodes first; with an admissible heuristic it still finds an optimal path.</div></details></div><div class="ex"><div class="qq">5. What is benchmark contamination?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">When test data appeared in the model’s training data, inflating its score.</div></details></div><div class="ex"><div class="qq">6. How do you make human evaluation of generated text reliable?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">A written rubric, at least two raters, blind to the system, and a measure of agreement between them.</div></details></div>
+</div></section>
+<section class="slide " data-title="Quiz" aria-label="Quiz" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Check yourself</p><h2>Quiz</h2><div><div class="quiz-host" data-quiz-key="th13"></div><script type="application/json" class="quiz-json">[{"q": "RAG stands for…", "o": ["random agent graph", "retrieval-augmented generation", "rapid answer generation", "reinforced attention gradient"], "a": 1, "w": "Retrieve documents, then generate an answer from them."}, {"q": "LoRA is used to…", "o": ["fine-tune large models cheaply", "search graphs", "label data", "encrypt prompts"], "a": 0, "w": "Low-rank adapters train a small number of parameters."}, {"q": "A* with an admissible heuristic finds…", "o": ["any path", "an optimal path", "no path", "the longest path"], "a": 1, "w": "It never overestimates, so the first goal reached is optimal."}, {"q": "When using an API LLM you must record…", "o": ["nothing", "the exact model version and date", "the colour of the UI", "your password"], "a": 1, "w": "API models change over time."}, {"q": "LLM-as-judge should be…", "o": ["trusted blindly", "validated against human ratings", "avoided always", "used for training only"], "a": 1, "w": "Check its agreement with humans first."}, {"q": "Which is a broad AI conference?", "o": ["AAAI", "ICSE", "MobiCom", "CHI"], "a": 0, "w": "AAAI and IJCAI cover all of AI."}]</script></div>
+</div></section>
+<section class="slide " data-title="Further learning" aria-label="Further learning" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Resources</p><h2>Further learning</h2><p class="muted">Hand-picked material to go deeper. Links open in a new tab.</p><div class="res-grid"><a class="res book" href="https://aima.cs.berkeley.edu" target="_blank" rel="noopener noreferrer"><small>Book</small><b>Artificial Intelligence: A Modern Approach — Russell &amp; Norvig ↗</b><span>The standard AI textbook: search, reasoning, planning, learning.</span></a><a class="res" href="https://huggingface.co/learn" target="_blank" rel="noopener noreferrer"><small>Course</small><b>Hugging Face courses ↗</b><span>LLMs, agents and fine-tuning, free and hands-on.</span></a><a class="res" href="https://arxiv.org/abs/1706.03762" target="_blank" rel="noopener noreferrer"><small>Paper</small><b>Attention Is All You Need — Vaswani et al. ↗</b><span>The transformer paper (NeurIPS 2017).</span></a><a class="res" href="https://crfm.stanford.edu/helm/" target="_blank" rel="noopener noreferrer"><small>Benchmark</small><b>Stanford HELM ↗</b><span>Holistic evaluation of language models.</span></a><a class="res" href="https://aiindex.stanford.edu" target="_blank" rel="noopener noreferrer"><small>Report</small><b>AI Index — Stanford HAI ↗</b><span>Yearly data on AI research and trends.</span></a><a class="res" href="https://gymnasium.farama.org" target="_blank" rel="noopener noreferrer"><small>Tool</small><b>Gymnasium ↗</b><span>Reinforcement-learning environments.</span></a></div>
+</div></section>
+<section class="slide " data-title="Summary" aria-label="Summary" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Summary</p><h2>Summary</h2><ul class="sumlist"><li>AI includes search, planning, reasoning, agents, reinforcement learning and generative models — not only ML.</li><li>Generative-AI theses need fixed model versions, private test sets, several runs and human evaluation.</li><li>Know RAG, LoRA fine-tuning, tool-using agents and classical search such as A*.</li><li>Watch for benchmark contamination and unvalidated LLM-as-judge scores.</li><li>Venues: AAAI, IJCAI, NeurIPS, ICML, ICLR, ACL/EMNLP, ICAPS, AAMAS.</li><li>A good AI thesis measures or improves something well defined — not a demo.</li></ul><div class="nextcard"><a class="btn pri" href="14-natural-language-processing.html">Next: Natural Language Processing</a><a class="btn" href="../practice.html#t13">More practice</a><a class="btn" href="../resources.html#t13">All resources</a><a class="btn" href="../index.html">All chapters</a></div>
+</div></section>
+</main>
+<footer class="deck-foot">
+  <button type="button" class="btn" id="prev">Previous</button>
+  <span class="counter" id="counter">1 / 22</span>
+  <button type="button" class="btn pri" id="next">Next</button>
+</footer>
+<aside id="slide-menu" hidden aria-label="Slide list"><div class="menu-head"><h3>Slides in this chapter</h3><button type="button" id="btn-menu-close" class="menu-close" aria-label="Close slide list">&#10005;</button></div></aside>
+<noscript><p style="padding:20px">This lesson needs JavaScript for the slides and the interactive tools.</p></noscript>
+<script src="../js/core.js"></script>
+<script src="../js/art.js"></script>
+<script src="../js/diagram.js"></script>
+<script src="../js/figs.js"></script>
+<script src="../js/latex.js"></script>
+<script src="../js/demos.js"></script>
+<script src="../js/quiz.js"></script>
+<script src="../js/page.js"></script>
+<script>window.DP_TOPIC = {"id": 13, "prev": "12-machine-learning.html", "next": "14-natural-language-processing.html"};</script>
+<script>mountPage();</script>
+<script src="../js/slides.js"></script>
+<script src="../js/annotate.js"></script>
+<script src="../js/lang.js"></script>
+<script src="../js/analytics.js"
+        data-endpoint="https://analytics-proxy.ayansarkar1829.workers.dev"
+        data-project="Thesis Research Guide"></script>
+<script src="../js/course-events.js"></script>
+</body>
+</html>

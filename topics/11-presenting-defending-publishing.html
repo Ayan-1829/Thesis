@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Presenting, Defending and Publishing – Chapter 11 | Thesis: Undergraduate Research Guide</title>
+<meta name="description" content="Proposal, progress and final presentations, slides that work, rehearsing, viva questions and how to answer them, posters, choosing a conference or journal, peer review and releasing code and data. Interactive slides, tools, worked examples and a quiz: chapter 11 of a free guide to doing a computer science thesis.">
+<meta name="keywords" content="thesis defence, thesis presentation, viva questions, research poster, how to publish a paper, conference vs journal, peer review, rebuttal, arXiv, open source code release">
+<meta name="author" content="Thesis Research Guide">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#4338A0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E0C1A" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://ayan-1829.github.io/Thesis/topics/11-presenting-defending-publishing.html">
+<link rel="icon" type="image/svg+xml" href="../img/logo-mark.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16.png">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Thesis (Undergraduate Research)">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Presenting, Defending and Publishing – Chapter 11 | Thesis: Undergraduate Research Guide">
+<meta property="og:description" content="Proposal, progress and final presentations, slides that work, rehearsing, viva questions and how to answer them, posters, choosing a conference or journal, peer review and releasing code and data. Interactive slides, tools, worked examples and a quiz: chapter 11 of a free guide to doing a computer science thesis.">
+<meta property="og:url" content="https://ayan-1829.github.io/Thesis/topics/11-presenting-defending-publishing.html">
+<meta property="og:image" content="https://ayan-1829.github.io/Thesis/img/og/11-presenting-defending-publishing.png?v=2">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Presenting, Defending and Publishing – Chapter 11 | Thesis: Undergraduate Research Guide">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Presenting, Defending and Publishing – Chapter 11 | Thesis: Undergraduate Research Guide">
+<meta name="twitter:description" content="Proposal, progress and final presentations, slides that work, rehearsing, viva questions and how to answer them, posters, choosing a conference or journal, peer review and releasing code and data. Interactive slides, tools, worked examples and a quiz: chapter 11 of a free guide to doing a computer science thesis.">
+<meta name="twitter:image" content="https://ayan-1829.github.io/Thesis/img/og/11-presenting-defending-publishing.png?v=2">
+<meta name="twitter:image:alt" content="Presenting, Defending and Publishing – Chapter 11 | Thesis: Undergraduate Research Guide">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "Presenting, Defending and Publishing", "description": "Proposal, progress and final presentations, slides that work, rehearsing, viva questions and how to answer them, posters, choosing a conference or journal, peer review and releasing code and data.", "position": 11, "educationalLevel": "Undergraduate", "learningResourceType": "Lecture slides", "inLanguage": "en", "isAccessibleForFree": true, "teaches": ["Proposal, progress, final defence and poster each have a different goal and focus.", "Structure the talk: hook, gap, questions, method, results, analysis, conclusion — about one slide per minute.", "One message per slide, big figures, message titles; rehearse with a timer.", "In the viva, answer directly, use evidence, admit what you do not know, accept fair criticism.", "Publish at a suitable conference or journal; respond to reviews point by point.", "Release clean, documented code and data with a DOI; remove personal data and secrets."], "keywords": "thesis defence, thesis presentation, viva questions, research poster, how to publish a paper, conference vs journal, peer review, rebuttal, arXiv, open source code release", "url": "https://ayan-1829.github.io/Thesis/topics/11-presenting-defending-publishing.html", "image": "https://ayan-1829.github.io/Thesis/img/og/11-presenting-defending-publishing.png", "isPartOf": {"@type": "Course", "name": "Thesis: Undergraduate Research in Computer Science", "url": "https://ayan-1829.github.io/Thesis/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Thesis", "item": "https://ayan-1829.github.io/Thesis/"}, {"@type": "ListItem", "position": 2, "name": "Chapter 11: Presenting, Defending and Publishing", "item": "https://ayan-1829.github.io/Thesis/topics/11-presenting-defending-publishing.html"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Mono:wght@400;500;600&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="deck-page">
+<div class="sr-only" id="live" aria-live="polite"></div>
+<header class="deck-bar">
+  <a class="home-link" href="../index.html" aria-label="Home: all chapters"><img src="../img/logo-mark.svg" alt="" width="26" height="26"><span>Home</span></a>
+  <div class="deck-title"><span class="badge">11</span><span>Presenting, Defending and Publishing</span></div>
+  <div class="deck-actions">
+    <button type="button" class="btn sm" id="btn-menu" aria-expanded="false" aria-controls="slide-menu" aria-label="Slides"><svg class="btn-ic" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><rect x="3" y="4.5" width="18" height="3" rx="1"></rect><rect x="3" y="10.5" width="18" height="3" rx="1"></rect><rect x="3" y="16.5" width="18" height="3" rx="1"></rect></svg><span>Slides</span></button>
+    <button type="button" class="btn sm" id="btn-theme" aria-pressed="false" aria-label="Toggle dark mode"><svg class="btn-ic" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"></path></svg><span>Dark mode</span></button>
+    <button type="button" class="btn sm" id="btn-fs" aria-pressed="false" aria-label="Full screen"><svg class="btn-ic" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"></path></svg><span>Full screen</span></button>
+  </div>
+</header>
+<div class="deck-progress"><i id="progress-fill"></i></div>
+<main class="deck" id="deck">
+<section class="slide title-slide" data-title="Presenting, Defending and Publishing" aria-label="Presenting, Defending and Publishing" tabindex="-1"><div class="slide-inner">
+<span class="topic-art" data-art="11" aria-hidden="true"></span>
+<span class="badge big">11</span>
+<p class="kicker">Chapter 11 of 21 · Part A · The research process</p>
+<h1>Presenting, Defending and Publishing</h1>
+<p class="lead">Proposal, progress and final presentations, slides that work, rehearsing, viva questions and how to answer them, posters, choosing a conference or journal, peer review and releasing code and data.</p>
+<div class="row"><a class="btn pri" href="#s=2">Start</a><a class="btn" href="../index.html">All chapters</a></div>
+</div></section>
+<section class="slide " data-title="Why this matters" aria-label="Why this matters" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Before we start</p><h2>Why this matters</h2><div class="hook"><p class="q">Fifteen minutes and a few questions decide how a year of work is judged.</p><p>A defence is not an exam on facts; it is a conversation in which you show that you understand your work, its strengths and its limits. Good slides and honest answers make that easy.</p><p>This chapter prepares you for presentations, the viva and the next step — turning the thesis into a published paper.</p></div>
+</div></section>
+<section class="slide " data-title="In this chapter" aria-label="In this chapter" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Outline · chapter 11</p><h2>In this chapter</h2><p class="muted">Select a section to jump to it.</p><ol class="outline-list"><li><a href="#s=4">Presenting</a></li><li><a href="#s=8">The defence</a></li><li><a href="#s=10">Posters and publishing</a></li></ol>
+</div></section>
+<section class="slide " data-title="Presentations during a thesis" aria-label="Presentations during a thesis" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 1 of 10</p><h2>Presentations during a thesis</h2><div class="scrollx"><table class="doc"><thead><tr><th>Presentation</th><th>Goal</th><th>Typical focus</th></tr></thead><tbody><tr><td>Proposal defence</td><td>approval of the plan</td><td>problem, questions, gap, methodology, timeline, risks</td></tr><tr><td>Progress presentation</td><td>show the work is on track</td><td>data, first results, problems, the remaining plan</td></tr><tr><td>Final defence</td><td>judge the thesis</td><td>contributions, results, analysis, limitations — then questions</td></tr><tr><td>Poster session</td><td>explain the work to visitors in minutes</td><td>one clear message, big figures, little text</td></tr></tbody></table></div>
+</div></section>
+<section class="slide " data-title="Structure of a defence talk" aria-label="Structure of a defence talk" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Presenting</p><h2>Structure of a defence talk</h2><div class="cols "><div><ol class="steps"><li><b>Hook</b><span>the problem in one slide, with an example</span></li><li><b>Gap</b><span>why existing work is not enough</span></li><li><b>Questions</b><span>your RQs and contributions</span></li><li><b>Method</b><span>one diagram</span></li><li><b>Results</b><span>the main table or plot, then the key insight</span></li><li><b>Analysis</b><span>ablation, errors, limitations</span></li><li><b>Conclusion</b><span>answers to the RQs; future work</span></li></ol></div><div><div class="panel"><h4>Timing for 15 minutes</h4><p class="small">Problem and gap 3 · method 3 · results 5 · analysis and limitations 2 · conclusion 1 · buffer 1. About one slide per minute.</p></div></div></div>
+</div></section>
+<section class="slide " data-title="Slides that work" aria-label="Slides that work" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Presenting</p><h2>Slides that work</h2><div class="scrollx"><table class="doc"><thead><tr><th>Do</th><th>Avoid</th></tr></thead><tbody><tr><td>one message per slide, stated in the title</td><td>titles like “Results” or “Methodology 2”</td></tr><tr><td>large figures and diagrams</td><td>paragraphs of text read aloud</td></tr><tr><td>highlight the number that matters</td><td>full tables with 40 numbers</td></tr><tr><td>the same terms and colours as the thesis</td><td>new names for the same thing</td></tr><tr><td>slide numbers (examiners refer to them)</td><td>animations that slow you down</td></tr><tr><td>backup slides for expected questions</td><td>saying “I did not have time”</td></tr></tbody></table></div>
+</div></section>
+<section class="slide " data-title="Rehearsing" aria-label="Rehearsing" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Presenting</p><h2>Rehearsing</h2><ul><li>Rehearse aloud with a timer at least three times; cut until you finish with a minute to spare.</li><li>Present to classmates who do not know your topic, and ask what was unclear.</li><li>Record yourself once: watch for filler words and turning your back to the audience.</li><li>Prepare the laptop, adapter, a PDF copy on a USB drive and in the cloud.</li><li>Know your first two sentences by heart; the rest follows.</li></ul>
+</div></section>
+<section class="slide " data-title="The viva: questions to expect" aria-label="The viva: questions to expect" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 5 of 10</p><h2>The viva: questions to expect</h2><div data-demo="viva-cards"></div>
+</div></section>
+<section class="slide " data-title="Answering questions" aria-label="Answering questions" tabindex="-1"><div class="slide-inner">
+<p class="kicker">The defence</p><h2>Answering questions</h2><div class="cols "><div><ol><li>Listen to the whole question; pause; thank the examiner if it helps you think.</li><li>Repeat or rephrase it if unsure: “Do you mean…?”</li><li>Answer directly first, then give the evidence (a backup slide helps).</li><li>If you do not know, say so honestly, then say how you would find out.</li><li>Agree with fair criticism and explain the limitation; do not become defensive.</li></ol></div><div><div class="callout">Examiners test whether <b>you</b> understand your work. An honest “we did not test that; I expect … because …” scores better than a confident guess.</div></div></div>
+</div></section>
+<section class="slide " data-title="Posters" aria-label="Posters" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 7 of 10</p><h2>Posters</h2><div class="cols "><div><ul><li>A0 or A1, portrait or as required; readable from 2 metres.</li><li>Title that states the finding, not only the topic.</li><li>Sections: problem · method (diagram) · results (big figure) · conclusion · QR code to the paper or code.</li><li>About 300–500 words in total.</li><li>Prepare a 1-minute and a 3-minute explanation.</li></ul></div><div><div class="panel"><h4>Poster layout</h4><p class="small">Three columns read left to right: <b>why</b> (problem, gap) → <b>how</b> (method) → <b>what</b> (results, conclusion). The key figure is the largest element.</p></div></div></div>
+</div></section>
+<section class="slide " data-title="Publishing your thesis work" aria-label="Publishing your thesis work" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Posters and publishing</p><h2>Publishing your thesis work</h2><div class="vs"><div><h4>Conference</h4><ul><li>8–10 page paper, peer-reviewed in 2–4 months</li><li>presented in person or online</li><li>the main venue type in ML, AI, CV, NLP</li><li>deadlines fixed; plan backwards</li></ul></div><div><h4>Journal</h4><ul><li>longer article, several review rounds</li><li>months to a year</li><li>more weight in many fields and for promotions</li><li>check quartile and that it is not predatory</li></ul></div></div><p class="small">Good first venues: workshops at major conferences, regional IEEE conferences with proper peer review, and student research competitions. Your supervisor knows which are respected.</p>
+</div></section>
+<section class="slide " data-title="Peer review" aria-label="Peer review" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Posters and publishing</p><h2>Peer review</h2><figure class="fig" data-fig="peer-review"></figure><ul><li><b>Desk reject</b>: out of scope or badly formatted — check the call for papers.</li><li><b>Reviews</b>: usually 2–4 experts, often anonymous.</li><li><b>Decision</b>: accept, minor revision, major revision or reject.</li><li><b>Rebuttal / response letter</b>: answer every point politely, say what changed and where.</li><li>A rejection with good reviews is useful: improve and submit elsewhere.</li></ul>
+</div></section>
+<section class="slide " data-title="Releasing code and data" aria-label="Releasing code and data" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Posters and publishing</p><h2>Releasing code and data</h2><ul><li>Clean the repository: README, licence, requirements, a script that reproduces the main table.</li><li>Archive a version with a DOI (Zenodo) and cite it in the thesis.</li><li>Release models on Hugging Face if allowed.</li><li>Remove personal data and secrets (API keys!) before publishing.</li><li>Post a preprint on arXiv if the venue allows it, to share the work early.</li></ul>
+</div></section>
+<section class="slide " data-title="Worked example 1" aria-label="Worked example 1" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 1 of 3</p><h2>Worked example 1</h2><div class="ex"><div class="qq">An examiner asks: “Why did you not compare with GPT-4?” How do you answer?</div><details class="reveal"><summary>Show the solution</summary><div class="ans">Directly and honestly: “We focused on models that can run locally and be fine-tuned on our data, because the target users cannot send private messages to an external API. We did not evaluate GPT-4; based on [ref], we expect it to be strong on standard Bangla but it would need to be tested on code-mixed text. That is a good direction for future work.”</div></details></div>
+</div></section>
+<section class="slide " data-title="Worked example 2" aria-label="Worked example 2" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 2 of 3</p><h2>Worked example 2</h2><div class="ex"><div class="qq">Turn the slide title “Results” into a message title.</div><details class="reveal"><summary>Show the solution</summary><div class="ans">“Continued pre-training improves macro-F1 by 3 points on code-mixed comments” — the audience knows what to look for before they read the table.</div></details></div>
+</div></section>
+<section class="slide " data-title="Worked example 3" aria-label="Worked example 3" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 3 of 3</p><h2>Worked example 3</h2><div class="ex"><div class="qq">A reviewer writes: “The baselines are weak; the comparison with recent transformer models is missing.” Draft your response.</div><details class="reveal"><summary>Show the solution</summary><div class="ans">“We thank the reviewer. We have added XLM-R and BanglaBERT as baselines, tuned with the same budget as our model (Table 3, Section 5.1). Our method still improves macro-F1 by 2.4 points over the strongest baseline (p = 0.02).”</div></details></div>
+</div></section>
+<section class="slide " data-title="Practice (1 of 2)" aria-label="Practice (1 of 2)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Practice</p><h2>Practice (1 of 2)</h2><p class="muted">Try each one yourself first, then check the answer.</p><div class="ex"><div class="qq">1. Name the four kinds of thesis presentation.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Proposal defence, progress presentation, final defence and poster session.</div></details></div><div class="ex"><div class="qq">2. How long should each part of a 15-minute defence take?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">About: problem and gap 3 min, method 3, results 5, analysis and limitations 2, conclusion 1, buffer 1.</div></details></div><div class="ex"><div class="qq">3. What do you do if you cannot answer a viva question?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Say honestly that you do not know or did not test it, explain your best reasoning, and say how you would find out.</div></details></div>
+</div></section>
+<section class="slide " data-title="Practice (2 of 2)" aria-label="Practice (2 of 2)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Practice</p><h2>Practice (2 of 2)</h2><p class="muted">Try each one yourself first, then check the answer.</p><div class="ex"><div class="qq">4. What makes a good poster?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">A finding in the title, one clear message, large figures, little text (300–500 words), a logical why–how–what flow, readable from 2 metres, a QR code.</div></details></div><div class="ex"><div class="qq">5. Conference or journal: give two differences.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Conferences: shorter papers, fixed deadlines, faster review, presented live, dominant in ML/AI. Journals: longer, several review rounds, slower, more weight in many fields.</div></details></div><div class="ex"><div class="qq">6. What should be removed before releasing code publicly?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Personal data, credentials and API keys, large private datasets you may not share; and add a README and licence.</div></details></div>
+</div></section>
+<section class="slide " data-title="Quiz" aria-label="Quiz" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Check yourself</p><h2>Quiz</h2><div><div class="quiz-host" data-quiz-key="th11"></div><script type="application/json" class="quiz-json">[{"q": "A good slide title…", "o": ["says “Results”", "states the slide’s message", "is left empty", "is the paper title"], "a": 1, "w": "Message titles guide the audience."}, {"q": "Facing criticism in a viva, you should…", "o": ["argue harder", "acknowledge it and explain the limitation", "change the topic", "stay silent"], "a": 1, "w": "Honesty about limits shows understanding."}, {"q": "In ML, AI, CV and NLP the main publication type is often…", "o": ["conference papers", "newspapers", "books", "blogs"], "a": 0, "w": "Top conferences are peer-reviewed and highly selective."}, {"q": "A “desk reject” means…", "o": ["accepted", "rejected by the editor before review", "reviewed by three people", "a minor revision"], "a": 1, "w": "Often for scope or formatting problems."}, {"q": "A response letter to reviewers should…", "o": ["ignore weak points", "answer every point and say what changed", "be one line", "criticise reviewers"], "a": 1, "w": "Point-by-point, polite and specific."}, {"q": "Zenodo is used to…", "o": ["archive code or data with a DOI", "rank journals", "detect plagiarism", "host slides only"], "a": 0, "w": "A DOI makes the release citable."}]</script></div>
+</div></section>
+<section class="slide " data-title="Further learning" aria-label="Further learning" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Resources</p><h2>Further learning</h2><p class="muted">Hand-picked material to go deeper. Links open in a new tab.</p><div class="res-grid"><a class="res" href="https://www.microsoft.com/en-us/research/academic-program/give-great-research-talk/" target="_blank" rel="noopener noreferrer"><small>Guide</small><b>How to give a great research talk — Simon Peyton Jones ↗</b><span>One idea, examples first, and how to handle questions.</span></a><a class="res" href="https://aideadlin.es" target="_blank" rel="noopener noreferrer"><small>Deadlines</small><b>AI conference deadlines ↗</b><span>Countdowns to ML, CV, NLP and robotics deadlines.</span></a><a class="res" href="http://www.wikicfp.com" target="_blank" rel="noopener noreferrer"><small>Calls</small><b>WikiCFP ↗</b><span>Calls for papers across computing.</span></a><a class="res" href="https://openreview.net" target="_blank" rel="noopener noreferrer"><small>Review</small><b>OpenReview ↗</b><span>Read real reviews and author responses from ICLR and other venues.</span></a><a class="res" href="https://info.arxiv.org/help/submit/index.html" target="_blank" rel="noopener noreferrer"><small>Preprints</small><b>arXiv submission guide ↗</b><span>How to post a preprint.</span></a><a class="res" href="https://zenodo.org" target="_blank" rel="noopener noreferrer"><small>Archive</small><b>Zenodo ↗</b><span>Archive code and data with a DOI.</span></a></div>
+</div></section>
+<section class="slide " data-title="Summary" aria-label="Summary" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Summary</p><h2>Summary</h2><ul class="sumlist"><li>Proposal, progress, final defence and poster each have a different goal and focus.</li><li>Structure the talk: hook, gap, questions, method, results, analysis, conclusion — about one slide per minute.</li><li>One message per slide, big figures, message titles; rehearse with a timer.</li><li>In the viva, answer directly, use evidence, admit what you do not know, accept fair criticism.</li><li>Publish at a suitable conference or journal; respond to reviews point by point.</li><li>Release clean, documented code and data with a DOI; remove personal data and secrets.</li></ul><div class="nextcard"><a class="btn pri" href="12-machine-learning.html">Next: Machine Learning</a><a class="btn" href="../practice.html#t11">More practice</a><a class="btn" href="../resources.html#t11">All resources</a><a class="btn" href="../milestones.html#m7">Milestone checklist</a><a class="btn" href="../index.html">All chapters</a></div>
+</div></section>
+</main>
+<footer class="deck-foot">
+  <button type="button" class="btn" id="prev">Previous</button>
+  <span class="counter" id="counter">1 / 21</span>
+  <button type="button" class="btn pri" id="next">Next</button>
+</footer>
+<aside id="slide-menu" hidden aria-label="Slide list"><div class="menu-head"><h3>Slides in this chapter</h3><button type="button" id="btn-menu-close" class="menu-close" aria-label="Close slide list">&#10005;</button></div></aside>
+<noscript><p style="padding:20px">This lesson needs JavaScript for the slides and the interactive tools.</p></noscript>
+<script src="../js/core.js"></script>
+<script src="../js/art.js"></script>
+<script src="../js/diagram.js"></script>
+<script src="../js/figs.js"></script>
+<script src="../js/latex.js"></script>
+<script src="../js/demos.js"></script>
+<script src="../js/quiz.js"></script>
+<script src="../js/page.js"></script>
+<script>window.DP_TOPIC = {"id": 11, "prev": "10-writing-the-thesis.html", "next": "12-machine-learning.html"};</script>
+<script>mountPage();</script>
+<script src="../js/slides.js"></script>
+<script src="../js/annotate.js"></script>
+<script src="../js/lang.js"></script>
+<script src="../js/analytics.js"
+        data-endpoint="https://analytics-proxy.ayansarkar1829.workers.dev"
+        data-project="Thesis Research Guide"></script>
+<script src="../js/course-events.js"></script>
+</body>
+</html>

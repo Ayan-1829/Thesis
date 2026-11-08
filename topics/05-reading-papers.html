@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reading Papers and Managing Notes – Chapter 5 | Thesis: Undergraduate Research Guide</title>
+<meta name="description" content="How a paper is built, the three-pass reading method, questions to ask, reading results critically, one-paper summaries, the literature matrix, reference managers and getting through hard papers. Interactive slides, tools, worked examples and a quiz: chapter 5 of a free guide to doing a computer science thesis.">
+<meta name="keywords" content="how to read a research paper, three-pass method, Keshav, critical reading, literature matrix, synthesis matrix, Zotero, Mendeley, reference manager, research notes">
+<meta name="author" content="Thesis Research Guide">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#4338A0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E0C1A" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://ayan-1829.github.io/Thesis/topics/05-reading-papers.html">
+<link rel="icon" type="image/svg+xml" href="../img/logo-mark.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16.png">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Thesis (Undergraduate Research)">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Reading Papers and Managing Notes – Chapter 5 | Thesis: Undergraduate Research Guide">
+<meta property="og:description" content="How a paper is built, the three-pass reading method, questions to ask, reading results critically, one-paper summaries, the literature matrix, reference managers and getting through hard papers. Interactive slides, tools, worked examples and a quiz: chapter 5 of a free guide to doing a computer science thesis.">
+<meta property="og:url" content="https://ayan-1829.github.io/Thesis/topics/05-reading-papers.html">
+<meta property="og:image" content="https://ayan-1829.github.io/Thesis/img/og/05-reading-papers.png?v=2">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Reading Papers and Managing Notes – Chapter 5 | Thesis: Undergraduate Research Guide">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Reading Papers and Managing Notes – Chapter 5 | Thesis: Undergraduate Research Guide">
+<meta name="twitter:description" content="How a paper is built, the three-pass reading method, questions to ask, reading results critically, one-paper summaries, the literature matrix, reference managers and getting through hard papers. Interactive slides, tools, worked examples and a quiz: chapter 5 of a free guide to doing a computer science thesis.">
+<meta name="twitter:image" content="https://ayan-1829.github.io/Thesis/img/og/05-reading-papers.png?v=2">
+<meta name="twitter:image:alt" content="Reading Papers and Managing Notes – Chapter 5 | Thesis: Undergraduate Research Guide">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "Reading Papers and Managing Notes", "description": "How a paper is built, the three-pass reading method, questions to ask, reading results critically, one-paper summaries, the literature matrix, reference managers and getting through hard papers.", "position": 5, "educationalLevel": "Undergraduate", "learningResourceType": "Lecture slides", "inLanguage": "en", "isAccessibleForFree": true, "teaches": ["Read in passes: a 10-minute scan, a one-hour read, and a deep read only for key papers.", "Ask the same questions of every paper: problem, novelty, method, evidence, limits, use for me.", "Read results critically: significance, imbalance, fair tuning, test-set size, failure cases.", "Write one-paper summaries in your own words; mark quotes with quotation marks.", "Keep a literature matrix: it reveals patterns and the gap.", "Use one reference manager from day one; tag papers by theme and status."], "keywords": "how to read a research paper, three-pass method, Keshav, critical reading, literature matrix, synthesis matrix, Zotero, Mendeley, reference manager, research notes", "url": "https://ayan-1829.github.io/Thesis/topics/05-reading-papers.html", "image": "https://ayan-1829.github.io/Thesis/img/og/05-reading-papers.png", "isPartOf": {"@type": "Course", "name": "Thesis: Undergraduate Research in Computer Science", "url": "https://ayan-1829.github.io/Thesis/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Thesis", "item": "https://ayan-1829.github.io/Thesis/"}, {"@type": "ListItem", "position": 2, "name": "Chapter 5: Reading Papers and Managing Notes", "item": "https://ayan-1829.github.io/Thesis/topics/05-reading-papers.html"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Mono:wght@400;500;600&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="deck-page">
+<div class="sr-only" id="live" aria-live="polite"></div>
+<header class="deck-bar">
+  <a class="home-link" href="../index.html" aria-label="Home: all chapters"><img src="../img/logo-mark.svg" alt="" width="26" height="26"><span>Home</span></a>
+  <div class="deck-title"><span class="badge">5</span><span>Reading Papers and Managing Notes</span></div>
+  <div class="deck-actions">
+    <button type="button" class="btn sm" id="btn-menu" aria-expanded="false" aria-controls="slide-menu" aria-label="Slides"><svg class="btn-ic" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><rect x="3" y="4.5" width="18" height="3" rx="1"></rect><rect x="3" y="10.5" width="18" height="3" rx="1"></rect><rect x="3" y="16.5" width="18" height="3" rx="1"></rect></svg><span>Slides</span></button>
+    <button type="button" class="btn sm" id="btn-theme" aria-pressed="false" aria-label="Toggle dark mode"><svg class="btn-ic" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"></path></svg><span>Dark mode</span></button>
+    <button type="button" class="btn sm" id="btn-fs" aria-pressed="false" aria-label="Full screen"><svg class="btn-ic" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"></path></svg><span>Full screen</span></button>
+  </div>
+</header>
+<div class="deck-progress"><i id="progress-fill"></i></div>
+<main class="deck" id="deck">
+<section class="slide title-slide" data-title="Reading Papers and Managing Notes" aria-label="Reading Papers and Managing Notes" tabindex="-1"><div class="slide-inner">
+<span class="topic-art" data-art="5" aria-hidden="true"></span>
+<span class="badge big">5</span>
+<p class="kicker">Chapter 5 of 21 · Part A · The research process</p>
+<h1>Reading Papers and Managing Notes</h1>
+<p class="lead">How a paper is built, the three-pass reading method, questions to ask, reading results critically, one-paper summaries, the literature matrix, reference managers and getting through hard papers.</p>
+<div class="row"><a class="btn pri" href="#s=2">Start</a><a class="btn" href="../index.html">All chapters</a></div>
+</div></section>
+<section class="slide " data-title="Why this matters" aria-label="Why this matters" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Before we start</p><h2>Why this matters</h2><div class="hook"><p class="q">You read a 12-page paper from start to end, carefully, for three hours. A week later you remember almost nothing.</p><p>Researchers do not read papers like novels. They read in passes, with questions, and they write notes they can use later. That is how they cover dozens of papers without drowning.</p><p>This chapter gives you a reading method, a note template and a literature matrix — the raw material of your literature review.</p></div>
+</div></section>
+<section class="slide " data-title="In this chapter" aria-label="In this chapter" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Outline · chapter 5</p><h2>In this chapter</h2><p class="muted">Select a section to jump to it.</p><ol class="outline-list"><li><a href="#s=4">Reading strategy</a></li><li><a href="#s=7">Reading critically</a></li><li><a href="#s=8">Notes and the literature matrix</a></li><li><a href="#s=12">Getting unstuck</a></li></ol>
+</div></section>
+<section class="slide " data-title="How a research paper is built" aria-label="How a research paper is built" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 1 of 9</p><h2>How a research paper is built</h2><div class="scrollx"><table class="doc"><thead><tr><th>Section</th><th>What it tells you</th><th>Read it…</th></tr></thead><tbody><tr><td>Title and abstract</td><td>the problem, method and main result in 200 words</td><td>always, first</td></tr><tr><td>Introduction</td><td>motivation, the gap, the contributions (often a bulleted list)</td><td>in pass 1</td></tr><tr><td>Related work</td><td>how it differs from earlier papers</td><td>to find more papers</td></tr><tr><td>Method</td><td>what exactly they did</td><td>in pass 2–3</td></tr><tr><td>Experiments / results</td><td>data, baselines, metrics, tables, figures</td><td>in pass 2; check carefully</td></tr><tr><td>Discussion and limitations</td><td>what the results mean and where they fail</td><td>always — gold for thesis ideas</td></tr><tr><td>Conclusion and future work</td><td>summary and open problems</td><td>in pass 1</td></tr></tbody></table></div>
+</div></section>
+<section class="slide " data-title="The three-pass method" aria-label="The three-pass method" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Reading strategy</p><h2>The three-pass method</h2><figure class="fig" data-fig="three-pass"></figure>
+</div></section>
+<section class="slide " data-title="The three-pass method (cont.)" aria-label="The three-pass method (cont.)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Reading strategy</p><h2>The three-pass method (cont.)</h2><ul><li><b>Pass 1 — 5 to 10 minutes.</b> Title, abstract, introduction, section headings, figures, conclusion. Decide: relevant? read on?</li><li><b>Pass 2 — about an hour.</b> Read everything except the hardest proofs and details. Study figures and tables. Mark references to read. Summarise it in your own words.</li><li><b>Pass 3 — several hours.</b> Only for the papers your thesis builds on. Re-derive, or re-implement; question every assumption; note strengths, weaknesses and ideas.</li></ul><p class="small muted">After S. Keshav, “How to Read a Paper”, ACM SIGCOMM Computer Communication Review, 2007.</p>
+</div></section>
+<section class="slide " data-title="Questions to ask while reading" aria-label="Questions to ask while reading" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Reading strategy</p><h2>Questions to ask while reading</h2><div class="tgrid"><div class="tcard"><h4>Problem</h4><p>What exactly is the problem, and why does it matter?</p></div><div class="tcard"><h4>Novelty</h4><p>What is new compared with earlier work? Is the claim supported?</p></div><div class="tcard"><h4>Method</h4><p>What did they do? Could I explain it to a classmate in two minutes?</p></div><div class="tcard"><h4>Evidence</h4><p>Which data, baselines and metrics? Do the numbers support the conclusion? Any statistics?</p></div><div class="tcard"><h4>Limits</h4><p>What assumptions? Where would it fail? What did they not test?</p></div><div class="tcard"><h4>For me</h4><p>What can I reuse (dataset, baseline, metric, code)? What would I do differently?</p></div></div>
+</div></section>
+<section class="slide " data-title="Reading results tables critically" aria-label="Reading results tables critically" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 4 of 9</p><h2>Reading results tables critically</h2><div class="cols "><div><div class="scrollx"><table class="doc"><thead><tr><th>Model</th><th>Accuracy</th><th>F1</th></tr></thead><tbody><tr><td>Baseline (2019)</td><td>81.2</td><td>0.62</td></tr><tr><td>Strong baseline (2023)</td><td>86.9</td><td>0.74</td></tr><tr><td><b>Proposed</b></td><td><b>87.4</b></td><td><b>0.75</b></td></tr></tbody></table></div></div><div><ul><li>Is +0.5 accuracy <b>significant</b>, or within run-to-run noise? Look for standard deviations or tests.</li><li>Why does accuracy (87%) differ so much from F1 (0.75)? Probably <b>class imbalance</b>.</li><li>Were all models tuned equally, on the <b>same split</b>?</li><li>Is the test set large enough? 0.5% of 200 samples is one example.</li><li>Which classes or cases does the method still get wrong?</li></ul></div></div>
+</div></section>
+<section class="slide " data-title="Taking notes that you can use" aria-label="Taking notes that you can use" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 5 of 9</p><h2>Taking notes that you can use</h2><div class="cols "><div><div class="panel"><h4>One-paper summary</h4><div class="scrollx"><table class="doc kv"><tbody><tr><td>Citation</td><td>author, year, venue (with BibTeX key)</td></tr><tr><td>Problem</td><td>one sentence</td></tr><tr><td>Method</td><td>two or three sentences</td></tr><tr><td>Data</td><td>datasets, sizes</td></tr><tr><td>Results</td><td>the main numbers</td></tr><tr><td>Limitations</td><td>what it does not do</td></tr><tr><td>Relevance</td><td>how it relates to my RQ</td></tr><tr><td>Ideas</td><td>what I could try</td></tr></tbody></table></div></div></div><div><ul><li>Write notes in <b>your own words</b>; copied sentences in notes become accidental plagiarism later.</li><li>Mark exact quotes with quotation marks and the page.</li><li>Give every paper a tag (theme, method, dataset).</li><li>Keep notes in one place: Zotero notes, a spreadsheet or Obsidian.</li></ul></div></div>
+</div></section>
+<section class="slide " data-title="The literature matrix" aria-label="The literature matrix" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Interactive</p><h2>The literature matrix</h2><div data-demo="lit-matrix"></div>
+</div></section>
+<section class="slide " data-title="Reference managers" aria-label="Reference managers" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Notes and the literature matrix</p><h2>Reference managers</h2><div class="scrollx"><table class="doc"><thead><tr><th>Tool</th><th>Strengths</th></tr></thead><tbody><tr><td><a href="https://www.zotero.org" target="_blank" rel="noopener">Zotero</a> (free, open source)</td><td>save papers from the browser in one click, annotate PDFs, groups for sharing with a partner, Better BibTeX for LaTeX</td></tr><tr><td>Mendeley (free)</td><td>PDF library and annotation; Word plugin</td></tr><tr><td>JabRef (free)</td><td>BibTeX-native; good with Overleaf</td></tr><tr><td>Overleaf + .bib file</td><td>the end point: export BibTeX from the manager into the thesis</td></tr></tbody></table></div><div class="callout">Choose one tool on day one and put every paper in it. Re-finding a paper you read three months ago costs far more than saving it now.</div>
+</div></section>
+<section class="slide " data-title="Organising your library" aria-label="Organising your library" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Notes and the literature matrix</p><h2>Organising your library</h2><div class="cols "><div><ul><li>Folders or tags by <b>theme</b> (e.g. datasets, transformer models, augmentation, evaluation).</li><li>A tag for <b>reading status</b>: to read, pass 1, pass 2, key paper.</li><li>Consistent <b>citation keys</b> (author + year + first word: <code>sharma2023bangla</code>).</li><li>One shared group library if you work in a pair.</li></ul></div><div><div class="panel"><h4>A weekly reading rhythm</h4><p class="small">Monday: pass 1 on 10 new titles · Wednesday: pass 2 on the best 2–3 · Friday: update the matrix and write one paragraph comparing what you read.</p></div></div></div>
+</div></section>
+<section class="slide " data-title="Understanding hard papers" aria-label="Understanding hard papers" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 9 of 9</p><h2>Understanding hard papers</h2><ul><li>Read a <b>survey</b> or tutorial on the topic first; then the paper makes sense.</li><li>Look up unknown terms in a textbook, not only in a chatbot — and check the answer.</li><li>Find the paper’s <b>code</b> and run it; code removes ambiguity.</li><li>Find a <b>talk</b> or blog by the authors: they often explain the idea more simply.</li><li>Discuss it in a reading group with classmates — explaining is the best test of understanding.</li><li>It is normal to read a key paper three or four times.</li></ul>
+</div></section>
+<section class="slide " data-title="Worked example 1" aria-label="Worked example 1" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 1 of 2</p><h2>Worked example 1</h2><div class="ex"><div class="qq">After pass 1 of a paper you know: it proposes a lightweight CNN for skin-lesion classification, tested on HAM10000, with 2% higher balanced accuracy than MobileNetV2. Write the matrix row.</div><details class="reveal"><summary>Show the solution</summary><div class="ans">Problem: skin-lesion classification on mobile devices. Method: lightweight CNN with … (fill after pass 2). Data: HAM10000 (≈10,000 dermatoscopic images, 7 classes). Results: +2% balanced accuracy over MobileNetV2. Limitations: (pass 2) single dataset, no external test. Relevance: candidate baseline for my mobile skin-cancer thesis.</div></details></div>
+</div></section>
+<section class="slide " data-title="Worked example 2" aria-label="Worked example 2" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 2 of 2</p><h2>Worked example 2</h2><div class="ex"><div class="qq">A table shows the proposed model at 92.1% accuracy and the baseline at 91.8%, one run each, on 300 test images. What do you conclude?</div><details class="reveal"><summary>Show the solution</summary><div class="ans">0.3% of 300 images is about one image. With one run and no variance, the difference is within noise. You cannot conclude the proposed model is better; you would need several runs, variance and a significance test (chapter 8).</div></details></div>
+</div></section>
+<section class="slide " data-title="Practice (1 of 2)" aria-label="Practice (1 of 2)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Practice</p><h2>Practice (1 of 2)</h2><p class="muted">Try each one yourself first, then check the answer.</p><div class="ex"><div class="qq">1. What do you read in pass 1?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Title, abstract, introduction, section headings, figures, conclusion (and glance at the references).</div></details></div><div class="ex"><div class="qq">2. Which papers deserve pass 3?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Only the few your thesis builds on directly: your main baselines and the methods you extend.</div></details></div><div class="ex"><div class="qq">3. Name five fields of a one-paper summary.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Citation, problem, method, data, results, limitations, relevance to my question, ideas.</div></details></div>
+</div></section>
+<section class="slide " data-title="Practice (2 of 2)" aria-label="Practice (2 of 2)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Practice</p><h2>Practice (2 of 2)</h2><p class="muted">Try each one yourself first, then check the answer.</p><div class="ex"><div class="qq">4. Why must notes be in your own words?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Copied sentences end up in the thesis without quotation marks and become plagiarism; paraphrasing also tests your understanding.</div></details></div><div class="ex"><div class="qq">5. What is a literature matrix?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">A table with one row per paper and columns such as problem, data, method, metric, results and limitations; it shows patterns and gaps across papers.</div></details></div><div class="ex"><div class="qq">6. Give three ways to understand a paper you find too hard.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Read a survey or tutorial first; run the authors’ code; watch the authors’ talk; discuss in a reading group; reread it several times.</div></details></div>
+</div></section>
+<section class="slide " data-title="Quiz" aria-label="Quiz" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Check yourself</p><h2>Quiz</h2><div><div class="quiz-host" data-quiz-key="th5"></div><script type="application/json" class="quiz-json">[{"q": "Pass 1 of the three-pass method takes about…", "o": ["5–10 minutes", "one day", "one week", "no time"], "a": 0, "w": "A quick scan to decide whether to read on."}, {"q": "The best section for thesis ideas is often…", "o": ["acknowledgements", "limitations and future work", "the title page", "references only"], "a": 1, "w": "Authors state open problems there."}, {"q": "Accuracy 90% but F1 0.55 usually means…", "o": ["a bug in the paper", "class imbalance", "perfect results", "too much data"], "a": 1, "w": "Accuracy is inflated by the majority class."}, {"q": "A literature matrix has…", "o": ["one row per paper, columns for its properties", "only titles", "only citations", "one column per author"], "a": 0, "w": "It compares papers along the same dimensions."}, {"q": "Which tool is a free, open-source reference manager?", "o": ["Zotero", "Photoshop", "Excel", "Figma"], "a": 0, "w": "Zotero saves papers, annotates PDFs and exports BibTeX."}, {"q": "An exact sentence copied into your notes should be…", "o": ["left as is", "in quotation marks with the page", "deleted", "paraphrased by AI"], "a": 1, "w": "Mark quotes so they are never mistaken for your words."}]</script></div>
+</div></section>
+<section class="slide " data-title="Further learning" aria-label="Further learning" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Resources</p><h2>Further learning</h2><p class="muted">Hand-picked material to go deeper. Links open in a new tab.</p><div class="res-grid"><a class="res" href="https://www.cs.princeton.edu/courses/archive/fall10/cos597B/papers/howtoread-keshav.pdf" target="_blank" rel="noopener noreferrer"><small>Paper</small><b>How to Read a Paper — S. Keshav ↗</b><span>The three-pass method in three pages.</span></a><a class="res" href="https://www.zotero.org/support/" target="_blank" rel="noopener noreferrer"><small>Tool</small><b>Zotero documentation ↗</b><span>Saving, annotating, groups and BibTeX export.</span></a><a class="res" href="https://retorque.re/zotero-better-bibtex/" target="_blank" rel="noopener noreferrer"><small>Tool</small><b>Better BibTeX for Zotero ↗</b><span>Stable citation keys and automatic .bib export for LaTeX.</span></a><a class="res" href="https://www.semanticscholar.org" target="_blank" rel="noopener noreferrer"><small>Search</small><b>Semantic Scholar ↗</b><span>TL;DR summaries help in pass 1.</span></a><div class="res book"><small>Book</small><b>Doing a Literature Review — Chris Hart</b><span>SAGE, 2nd ed. 2018. Reading critically and analysing arguments.</span></div></div>
+</div></section>
+<section class="slide " data-title="Summary" aria-label="Summary" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Summary</p><h2>Summary</h2><ul class="sumlist"><li>Read in passes: a 10-minute scan, a one-hour read, and a deep read only for key papers.</li><li>Ask the same questions of every paper: problem, novelty, method, evidence, limits, use for me.</li><li>Read results critically: significance, imbalance, fair tuning, test-set size, failure cases.</li><li>Write one-paper summaries in your own words; mark quotes with quotation marks.</li><li>Keep a literature matrix: it reveals patterns and the gap.</li><li>Use one reference manager from day one; tag papers by theme and status.</li></ul><div class="nextcard"><a class="btn pri" href="06-writing-the-literature-review.html">Next: Writing the Literature Review</a><a class="btn" href="../practice.html#t5">More practice</a><a class="btn" href="../resources.html#t5">All resources</a><a class="btn" href="../milestones.html#m3">Milestone checklist</a><a class="btn" href="../index.html">All chapters</a></div>
+</div></section>
+</main>
+<footer class="deck-foot">
+  <button type="button" class="btn" id="prev">Previous</button>
+  <span class="counter" id="counter">1 / 20</span>
+  <button type="button" class="btn pri" id="next">Next</button>
+</footer>
+<aside id="slide-menu" hidden aria-label="Slide list"><div class="menu-head"><h3>Slides in this chapter</h3><button type="button" id="btn-menu-close" class="menu-close" aria-label="Close slide list">&#10005;</button></div></aside>
+<noscript><p style="padding:20px">This lesson needs JavaScript for the slides and the interactive tools.</p></noscript>
+<script src="../js/core.js"></script>
+<script src="../js/art.js"></script>
+<script src="../js/diagram.js"></script>
+<script src="../js/figs.js"></script>
+<script src="../js/latex.js"></script>
+<script src="../js/demos.js"></script>
+<script src="../js/quiz.js"></script>
+<script src="../js/page.js"></script>
+<script>window.DP_TOPIC = {"id": 5, "prev": "04-selecting-and-judging-papers.html", "next": "06-writing-the-literature-review.html"};</script>
+<script>mountPage();</script>
+<script src="../js/slides.js"></script>
+<script src="../js/annotate.js"></script>
+<script src="../js/lang.js"></script>
+<script src="../js/analytics.js"
+        data-endpoint="https://analytics-proxy.ayansarkar1829.workers.dev"
+        data-project="Thesis Research Guide"></script>
+<script src="../js/course-events.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Experiments, Statistics and Reproducibility – Chapter 8 | Thesis: Undergraduate Research Guide</title>
+<meta name="description" content="Preparing data, train/validation/test splits and cross-validation, data leakage, running and logging experiments, metrics from the confusion matrix, significance tests, ablation and error analysis, presenting results and reproducibility. Interactive slides, tools, worked examples and a quiz: chapter 8 of a free guide to doing a computer science thesis.">
+<meta name="keywords" content="machine learning experiments, train validation test split, cross validation, data leakage, confusion matrix, precision recall F1, paired t-test, statistical significance, ablation study, error analysis, reproducibility">
+<meta name="author" content="Thesis Research Guide">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#4338A0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E0C1A" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://ayan-1829.github.io/Thesis/topics/08-experiments-and-evaluation.html">
+<link rel="icon" type="image/svg+xml" href="../img/logo-mark.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16.png">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Thesis (Undergraduate Research)">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Experiments, Statistics and Reproducibility – Chapter 8 | Thesis: Undergraduate Research Guide">
+<meta property="og:description" content="Preparing data, train/validation/test splits and cross-validation, data leakage, running and logging experiments, metrics from the confusion matrix, significance tests, ablation and error analysis, presenting results and reproducibility. Interactive slides, tools, worked examples and a quiz: chapter 8 of a free guide to doing a computer science thesis.">
+<meta property="og:url" content="https://ayan-1829.github.io/Thesis/topics/08-experiments-and-evaluation.html">
+<meta property="og:image" content="https://ayan-1829.github.io/Thesis/img/og/08-experiments-and-evaluation.png?v=2">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Experiments, Statistics and Reproducibility – Chapter 8 | Thesis: Undergraduate Research Guide">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Experiments, Statistics and Reproducibility – Chapter 8 | Thesis: Undergraduate Research Guide">
+<meta name="twitter:description" content="Preparing data, train/validation/test splits and cross-validation, data leakage, running and logging experiments, metrics from the confusion matrix, significance tests, ablation and error analysis, presenting results and reproducibility. Interactive slides, tools, worked examples and a quiz: chapter 8 of a free guide to doing a computer science thesis.">
+<meta name="twitter:image" content="https://ayan-1829.github.io/Thesis/img/og/08-experiments-and-evaluation.png?v=2">
+<meta name="twitter:image:alt" content="Experiments, Statistics and Reproducibility – Chapter 8 | Thesis: Undergraduate Research Guide">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "Experiments, Statistics and Reproducibility", "description": "Preparing data, train/validation/test splits and cross-validation, data leakage, running and logging experiments, metrics from the confusion matrix, significance tests, ablation and error analysis, presenting results and reproducibility.", "position": 8, "educationalLevel": "Undergraduate", "learningResourceType": "Lecture slides", "inLanguage": "en", "isAccessibleForFree": true, "teaches": ["Describe and document your data; measure label agreement; check licences.", "Split into train, validation and test (or use cross-validation); test once, at the end.", "Prevent leakage: no duplicates or subjects across splits, time-based splits, fit pre-processing on train only.", "Run several seeds, log every run, give every method the same tuning budget.", "Report mean ± sd and test whether differences are real; add ablation and error analysis.", "Make every number reproducible: Git, environment, seeds, scripts, README."], "keywords": "machine learning experiments, train validation test split, cross validation, data leakage, confusion matrix, precision recall F1, paired t-test, statistical significance, ablation study, error analysis, reproducibility", "url": "https://ayan-1829.github.io/Thesis/topics/08-experiments-and-evaluation.html", "image": "https://ayan-1829.github.io/Thesis/img/og/08-experiments-and-evaluation.png", "isPartOf": {"@type": "Course", "name": "Thesis: Undergraduate Research in Computer Science", "url": "https://ayan-1829.github.io/Thesis/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Thesis", "item": "https://ayan-1829.github.io/Thesis/"}, {"@type": "ListItem", "position": 2, "name": "Chapter 8: Experiments, Statistics and Reproducibility", "item": "https://ayan-1829.github.io/Thesis/topics/08-experiments-and-evaluation.html"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Mono:wght@400;500;600&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="deck-page">
+<div class="sr-only" id="live" aria-live="polite"></div>
+<header class="deck-bar">
+  <a class="home-link" href="../index.html" aria-label="Home: all chapters"><img src="../img/logo-mark.svg" alt="" width="26" height="26"><span>Home</span></a>
+  <div class="deck-title"><span class="badge">8</span><span>Experiments, Statistics and Reproducibility</span></div>
+  <div class="deck-actions">
+    <button type="button" class="btn sm" id="btn-menu" aria-expanded="false" aria-controls="slide-menu" aria-label="Slides"><svg class="btn-ic" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><rect x="3" y="4.5" width="18" height="3" rx="1"></rect><rect x="3" y="10.5" width="18" height="3" rx="1"></rect><rect x="3" y="16.5" width="18" height="3" rx="1"></rect></svg><span>Slides</span></button>
+    <button type="button" class="btn sm" id="btn-theme" aria-pressed="false" aria-label="Toggle dark mode"><svg class="btn-ic" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"></path></svg><span>Dark mode</span></button>
+    <button type="button" class="btn sm" id="btn-fs" aria-pressed="false" aria-label="Full screen"><svg class="btn-ic" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"></path></svg><span>Full screen</span></button>
+  </div>
+</header>
+<div class="deck-progress"><i id="progress-fill"></i></div>
+<main class="deck" id="deck">
+<section class="slide title-slide" data-title="Experiments, Statistics and Reproducibility" aria-label="Experiments, Statistics and Reproducibility" tabindex="-1"><div class="slide-inner">
+<span class="topic-art" data-art="8" aria-hidden="true"></span>
+<span class="badge big">8</span>
+<p class="kicker">Chapter 8 of 21 · Part A · The research process</p>
+<h1>Experiments, Statistics and Reproducibility</h1>
+<p class="lead">Preparing data, train/validation/test splits and cross-validation, data leakage, running and logging experiments, metrics from the confusion matrix, significance tests, ablation and error analysis, presenting results and reproducibility.</p>
+<div class="row"><a class="btn pri" href="#s=2">Start</a><a class="btn" href="../index.html">All chapters</a></div>
+</div></section>
+<section class="slide " data-title="Why this matters" aria-label="Why this matters" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Before we start</p><h2>Why this matters</h2><div class="hook"><p class="q">Two months of work: your model is 0.4% better than the baseline. Your examiner asks: “Would it still be better with a different random seed?” You do not know.</p><p>Experiments are only as convincing as their setup: clean splits, no leakage, several runs, the right metrics and a test of whether differences are real.</p><p>This chapter turns “I trained a model” into “I can show, with evidence, that the method works — and why”.</p></div>
+</div></section>
+<section class="slide " data-title="In this chapter" aria-label="In this chapter" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Outline · chapter 8</p><h2>In this chapter</h2><p class="muted">Select a section to jump to it.</p><ol class="outline-list"><li><a href="#s=4">Data</a></li><li><a href="#s=6">Avoiding leakage</a></li><li><a href="#s=8">Experiments</a></li><li><a href="#s=9">Measuring</a></li><li><a href="#s=12">Analysis</a></li><li><a href="#s=14">Reproducibility</a></li></ol>
+</div></section>
+<section class="slide " data-title="Getting and preparing data" aria-label="Getting and preparing data" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 1 of 11</p><h2>Getting and preparing data</h2><div class="cols "><div><ul><li><b>Public datasets</b>: cite the paper that introduced them; check the licence.</li><li><b>Your own data</b>: plan collection, consent and storage (chapter 9); write a labelling guide.</li><li><b>Labelling</b>: at least two annotators on a sample; report agreement (Cohen’s κ).</li><li><b>Clean</b>: remove duplicates and broken items; document every rule.</li><li><b>Describe</b>: size, classes, class balance, sources, time period.</li></ul></div><div><div class="panel"><h4>A datasheet for your data</h4><p class="small">Who collected it, when, how, for what purpose; what each label means; known gaps and biases; licence and how to access it. Put it in an appendix.</p></div></div></div>
+</div></section>
+<section class="slide " data-title="Train, validation and test" aria-label="Train, validation and test" tabindex="-1"><div style="zoom:0.94;" class="slide-inner">
+<p class="kicker">Data</p><h2>Train, validation and test</h2><figure class="fig" data-fig="data-split"></figure><ul><li><b>Train</b>: the model learns from it.</li><li><b>Validation</b>: you tune hyperparameters and choose models with it.</li><li><b>Test</b>: used <b>once</b>, at the end, to report the result.</li><li>Split <b>before</b> any analysis; keep class balance (stratify).</li><li>For small data use <b>k-fold cross-validation</b>: every item is tested exactly once.</li></ul>
+</div></section>
+<section class="slide " data-title="Data leakage" aria-label="Data leakage" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 3 of 11</p><h2>Data leakage</h2><div class="scrollx"><table class="doc"><thead><tr><th>Leak</th><th>How it happens</th><th>Fix</th></tr></thead><tbody><tr><td>Duplicates across splits</td><td>the same image or sentence is in train and test</td><td>remove duplicates before splitting</td></tr><tr><td>Same subject in both</td><td>photos of one patient or one user in train and test</td><td>split by patient / user / device</td></tr><tr><td>Future information</td><td>random split of time-series data</td><td>split by time: train on the past, test on the future</td></tr><tr><td>Pre-processing on all data</td><td>normalisation or feature selection fitted on train + test</td><td>fit on train only, then apply</td></tr><tr><td>Tuning on the test set</td><td>choosing the best epoch by test score</td><td>tune on validation; test once</td></tr></tbody></table></div><div class="callout warn">Leakage makes results look excellent and then fail in practice. It is one of the most common errors in published machine learning.</div>
+</div></section>
+<section class="slide " data-title="Leak or no leak?" aria-label="Leak or no leak?" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Interactive</p><h2>Leak or no leak?</h2><div data-demo="leak-game"></div>
+</div></section>
+<section class="slide " data-title="Running experiments" aria-label="Running experiments" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 5 of 11</p><h2>Running experiments</h2><div class="cols "><div><ul><li>Start with the <b>simplest</b> baseline end to end; then add complexity.</li><li>Change <b>one thing at a time</b> and record it.</li><li>Fix and record <b>random seeds</b>; run each setting 3–5 times.</li><li>Give every method the same <b>tuning budget</b>.</li><li>Log every run: config, commit hash, metrics, time (a spreadsheet, or MLflow / Weights &amp; Biases).</li></ul></div><div><div class="panel"><h4>An experiment log row</h4><p class="small mono">2025-03-04 · run 17 · commit a3f9c1 · bert-base, lr 2e-5, 4 epochs, seed 3 · val F1 0.812 · test — · note: augmentation on</p></div></div></div>
+</div></section>
+<section class="slide " data-title="Measuring results: the confusion matrix" aria-label="Measuring results: the confusion matrix" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 6 of 11</p><h2>Measuring results: the confusion matrix</h2><div data-demo="confusion"></div>
+</div></section>
+<section class="slide " data-title="Is the difference real?" aria-label="Is the difference real?" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Measuring</p><h2>Is the difference real?</h2><div class="cols "><div><ul><li>Report <b>mean ± standard deviation</b> over several runs or folds.</li><li>Two methods on the same folds or seeds: <b>paired t-test</b>, or <b>Wilcoxon signed-rank</b> if the differences are not normal.</li><li>Two classifiers on one test set: <b>McNemar’s test</b>.</li><li>Several methods on several datasets: <b>Friedman test</b> with a post-hoc test.</li><li>p &lt; 0.05 means the difference is unlikely to be chance — not that it is large or important. Report the size too.</li></ul></div><div><div class="callout">With one run and no variance, a difference of 0.3% tells you nothing.</div></div></div>
+</div></section>
+<section class="slide " data-title="Paired t-test calculator" aria-label="Paired t-test calculator" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Interactive</p><h2>Paired t-test calculator</h2><div data-demo="ttest"></div>
+</div></section>
+<section class="slide " data-title="Ablation and error analysis" aria-label="Ablation and error analysis" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 9 of 11</p><h2>Ablation and error analysis</h2><div class="vs"><div><h4>Ablation study</h4><p>Remove or replace one component at a time and measure the change. It shows <b>which part</b> of your method gives the improvement.</p><div class="scrollx"><table class="doc"><thead><tr><th>Variant</th><th>Macro-F1</th></tr></thead><tbody><tr><td>Full model</td><td>0.812</td></tr><tr><td>– continued pre-training</td><td>0.781</td></tr><tr><td>– augmentation</td><td>0.804</td></tr><tr><td>– both</td><td>0.769</td></tr></tbody></table></div></div><div><h4>Error analysis</h4><p>Look at real mistakes: sample 50–100 errors, group them by cause, count each group. It explains <b>why</b> the method fails and gives you future work.</p><div class="scrollx"><table class="doc"><thead><tr><th>Error type</th><th>Count</th></tr></thead><tbody><tr><td>sarcasm</td><td>31</td></tr><tr><td>mixed sentiment</td><td>24</td></tr><tr><td>spelling variants</td><td>18</td></tr><tr><td>label noise</td><td>9</td></tr></tbody></table></div></div></div>
+</div></section>
+<section class="slide " data-title="Presenting results" aria-label="Presenting results" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Analysis</p><h2>Presenting results</h2><div class="cols "><div><ul><li>A main results table: methods × metrics, mean ± sd, <b>best in bold</b>, the test of significance noted.</li><li>Plots: learning curves, per-class bars, confusion matrices, examples.</li><li>Every figure and table numbered, captioned, and discussed in the text.</li><li>Say what the numbers <b>mean</b>, not only what they are.</li></ul></div><div><div class="scrollx"><table class="doc"><thead><tr><th>Method</th><th>Macro-F1</th><th>Accuracy</th></tr></thead><tbody><tr><td>Majority class</td><td>0.21 ± 0.00</td><td>0.46 ± 0.00</td></tr><tr><td>TF-IDF + LR</td><td>0.68 ± 0.01</td><td>0.73 ± 0.01</td></tr><tr><td>BanglaBERT</td><td>0.78 ± 0.02</td><td>0.81 ± 0.01</td></tr><tr><td><b>Ours</b></td><td><b>0.81 ± 0.01</b>*</td><td><b>0.84 ± 0.01</b></td></tr></tbody></table></div><p class="small muted">* p &lt; 0.05, paired t-test against BanglaBERT over 5 seeds.</p></div></div>
+</div></section>
+<section class="slide " data-title="Reproducibility" aria-label="Reproducibility" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 11 of 11</p><h2>Reproducibility</h2><div class="tgrid"><div class="tcard"><h4>Code in Git</h4><p>Commit often with clear messages; tag the version used for the thesis.</p></div><div class="tcard"><h4>Environment</h4><p><code>requirements.txt</code> or <code>environment.yml</code> with versions; note the GPU and OS.</p></div><div class="tcard"><h4>Seeds and configs</h4><p>Every run from a config file and a recorded seed.</p></div><div class="tcard"><h4>Scripts for every number</h4><p>Each table and figure regenerated by one script from saved results.</p></div><div class="tcard"><h4>Data and models</h4><p>Release them if allowed (GitHub, Zenodo, Hugging Face), or explain why not.</p></div><div class="tcard"><h4>README</h4><p>How to install, run and reproduce the main table.</p></div></div>
+</div></section>
+<section class="slide " data-title="Worked example 1" aria-label="Worked example 1" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 1 of 3</p><h2>Worked example 1</h2><div class="ex"><div class="qq">A model for detecting pneumonia is trained and tested on X-ray images split randomly. Many patients have several images. Is there a problem?</div><details class="reveal"><summary>Show the solution</summary><div class="ans">Yes: images of the same patient appear in both train and test, so the model can recognise the patient rather than the disease — leakage. Split by patient ID so that each patient’s images are all in one split, and report the result again.</div></details></div>
+</div></section>
+<section class="slide " data-title="Worked example 2" aria-label="Worked example 2" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 2 of 3</p><h2>Worked example 2</h2><div class="ex"><div class="qq">Confusion matrix for “phishing” as positive: TP = 90, FN = 10, FP = 30, TN = 870. Compute precision, recall, F1 and accuracy.</div><details class="reveal"><summary>Show the solution</summary><div class="ans">Precision = 90 ÷ (90 + 30) = 0.75. Recall = 90 ÷ (90 + 10) = 0.90. F1 = 2 × 0.75 × 0.90 ÷ 1.65 = 0.818. Accuracy = (90 + 870) ÷ 1000 = 0.96. Accuracy looks excellent; precision shows one in four alarms is false.</div></details></div>
+</div></section>
+<section class="slide " data-title="Worked example 3" aria-label="Worked example 3" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 3 of 3</p><h2>Worked example 3</h2><div class="ex"><div class="qq">Method A: F1 over 5 seeds 0.80, 0.82, 0.81, 0.79, 0.83. Method B on the same seeds: 0.78, 0.80, 0.80, 0.77, 0.80. How do you report and test it?</div><details class="reveal"><summary>Show the solution</summary><div class="ans">Means: A 0.810 ± 0.016, B 0.790 ± 0.014. Differences A − B: 0.02, 0.02, 0.01, 0.02, 0.03; mean 0.02, sd 0.0071; t = 0.02 ÷ (0.0071 ÷ √5) ≈ 6.3 with 4 degrees of freedom, p ≈ 0.003. A is significantly better, by about 2 F1 points — a small but consistent gain.</div></details></div>
+</div></section>
+<section class="slide " data-title="Practice (1 of 2)" aria-label="Practice (1 of 2)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Practice</p><h2>Practice (1 of 2)</h2><p class="muted">Try each one yourself first, then check the answer.</p><div class="ex"><div class="qq">1. What is each split for: train, validation, test?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Train: fit the model. Validation: tune and select models. Test: report the final result, used once.</div></details></div><div class="ex"><div class="qq">2. Give three examples of data leakage.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Duplicates across splits; the same patient/user in train and test; random splits of time series; normalisation fitted on all data; tuning on the test set.</div></details></div><div class="ex"><div class="qq">3. Why run each experiment with several seeds?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Results vary with initialisation and data order; several runs give a mean and standard deviation and allow a significance test.</div></details></div>
+</div></section>
+<section class="slide " data-title="Practice (2 of 2)" aria-label="Practice (2 of 2)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Practice</p><h2>Practice (2 of 2)</h2><p class="muted">Try each one yourself first, then check the answer.</p><div class="ex"><div class="qq">4. Which test compares two methods evaluated on the same 10 folds?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">A paired t-test (or the Wilcoxon signed-rank test if the differences are not normally distributed).</div></details></div><div class="ex"><div class="qq">5. What is the difference between an ablation study and error analysis?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Ablation removes components to measure their contribution; error analysis studies the mistakes to understand why the method fails.</div></details></div><div class="ex"><div class="qq">6. List four things that make an experiment reproducible.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Code in Git with a tagged version; environment with versions; recorded seeds and configs; scripts that regenerate every table and figure; released data/models or an explanation; a README.</div></details></div>
+</div></section>
+<section class="slide " data-title="Quiz" aria-label="Quiz" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Check yourself</p><h2>Quiz</h2><div><div class="quiz-host" data-quiz-key="th8"></div><script type="application/json" class="quiz-json">[{"q": "The test set should be used…", "o": ["for tuning", "once, at the end", "every epoch", "never"], "a": 1, "w": "Tuning on test data leaks it into the model."}, {"q": "For time-series data you should split…", "o": ["randomly", "by time", "alphabetically", "by file size"], "a": 1, "w": "Train on the past, test on the future."}, {"q": "Recall = …", "o": ["TP ÷ (TP + FP)", "TP ÷ (TP + FN)", "TN ÷ (TN + FP)", "(TP + TN) ÷ all"], "a": 1, "w": "The share of real positives that were found."}, {"q": "p < 0.05 means…", "o": ["the difference is large", "the difference is unlikely to be chance", "the method is perfect", "the data is clean"], "a": 1, "w": "Significance is not the same as size or importance."}, {"q": "Two classifiers on one test set can be compared with…", "o": ["McNemar’s test", "BLEU", "Dice", "Gantt"], "a": 0, "w": "McNemar compares their disagreements."}, {"q": "An ablation study…", "o": ["removes components one at a time", "deletes the dataset", "tunes the test set", "counts citations"], "a": 0, "w": "It shows what each part contributes."}]</script></div>
+</div></section>
+<section class="slide " data-title="Further learning" aria-label="Further learning" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Resources</p><h2>Further learning</h2><p class="muted">Hand-picked material to go deeper. Links open in a new tab.</p><div class="res-grid"><a class="res" href="https://scikit-learn.org/stable/modules/cross_validation.html" target="_blank" rel="noopener noreferrer"><small>Guide</small><b>scikit-learn: cross-validation ↗</b><span>Splits, k-fold, grouped and time-series splits.</span></a><a class="res" href="https://www.jmlr.org/papers/v7/demsar06a.html" target="_blank" rel="noopener noreferrer"><small>Paper</small><b>Statistical Comparisons of Classifiers over Multiple Data Sets — J. Demšar ↗</b><span>JMLR, 2006. Which tests to use when comparing ML methods.</span></a><a class="res" href="https://reproducible.cs.princeton.edu" target="_blank" rel="noopener noreferrer"><small>Project</small><b>Leakage and the reproducibility crisis in ML-based science ↗</b><span>A catalogue of leakage types found in published studies.</span></a><a class="res" href="https://neurips.cc/public/guides/PaperChecklist" target="_blank" rel="noopener noreferrer"><small>Checklist</small><b>NeurIPS paper checklist ↗</b><span>Reporting seeds, variance, compute and data.</span></a><a class="res" href="https://mlflow.org" target="_blank" rel="noopener noreferrer"><small>Tool</small><b>MLflow tracking ↗</b><span>Free experiment tracking: parameters, metrics, artefacts.</span></a><a class="res" href="https://arxiv.org/abs/1803.09010" target="_blank" rel="noopener noreferrer"><small>Guide</small><b>Datasheets for Datasets — Gebru et al. ↗</b><span>Questions every dataset description should answer.</span></a></div>
+</div></section>
+<section class="slide " data-title="Summary" aria-label="Summary" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Summary</p><h2>Summary</h2><ul class="sumlist"><li>Describe and document your data; measure label agreement; check licences.</li><li>Split into train, validation and test (or use cross-validation); test once, at the end.</li><li>Prevent leakage: no duplicates or subjects across splits, time-based splits, fit pre-processing on train only.</li><li>Run several seeds, log every run, give every method the same tuning budget.</li><li>Report mean ± sd and test whether differences are real; add ablation and error analysis.</li><li>Make every number reproducible: Git, environment, seeds, scripts, README.</li></ul><div class="nextcard"><a class="btn pri" href="09-research-ethics-and-integrity.html">Next: Research Ethics and Integrity</a><a class="btn" href="../practice.html#t8">More practice</a><a class="btn" href="../resources.html#t8">All resources</a><a class="btn" href="../milestones.html#m5">Milestone checklist</a><a class="btn" href="../index.html">All chapters</a></div>
+</div></section>
+</main>
+<footer class="deck-foot">
+  <button type="button" class="btn" id="prev">Previous</button>
+  <span class="counter" id="counter">1 / 22</span>
+  <button type="button" class="btn pri" id="next">Next</button>
+</footer>
+<aside id="slide-menu" hidden aria-label="Slide list"><div class="menu-head"><h3>Slides in this chapter</h3><button type="button" id="btn-menu-close" class="menu-close" aria-label="Close slide list">&#10005;</button></div></aside>
+<noscript><p style="padding:20px">This lesson needs JavaScript for the slides and the interactive tools.</p></noscript>
+<script src="../js/core.js"></script>
+<script src="../js/art.js"></script>
+<script src="../js/diagram.js"></script>
+<script src="../js/figs.js"></script>
+<script src="../js/latex.js"></script>
+<script src="../js/demos.js"></script>
+<script src="../js/quiz.js"></script>
+<script src="../js/page.js"></script>
+<script>window.DP_TOPIC = {"id": 8, "prev": "07-designing-your-methodology.html", "next": "09-research-ethics-and-integrity.html"};</script>
+<script>mountPage();</script>
+<script src="../js/slides.js"></script>
+<script src="../js/annotate.js"></script>
+<script src="../js/lang.js"></script>
+<script src="../js/analytics.js"
+        data-endpoint="https://analytics-proxy.ayansarkar1829.workers.dev"
+        data-project="Thesis Research Guide"></script>
+<script src="../js/course-events.js"></script>
+</body>
+</html>

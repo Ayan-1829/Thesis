@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Computer Vision and Image Processing – Chapter 15 | Thesis: Undergraduate Research Guide</title>
+<meta name="description" content="Image processing and computer vision tasks — classification, detection, segmentation, OCR, restoration, video — with CNNs and vision transformers, datasets, metrics, tools, venues and thesis ideas. Interactive slides, tools, worked examples and a quiz: chapter 15 of a free guide to doing a computer science thesis.">
+<meta name="keywords" content="computer vision thesis, image processing research, object detection, YOLO, image segmentation, U-Net, CNN, vision transformer, OCR, plant disease detection, CVPR ICCV">
+<meta name="author" content="Thesis Research Guide">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#4338A0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E0C1A" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://ayan-1829.github.io/Thesis/topics/15-computer-vision-and-image-processing.html">
+<link rel="icon" type="image/svg+xml" href="../img/logo-mark.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16.png">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Thesis (Undergraduate Research)">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Computer Vision and Image Processing – Chapter 15 | Thesis: Undergraduate Research Guide">
+<meta property="og:description" content="Image processing and computer vision tasks — classification, detection, segmentation, OCR, restoration, video — with CNNs and vision transformers, datasets, metrics, tools, venues and thesis ideas. Interactive slides, tools, worked examples and a quiz: chapter 15 of a free guide to doing a computer science thesis.">
+<meta property="og:url" content="https://ayan-1829.github.io/Thesis/topics/15-computer-vision-and-image-processing.html">
+<meta property="og:image" content="https://ayan-1829.github.io/Thesis/img/og/15-computer-vision-and-image-processing.png?v=2">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Computer Vision and Image Processing – Chapter 15 | Thesis: Undergraduate Research Guide">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Computer Vision and Image Processing – Chapter 15 | Thesis: Undergraduate Research Guide">
+<meta name="twitter:description" content="Image processing and computer vision tasks — classification, detection, segmentation, OCR, restoration, video — with CNNs and vision transformers, datasets, metrics, tools, venues and thesis ideas. Interactive slides, tools, worked examples and a quiz: chapter 15 of a free guide to doing a computer science thesis.">
+<meta name="twitter:image" content="https://ayan-1829.github.io/Thesis/img/og/15-computer-vision-and-image-processing.png?v=2">
+<meta name="twitter:image:alt" content="Computer Vision and Image Processing – Chapter 15 | Thesis: Undergraduate Research Guide">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "Computer Vision and Image Processing", "description": "Image processing and computer vision tasks — classification, detection, segmentation, OCR, restoration, video — with CNNs and vision transformers, datasets, metrics, tools, venues and thesis ideas.", "position": 15, "educationalLevel": "Undergraduate", "learningResourceType": "Lecture slides", "inLanguage": "en", "isAccessibleForFree": true, "teaches": ["Image processing transforms images; computer vision extracts meaning from them.", "Tasks: classification, detection, segmentation, OCR, restoration, video understanding.", "Methods: classic filters and convolution, CNNs, vision transformers, YOLO/DETR detectors, U-Net, diffusion models.", "Split by source, test on a new source, report mAP/IoU/Dice and show failures.", "Venues: CVPR, ICCV, ECCV (free on CVF Open Access), plus WACV, BMVC, ICIP.", "The lab-to-field gap is a rich source of thesis questions."], "keywords": "computer vision thesis, image processing research, object detection, YOLO, image segmentation, U-Net, CNN, vision transformer, OCR, plant disease detection, CVPR ICCV", "url": "https://ayan-1829.github.io/Thesis/topics/15-computer-vision-and-image-processing.html", "image": "https://ayan-1829.github.io/Thesis/img/og/15-computer-vision-and-image-processing.png", "isPartOf": {"@type": "Course", "name": "Thesis: Undergraduate Research in Computer Science", "url": "https://ayan-1829.github.io/Thesis/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Thesis", "item": "https://ayan-1829.github.io/Thesis/"}, {"@type": "ListItem", "position": 2, "name": "Chapter 15: Computer Vision and Image Processing", "item": "https://ayan-1829.github.io/Thesis/topics/15-computer-vision-and-image-processing.html"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Mono:wght@400;500;600&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="deck-page">
+<div class="sr-only" id="live" aria-live="polite"></div>
+<header class="deck-bar">
+  <a class="home-link" href="../index.html" aria-label="Home: all chapters"><img src="../img/logo-mark.svg" alt="" width="26" height="26"><span>Home</span></a>
+  <div class="deck-title"><span class="badge">15</span><span>Computer Vision and Image Processing</span></div>
+  <div class="deck-actions">
+    <button type="button" class="btn sm" id="btn-menu" aria-expanded="false" aria-controls="slide-menu" aria-label="Slides"><svg class="btn-ic" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><rect x="3" y="4.5" width="18" height="3" rx="1"></rect><rect x="3" y="10.5" width="18" height="3" rx="1"></rect><rect x="3" y="16.5" width="18" height="3" rx="1"></rect></svg><span>Slides</span></button>
+    <button type="button" class="btn sm" id="btn-theme" aria-pressed="false" aria-label="Toggle dark mode"><svg class="btn-ic" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"></path></svg><span>Dark mode</span></button>
+    <button type="button" class="btn sm" id="btn-fs" aria-pressed="false" aria-label="Full screen"><svg class="btn-ic" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"></path></svg><span>Full screen</span></button>
+  </div>
+</header>
+<div class="deck-progress"><i id="progress-fill"></i></div>
+<main class="deck" id="deck">
+<section class="slide title-slide" data-title="Computer Vision and Image Processing" aria-label="Computer Vision and Image Processing" tabindex="-1"><div class="slide-inner">
+<span class="topic-art" data-art="15" aria-hidden="true"></span>
+<span class="badge big">15</span>
+<p class="kicker">Chapter 15 of 21 · Part B · Research fields</p>
+<h1>Computer Vision and Image Processing</h1>
+<p class="lead">Image processing and computer vision tasks — classification, detection, segmentation, OCR, restoration, video — with CNNs and vision transformers, datasets, metrics, tools, venues and thesis ideas.</p>
+<div class="row"><a class="btn pri" href="#s=2">Start</a><a class="btn" href="../index.html">All chapters</a></div>
+</div></section>
+<section class="slide " data-title="Why this matters" aria-label="Why this matters" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Before we start</p><h2>Why this matters</h2><div class="hook"><p class="q">A model reaches 99% on plant-disease photos taken in a lab. On a farmer’s phone in the field, it drops to 60%.</p><p>That gap — between benchmark images and the real world — is where much of the useful vision research for local problems lies. Closing or even measuring it well makes a strong thesis.</p><p>This chapter introduces image processing and computer vision: tasks, methods, data, evaluation and ideas.</p></div>
+</div></section>
+<section class="slide " data-title="In this chapter" aria-label="In this chapter" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Outline · chapter 15</p><h2>In this chapter</h2><p class="muted">Select a section to jump to it.</p><ol class="outline-list"><li><a href="#s=4">The field</a></li><li><a href="#s=6">Methods</a></li><li><a href="#s=10">Data and evaluation</a></li><li><a href="#s=12">Tools and venues</a></li><li><a href="#s=14">Thesis ideas</a></li></ol>
+</div></section>
+<section class="slide " data-title="What vision and image-processing research studies" aria-label="What vision and image-processing research studies" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 1 of 12</p><h2>What vision and image-processing research studies</h2><p><b>Image processing</b> transforms images: denoising, enhancement, compression, edge detection. <b>Computer vision</b> extracts meaning: what is in the image, where, and what is happening in a video. Applications range from agriculture and medicine to traffic, document reading and robotics.</p><p class="small muted">Rest on a branch of the map for a description.</p><figure class="fig" data-fig="map-cv"></figure>
+</div></section>
+<section class="slide " data-title="Typical research problems" aria-label="Typical research problems" tabindex="-1"><div class="slide-inner">
+<p class="kicker">The field</p><h2>Typical research problems</h2><div class="scrollx"><table class="doc"><thead><tr><th>Task</th><th>Example thesis question</th></tr></thead><tbody><tr><td>Classification</td><td>Can a lightweight CNN identify five rice-leaf diseases from phone photos taken in the field?</td></tr><tr><td>Object detection</td><td>How accurately does YOLO detect rickshaws and CNG auto-rickshaws in Dhaka traffic video at night?</td></tr><tr><td>Segmentation</td><td>Does U-Net segment flood water in satellite images better than thresholding?</td></tr><tr><td>OCR and documents</td><td>How well does open OCR read handwritten Bangla forms, and does synthetic data help?</td></tr><tr><td>Image restoration</td><td>Can a model enhance low-light images from cheap CCTV cameras for later detection?</td></tr><tr><td>Video understanding</td><td>Can action recognition detect falls of elderly people from home cameras?</td></tr><tr><td>Robustness and efficiency</td><td>How much does accuracy drop with blur and rain, and can augmentation recover it?</td></tr></tbody></table></div>
+</div></section>
+<section class="slide " data-title="The vision pipeline" aria-label="The vision pipeline" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 3 of 12</p><h2>The vision pipeline</h2><ol class="steps"><li><b>Images</b><span>collect, check consent and licences</span></li><li><b>Annotate</b><span>labels, boxes or masks</span></li><li><b>Pre-process</b><span>resize, normalise, augment</span></li><li><b>Model</b><span>pretrained backbone + task head</span></li><li><b>Train</b><span>transfer learning, then fine-tune</span></li><li><b>Evaluate</b><span>per-class metrics, held-out site</span></li><li><b>Analyse</b><span>failure images, Grad-CAM</span></li></ol><p>Split by <b>source</b> (camera, field, patient, video) — not by individual frame — or near-identical images will leak into the test set.</p>
+</div></section>
+<section class="slide " data-title="Key methods to know" aria-label="Key methods to know" tabindex="-1"><div style="zoom:0.97;" class="slide-inner">
+<p class="kicker">Methods</p><h2>Key methods to know</h2><div class="tgrid"><div class="tcard"><h4>Classic image processing</h4><p>Filtering and convolution, histograms, edge detection (Sobel, Canny), morphology, thresholding.</p></div><div class="tcard"><h4>CNNs</h4><p>ResNet, EfficientNet, MobileNet: convolutional feature extractors.</p></div><div class="tcard"><h4>Vision transformers</h4><p>ViT, Swin; self-supervised models like DINO; image–text models like CLIP.</p></div><div class="tcard"><h4>Detection</h4><p>Two-stage (Faster R-CNN) and one-stage (YOLO family, DETR).</p></div><div class="tcard"><h4>Segmentation</h4><p>U-Net, Mask R-CNN, and promptable “segment anything” models.</p></div><div class="tcard"><h4>Generation</h4><p>GANs and diffusion models — for synthesis and data augmentation.</p></div></div>
+</div></section>
+<section class="slide " data-title="Popular models in computer vision" aria-label="Popular models in computer vision" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Methods</p><h2>Popular models in computer vision</h2><div class="scrollx"><table class="doc"><thead><tr><th>Model</th><th>What it is</th><th>Typical use</th></tr></thead><tbody><tr><td>ResNet, EfficientNet, ConvNeXt</td><td>convolutional backbones</td><td>image classification, transfer learning</td></tr><tr><td>MobileNet</td><td>lightweight CNN</td><td>phones and edge devices</td></tr><tr><td>ViT, Swin Transformer</td><td>vision transformers</td><td>classification and backbones when data is large or pretrained</td></tr><tr><td>YOLO (Ultralytics YOLOv8, YOLO11)</td><td>fast one-stage object detector</td><td>real-time detection: traffic, crops, safety</td></tr><tr><td>Faster R-CNN, DETR / RT-DETR</td><td>two-stage and transformer detectors</td><td>accurate detection; strong baselines for YOLO</td></tr><tr><td>U-Net, DeepLabv3+, Mask R-CNN</td><td>segmentation networks</td><td>pixel masks in medical, satellite and street images</td></tr><tr><td>SAM (Segment Anything)</td><td>promptable segmentation foundation model</td><td>fast labelling, zero-shot segmentation</td></tr><tr><td>CLIP, DINOv2</td><td>image–text and self-supervised models</td><td>zero-shot classification, strong features</td></tr><tr><td>Stable Diffusion</td><td>diffusion image generator</td><td>synthetic training data, image editing</td></tr><tr><td>Tesseract, TrOCR, PaddleOCR</td><td>OCR engines and models</td><td>reading printed and handwritten text</td></tr></tbody></table></div>
+</div></section>
+<section class="slide " data-title="Popular models in computer vision (cont.)" aria-label="Popular models in computer vision (cont.)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Methods</p><h2>Popular models in computer vision (cont.)</h2><div class="callout">For detection, compare YOLO with at least one other family (Faster R-CNN or RT-DETR) and report both accuracy (mAP) and speed (FPS).</div>
+</div></section>
+<section class="slide " data-title="Convolution: the core operation" aria-label="Convolution: the core operation" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Interactive</p><h2>Convolution: the core operation</h2><div data-demo="convolve"></div>
+</div></section>
+<section class="slide " data-title="Datasets" aria-label="Datasets" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 7 of 12</p><h2>Datasets</h2><div class="scrollx"><table class="doc"><thead><tr><th>Dataset</th><th>Task</th></tr></thead><tbody><tr><td><a href="https://www.image-net.org" target="_blank" rel="noopener">ImageNet</a></td><td>classification; the source of most pretrained backbones</td></tr><tr><td><a href="https://cocodataset.org" target="_blank" rel="noopener">COCO</a></td><td>detection, segmentation, captions</td></tr><tr><td>PlantVillage, PlantDoc</td><td>plant-disease classification (lab and field photos)</td></tr><tr><td>Cityscapes</td><td>urban street segmentation</td></tr><tr><td><a href="https://universe.roboflow.com" target="_blank" rel="noopener">Roboflow Universe</a></td><td>thousands of community detection datasets (check quality and licence)</td></tr><tr><td>Your own images</td><td>local problems: crops, traffic, documents — with consent where people appear</td></tr></tbody></table></div>
+</div></section>
+<section class="slide " data-title="Evaluation" aria-label="Evaluation" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Data and evaluation</p><h2>Evaluation</h2><div class="cols "><div><div class="scrollx"><table class="doc"><thead><tr><th>Task</th><th>Metrics</th></tr></thead><tbody><tr><td>Classification</td><td>accuracy, macro-F1, top-k</td></tr><tr><td>Detection</td><td>mAP@0.5, mAP@0.5:0.95</td></tr><tr><td>Segmentation</td><td>IoU, Dice</td></tr><tr><td>Restoration</td><td>PSNR, SSIM + human rating</td></tr><tr><td>Efficiency</td><td>FPS, latency, model size</td></tr></tbody></table></div></div><div><ul><li>Test on images from a <b>different source</b> than training (another field, camera or hospital).</li><li>Show qualitative examples: successes <b>and</b> failures.</li><li>Use Grad-CAM or similar to check the model looks at the right region.</li></ul></div></div>
+</div></section>
+<section class="slide " data-title="Tools" aria-label="Tools" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 9 of 12</p><h2>Tools</h2><div class="tgrid"><div class="tcard"><h4>OpenCV</h4><p>Classic image processing and video I/O.</p></div><div class="tcard"><h4>PyTorch + torchvision / timm</h4><p>Backbones and training.</p></div><div class="tcard"><h4>Ultralytics YOLO</h4><p>Fast object detection training.</p></div><div class="tcard"><h4>Albumentations</h4><p>Image augmentation.</p></div><div class="tcard"><h4>CVAT / Label Studio</h4><p>Free annotation for boxes and masks.</p></div><div class="tcard"><h4>Grad-CAM</h4><p>Visual explanations of CNN predictions.</p></div></div>
+</div></section>
+<section class="slide " data-title="Where vision research is published" aria-label="Where vision research is published" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Tools and venues</p><h2>Where vision research is published</h2><div class="scrollx"><table class="doc"><thead><tr><th>Type</th><th>Venues</th></tr></thead><tbody><tr><td>Top conferences</td><td>CVPR, ICCV, ECCV</td></tr><tr><td>Other conferences</td><td>WACV, BMVC, ICIP, ICPR</td></tr><tr><td>Medical imaging</td><td>MICCAI, ISBI (see chapter 17)</td></tr><tr><td>Journals</td><td>IEEE TPAMI, IJCV, IEEE TIP, Pattern Recognition, Computer Vision and Image Understanding</td></tr><tr><td>Free papers</td><td>CVF Open Access hosts CVPR/ICCV papers</td></tr></tbody></table></div>
+</div></section>
+<section class="slide " data-title="Thesis ideas" aria-label="Thesis ideas" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 11 of 12</p><h2>Thesis ideas</h2><div class="ideas"><div class="idea starter"><span class="lvl">Starter</span><b>Lab-to-field gap in plant disease detection</b><p>Train on PlantVillage, test on your own field photos; measure the drop and test augmentation.</p></div><div class="idea standard"><span class="lvl">Standard</span><b>Local vehicle detection</b><p>Annotate local vehicle types (rickshaw, CNG, leguna) and compare YOLO versions by mAP and speed.</p></div><div class="idea standard"><span class="lvl">Standard</span><b>Handwritten Bangla OCR</b><p>Evaluate open OCR on handwritten forms; add synthetic training data.</p></div><div class="idea standard"><span class="lvl">Standard</span><b>Low-light enhancement for detection</b><p>Does enhancing night images improve downstream detection?</p></div><div class="idea ambitious"><span class="lvl">Ambitious</span><b>Efficient on-device vision</b><p>Quantise and deploy a detector on a phone; measure accuracy, FPS and battery.</p></div></div>
+</div></section>
+<section class="slide " data-title="Getting started in four weeks" aria-label="Getting started in four weeks" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Thesis ideas</p><h2>Getting started in four weeks</h2><ol class="steps"><li><b>Week 1</b><span>CS231n notes on CNNs; OpenCV basics</span></li><li><b>Week 2</b><span>fine-tune a pretrained ResNet on a small dataset</span></li><li><b>Week 3</b><span>read 5 recent papers on your task (CVF Open Access)</span></li><li><b>Week 4</b><span>collect and label 200 pilot images; one-page idea</span></li></ol><div class="callout warn">Pitfalls: frames of one video in both train and test, near-duplicate images, reporting only accuracy, no test on a new source, people’s faces without consent.</div>
+</div></section>
+<section class="slide " data-title="Worked example 1" aria-label="Worked example 1" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 1 of 2</p><h2>Worked example 1</h2><div class="ex"><div class="qq">You have 40 videos of traffic and extract 20,000 frames for detection. How do you split?</div><details class="reveal"><summary>Show the solution</summary><div class="ans">By video: e.g. 28 videos for training, 6 for validation, 6 for testing. Random frame splits put near-identical frames from the same video in train and test, inflating mAP.</div></details></div>
+</div></section>
+<section class="slide " data-title="Worked example 2" aria-label="Worked example 2" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 2 of 2</p><h2>Worked example 2</h2><div class="ex"><div class="qq">A disease classifier is accurate but Grad-CAM shows it focuses on the background. What does that mean?</div><details class="reveal"><summary>Show the solution</summary><div class="ans">It may be using a shortcut (e.g. lab background or lighting that correlates with the label). Test on images with different backgrounds, crop or mask backgrounds, and add varied field images.</div></details></div>
+</div></section>
+<section class="slide " data-title="Practice (1 of 2)" aria-label="Practice (1 of 2)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Practice</p><h2>Practice (1 of 2)</h2><p class="muted">Try each one yourself first, then check the answer.</p><div class="ex"><div class="qq">1. Distinguish image processing from computer vision.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Image processing transforms images (enhance, denoise, detect edges); computer vision extracts meaning (what and where objects are, what happens).</div></details></div><div class="ex"><div class="qq">2. Name the metric for detection and for segmentation.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Detection: mAP (e.g. mAP@0.5:0.95). Segmentation: IoU or Dice.</div></details></div><div class="ex"><div class="qq">3. What does a 3×3 convolution kernel do?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Computes each output pixel as a weighted sum of the 3×3 neighbourhood; different weights blur, sharpen or detect edges.</div></details></div>
+</div></section>
+<section class="slide " data-title="Practice (2 of 2)" aria-label="Practice (2 of 2)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Practice</p><h2>Practice (2 of 2)</h2><p class="muted">Try each one yourself first, then check the answer.</p><div class="ex"><div class="qq">4. Why use transfer learning in vision?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Pretrained backbones already detect general features, so small datasets reach good accuracy with less data and training.</div></details></div><div class="ex"><div class="qq">5. Name three top vision conferences.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">CVPR, ICCV, ECCV.</div></details></div><div class="ex"><div class="qq">6. How do you test robustness of a vision model?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Evaluate on images from a different source, and with controlled corruptions (blur, noise, low light, rain).</div></details></div>
+</div></section>
+<section class="slide " data-title="Quiz" aria-label="Quiz" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Check yourself</p><h2>Quiz</h2><div><div class="quiz-host" data-quiz-key="th15"></div><script type="application/json" class="quiz-json">[{"q": "IoU measures…", "o": ["overlap between predicted and true regions", "image size", "training time", "colour depth"], "a": 0, "w": "Intersection over union."}, {"q": "YOLO is a family of…", "o": ["object detectors", "databases", "search engines", "compilers"], "a": 0, "w": "One-stage, fast object detectors."}, {"q": "U-Net is mainly used for…", "o": ["segmentation", "translation", "routing", "encryption"], "a": 0, "w": "An encoder–decoder for pixel-level masks."}, {"q": "Frames from one video should be split…", "o": ["randomly", "together, by video", "by colour", "by file name length"], "a": 1, "w": "Otherwise near-duplicates leak into the test set."}, {"q": "Grad-CAM shows…", "o": ["which image regions influenced the prediction", "the dataset licence", "GPU memory", "the loss curve"], "a": 0, "w": "A visual explanation of CNN decisions."}, {"q": "Which is a top vision venue?", "o": ["CVPR", "SIGIR", "ICSE", "CCS"], "a": 0, "w": "CVPR, ICCV and ECCV lead the field."}]</script></div>
+</div></section>
+<section class="slide " data-title="Further learning" aria-label="Further learning" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Resources</p><h2>Further learning</h2><p class="muted">Hand-picked material to go deeper. Links open in a new tab.</p><div class="res-grid"><a class="res" href="https://cs231n.stanford.edu" target="_blank" rel="noopener noreferrer"><small>Course</small><b>Stanford CS231n: Deep Learning for Computer Vision ↗</b><span>Notes on CNNs, training and vision tasks.</span></a><a class="res book" href="https://szeliski.org/Book/" target="_blank" rel="noopener noreferrer"><small>Book</small><b>Computer Vision: Algorithms and Applications — R. Szeliski ↗</b><span>Free online textbook, 2nd edition.</span></a><a class="res" href="https://opencv.org" target="_blank" rel="noopener noreferrer"><small>Tool</small><b>OpenCV ↗</b><span>Classic image processing and video.</span></a><a class="res" href="https://cocodataset.org" target="_blank" rel="noopener noreferrer"><small>Data</small><b>COCO ↗</b><span>Detection and segmentation benchmark.</span></a><a class="res" href="https://arxiv.org/abs/1512.03385" target="_blank" rel="noopener noreferrer"><small>Paper</small><b>Deep Residual Learning (ResNet) — He et al. ↗</b><span>CVPR 2016; the backbone behind many models.</span></a><a class="res" href="https://arxiv.org/abs/1505.04597" target="_blank" rel="noopener noreferrer"><small>Paper</small><b>U-Net — Ronneberger et al. ↗</b><span>MICCAI 2015; segmentation with little data.</span></a></div>
+</div></section>
+<section class="slide " data-title="Summary" aria-label="Summary" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Summary</p><h2>Summary</h2><ul class="sumlist"><li>Image processing transforms images; computer vision extracts meaning from them.</li><li>Tasks: classification, detection, segmentation, OCR, restoration, video understanding.</li><li>Methods: classic filters and convolution, CNNs, vision transformers, YOLO/DETR detectors, U-Net, diffusion models.</li><li>Split by source, test on a new source, report mAP/IoU/Dice and show failures.</li><li>Venues: CVPR, ICCV, ECCV (free on CVF Open Access), plus WACV, BMVC, ICIP.</li><li>The lab-to-field gap is a rich source of thesis questions.</li></ul><div class="nextcard"><a class="btn pri" href="16-cybersecurity.html">Next: Cybersecurity</a><a class="btn" href="../practice.html#t15">More practice</a><a class="btn" href="../resources.html#t15">All resources</a><a class="btn" href="../index.html">All chapters</a></div>
+</div></section>
+</main>
+<footer class="deck-foot">
+  <button type="button" class="btn" id="prev">Previous</button>
+  <span class="counter" id="counter">1 / 23</span>
+  <button type="button" class="btn pri" id="next">Next</button>
+</footer>
+<aside id="slide-menu" hidden aria-label="Slide list"><div class="menu-head"><h3>Slides in this chapter</h3><button type="button" id="btn-menu-close" class="menu-close" aria-label="Close slide list">&#10005;</button></div></aside>
+<noscript><p style="padding:20px">This lesson needs JavaScript for the slides and the interactive tools.</p></noscript>
+<script src="../js/core.js"></script>
+<script src="../js/art.js"></script>
+<script src="../js/diagram.js"></script>
+<script src="../js/figs.js"></script>
+<script src="../js/latex.js"></script>
+<script src="../js/demos.js"></script>
+<script src="../js/quiz.js"></script>
+<script src="../js/page.js"></script>
+<script>window.DP_TOPIC = {"id": 15, "prev": "14-natural-language-processing.html", "next": "16-cybersecurity.html"};</script>
+<script>mountPage();</script>
+<script src="../js/slides.js"></script>
+<script src="../js/annotate.js"></script>
+<script src="../js/lang.js"></script>
+<script src="../js/analytics.js"
+        data-endpoint="https://analytics-proxy.ayansarkar1829.workers.dev"
+        data-project="Thesis Research Guide"></script>
+<script src="../js/course-events.js"></script>
+</body>
+</html>

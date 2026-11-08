@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IoT, Networks and Edge Computing – Chapter 19 | Thesis: Undergraduate Research Guide</title>
+<meta name="description" content="IoT systems, energy efficiency, edge AI, wireless and mobile networks, SDN and network measurement; simulation versus testbeds, metrics such as latency, delivery ratio and energy, tools, venues and thesis ideas. Interactive slides, tools, worked examples and a quiz: chapter 19 of a free guide to doing a computer science thesis.">
+<meta name="keywords" content="IoT thesis, internet of things research, edge computing, fog computing, wireless sensor networks, LoRa, MQTT, SDN, ns-3, Mininet, network latency, TinyML, SenSys MobiCom INFOCOM">
+<meta name="author" content="Thesis Research Guide">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#4338A0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E0C1A" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://ayan-1829.github.io/Thesis/topics/19-iot-networks-and-edge-computing.html">
+<link rel="icon" type="image/svg+xml" href="../img/logo-mark.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16.png">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Thesis (Undergraduate Research)">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="IoT, Networks and Edge Computing – Chapter 19 | Thesis: Undergraduate Research Guide">
+<meta property="og:description" content="IoT systems, energy efficiency, edge AI, wireless and mobile networks, SDN and network measurement; simulation versus testbeds, metrics such as latency, delivery ratio and energy, tools, venues and thesis ideas. Interactive slides, tools, worked examples and a quiz: chapter 19 of a free guide to doing a computer science thesis.">
+<meta property="og:url" content="https://ayan-1829.github.io/Thesis/topics/19-iot-networks-and-edge-computing.html">
+<meta property="og:image" content="https://ayan-1829.github.io/Thesis/img/og/19-iot-networks-and-edge-computing.png?v=2">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="IoT, Networks and Edge Computing – Chapter 19 | Thesis: Undergraduate Research Guide">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="IoT, Networks and Edge Computing – Chapter 19 | Thesis: Undergraduate Research Guide">
+<meta name="twitter:description" content="IoT systems, energy efficiency, edge AI, wireless and mobile networks, SDN and network measurement; simulation versus testbeds, metrics such as latency, delivery ratio and energy, tools, venues and thesis ideas. Interactive slides, tools, worked examples and a quiz: chapter 19 of a free guide to doing a computer science thesis.">
+<meta name="twitter:image" content="https://ayan-1829.github.io/Thesis/img/og/19-iot-networks-and-edge-computing.png?v=2">
+<meta name="twitter:image:alt" content="IoT, Networks and Edge Computing – Chapter 19 | Thesis: Undergraduate Research Guide">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "IoT, Networks and Edge Computing", "description": "IoT systems, energy efficiency, edge AI, wireless and mobile networks, SDN and network measurement; simulation versus testbeds, metrics such as latency, delivery ratio and energy, tools, venues and thesis ideas.", "position": 19, "educationalLevel": "Undergraduate", "learningResourceType": "Lecture slides", "inLanguage": "en", "isAccessibleForFree": true, "teaches": ["Networking and IoT research balances latency, bandwidth, energy, cost and reliability.", "Edge computing moves processing close to the data to cut delay and bandwidth.", "Use simulation (ns-3, Mininet, Cooja) to explore and real testbeds (ESP32, LoRa, Raspberry Pi) to validate.", "Report distributions and tail latency, energy and delivery ratio, with the full setup.", "Local problems — agriculture, water, transport — make strong, practical theses.", "Venues: SIGCOMM, NSDI, INFOCOM, MobiCom, SenSys, IEEE IoT Journal."], "keywords": "IoT thesis, internet of things research, edge computing, fog computing, wireless sensor networks, LoRa, MQTT, SDN, ns-3, Mininet, network latency, TinyML, SenSys MobiCom INFOCOM", "url": "https://ayan-1829.github.io/Thesis/topics/19-iot-networks-and-edge-computing.html", "image": "https://ayan-1829.github.io/Thesis/img/og/19-iot-networks-and-edge-computing.png", "isPartOf": {"@type": "Course", "name": "Thesis: Undergraduate Research in Computer Science", "url": "https://ayan-1829.github.io/Thesis/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Thesis", "item": "https://ayan-1829.github.io/Thesis/"}, {"@type": "ListItem", "position": 2, "name": "Chapter 19: IoT, Networks and Edge Computing", "item": "https://ayan-1829.github.io/Thesis/topics/19-iot-networks-and-edge-computing.html"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Mono:wght@400;500;600&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="deck-page">
+<div class="sr-only" id="live" aria-live="polite"></div>
+<header class="deck-bar">
+  <a class="home-link" href="../index.html" aria-label="Home: all chapters"><img src="../img/logo-mark.svg" alt="" width="26" height="26"><span>Home</span></a>
+  <div class="deck-title"><span class="badge">19</span><span>IoT, Networks and Edge Computing</span></div>
+  <div class="deck-actions">
+    <button type="button" class="btn sm" id="btn-menu" aria-expanded="false" aria-controls="slide-menu" aria-label="Slides"><svg class="btn-ic" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><rect x="3" y="4.5" width="18" height="3" rx="1"></rect><rect x="3" y="10.5" width="18" height="3" rx="1"></rect><rect x="3" y="16.5" width="18" height="3" rx="1"></rect></svg><span>Slides</span></button>
+    <button type="button" class="btn sm" id="btn-theme" aria-pressed="false" aria-label="Toggle dark mode"><svg class="btn-ic" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"></path></svg><span>Dark mode</span></button>
+    <button type="button" class="btn sm" id="btn-fs" aria-pressed="false" aria-label="Full screen"><svg class="btn-ic" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"></path></svg><span>Full screen</span></button>
+  </div>
+</header>
+<div class="deck-progress"><i id="progress-fill"></i></div>
+<main class="deck" id="deck">
+<section class="slide title-slide" data-title="IoT, Networks and Edge Computing" aria-label="IoT, Networks and Edge Computing" tabindex="-1"><div class="slide-inner">
+<span class="topic-art" data-art="19" aria-hidden="true"></span>
+<span class="badge big">19</span>
+<p class="kicker">Chapter 19 of 21 · Part B · Research fields</p>
+<h1>IoT, Networks and Edge Computing</h1>
+<p class="lead">IoT systems, energy efficiency, edge AI, wireless and mobile networks, SDN and network measurement; simulation versus testbeds, metrics such as latency, delivery ratio and energy, tools, venues and thesis ideas.</p>
+<div class="row"><a class="btn pri" href="#s=2">Start</a><a class="btn" href="../index.html">All chapters</a></div>
+</div></section>
+<section class="slide " data-title="Why this matters" aria-label="Why this matters" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Before we start</p><h2>Why this matters</h2><div class="hook"><p class="q">A flood sensor that reports a rising river ten minutes late, or whose battery dies in a month, is worse than no sensor at all.</p><p>Networking and IoT research is about real constraints — delay, bandwidth, energy, cost — measured carefully in simulation and on real devices. Local problems in agriculture, water and transport are a natural fit.</p><p>This chapter introduces networking, IoT and edge computing research: methods, tools, metrics, venues and ideas.</p></div>
+</div></section>
+<section class="slide " data-title="In this chapter" aria-label="In this chapter" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Outline · chapter 19</p><h2>In this chapter</h2><p class="muted">Select a section to jump to it.</p><ol class="outline-list"><li><a href="#s=4">The field</a></li><li><a href="#s=6">Methods</a></li><li><a href="#s=10">Data and evaluation</a></li><li><a href="#s=12">Tools and venues</a></li><li><a href="#s=14">Thesis ideas</a></li></ol>
+</div></section>
+<section class="slide " data-title="What networking and IoT research studies" aria-label="What networking and IoT research studies" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 1 of 12</p><h2>What networking and IoT research studies</h2><p><b>Networking</b> research studies how data moves: protocols, wireless and mobile networks, performance and reliability. The <b>Internet of Things</b> (IoT) connects sensors and devices; <b>edge computing</b> processes their data close to where it is produced instead of in a distant cloud. Research balances <b>latency, bandwidth, energy, cost and reliability</b>.</p><p class="small muted">Rest on a branch of the map for a description.</p><figure class="fig" data-fig="map-iot"></figure>
+</div></section>
+<section class="slide " data-title="Typical research problems" aria-label="Typical research problems" tabindex="-1"><div class="slide-inner">
+<p class="kicker">The field</p><h2>Typical research problems</h2><div class="scrollx"><table class="doc"><thead><tr><th>Area</th><th>Example thesis question</th></tr></thead><tbody><tr><td>IoT systems</td><td>Can low-cost soil sensors with LoRa report moisture reliably across a 2 km farm for a whole season?</td></tr><tr><td>Energy efficiency</td><td>Which duty-cycling scheme extends battery life of sensor nodes most without losing events?</td></tr><tr><td>Edge AI</td><td>Is it better to run a detection model on the camera, on an edge box or in the cloud, for latency and cost?</td></tr><tr><td>Wireless and mobile</td><td>How does Wi-Fi throughput degrade in crowded university halls, and does channel assignment help?</td></tr><tr><td>Routing and SDN</td><td>Can software-defined networking reroute traffic faster after a link failure?</td></tr><tr><td>Network measurement</td><td>What latency and packet loss do mobile users in different districts experience?</td></tr><tr><td>IoT security</td><td>How many consumer IoT devices on a campus network use default passwords? (with permission)</td></tr></tbody></table></div>
+</div></section>
+<section class="slide " data-title="How networking research is done" aria-label="How networking research is done" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 3 of 12</p><h2>How networking research is done</h2><div class="vs"><div><h4>Simulation and emulation</h4><ul><li>ns-3, OMNeT++, Cooja (for IoT), Mininet (for SDN)</li><li>large, repeatable scenarios cheaply</li><li>results only as good as the model of reality</li></ul></div><div><h4>Testbeds and real deployments</h4><ul><li>real devices: ESP32, Raspberry Pi, LoRa modules</li><li>convincing, captures real noise and failures</li><li>small scale; harder to repeat</li></ul></div></div><div class="callout">A strong thesis often does both: simulate to explore many settings, then validate the key result on a small real testbed.</div>
+</div></section>
+<section class="slide " data-title="Key methods to know" aria-label="Key methods to know" tabindex="-1"><div style="zoom:0.97;" class="slide-inner">
+<p class="kicker">Methods</p><h2>Key methods to know</h2><div class="tgrid"><div class="tcard"><h4>Protocols</h4><p>TCP/IP, MQTT and CoAP for IoT, HTTP/3/QUIC; how they behave under loss and delay.</p></div><div class="tcard"><h4>Wireless technologies</h4><p>Wi-Fi, Bluetooth Low Energy, Zigbee, LoRaWAN, NB-IoT, 5G — range, rate and energy trade-offs.</p></div><div class="tcard"><h4>Queueing and performance models</h4><p>Latency, throughput, utilisation; Little’s law.</p></div><div class="tcard"><h4>SDN and virtualisation</h4><p>Programmable control of networks; network functions in software.</p></div><div class="tcard"><h4>Edge and fog computing</h4><p>Task offloading, placement and scheduling between device, edge and cloud.</p></div><div class="tcard"><h4>TinyML</h4><p>Running small ML models on microcontrollers.</p></div></div>
+</div></section>
+<section class="slide " data-title="Popular models, platforms and standards in IoT and networking" aria-label="Popular models, platforms and standards in IoT and networking" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Methods</p><h2>Popular models, platforms and standards in IoT and networking</h2><div class="scrollx"><table class="doc"><thead><tr><th>Model / platform</th><th>What it is</th><th>Typical use</th></tr></thead><tbody><tr><td>MQTT, CoAP</td><td>lightweight IoT messaging protocols</td><td>sensor data to brokers and servers</td></tr><tr><td>LoRaWAN, BLE, Zigbee, NB-IoT</td><td>low-power wireless standards</td><td>long-range or short-range sensor links</td></tr><tr><td>Log-distance path loss, Okumura–Hata</td><td>radio propagation models</td><td>predicting range and signal strength in simulation</td></tr><tr><td>M/M/1 and other queueing models</td><td>mathematical models of delay</td><td>analysing latency and capacity</td></tr><tr><td>MobileNet, YOLO-nano, DS-CNN</td><td>tiny neural networks</td><td>vision and keyword spotting on edge devices</td></tr><tr><td>TensorFlow Lite Micro</td><td>ML runtime for microcontrollers</td><td>TinyML deployment</td></tr><tr><td>DQN / PPO for offloading</td><td>reinforcement learning</td><td>deciding where to run tasks: device, edge or cloud</td></tr></tbody></table></div><div class="callout">Say which propagation and traffic models your simulator uses — results depend heavily on them.</div>
+</div></section>
+<section class="slide " data-title="Edge or cloud? A latency calculator" aria-label="Edge or cloud? A latency calculator" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Interactive</p><h2>Edge or cloud? A latency calculator</h2><div data-demo="latency"></div>
+</div></section>
+<section class="slide " data-title="Data, testbeds and simulators" aria-label="Data, testbeds and simulators" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 7 of 12</p><h2>Data, testbeds and simulators</h2><div class="scrollx"><table class="doc"><thead><tr><th>Resource</th><th>Use</th></tr></thead><tbody><tr><td><a href="https://www.nsnam.org" target="_blank" rel="noopener">ns-3</a></td><td>discrete-event network simulator for research</td></tr><tr><td>Mininet</td><td>emulate SDN networks on a laptop</td></tr><tr><td>Cooja (Contiki-NG)</td><td>simulate IoT sensor networks</td></tr><tr><td>FIT IoT-LAB</td><td>large open IoT testbed in Europe (remote access)</td></tr><tr><td>CRAWDAD</td><td>archive of wireless network traces</td></tr><tr><td>Your own testbed</td><td>ESP32 / Raspberry Pi nodes, LoRa gateways — a few hundred dollars</td></tr></tbody></table></div>
+</div></section>
+<section class="slide " data-title="Evaluation" aria-label="Evaluation" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Data and evaluation</p><h2>Evaluation</h2><div class="cols "><div><div class="scrollx"><table class="doc"><thead><tr><th>Metric</th><th>Meaning</th></tr></thead><tbody><tr><td>Latency (and its tail, e.g. 99th percentile)</td><td>delay from send to receive</td></tr><tr><td>Throughput</td><td>data delivered per second</td></tr><tr><td>Packet delivery ratio / loss</td><td>reliability</td></tr><tr><td>Energy per message, battery lifetime</td><td>crucial for IoT</td></tr><tr><td>Jitter</td><td>variation in delay</td></tr><tr><td>Cost and scalability</td><td>devices, bandwidth, cloud bills</td></tr></tbody></table></div></div><div><ul><li>Report <b>distributions</b> (CDFs, percentiles), not only averages.</li><li>Repeat measurements at different times; networks vary.</li><li>State the full setup: hardware, firmware, distances, interference.</li></ul></div></div>
+</div></section>
+<section class="slide " data-title="Tools" aria-label="Tools" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 9 of 12</p><h2>Tools</h2><div class="tgrid"><div class="tcard"><h4>ns-3 / OMNeT++</h4><p>Network simulation.</p></div><div class="tcard"><h4>Mininet / Ryu / ONOS</h4><p>SDN experiments.</p></div><div class="tcard"><h4>Wireshark / iperf3</h4><p>Capture traffic; measure throughput.</p></div><div class="tcard"><h4>ESP32, Arduino, Raspberry Pi</h4><p>Cheap IoT hardware.</p></div><div class="tcard"><h4>MQTT brokers (Mosquitto)</h4><p>IoT messaging.</p></div><div class="tcard"><h4>TensorFlow Lite Micro</h4><p>TinyML on microcontrollers.</p></div></div>
+</div></section>
+<section class="slide " data-title="Where this research is published" aria-label="Where this research is published" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Tools and venues</p><h2>Where this research is published</h2><div class="scrollx"><table class="doc"><thead><tr><th>Type</th><th>Venues</th></tr></thead><tbody><tr><td>Networking</td><td>ACM SIGCOMM, USENIX NSDI, IEEE INFOCOM, ACM CoNEXT</td></tr><tr><td>Mobile and wireless</td><td>ACM MobiCom, MobiSys, IEEE ICC, IEEE GLOBECOM</td></tr><tr><td>IoT and sensors</td><td>ACM SenSys, IPSN, EWSN</td></tr><tr><td>Journals</td><td>IEEE/ACM Transactions on Networking, IEEE Internet of Things Journal, IEEE TMC, Computer Networks</td></tr></tbody></table></div>
+</div></section>
+<section class="slide " data-title="Thesis ideas" aria-label="Thesis ideas" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 11 of 12</p><h2>Thesis ideas</h2><div class="ideas"><div class="idea starter"><span class="lvl">Starter</span><b>Smart-agriculture sensor network</b><p>Deploy LoRa soil sensors; measure delivery ratio, range and battery life over weeks.</p></div><div class="idea starter"><span class="lvl">Starter</span><b>MQTT versus CoAP under poor networks</b><p>Compare protocols for latency, overhead and energy with emulated loss.</p></div><div class="idea standard"><span class="lvl">Standard</span><b>Edge versus cloud inference</b><p>Measure latency, bandwidth and cost of running a vision model at device, edge and cloud.</p></div><div class="idea standard"><span class="lvl">Standard</span><b>SDN fast failover</b><p>Design and evaluate a recovery scheme in Mininet.</p></div><div class="idea ambitious"><span class="lvl">Ambitious</span><b>TinyML anomaly detection</b><p>Detect machine faults from vibration data on a microcontroller; measure accuracy and energy.</p></div></div>
+</div></section>
+<section class="slide " data-title="Getting started in four weeks" aria-label="Getting started in four weeks" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Thesis ideas</p><h2>Getting started in four weeks</h2><ol class="steps"><li><b>Week 1</b><span>refresh TCP/IP, wireless basics, MQTT</span></li><li><b>Week 2</b><span>run an ns-3 or Mininet tutorial; build an ESP32 sensor sending MQTT data</span></li><li><b>Week 3</b><span>read 5 recent papers (IEEE IoT Journal, SenSys)</span></li><li><b>Week 4</b><span>measure one real metric (latency or battery) end to end; one-page idea</span></li></ol><div class="callout warn">Pitfalls: only averages (no tail latency), simulation settings unstated, a single measurement run, unrealistic radio models, ignoring energy in IoT.</div>
+</div></section>
+<section class="slide " data-title="Worked example 1" aria-label="Worked example 1" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 1 of 2</p><h2>Worked example 1</h2><div class="ex"><div class="qq">A camera sends 1 MB images for detection. Uplink is 2 Mbps; cloud round trip 80 ms; cloud inference 30 ms; on-device inference 400 ms. Which is faster per image?</div><details class="reveal"><summary>Show the solution</summary><div class="ans">Cloud: transfer 8 Mbit ÷ 2 Mbps = 4 s, + 0.08 + 0.03 ≈ 4.11 s. Device: 0.4 s. On-device is about 10× faster here; the cloud wins only with much faster uplink or a much slower device — exactly the trade-off to measure in an edge-computing thesis.</div></details></div>
+</div></section>
+<section class="slide " data-title="Worked example 2" aria-label="Worked example 2" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 2 of 2</p><h2>Worked example 2</h2><div class="ex"><div class="qq">Your simulation shows 99% packet delivery; a field test shows 82%. What do you report?</div><details class="reveal"><summary>Show the solution</summary><div class="ans">Both, and the difference is a finding: the simulator’s radio model missed real interference, obstacles or weather. Analyse the field losses (distance, time of day), and adjust the simulation or discuss the limitation.</div></details></div>
+</div></section>
+<section class="slide " data-title="Practice (1 of 2)" aria-label="Practice (1 of 2)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Practice</p><h2>Practice (1 of 2)</h2><p class="muted">Try each one yourself first, then check the answer.</p><div class="ex"><div class="qq">1. Name three trade-offs IoT research balances.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Latency, bandwidth, energy, cost, reliability, range.</div></details></div><div class="ex"><div class="qq">2. Simulation or testbed: one advantage of each.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Simulation: large, cheap, repeatable scenarios. Testbed: real behaviour, noise and failures.</div></details></div><div class="ex"><div class="qq">3. Why report the 99th-percentile latency?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Averages hide rare long delays that matter for real-time applications.</div></details></div>
+</div></section>
+<section class="slide " data-title="Practice (2 of 2)" aria-label="Practice (2 of 2)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Practice</p><h2>Practice (2 of 2)</h2><p class="muted">Try each one yourself first, then check the answer.</p><div class="ex"><div class="qq">4. Name two IoT messaging protocols.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">MQTT and CoAP.</div></details></div><div class="ex"><div class="qq">5. What is edge computing?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Processing data near its source (on the device or a nearby server) instead of in a distant cloud, to cut latency and bandwidth.</div></details></div><div class="ex"><div class="qq">6. Name two networking and two IoT venues.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Networking: SIGCOMM, INFOCOM (also NSDI, CoNEXT). IoT: SenSys, IPSN (also IEEE Internet of Things Journal).</div></details></div>
+</div></section>
+<section class="slide " data-title="Quiz" aria-label="Quiz" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Check yourself</p><h2>Quiz</h2><div><div class="quiz-host" data-quiz-key="th19"></div><script type="application/json" class="quiz-json">[{"q": "LoRaWAN is designed for…", "o": ["long range, low power, low data rate", "gigabit video", "wired backbones", "GPUs"], "a": 0, "w": "Ideal for sparse sensor data over kilometres."}, {"q": "ns-3 is a…", "o": ["network simulator", "database", "image editor", "compiler"], "a": 0, "w": "A discrete-event simulator for network research."}, {"q": "Packet delivery ratio measures…", "o": ["reliability", "image quality", "code coverage", "fairness"], "a": 0, "w": "Delivered ÷ sent packets."}, {"q": "Mininet is used for…", "o": ["emulating SDN networks", "medical imaging", "NLP", "cryptanalysis"], "a": 0, "w": "Virtual switches and hosts on one machine."}, {"q": "TinyML means…", "o": ["ML on microcontrollers", "very small datasets only", "a programming language", "a router"], "a": 0, "w": "Running small models on tiny devices."}, {"q": "Which is an IoT/sensor venue?", "o": ["SenSys", "ACL", "CVPR", "CHI"], "a": 0, "w": "ACM SenSys focuses on embedded and sensor systems."}]</script></div>
+</div></section>
+<section class="slide " data-title="Further learning" aria-label="Further learning" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Resources</p><h2>Further learning</h2><p class="muted">Hand-picked material to go deeper. Links open in a new tab.</p><div class="res-grid"><a class="res" href="https://www.nsnam.org" target="_blank" rel="noopener noreferrer"><small>Tool</small><b>ns-3 ↗</b><span>Network simulator with tutorials.</span></a><a class="res" href="https://mininet.org" target="_blank" rel="noopener noreferrer"><small>Tool</small><b>Mininet ↗</b><span>SDN network emulation.</span></a><a class="res" href="https://www.contiki-ng.org" target="_blank" rel="noopener noreferrer"><small>Tool</small><b>Contiki-NG and Cooja ↗</b><span>IoT operating system and simulator.</span></a><div class="res book"><small>Book</small><b>Computer Networking: A Top-Down Approach — Kurose &amp; Ross</b><span>Pearson, 8th ed. The standard networking textbook.</span></div><a class="res" href="https://tinyml.seas.harvard.edu" target="_blank" rel="noopener noreferrer"><small>Course</small><b>TinyML (Harvard edX) ↗</b><span>Machine learning on microcontrollers.</span></a><a class="res" href="https://www.iot-lab.info" target="_blank" rel="noopener noreferrer"><small>Testbed</small><b>FIT IoT-LAB ↗</b><span>Open large-scale IoT testbed.</span></a></div>
+</div></section>
+<section class="slide " data-title="Summary" aria-label="Summary" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Summary</p><h2>Summary</h2><ul class="sumlist"><li>Networking and IoT research balances latency, bandwidth, energy, cost and reliability.</li><li>Edge computing moves processing close to the data to cut delay and bandwidth.</li><li>Use simulation (ns-3, Mininet, Cooja) to explore and real testbeds (ESP32, LoRa, Raspberry Pi) to validate.</li><li>Report distributions and tail latency, energy and delivery ratio, with the full setup.</li><li>Local problems — agriculture, water, transport — make strong, practical theses.</li><li>Venues: SIGCOMM, NSDI, INFOCOM, MobiCom, SenSys, IEEE IoT Journal.</li></ul><div class="nextcard"><a class="btn pri" href="20-software-engineering-research.html">Next: Software Engineering Research</a><a class="btn" href="../practice.html#t19">More practice</a><a class="btn" href="../resources.html#t19">All resources</a><a class="btn" href="../index.html">All chapters</a></div>
+</div></section>
+</main>
+<footer class="deck-foot">
+  <button type="button" class="btn" id="prev">Previous</button>
+  <span class="counter" id="counter">1 / 22</span>
+  <button type="button" class="btn pri" id="next">Next</button>
+</footer>
+<aside id="slide-menu" hidden aria-label="Slide list"><div class="menu-head"><h3>Slides in this chapter</h3><button type="button" id="btn-menu-close" class="menu-close" aria-label="Close slide list">&#10005;</button></div></aside>
+<noscript><p style="padding:20px">This lesson needs JavaScript for the slides and the interactive tools.</p></noscript>
+<script src="../js/core.js"></script>
+<script src="../js/art.js"></script>
+<script src="../js/diagram.js"></script>
+<script src="../js/figs.js"></script>
+<script src="../js/latex.js"></script>
+<script src="../js/demos.js"></script>
+<script src="../js/quiz.js"></script>
+<script src="../js/page.js"></script>
+<script>window.DP_TOPIC = {"id": 19, "prev": "18-data-science-and-information-retrieval.html", "next": "20-software-engineering-research.html"};</script>
+<script>mountPage();</script>
+<script src="../js/slides.js"></script>
+<script src="../js/annotate.js"></script>
+<script src="../js/lang.js"></script>
+<script src="../js/analytics.js"
+        data-endpoint="https://analytics-proxy.ayansarkar1829.workers.dev"
+        data-project="Thesis Research Guide"></script>
+<script src="../js/course-events.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Human–Computer Interaction – Chapter 21 | Thesis: Undergraduate Research Guide</title>
+<meta name="description" content="Usability, accessibility, interaction techniques, ICTD, human–AI interaction and education technology; user-centred research methods, participants and ethics, SUS and other measures, tools, venues and thesis ideas. Interactive slides, tools, worked examples and a quiz: chapter 21 of a free guide to doing a computer science thesis.">
+<meta name="keywords" content="HCI thesis, human computer interaction research, usability study, accessibility, user study, System Usability Scale, SUS, thematic analysis, ICTD, human-AI interaction, CHI">
+<meta name="author" content="Thesis Research Guide">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#4338A0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E0C1A" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://ayan-1829.github.io/Thesis/topics/21-human-computer-interaction.html">
+<link rel="icon" type="image/svg+xml" href="../img/logo-mark.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16.png">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Thesis (Undergraduate Research)">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Human–Computer Interaction – Chapter 21 | Thesis: Undergraduate Research Guide">
+<meta property="og:description" content="Usability, accessibility, interaction techniques, ICTD, human–AI interaction and education technology; user-centred research methods, participants and ethics, SUS and other measures, tools, venues and thesis ideas. Interactive slides, tools, worked examples and a quiz: chapter 21 of a free guide to doing a computer science thesis.">
+<meta property="og:url" content="https://ayan-1829.github.io/Thesis/topics/21-human-computer-interaction.html">
+<meta property="og:image" content="https://ayan-1829.github.io/Thesis/img/og/21-human-computer-interaction.png?v=2">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Human–Computer Interaction – Chapter 21 | Thesis: Undergraduate Research Guide">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Human–Computer Interaction – Chapter 21 | Thesis: Undergraduate Research Guide">
+<meta name="twitter:description" content="Usability, accessibility, interaction techniques, ICTD, human–AI interaction and education technology; user-centred research methods, participants and ethics, SUS and other measures, tools, venues and thesis ideas. Interactive slides, tools, worked examples and a quiz: chapter 21 of a free guide to doing a computer science thesis.">
+<meta name="twitter:image" content="https://ayan-1829.github.io/Thesis/img/og/21-human-computer-interaction.png?v=2">
+<meta name="twitter:image:alt" content="Human–Computer Interaction – Chapter 21 | Thesis: Undergraduate Research Guide">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "Human–Computer Interaction", "description": "Usability, accessibility, interaction techniques, ICTD, human–AI interaction and education technology; user-centred research methods, participants and ethics, SUS and other measures, tools, venues and thesis ideas.", "position": 21, "educationalLevel": "Undergraduate", "learningResourceType": "Lecture slides", "inLanguage": "en", "isAccessibleForFree": true, "teaches": ["HCI studies how people use technology and designs technology that fits them.", "Methods: interviews, observation, surveys, usability tests, experiments, heuristic evaluation, field deployments.", "Plan studies like experiments: question, participants, tasks, measures, analysis; pilot first.", "Measure effectiveness, efficiency and satisfaction (SUS), and explain the numbers with observations.", "Participants need consent, fair treatment and privacy; recruit real target users.", "Venues: CHI, UIST, CSCW, ASSETS, COMPASS; journals TOCHI, IJHCS."], "keywords": "HCI thesis, human computer interaction research, usability study, accessibility, user study, System Usability Scale, SUS, thematic analysis, ICTD, human-AI interaction, CHI", "url": "https://ayan-1829.github.io/Thesis/topics/21-human-computer-interaction.html", "image": "https://ayan-1829.github.io/Thesis/img/og/21-human-computer-interaction.png", "isPartOf": {"@type": "Course", "name": "Thesis: Undergraduate Research in Computer Science", "url": "https://ayan-1829.github.io/Thesis/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Thesis", "item": "https://ayan-1829.github.io/Thesis/"}, {"@type": "ListItem", "position": 2, "name": "Chapter 21: Human–Computer Interaction", "item": "https://ayan-1829.github.io/Thesis/topics/21-human-computer-interaction.html"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Mono:wght@400;500;600&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="deck-page">
+<div class="sr-only" id="live" aria-live="polite"></div>
+<header class="deck-bar">
+  <a class="home-link" href="../index.html" aria-label="Home: all chapters"><img src="../img/logo-mark.svg" alt="" width="26" height="26"><span>Home</span></a>
+  <div class="deck-title"><span class="badge">21</span><span>Human–Computer Interaction</span></div>
+  <div class="deck-actions">
+    <button type="button" class="btn sm" id="btn-menu" aria-expanded="false" aria-controls="slide-menu" aria-label="Slides"><svg class="btn-ic" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><rect x="3" y="4.5" width="18" height="3" rx="1"></rect><rect x="3" y="10.5" width="18" height="3" rx="1"></rect><rect x="3" y="16.5" width="18" height="3" rx="1"></rect></svg><span>Slides</span></button>
+    <button type="button" class="btn sm" id="btn-theme" aria-pressed="false" aria-label="Toggle dark mode"><svg class="btn-ic" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"></path></svg><span>Dark mode</span></button>
+    <button type="button" class="btn sm" id="btn-fs" aria-pressed="false" aria-label="Full screen"><svg class="btn-ic" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"></path></svg><span>Full screen</span></button>
+  </div>
+</header>
+<div class="deck-progress"><i id="progress-fill"></i></div>
+<main class="deck" id="deck">
+<section class="slide title-slide" data-title="Human–Computer Interaction" aria-label="Human–Computer Interaction" tabindex="-1"><div class="slide-inner">
+<span class="topic-art" data-art="21" aria-hidden="true"></span>
+<span class="badge big">21</span>
+<p class="kicker">Chapter 21 of 21 · Part B · Research fields</p>
+<h1>Human–Computer Interaction</h1>
+<p class="lead">Usability, accessibility, interaction techniques, ICTD, human–AI interaction and education technology; user-centred research methods, participants and ethics, SUS and other measures, tools, venues and thesis ideas.</p>
+<div class="row"><a class="btn pri" href="#s=2">Start</a><a class="btn" href="../index.html">All chapters</a></div>
+</div></section>
+<section class="slide " data-title="Why this matters" aria-label="Why this matters" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Before we start</p><h2>Why this matters</h2><div class="hook"><p class="q">A mobile-banking app works perfectly in testing. Real users send money to the wrong number.</p><p>HCI research finds out how people really use technology and designs it to fit them — with evidence from observations, experiments and interviews, not opinions.</p><p>This chapter introduces HCI research methods, measures, ethics, tools and venues, with ideas that fit local users and needs.</p></div>
+</div></section>
+<section class="slide " data-title="In this chapter" aria-label="In this chapter" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Outline · chapter 21</p><h2>In this chapter</h2><p class="muted">Select a section to jump to it.</p><ol class="outline-list"><li><a href="#s=4">The field</a></li><li><a href="#s=6">Methods</a></li><li><a href="#s=10">Data and evaluation</a></li><li><a href="#s=12">Tools and venues</a></li><li><a href="#s=14">Thesis ideas</a></li></ol>
+</div></section>
+<section class="slide " data-title="What HCI research studies" aria-label="What HCI research studies" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 1 of 12</p><h2>What HCI research studies</h2><p><b>Human–computer interaction</b> (HCI) studies how people use technology and designs technology that fits people: usable interfaces, accessible apps, new interaction techniques, and how technology affects communities. Its evidence comes mostly from <b>people</b> — observations, interviews, experiments and surveys.</p><p class="small muted">Rest on a branch of the map for a description.</p><figure class="fig" data-fig="map-hci"></figure>
+</div></section>
+<section class="slide " data-title="Typical research problems" aria-label="Typical research problems" tabindex="-1"><div class="slide-inner">
+<p class="kicker">The field</p><h2>Typical research problems</h2><div class="scrollx"><table class="doc"><thead><tr><th>Area</th><th>Example thesis question</th></tr></thead><tbody><tr><td>Usability</td><td>Which design of a mobile-banking transfer screen leads to fewer errors among first-time users?</td></tr><tr><td>Accessibility</td><td>How do visually impaired users in Bangladesh use smartphones, and which barriers are most common in local apps?</td></tr><tr><td>Interaction techniques</td><td>Is voice input faster than typing for Bangla text on low-cost phones?</td></tr><tr><td>Information and communication technology for development (ICTD)</td><td>How do rural farmers use mobile information services, and what makes them trust advice?</td></tr><tr><td>Human–AI interaction</td><td>Do explanations make users rely on an AI suggestion more appropriately — or just more?</td></tr><tr><td>Education technology</td><td>Does a visual step-through tool help students understand recursion?</td></tr><tr><td>Health and well-being</td><td>What makes students keep using a mental-health app beyond the first week?</td></tr></tbody></table></div>
+</div></section>
+<section class="slide " data-title="The user-centred research process" aria-label="The user-centred research process" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 3 of 12</p><h2>The user-centred research process</h2><ol class="steps"><li><b>Understand</b><span>interviews, observation, surveys</span></li><li><b>Define</b><span>personas, tasks, requirements</span></li><li><b>Ideate</b><span>sketches, alternatives</span></li><li><b>Prototype</b><span>paper → Figma → working app</span></li><li><b>Evaluate</b><span>usability tests, experiments</span></li><li><b>Iterate</b><span>improve and test again</span></li></ol><p>For research, the evaluation must be planned like an experiment: a question, participants, tasks, measures and analysis — not just “users liked it”.</p>
+</div></section>
+<section class="slide " data-title="Key methods to know" aria-label="Key methods to know" tabindex="-1"><div style="zoom:0.97;" class="slide-inner">
+<p class="kicker">Methods</p><h2>Key methods to know</h2><div class="tgrid"><div class="tcard"><h4>Interviews and observation</h4><p>Semi-structured interviews, contextual inquiry; analysed with thematic analysis.</p></div><div class="tcard"><h4>Surveys</h4><p>Validated questionnaires (SUS, NASA-TLX, UEQ) and good question design.</p></div><div class="tcard"><h4>Usability testing</h4><p>Users perform tasks while thinking aloud; measure success, time and errors.</p></div><div class="tcard"><h4>Controlled experiments</h4><p>Compare designs A and B with enough participants; within- or between-subjects.</p></div><div class="tcard"><h4>Heuristic evaluation</h4><p>Experts check an interface against principles such as Nielsen’s ten heuristics.</p></div><div class="tcard"><h4>Field deployment</h4><p>Use in real life over weeks: logs plus interviews.</p></div></div>
+</div></section>
+<section class="slide " data-title="Popular models and instruments in HCI" aria-label="Popular models and instruments in HCI" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Methods</p><h2>Popular models and instruments in HCI</h2><div class="scrollx"><table class="doc"><thead><tr><th>Model / instrument</th><th>What it is</th><th>Typical use</th></tr></thead><tbody><tr><td>Fitts’s law</td><td>predicts the time to hit a target from its size and distance</td><td>button and touch-target design</td></tr><tr><td>Hick–Hyman law</td><td>decision time grows with the number of choices</td><td>menu design</td></tr><tr><td>GOMS / Keystroke-Level Model</td><td>predicts expert task time from basic actions</td><td>comparing interface designs before testing</td></tr><tr><td>Technology Acceptance Model (TAM), UTAUT</td><td>models of why people adopt technology</td><td>survey studies of adoption</td></tr><tr><td>SUS, UEQ</td><td>standard usability and experience questionnaires</td><td>measuring perceived usability</td></tr><tr><td>NASA-TLX</td><td>workload questionnaire</td><td>how demanding a task feels</td></tr><tr><td>WCAG 2.2</td><td>accessibility guidelines</td><td>auditing and designing accessible interfaces</td></tr></tbody></table></div><div class="callout">In HCI, “models” are often theories of human behaviour; using a validated questionnaire is better than inventing your own.</div>
+</div></section>
+<section class="slide " data-title="System Usability Scale calculator" aria-label="System Usability Scale calculator" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Interactive</p><h2>System Usability Scale calculator</h2><div data-demo="sus"></div>
+</div></section>
+<section class="slide " data-title="Participants and ethics" aria-label="Participants and ethics" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 7 of 12</p><h2>Participants and ethics</h2><div class="cols "><div><ul><li>Recruit participants who match the real users (not only classmates).</li><li>How many? 5–8 users find most usability problems in a formative test; comparisons need more — often 20+ per condition, or a power analysis.</li><li>Within-subjects designs: counterbalance the order of conditions.</li><li>Pilot your study with two people before running it.</li></ul></div><div><div class="callout warn">People are your data: get informed consent, pay or thank participants fairly, protect recordings, and check whether ethics approval is required (chapter 9).</div></div></div>
+</div></section>
+<section class="slide " data-title="Evaluation" aria-label="Evaluation" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Data and evaluation</p><h2>Evaluation</h2><div class="scrollx"><table class="doc"><thead><tr><th>Measure</th><th>How</th></tr></thead><tbody><tr><td>Effectiveness</td><td>task success rate, errors</td></tr><tr><td>Efficiency</td><td>task time, steps</td></tr><tr><td>Satisfaction</td><td>SUS score, UEQ, interviews</td></tr><tr><td>Workload</td><td>NASA-TLX</td></tr><tr><td>Accessibility</td><td>WCAG checks plus tests with disabled users</td></tr><tr><td>Long-term use</td><td>retention, logs, follow-up interviews</td></tr></tbody></table></div><p class="small">Combine numbers with <b>why</b>: quotes and observed problems explain the results. Use appropriate statistics for small samples (e.g. Wilcoxon, Mann–Whitney).</p>
+</div></section>
+<section class="slide " data-title="Tools" aria-label="Tools" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 9 of 12</p><h2>Tools</h2><div class="tgrid"><div class="tcard"><h4>Figma</h4><p>Prototypes for testing before coding.</p></div><div class="tcard"><h4>Maze / Lookback / OBS</h4><p>Remote testing and screen recording.</p></div><div class="tcard"><h4>Google Forms / LimeSurvey</h4><p>Questionnaires.</p></div><div class="tcard"><h4>Taguette / NVivo</h4><p>Coding interview transcripts.</p></div><div class="tcard"><h4>R / Python (SciPy)</h4><p>Statistics for experiments.</p></div><div class="tcard"><h4>Accessibility checkers</h4><p>Lighthouse, axe, screen readers (TalkBack, VoiceOver).</p></div></div>
+</div></section>
+<section class="slide " data-title="Where HCI research is published" aria-label="Where HCI research is published" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Tools and venues</p><h2>Where HCI research is published</h2><div class="scrollx"><table class="doc"><thead><tr><th>Type</th><th>Venues</th></tr></thead><tbody><tr><td>Top conference</td><td>ACM CHI</td></tr><tr><td>Other ACM conferences</td><td>UIST, CSCW, DIS, IUI, ASSETS (accessibility), MobileHCI</td></tr><tr><td>ICTD</td><td>ACM COMPASS, ICTD</td></tr><tr><td>Journals</td><td>ACM TOCHI, International Journal of Human-Computer Studies, Behaviour &amp; Information Technology</td></tr></tbody></table></div>
+</div></section>
+<section class="slide " data-title="Thesis ideas" aria-label="Thesis ideas" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 11 of 12</p><h2>Thesis ideas</h2><div class="ideas"><div class="idea starter"><span class="lvl">Starter</span><b>Usability study of a local service</b><p>Test a popular local app or website with 8–10 users; report problems, SUS and redesign suggestions.</p></div><div class="idea starter"><span class="lvl">Starter</span><b>Accessibility audit</b><p>Check local apps against WCAG and with screen-reader users; categorise barriers.</p></div><div class="idea standard"><span class="lvl">Standard</span><b>Bangla text-entry experiment</b><p>Compare keyboard layouts or voice input for speed and errors in a controlled study.</p></div><div class="idea standard"><span class="lvl">Standard</span><b>Trust in AI advice</b><p>Experiment on how explanations change reliance on an AI assistant’s suggestions.</p></div><div class="idea ambitious"><span class="lvl">Ambitious</span><b>Field deployment</b><p>Design, deploy and study a tool with a community (farmers, patients) over several weeks.</p></div></div>
+</div></section>
+<section class="slide " data-title="Getting started in four weeks" aria-label="Getting started in four weeks" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Thesis ideas</p><h2>Getting started in four weeks</h2><ol class="steps"><li><b>Week 1</b><span>Nielsen’s heuristics, SUS, thematic analysis basics</span></li><li><b>Week 2</b><span>observe or interview 3 target users</span></li><li><b>Week 3</b><span>read 5 recent CHI papers on your topic</span></li><li><b>Week 4</b><span>paper prototype + pilot test; one-page idea</span></li></ol><div class="callout warn">Pitfalls: testing only with friends, leading questions, “users liked it” as the only result, too few participants for a comparison, no consent.</div>
+</div></section>
+<section class="slide " data-title="Worked example 1" aria-label="Worked example 1" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 1 of 2</p><h2>Worked example 1</h2><div class="ex"><div class="qq">Design a study comparing two layouts (A and B) of a payment screen.</div><details class="reveal"><summary>Show the solution</summary><div class="ans">Within-subjects experiment with 24 participants who use mobile banking; each completes 5 transfers with A and 5 with B, order counterbalanced. Measures: errors, task time, SUS for each layout, short interview. Analysis: Wilcoxon signed-rank tests on time and errors, thematic analysis of interviews. Consent and anonymised recordings.</div></details></div>
+</div></section>
+<section class="slide " data-title="Worked example 2" aria-label="Worked example 2" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 2 of 2</p><h2>Worked example 2</h2><div class="ex"><div class="qq">Ten users give SUS answers; the mean SUS score is 58. What does it mean?</div><details class="reveal"><summary>Show the solution</summary><div class="ans">About 68 is the commonly cited average, so 58 is below average usability. Combine with observed problems (where users failed or hesitated) to explain why, and prioritise fixes.</div></details></div>
+</div></section>
+<section class="slide " data-title="Practice (1 of 2)" aria-label="Practice (1 of 2)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Practice</p><h2>Practice (1 of 2)</h2><p class="muted">Try each one yourself first, then check the answer.</p><div class="ex"><div class="qq">1. Name four HCI research methods.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Interviews and observation, surveys, usability testing, controlled experiments, heuristic evaluation, field deployments.</div></details></div><div class="ex"><div class="qq">2. How many users find most usability problems in a formative test?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">About 5–8, tested in rounds; comparison experiments need more.</div></details></div><div class="ex"><div class="qq">3. What does counterbalancing prevent?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Order effects (learning or fatigue) in within-subjects designs.</div></details></div>
+</div></section>
+<section class="slide " data-title="Practice (2 of 2)" aria-label="Practice (2 of 2)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Practice</p><h2>Practice (2 of 2)</h2><p class="muted">Try each one yourself first, then check the answer.</p><div class="ex"><div class="qq">4. What is the SUS?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">A 10-item questionnaire with 1–5 answers giving a usability score from 0 to 100.</div></details></div><div class="ex"><div class="qq">5. Name two HCI venues.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">ACM CHI, UIST (also CSCW, ASSETS, TOCHI).</div></details></div><div class="ex"><div class="qq">6. Why is “users liked it” a weak result?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">It is subjective, unmeasured and possibly biased; a study needs defined tasks, measures and analysis.</div></details></div>
+</div></section>
+<section class="slide " data-title="Quiz" aria-label="Quiz" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Check yourself</p><h2>Quiz</h2><div><div class="quiz-host" data-quiz-key="th21"></div><script type="application/json" class="quiz-json">[{"q": "The top HCI conference is…", "o": ["CHI", "ICML", "SIGCOMM", "ICSE"], "a": 0, "w": "ACM CHI."}, {"q": "Thematic analysis is used for…", "o": ["interview data", "packet traces", "images", "compilers"], "a": 0, "w": "Coding qualitative data into themes."}, {"q": "An average SUS score is about…", "o": ["68", "10", "100", "5"], "a": 0, "w": "Scores below ~68 suggest below-average usability."}, {"q": "ASSETS focuses on…", "o": ["accessibility", "databases", "security", "graphics hardware"], "a": 0, "w": "The ACM conference on accessible computing."}, {"q": "Think-aloud means…", "o": ["users say what they think while doing tasks", "reading aloud the code", "a voice assistant", "a lecture"], "a": 0, "w": "It reveals confusion and reasoning."}, {"q": "Before recording participants you need…", "o": ["informed consent", "a GPU", "a paper", "nothing"], "a": 0, "w": "Participants must agree to recording."}]</script></div>
+</div></section>
+<section class="slide " data-title="Further learning" aria-label="Further learning" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Resources</p><h2>Further learning</h2><p class="muted">Hand-picked material to go deeper. Links open in a new tab.</p><div class="res-grid"><a class="res" href="https://www.nngroup.com/articles/" target="_blank" rel="noopener noreferrer"><small>Guide</small><b>Nielsen Norman Group articles ↗</b><span>Usability methods and research findings.</span></a><a class="res" href="https://www.interaction-design.org" target="_blank" rel="noopener noreferrer"><small>Guide</small><b>Interaction Design Foundation ↗</b><span>Free articles on user research and design.</span></a><a class="res" href="https://measuringu.com/sus/" target="_blank" rel="noopener noreferrer"><small>Guide</small><b>Measuring U: System Usability Scale ↗</b><span>How to score and interpret SUS.</span></a><a class="res" href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener noreferrer"><small>Standard</small><b>WCAG overview (W3C) ↗</b><span>Web accessibility guidelines.</span></a><div class="res book"><small>Book</small><b>Research Methods in Human-Computer Interaction — Lazar, Feng &amp; Hochheiser</b><span>Morgan Kaufmann, 2nd ed. 2017. Experiments, surveys, interviews, analysis.</span></div><div class="res book"><small>Book</small><b>The Design of Everyday Things — Don Norman</b><span>Basic Books, revised ed. 2013. Foundations of user-centred design.</span></div></div>
+</div></section>
+<section class="slide " data-title="Summary" aria-label="Summary" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Summary</p><h2>Summary</h2><ul class="sumlist"><li>HCI studies how people use technology and designs technology that fits them.</li><li>Methods: interviews, observation, surveys, usability tests, experiments, heuristic evaluation, field deployments.</li><li>Plan studies like experiments: question, participants, tasks, measures, analysis; pilot first.</li><li>Measure effectiveness, efficiency and satisfaction (SUS), and explain the numbers with observations.</li><li>Participants need consent, fair treatment and privacy; recruit real target users.</li><li>Venues: CHI, UIST, CSCW, ASSETS, COMPASS; journals TOCHI, IJHCS.</li></ul><div class="nextcard"><a class="btn pri" href="../milestones.html">Thesis milestones</a><a class="btn" href="../practice.html#t21">More practice</a><a class="btn" href="../resources.html#t21">All resources</a><a class="btn" href="../index.html">All chapters</a></div>
+</div></section>
+</main>
+<footer class="deck-foot">
+  <button type="button" class="btn" id="prev">Previous</button>
+  <span class="counter" id="counter">1 / 22</span>
+  <button type="button" class="btn pri" id="next">Next</button>
+</footer>
+<aside id="slide-menu" hidden aria-label="Slide list"><div class="menu-head"><h3>Slides in this chapter</h3><button type="button" id="btn-menu-close" class="menu-close" aria-label="Close slide list">&#10005;</button></div></aside>
+<noscript><p style="padding:20px">This lesson needs JavaScript for the slides and the interactive tools.</p></noscript>
+<script src="../js/core.js"></script>
+<script src="../js/art.js"></script>
+<script src="../js/diagram.js"></script>
+<script src="../js/figs.js"></script>
+<script src="../js/latex.js"></script>
+<script src="../js/demos.js"></script>
+<script src="../js/quiz.js"></script>
+<script src="../js/page.js"></script>
+<script>window.DP_TOPIC = {"id": 21, "prev": "20-software-engineering-research.html", "next": null};</script>
+<script>mountPage();</script>
+<script src="../js/slides.js"></script>
+<script src="../js/annotate.js"></script>
+<script src="../js/lang.js"></script>
+<script src="../js/analytics.js"
+        data-endpoint="https://analytics-proxy.ayansarkar1829.workers.dev"
+        data-project="Thesis Research Guide"></script>
+<script src="../js/course-events.js"></script>
+</body>
+</html>

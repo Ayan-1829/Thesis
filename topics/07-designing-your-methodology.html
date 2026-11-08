@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Designing Your Methodology – Chapter 7 | Thesis: Undergraduate Research Guide</title>
+<meta name="description" content="Choosing a research design, the experimental pipeline, describing a proposed method, choosing baselines and metrics, threats to validity and writing the research proposal. Interactive slides, tools, worked examples and a quiz: chapter 7 of a free guide to doing a computer science thesis.">
+<meta name="keywords" content="research methodology, research design, experimental design, baselines, evaluation metrics, threats to validity, research proposal, proposed method, design science research">
+<meta name="author" content="Thesis Research Guide">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#4338A0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E0C1A" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://ayan-1829.github.io/Thesis/topics/07-designing-your-methodology.html">
+<link rel="icon" type="image/svg+xml" href="../img/logo-mark.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16.png">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Thesis (Undergraduate Research)">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Designing Your Methodology – Chapter 7 | Thesis: Undergraduate Research Guide">
+<meta property="og:description" content="Choosing a research design, the experimental pipeline, describing a proposed method, choosing baselines and metrics, threats to validity and writing the research proposal. Interactive slides, tools, worked examples and a quiz: chapter 7 of a free guide to doing a computer science thesis.">
+<meta property="og:url" content="https://ayan-1829.github.io/Thesis/topics/07-designing-your-methodology.html">
+<meta property="og:image" content="https://ayan-1829.github.io/Thesis/img/og/07-designing-your-methodology.png?v=2">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Designing Your Methodology – Chapter 7 | Thesis: Undergraduate Research Guide">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Designing Your Methodology – Chapter 7 | Thesis: Undergraduate Research Guide">
+<meta name="twitter:description" content="Choosing a research design, the experimental pipeline, describing a proposed method, choosing baselines and metrics, threats to validity and writing the research proposal. Interactive slides, tools, worked examples and a quiz: chapter 7 of a free guide to doing a computer science thesis.">
+<meta name="twitter:image" content="https://ayan-1829.github.io/Thesis/img/og/07-designing-your-methodology.png?v=2">
+<meta name="twitter:image:alt" content="Designing Your Methodology – Chapter 7 | Thesis: Undergraduate Research Guide">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "Designing Your Methodology", "description": "Choosing a research design, the experimental pipeline, describing a proposed method, choosing baselines and metrics, threats to validity and writing the research proposal.", "position": 7, "educationalLevel": "Undergraduate", "learningResourceType": "Lecture slides", "inLanguage": "en", "isAccessibleForFree": true, "teaches": ["The methodology turns the research question into evidence and must be repeatable.", "Choose the design from the question: experiment, design science, empirical study, survey, simulation or case study.", "Describe the proposed method fully: diagram, settings, choices and alternatives.", "Compare with trivial, classic, state-of-the-art and ablation baselines, tuned equally.", "Pick metrics that match the question; accuracy misleads on imbalanced data.", "Name threats to validity and what you did about them; the proposal fixes the plan."], "keywords": "research methodology, research design, experimental design, baselines, evaluation metrics, threats to validity, research proposal, proposed method, design science research", "url": "https://ayan-1829.github.io/Thesis/topics/07-designing-your-methodology.html", "image": "https://ayan-1829.github.io/Thesis/img/og/07-designing-your-methodology.png", "isPartOf": {"@type": "Course", "name": "Thesis: Undergraduate Research in Computer Science", "url": "https://ayan-1829.github.io/Thesis/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Thesis", "item": "https://ayan-1829.github.io/Thesis/"}, {"@type": "ListItem", "position": 2, "name": "Chapter 7: Designing Your Methodology", "item": "https://ayan-1829.github.io/Thesis/topics/07-designing-your-methodology.html"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Mono:wght@400;500;600&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="deck-page">
+<div class="sr-only" id="live" aria-live="polite"></div>
+<header class="deck-bar">
+  <a class="home-link" href="../index.html" aria-label="Home: all chapters"><img src="../img/logo-mark.svg" alt="" width="26" height="26"><span>Home</span></a>
+  <div class="deck-title"><span class="badge">7</span><span>Designing Your Methodology</span></div>
+  <div class="deck-actions">
+    <button type="button" class="btn sm" id="btn-menu" aria-expanded="false" aria-controls="slide-menu" aria-label="Slides"><svg class="btn-ic" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><rect x="3" y="4.5" width="18" height="3" rx="1"></rect><rect x="3" y="10.5" width="18" height="3" rx="1"></rect><rect x="3" y="16.5" width="18" height="3" rx="1"></rect></svg><span>Slides</span></button>
+    <button type="button" class="btn sm" id="btn-theme" aria-pressed="false" aria-label="Toggle dark mode"><svg class="btn-ic" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"></path></svg><span>Dark mode</span></button>
+    <button type="button" class="btn sm" id="btn-fs" aria-pressed="false" aria-label="Full screen"><svg class="btn-ic" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"></path></svg><span>Full screen</span></button>
+  </div>
+</header>
+<div class="deck-progress"><i id="progress-fill"></i></div>
+<main class="deck" id="deck">
+<section class="slide title-slide" data-title="Designing Your Methodology" aria-label="Designing Your Methodology" tabindex="-1"><div class="slide-inner">
+<span class="topic-art" data-art="7" aria-hidden="true"></span>
+<span class="badge big">7</span>
+<p class="kicker">Chapter 7 of 21 · Part A · The research process</p>
+<h1>Designing Your Methodology</h1>
+<p class="lead">Choosing a research design, the experimental pipeline, describing a proposed method, choosing baselines and metrics, threats to validity and writing the research proposal.</p>
+<div class="row"><a class="btn pri" href="#s=2">Start</a><a class="btn" href="../index.html">All chapters</a></div>
+</div></section>
+<section class="slide " data-title="Why this matters" aria-label="Why this matters" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Before we start</p><h2>Why this matters</h2><div class="hook"><p class="q">Your model reaches 94% accuracy. Is that good? Compared with what, on which data, measured how — and would it be 94% again tomorrow?</p><p>A methodology answers these questions before you start, so that your result means something. Without it, even a correct result cannot convince an examiner.</p><p>This chapter shows how to design a study: choose a design, describe your method, pick fair baselines and the right metrics, and anticipate threats to validity.</p></div>
+</div></section>
+<section class="slide " data-title="In this chapter" aria-label="In this chapter" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Outline · chapter 7</p><h2>In this chapter</h2><p class="muted">Select a section to jump to it.</p><ol class="outline-list"><li><a href="#s=4">Designs</a></li><li><a href="#s=7">The proposed method</a></li><li><a href="#s=9">Comparison and measurement</a></li><li><a href="#s=12">Validity</a></li><li><a href="#s=13">The proposal</a></li></ol>
+</div></section>
+<section class="slide " data-title="What a methodology is" aria-label="What a methodology is" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 1 of 10</p><h2>What a methodology is</h2><div class="cols "><div><p>The <b>methodology</b> is the plan that turns your research question into evidence: what data, what method, compared with what, measured how. It must be detailed enough that another student could repeat your study.</p><ul><li>It follows from the <b>research question</b> — not from the tool you want to use.</li><li>It is decided <b>before</b> the experiments, then refined.</li><li>It names its own <b>weaknesses</b> (threats to validity).</li></ul></div><div><div class="panel"><h4>A methodology answers</h4><ol><li>Which research design?</li><li>What data, and how is it prepared?</li><li>What is the proposed method?</li><li>What is it compared with (baselines)?</li><li>How is success measured (metrics)?</li><li>How is the evaluation set up?</li><li>What could make the results wrong?</li></ol></div></div></div>
+</div></section>
+<section class="slide " data-title="Choosing a research design" aria-label="Choosing a research design" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Designs</p><h2>Choosing a research design</h2><figure class="fig" data-fig="design-tree"></figure>
+</div></section>
+<section class="slide " data-title="Choosing a research design (cont.)" aria-label="Choosing a research design (cont.)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Designs</p><h2>Choosing a research design (cont.)</h2><div class="scrollx"><table class="doc"><thead><tr><th>If your question is…</th><th>Use…</th></tr></thead><tbody><tr><td>Does X improve Y?</td><td>controlled experiment</td></tr><tr><td>Can we build something that solves P?</td><td>design science: build, then evaluate</td></tr><tr><td>How often / how much happens in practice?</td><td>empirical study, data mining</td></tr><tr><td>What do people think or do?</td><td>survey, interviews, user study</td></tr><tr><td>What happens at a scale we cannot test?</td><td>simulation</td></tr><tr><td>How does it work in one real setting?</td><td>case study</td></tr></tbody></table></div><p class="small muted">Rest on a branch of the tree for a description.</p>
+</div></section>
+<section class="slide " data-title="Which design fits?" aria-label="Which design fits?" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Interactive</p><h2>Which design fits?</h2><div data-demo="design-game"></div>
+</div></section>
+<section class="slide " data-title="The experimental pipeline" aria-label="The experimental pipeline" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 4 of 10</p><h2>The experimental pipeline</h2><figure class="fig" data-fig="method-pipeline"></figure><ul><li><b>Data</b>: source, size, labels, licence, ethics.</li><li><b>Pre-processing</b>: cleaning, normalisation, tokenisation, augmentation — applied the same way to every method.</li><li><b>Proposed method</b>: what is new, with a diagram and every setting.</li><li><b>Baselines</b>: the methods you compare against.</li><li><b>Evaluation</b>: split, metrics, number of runs, statistics.</li></ul>
+</div></section>
+<section class="slide " data-title="Describing your proposed method" aria-label="Describing your proposed method" tabindex="-1"><div class="slide-inner">
+<p class="kicker">The proposed method</p><h2>Describing your proposed method</h2><div class="cols "><div><ul><li>A <b>block diagram</b> of the whole system, then each block in detail.</li><li>Equations or pseudocode for the new parts; cite the parts you reuse.</li><li>All <b>hyperparameters</b> and how they were chosen (on validation data).</li><li>Hardware and software: GPU, library versions, training time.</li><li>Why each design choice was made — and the alternatives you rejected.</li></ul></div><div><div class="callout">Write it so a classmate could re-implement it without asking you. If something is “standard”, cite the source that defines it.</div></div></div>
+</div></section>
+<section class="slide " data-title="Baselines" aria-label="Baselines" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 6 of 10</p><h2>Baselines</h2><div class="scrollx"><table class="doc"><thead><tr><th>Kind of baseline</th><th>Why include it</th><th>Example</th></tr></thead><tbody><tr><td>Trivial</td><td>shows the task is not trivial</td><td>always predict the majority class; random</td></tr><tr><td>Classic</td><td>a simple, well-known method</td><td>logistic regression or SVM on TF-IDF</td></tr><tr><td>State of the art</td><td>the method you must beat or match</td><td>the best recent model on this benchmark</td></tr><tr><td>Ablation of your own method</td><td>shows what each part contributes</td><td>your model without the new component</td></tr></tbody></table></div><div class="callout warn">Tune baselines as carefully as your own method, on the same data and split. A weak, untuned baseline makes any method look good — and examiners know it.</div>
+</div></section>
+<section class="slide " data-title="Choosing metrics" aria-label="Choosing metrics" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Comparison and measurement</p><h2>Choosing metrics</h2><div class="scrollx"><table class="doc"><thead><tr><th>Task</th><th>Common metrics</th><th>Note</th></tr></thead><tbody><tr><td>Balanced classification</td><td>accuracy, F1</td><td>—</td></tr><tr><td>Imbalanced classification</td><td>macro-F1, balanced accuracy, AUC-PR, recall at fixed precision</td><td>accuracy misleads</td></tr><tr><td>Detection / segmentation</td><td>mAP, IoU, Dice</td><td>report per class</td></tr><tr><td>Regression / forecasting</td><td>MAE, RMSE, MAPE</td><td>MAE is easier to explain</td></tr><tr><td>Ranking / retrieval</td><td>precision@k, MRR, nDCG</td><td>—</td></tr><tr><td>Text generation</td><td>BLEU, ROUGE, BERTScore + human evaluation</td><td>automatic metrics are rough</td></tr><tr><td>Systems</td><td>latency, throughput, memory, energy</td><td>report the hardware</td></tr><tr><td>User studies</td><td>task time, success rate, SUS, errors</td><td>with enough participants</td></tr></tbody></table></div><p class="small">Choose the metric that matches the <b>question</b>: if missing a disease is worse than a false alarm, report recall (sensitivity).</p>
+</div></section>
+<section class="slide " data-title="Pick the right metric" aria-label="Pick the right metric" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Interactive</p><h2>Pick the right metric</h2><div data-demo="metric-game"></div>
+</div></section>
+<section class="slide " data-title="Threats to validity" aria-label="Threats to validity" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 9 of 10</p><h2>Threats to validity</h2><div class="scrollx"><table class="doc"><thead><tr><th>Threat</th><th>Question</th><th>Mitigation</th></tr></thead><tbody><tr><td>Internal validity</td><td>Is the improvement really caused by my method?</td><td>same data and tuning for all methods; ablation; several seeds</td></tr><tr><td>External validity</td><td>Do results hold beyond this dataset?</td><td>test on a second dataset or real-world data</td></tr><tr><td>Construct validity</td><td>Does the metric measure what I care about?</td><td>choose metrics carefully; add human evaluation</td></tr><tr><td>Conclusion validity</td><td>Is the difference statistically reliable?</td><td>enough data, variance, significance tests</td></tr></tbody></table></div><p>Every thesis has threats. Naming them, with what you did about them, is a strength, not a weakness.</p>
+</div></section>
+<section class="slide " data-title="The research proposal" aria-label="The research proposal" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 10 of 10</p><h2>The research proposal</h2><ol><li>Title and one-paragraph summary</li><li>Introduction: problem, motivation, research questions, objectives</li><li>Literature review: key work and the gap (shorter than in the thesis)</li><li>Methodology: design, data, proposed method, baselines, metrics, evaluation setup</li><li>Expected contributions and risks (with fallback plans)</li><li>Timeline (Gantt chart) and resources needed</li><li>References</li></ol><p>The proposal is a contract with your supervisor and committee: once approved, the methodology is the plan you follow — and changes are discussed, not hidden.</p>
+</div></section>
+<section class="slide " data-title="Worked example 1" aria-label="Worked example 1" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 1 of 3</p><h2>Worked example 1</h2><div class="ex"><div class="qq">RQ: “Does continued pre-training on code-mixed text improve sentiment classification of Banglish comments?” Design the methodology in six lines.</div><details class="reveal"><summary>Show the solution</summary><div class="ans">Design: controlled experiment. Data: 5,000 labelled comments, 70/15/15 stratified split, plus a public Bangla dataset for external testing. Proposed: BanglaBERT with continued pre-training on 1M unlabelled code-mixed comments, then fine-tuning. Baselines: majority class; TF-IDF + logistic regression; BanglaBERT fine-tuned only; multilingual XLM-R. Metrics: macro-F1 (primary), per-class F1. Setup: 5 seeds, mean ± sd, paired test on macro-F1; error analysis of 100 misclassified comments.</div></details></div>
+</div></section>
+<section class="slide " data-title="Worked example 2" aria-label="Worked example 2" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 2 of 3</p><h2>Worked example 2</h2><div class="ex"><div class="qq">A student plans to compare their model with a 2016 SVM baseline only. What do you advise?</div><details class="reveal"><summary>Show the solution</summary><div class="ans">Add a trivial baseline (majority class), a strong recent baseline (the current best on that dataset) and an ablation of their own model. Tune all of them with the same budget on the same split. Otherwise the improvement is not convincing.</div></details></div>
+</div></section>
+<section class="slide " data-title="Worked example 3" aria-label="Worked example 3" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 3 of 3</p><h2>Worked example 3</h2><div class="ex"><div class="qq">A cancer-screening model has 98% accuracy on data with 2% positive cases. Which metrics should be reported?</div><details class="reveal"><summary>Show the solution</summary><div class="ans">Accuracy is misleading (predicting “healthy” always gives 98%). Report sensitivity (recall), specificity, precision (PPV), F1 or AUC-PR, and the confusion matrix — with sensitivity as the primary metric if missing a cancer is the main risk.</div></details></div>
+</div></section>
+<section class="slide " data-title="Practice (1 of 2)" aria-label="Practice (1 of 2)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Practice</p><h2>Practice (1 of 2)</h2><p class="muted">Try each one yourself first, then check the answer.</p><div class="ex"><div class="qq">1. What are the main parts of a methodology?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Research design, data, pre-processing, proposed method, baselines, metrics, evaluation setup, and threats to validity.</div></details></div><div class="ex"><div class="qq">2. Which design for: “How do software developers in Dhaka use code-review tools?”</div><details class="reveal"><summary>Show the answer</summary><div class="ans">A survey and/or interviews (qualitative or mixed methods), possibly with mining of repository data.</div></details></div><div class="ex"><div class="qq">3. Name four kinds of baseline.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Trivial (majority/random), classic simple method, state of the art, ablations of your own method.</div></details></div>
+</div></section>
+<section class="slide " data-title="Practice (2 of 2)" aria-label="Practice (2 of 2)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Practice</p><h2>Practice (2 of 2)</h2><p class="muted">Try each one yourself first, then check the answer.</p><div class="ex"><div class="qq">4. Why is accuracy a poor metric for imbalanced data?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Predicting the majority class gives high accuracy while missing the minority class completely; use macro-F1, recall, balanced accuracy or AUC-PR.</div></details></div><div class="ex"><div class="qq">5. Explain external validity with an example.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Whether results generalise beyond the study: a model tested only on lab photos may fail on field photos; testing on a second, real-world dataset checks it.</div></details></div><div class="ex"><div class="qq">6. List the sections of a research proposal.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Title and summary, introduction (problem, RQs, objectives), literature review and gap, methodology, expected contributions and risks, timeline, references.</div></details></div>
+</div></section>
+<section class="slide " data-title="Quiz" aria-label="Quiz" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Check yourself</p><h2>Quiz</h2><div><div class="quiz-host" data-quiz-key="th7"></div><script type="application/json" class="quiz-json">[{"q": "A methodology should follow from…", "o": ["the tool you like", "the research question", "the supervisor’s laptop", "the number of pages"], "a": 1, "w": "The question decides the design, data and metrics."}, {"q": "“Can we build a system that does P?” calls for…", "o": ["a survey", "design science: build and evaluate", "a proof only", "no evaluation"], "a": 1, "w": "Build the artefact, then evaluate it."}, {"q": "An ablation study shows…", "o": ["how fast the GPU is", "what each component of your method contributes", "the literature", "the dataset licence"], "a": 1, "w": "Remove one part at a time and measure the change."}, {"q": "Baselines should be tuned…", "o": ["less than your method", "as carefully as your method", "never", "by the examiner"], "a": 1, "w": "Fair comparison needs equal effort."}, {"q": "For retrieval and ranking, a common metric is…", "o": ["RMSE", "nDCG", "Dice", "BLEU"], "a": 1, "w": "nDCG, MRR and precision@k measure ranking quality."}, {"q": "Testing on a second dataset addresses…", "o": ["external validity", "spelling", "internal formatting", "nothing"], "a": 0, "w": "It checks whether results generalise."}]</script></div>
+</div></section>
+<section class="slide " data-title="Further learning" aria-label="Further learning" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Resources</p><h2>Further learning</h2><p class="muted">Hand-picked material to go deeper. Links open in a new tab.</p><div class="res-grid"><a class="res" href="https://scikit-learn.org/stable/modules/model_evaluation.html" target="_blank" rel="noopener noreferrer"><small>Guide</small><b>scikit-learn: metrics and scoring ↗</b><span>Definitions and code for classification, regression and ranking metrics.</span></a><a class="res" href="https://neurips.cc/public/guides/PaperChecklist" target="_blank" rel="noopener noreferrer"><small>Checklist</small><b>NeurIPS paper checklist ↗</b><span>What a sound ML experiment should report.</span></a><div class="res book"><small>Book</small><b>Writing for Computer Science — Justin Zobel</b><span>Springer, 3rd ed. 2014. Chapters on experiments, hypotheses and evidence.</span></div><div class="res book"><small>Book</small><b>Experimentation in Software Engineering — Wohlin et al.</b><span>Springer, 2nd ed. 2024. Designs, validity threats and analysis for empirical studies.</span></div><a class="res" href="../milestones.html#m2"><small>Guide</small><b>Thesis milestone 2: research proposal</b><span>Checklist for the proposal.</span></a></div>
+</div></section>
+<section class="slide " data-title="Summary" aria-label="Summary" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Summary</p><h2>Summary</h2><ul class="sumlist"><li>The methodology turns the research question into evidence and must be repeatable.</li><li>Choose the design from the question: experiment, design science, empirical study, survey, simulation or case study.</li><li>Describe the proposed method fully: diagram, settings, choices and alternatives.</li><li>Compare with trivial, classic, state-of-the-art and ablation baselines, tuned equally.</li><li>Pick metrics that match the question; accuracy misleads on imbalanced data.</li><li>Name threats to validity and what you did about them; the proposal fixes the plan.</li></ul><div class="nextcard"><a class="btn pri" href="08-experiments-and-evaluation.html">Next: Experiments, Statistics and Reproducibility</a><a class="btn" href="../practice.html#t7">More practice</a><a class="btn" href="../resources.html#t7">All resources</a><a class="btn" href="../milestones.html#m2">Milestone checklist</a><a class="btn" href="../index.html">All chapters</a></div>
+</div></section>
+</main>
+<footer class="deck-foot">
+  <button type="button" class="btn" id="prev">Previous</button>
+  <span class="counter" id="counter">1 / 22</span>
+  <button type="button" class="btn pri" id="next">Next</button>
+</footer>
+<aside id="slide-menu" hidden aria-label="Slide list"><div class="menu-head"><h3>Slides in this chapter</h3><button type="button" id="btn-menu-close" class="menu-close" aria-label="Close slide list">&#10005;</button></div></aside>
+<noscript><p style="padding:20px">This lesson needs JavaScript for the slides and the interactive tools.</p></noscript>
+<script src="../js/core.js"></script>
+<script src="../js/art.js"></script>
+<script src="../js/diagram.js"></script>
+<script src="../js/figs.js"></script>
+<script src="../js/latex.js"></script>
+<script src="../js/demos.js"></script>
+<script src="../js/quiz.js"></script>
+<script src="../js/page.js"></script>
+<script>window.DP_TOPIC = {"id": 7, "prev": "06-writing-the-literature-review.html", "next": "08-experiments-and-evaluation.html"};</script>
+<script>mountPage();</script>
+<script src="../js/slides.js"></script>
+<script src="../js/annotate.js"></script>
+<script src="../js/lang.js"></script>
+<script src="../js/analytics.js"
+        data-endpoint="https://analytics-proxy.ayansarkar1829.workers.dev"
+        data-project="Thesis Research Guide"></script>
+<script src="../js/course-events.js"></script>
+</body>
+</html>

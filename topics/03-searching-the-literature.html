@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Searching the Literature – Chapter 3 | Thesis: Undergraduate Research Guide</title>
+<meta name="description" content="Where to search (Google Scholar, Semantic Scholar, IEEE Xplore, ACM, arXiv, DBLP, PubMed), building Boolean search strings, filters, snowballing, getting full text legally and keeping a search log. Interactive slides, tools, worked examples and a quiz: chapter 3 of a free guide to doing a computer science thesis.">
+<meta name="keywords" content="literature search, how to search research papers, Google Scholar tips, Boolean search, IEEE Xplore, ACM digital library, arXiv, Semantic Scholar, snowballing, search log">
+<meta name="author" content="Thesis Research Guide">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#4338A0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E0C1A" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://ayan-1829.github.io/Thesis/topics/03-searching-the-literature.html">
+<link rel="icon" type="image/svg+xml" href="../img/logo-mark.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16.png">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Thesis (Undergraduate Research)">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Searching the Literature – Chapter 3 | Thesis: Undergraduate Research Guide">
+<meta property="og:description" content="Where to search (Google Scholar, Semantic Scholar, IEEE Xplore, ACM, arXiv, DBLP, PubMed), building Boolean search strings, filters, snowballing, getting full text legally and keeping a search log. Interactive slides, tools, worked examples and a quiz: chapter 3 of a free guide to doing a computer science thesis.">
+<meta property="og:url" content="https://ayan-1829.github.io/Thesis/topics/03-searching-the-literature.html">
+<meta property="og:image" content="https://ayan-1829.github.io/Thesis/img/og/03-searching-the-literature.png?v=2">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Searching the Literature – Chapter 3 | Thesis: Undergraduate Research Guide">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Searching the Literature – Chapter 3 | Thesis: Undergraduate Research Guide">
+<meta name="twitter:description" content="Where to search (Google Scholar, Semantic Scholar, IEEE Xplore, ACM, arXiv, DBLP, PubMed), building Boolean search strings, filters, snowballing, getting full text legally and keeping a search log. Interactive slides, tools, worked examples and a quiz: chapter 3 of a free guide to doing a computer science thesis.">
+<meta name="twitter:image" content="https://ayan-1829.github.io/Thesis/img/og/03-searching-the-literature.png?v=2">
+<meta name="twitter:image:alt" content="Searching the Literature – Chapter 3 | Thesis: Undergraduate Research Guide">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "Searching the Literature", "description": "Where to search (Google Scholar, Semantic Scholar, IEEE Xplore, ACM, arXiv, DBLP, PubMed), building Boolean search strings, filters, snowballing, getting full text legally and keeping a search log.", "position": 3, "educationalLevel": "Undergraduate", "learningResourceType": "Lecture slides", "inLanguage": "en", "isAccessibleForFree": true, "teaches": ["Search systematically: it finds the key, recent and closest work, plus datasets, baselines and metrics.", "Use several sources: Google Scholar, Semantic Scholar, IEEE Xplore, ACM DL, arXiv, DBLP (PubMed for biomedicine).", "Build strings from concepts and synonyms: OR within a concept, AND between concepts, quotes for phrases.", "Snowball backward (references) and forward (“Cited by”) from strong seed papers.", "Get full text legally: library access, open-access copies, authors.", "Keep a search log; stop when results saturate and you can state the gap."], "keywords": "literature search, how to search research papers, Google Scholar tips, Boolean search, IEEE Xplore, ACM digital library, arXiv, Semantic Scholar, snowballing, search log", "url": "https://ayan-1829.github.io/Thesis/topics/03-searching-the-literature.html", "image": "https://ayan-1829.github.io/Thesis/img/og/03-searching-the-literature.png", "isPartOf": {"@type": "Course", "name": "Thesis: Undergraduate Research in Computer Science", "url": "https://ayan-1829.github.io/Thesis/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Thesis", "item": "https://ayan-1829.github.io/Thesis/"}, {"@type": "ListItem", "position": 2, "name": "Chapter 3: Searching the Literature", "item": "https://ayan-1829.github.io/Thesis/topics/03-searching-the-literature.html"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Mono:wght@400;500;600&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="deck-page">
+<div class="sr-only" id="live" aria-live="polite"></div>
+<header class="deck-bar">
+  <a class="home-link" href="../index.html" aria-label="Home: all chapters"><img src="../img/logo-mark.svg" alt="" width="26" height="26"><span>Home</span></a>
+  <div class="deck-title"><span class="badge">3</span><span>Searching the Literature</span></div>
+  <div class="deck-actions">
+    <button type="button" class="btn sm" id="btn-menu" aria-expanded="false" aria-controls="slide-menu" aria-label="Slides"><svg class="btn-ic" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><rect x="3" y="4.5" width="18" height="3" rx="1"></rect><rect x="3" y="10.5" width="18" height="3" rx="1"></rect><rect x="3" y="16.5" width="18" height="3" rx="1"></rect></svg><span>Slides</span></button>
+    <button type="button" class="btn sm" id="btn-theme" aria-pressed="false" aria-label="Toggle dark mode"><svg class="btn-ic" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"></path></svg><span>Dark mode</span></button>
+    <button type="button" class="btn sm" id="btn-fs" aria-pressed="false" aria-label="Full screen"><svg class="btn-ic" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"></path></svg><span>Full screen</span></button>
+  </div>
+</header>
+<div class="deck-progress"><i id="progress-fill"></i></div>
+<main class="deck" id="deck">
+<section class="slide title-slide" data-title="Searching the Literature" aria-label="Searching the Literature" tabindex="-1"><div class="slide-inner">
+<span class="topic-art" data-art="3" aria-hidden="true"></span>
+<span class="badge big">3</span>
+<p class="kicker">Chapter 3 of 21 · Part A · The research process</p>
+<h1>Searching the Literature</h1>
+<p class="lead">Where to search (Google Scholar, Semantic Scholar, IEEE Xplore, ACM, arXiv, DBLP, PubMed), building Boolean search strings, filters, snowballing, getting full text legally and keeping a search log.</p>
+<div class="row"><a class="btn pri" href="#s=2">Start</a><a class="btn" href="../index.html">All chapters</a></div>
+</div></section>
+<section class="slide " data-title="Why this matters" aria-label="Why this matters" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Before we start</p><h2>Why this matters</h2><div class="hook"><p class="q">You spend three months building a method — then find a paper from last year that did exactly the same, and did it better.</p><p>A systematic search prevents that, and gives you the datasets, baselines and metrics you need. It also shows examiners that your claim of novelty is based on evidence.</p><p>This chapter shows where to search, how to write search strings, how to follow citations and how to record what you did.</p></div>
+</div></section>
+<section class="slide " data-title="In this chapter" aria-label="In this chapter" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Outline · chapter 3</p><h2>In this chapter</h2><p class="muted">Select a section to jump to it.</p><ol class="outline-list"><li><a href="#s=4">Where to search</a></li><li><a href="#s=7">Search strings</a></li><li><a href="#s=10">Following citations</a></li><li><a href="#s=12">Recording the search</a></li></ol>
+</div></section>
+<section class="slide " data-title="Why search systematically" aria-label="Why search systematically" tabindex="-1"><div style="zoom:0.90;" class="slide-inner">
+<p class="kicker">Part 1 of 10</p><h2>Why search systematically</h2><p>A literature search is not “type a few words into Google”. You need to find the <b>important</b> papers, the <b>recent</b> ones and the ones that do <b>almost what you plan</b> — before your examiners do.</p><ul><li>It shows what is already known, so you do not reinvent it.</li><li>It gives you baselines, datasets and metrics.</li><li>It reveals the gap your thesis fills.</li><li>A recorded search can be repeated and defended.</li></ul><figure class="fig" data-fig="search-strategy"></figure>
+</div></section>
+<section class="slide " data-title="Search engines and digital libraries" aria-label="Search engines and digital libraries" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Where to search</p><h2>Search engines and digital libraries</h2><div class="scrollx"><table class="doc"><thead><tr><th>Source</th><th>Best for</th><th>Notes</th></tr></thead><tbody><tr><td><a href="https://scholar.google.com" target="_blank" rel="noopener">Google Scholar</a></td><td>everything; citation counts; “Cited by”</td><td>widest coverage, little filtering; set up alerts</td></tr><tr><td><a href="https://www.semanticscholar.org" target="_blank" rel="noopener">Semantic Scholar</a></td><td>AI-assisted search, TL;DR summaries, influential citations</td><td>free; good for CS and biomedicine</td></tr><tr><td><a href="https://ieeexplore.ieee.org" target="_blank" rel="noopener">IEEE Xplore</a></td><td>networks, security, signal and image processing, IoT</td><td>full text often through the university library</td></tr><tr><td><a href="https://dl.acm.org" target="_blank" rel="noopener">ACM Digital Library</a></td><td>software engineering, HCI, systems, data</td><td>many papers now open access</td></tr><tr><td><a href="https://arxiv.org" target="_blank" rel="noopener">arXiv</a></td><td>the newest ML, AI, CV and NLP work</td><td>preprints: not yet peer-reviewed</td></tr><tr><td><a href="https://dblp.org" target="_blank" rel="noopener">DBLP</a></td><td>an author’s or venue’s full list of papers</td><td>bibliographic index, very accurate</td></tr><tr><td>Scopus / Web of Science</td><td>curated, quality-filtered search; journal metrics</td><td>through the university subscription</td></tr><tr><td><a href="https://pubmed.ncbi.nlm.nih.gov" target="_blank" rel="noopener">PubMed</a></td><td>biomedical and health papers</td><td>essential for biomedical theses</td></tr></tbody></table></div>
+</div></section>
+<section class="slide " data-title="Discovery tools" aria-label="Discovery tools" tabindex="-1"><div style="zoom:0.92;" class="slide-inner">
+<p class="kicker">Where to search</p><h2>Discovery tools</h2><div class="tgrid"><div class="tcard"><h4><a href="https://www.connectedpapers.com" target="_blank" rel="noopener">Connected Papers</a></h4><p>Enter one good paper; see a graph of similar papers, older “prior works” and newer “derivative works”.</p></div><div class="tcard"><h4><a href="https://huggingface.co/papers" target="_blank" rel="noopener">Hugging Face Papers</a></h4><p>Trending ML papers with code and models. (Papers with Code closed in 2025; its archive is no longer updated.)</p></div><div class="tcard"><h4><a href="https://unpaywall.org" target="_blank" rel="noopener">Unpaywall</a></h4><p>Finds the legal free copy of a paywalled paper: the author’s version or a repository copy.</p></div><div class="tcard"><h4>Survey papers</h4><p>Search “<i>topic</i> survey” or “<i>topic</i> review”: one good survey maps hundreds of papers for you.</p></div><div class="tcard"><h4>Alerts</h4><p>Google Scholar alerts and arXiv daily listings bring new papers on your keywords to your inbox.</p></div><div class="tcard"><h4>Your library</h4><p>The university library gives access to IEEE, ACM, Springer and Elsevier full text; ask about remote access.</p></div></div>
+</div></section>
+<section class="slide " data-title="Building a search string" aria-label="Building a search string" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 4 of 10</p><h2>Building a search string</h2><div class="cols "><div><ol><li>Write the RQ as <b>concepts</b>: e.g. <i>sentiment</i> · <i>Bangla</i> · <i>social media</i>.</li><li>For each concept list <b>synonyms</b>: Bangla / Bengali; sentiment / opinion / emotion; social media / Facebook / YouTube comments.</li><li>Join synonyms with <b>OR</b> inside brackets, concepts with <b>AND</b>.</li><li>Use <b>"quotes"</b> for exact phrases and <b>*</b> for word endings where supported.</li><li>Run it, read the first results, refine the words — and record each version.</li></ol></div><div><pre class="code nonum">("Bangla" OR "Bengali")
+AND (sentiment OR opinion OR emotion)
+AND ("social media" OR Facebook OR YouTube)</pre><p class="small muted">Google Scholar ignores brackets and wildcards in some cases; use fewer, more specific terms there, and the full string in IEEE Xplore, ACM, Scopus.</p></div></div>
+</div></section>
+<section class="slide " data-title="Build a search query" aria-label="Build a search query" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Interactive</p><h2>Build a search query</h2><div data-demo="query-build"></div>
+</div></section>
+<section class="slide " data-title="Filters and search fields" aria-label="Filters and search fields" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Search strings</p><h2>Filters and search fields</h2><div class="scrollx"><table class="doc"><thead><tr><th>Filter</th><th>Use it to…</th></tr></thead><tbody><tr><td>Year range</td><td>keep the last 5 years for methods; keep older seminal papers too</td></tr><tr><td>Title / abstract only</td><td>cut noise from papers that mention a word once</td></tr><tr><td>Publication type</td><td>separate journals, conferences, surveys and preprints</td></tr><tr><td>Venue</td><td>restrict to the top conferences of your field</td></tr><tr><td>Author</td><td>follow a leading group’s work</td></tr><tr><td>Sort by citations vs date</td><td>citations finds classics; date finds the frontier</td></tr></tbody></table></div>
+</div></section>
+<section class="slide " data-title="Snowballing" aria-label="Snowballing" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 7 of 10</p><h2>Snowballing</h2><figure class="fig" data-fig="snowball"></figure>
+</div></section>
+<section class="slide " data-title="Snowballing (cont.)" aria-label="Snowballing (cont.)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 7 of 10</p><h2>Snowballing (cont.)</h2><p>Start from a few strong “seed” papers and follow citations both ways:</p><ul><li><b>Backward:</b> read the reference list of the seed — what it builds on.</li><li><b>Forward:</b> use “Cited by” in Google Scholar or Semantic Scholar — who built on it since.</li><li>Repeat with the best new papers until no new relevant papers appear.</li></ul><div class="callout">Keyword search plus snowballing finds far more of the relevant work than either alone.</div>
+</div></section>
+<section class="slide " data-title="Getting the full text legally" aria-label="Getting the full text legally" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Following citations</p><h2>Getting the full text legally</h2><ol><li>Open the link from the university network or library proxy (IEEE, ACM, Springer, Elsevier).</li><li>Look for an open-access version: arXiv, the author’s homepage, a university repository, Unpaywall.</li><li>Check ResearchGate or the author’s profile for an accepted version.</li><li>Email the author politely — most are happy to send their paper.</li><li>Ask your supervisor or the library for an inter-library request.</li></ol><div class="callout warn">Do not use pirate sites. Besides being illegal, they often serve wrong versions and malware.</div>
+</div></section>
+<section class="slide " data-title="Keep a search log" aria-label="Keep a search log" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 9 of 10</p><h2>Keep a search log</h2><div class="scrollx"><table class="doc"><thead><tr><th>Date</th><th>Database</th><th>Query</th><th>Filters</th><th>Results</th><th>Kept</th></tr></thead><tbody><tr><td>3 Feb</td><td>IEEE Xplore</td><td>("Bangla" OR "Bengali") AND sentiment</td><td>2019–2025, title/abstract</td><td>142</td><td>18</td></tr><tr><td>3 Feb</td><td>Google Scholar</td><td>Bangla sentiment social media</td><td>since 2020</td><td>≈ 2,400</td><td>12 (first 100 screened)</td></tr><tr><td>5 Feb</td><td>Snowball</td><td>backward from Sharma et al. 2023</td><td>—</td><td>61 refs</td><td>7</td></tr></tbody></table></div><p>The log makes your review <b>reproducible</b> and lets you write the “search method” paragraph of your literature review in minutes. A spreadsheet is enough.</p>
+</div></section>
+<section class="slide " data-title="How much is enough?" aria-label="How much is enough?" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Recording the search</p><h2>How much is enough?</h2><div class="cols "><div><ul><li>You keep meeting the same papers and authors — the search is <b>saturating</b>.</li><li>You can name the 3–5 most important papers and the current best result.</li><li>You know the standard datasets, baselines and metrics.</li><li>You can state the gap in one paragraph.</li></ul></div><div><div class="panel"><h4>Typical numbers</h4><p class="small">Screen a few hundred titles, read 40–80 abstracts, read 20–40 papers properly, and cite 30–60 in an undergraduate thesis. Quality beats quantity.</p></div></div></div>
+</div></section>
+<section class="slide " data-title="Worked example 1" aria-label="Worked example 1" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 1 of 2</p><h2>Worked example 1</h2><div class="ex"><div class="qq">Turn the RQ “Does data augmentation improve rice-leaf disease classification on smartphone photos?” into a search string.</div><details class="reveal"><summary>Show the solution</summary><div class="ans">Concepts and synonyms: (rice OR paddy) · (leaf disease OR plant disease) · (classification OR detection OR recognition) · (augmentation OR “synthetic data”). String: <code>(rice OR paddy) AND ("leaf disease" OR "plant disease") AND (classif* OR detect* OR recogni*) AND (augmentation OR "synthetic data")</code>. In Google Scholar, simplify to: <code>rice leaf disease detection augmentation smartphone</code>.</div></details></div>
+</div></section>
+<section class="slide " data-title="Worked example 2" aria-label="Worked example 2" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 2 of 2</p><h2>Worked example 2</h2><div class="ex"><div class="qq">A seed paper has 45 references and is cited by 120 papers. How do you snowball efficiently?</div><details class="reveal"><summary>Show the solution</summary><div class="ans">Backward: scan the 45 titles, keep those on your problem (say 8). Forward: in “Cited by”, sort by date or search within citing articles for your keywords; scan titles of the 120, keep about 10. Read abstracts of the 18 and repeat from the 3–4 best. Record each step in the search log.</div></details></div>
+</div></section>
+<section class="slide " data-title="Practice (1 of 2)" aria-label="Practice (1 of 2)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Practice</p><h2>Practice (1 of 2)</h2><p class="muted">Try each one yourself first, then check the answer.</p><div class="ex"><div class="qq">1. Name three databases and say what each is best for.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">For example: Google Scholar (widest coverage and citations), IEEE Xplore (networks, signal processing, IoT), arXiv (the newest ML/AI preprints); also ACM DL, DBLP, Semantic Scholar, PubMed.</div></details></div><div class="ex"><div class="qq">2. What do AND, OR and quotes do in a search string?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">AND requires all concepts (narrower); OR allows any synonym (wider); quotes keep an exact phrase.</div></details></div><div class="ex"><div class="qq">3. Explain backward and forward snowballing.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Backward: follow a paper’s reference list to older work. Forward: follow “Cited by” to newer papers that build on it.</div></details></div>
+</div></section>
+<section class="slide " data-title="Practice (2 of 2)" aria-label="Practice (2 of 2)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Practice</p><h2>Practice (2 of 2)</h2><p class="muted">Try each one yourself first, then check the answer.</p><div class="ex"><div class="qq">4. Why is a preprint on arXiv treated with care?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">It has not necessarily been peer-reviewed; check whether a reviewed version was later published, and read its claims critically.</div></details></div><div class="ex"><div class="qq">5. List four legal ways to get a paywalled paper.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">University library access or proxy; arXiv or other open-access copy; author homepage or repository (Unpaywall finds it); emailing the author; inter-library request.</div></details></div><div class="ex"><div class="qq">6. What should a search log record?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Date, database, exact query, filters, number of results, number kept — so the search can be repeated and described in the thesis.</div></details></div>
+</div></section>
+<section class="slide " data-title="Quiz" aria-label="Quiz" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Check yourself</p><h2>Quiz</h2><div><div class="quiz-host" data-quiz-key="th3"></div><script type="application/json" class="quiz-json">[{"q": "To include synonyms you join them with…", "o": ["AND", "OR", "NOT", "quotes"], "a": 1, "w": "OR widens the search to any of the synonyms."}, {"q": "Forward snowballing uses…", "o": ["the reference list", "“Cited by”", "the abstract", "the author’s CV"], "a": 1, "w": "It finds newer papers that cite the seed."}, {"q": "The newest machine-learning work usually appears first on…", "o": ["arXiv", "printed textbooks", "Wikipedia", "newspapers"], "a": 0, "w": "Preprints appear on arXiv months before conferences."}, {"q": "Which tool finds legal free copies of papers?", "o": ["Unpaywall", "a pirate site", "Excel", "DBLP only"], "a": 0, "w": "Unpaywall points to open-access versions."}, {"q": "Your search is saturating when…", "o": ["you are tired", "new searches keep returning papers you already have", "you found one paper", "the library closes"], "a": 1, "w": "Saturation is a sign the important work has been found."}, {"q": "Why keep a search log?", "o": ["to make the review reproducible and describable", "to fill pages", "Google requires it", "it is not useful"], "a": 0, "w": "The log lets you repeat and describe your search."}]</script></div>
+</div></section>
+<section class="slide " data-title="Further learning" aria-label="Further learning" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Resources</p><h2>Further learning</h2><p class="muted">Hand-picked material to go deeper. Links open in a new tab.</p><div class="res-grid"><a class="res" href="https://scholar.google.com/intl/en/scholar/help.html" target="_blank" rel="noopener noreferrer"><small>Guide</small><b>Google Scholar search help ↗</b><span>Operators, alerts, “Cited by” and library links.</span></a><a class="res" href="https://www.semanticscholar.org" target="_blank" rel="noopener noreferrer"><small>Search</small><b>Semantic Scholar ↗</b><span>AI-assisted search with summaries and citation context.</span></a><a class="res" href="https://ieeexplore.ieee.org" target="_blank" rel="noopener noreferrer"><small>Library</small><b>IEEE Xplore ↗</b><span>Advanced search with command search for Boolean strings.</span></a><a class="res" href="https://dl.acm.org" target="_blank" rel="noopener noreferrer"><small>Library</small><b>ACM Digital Library ↗</b><span>Computing literature from ACM conferences and journals.</span></a><a class="res" href="https://arxiv.org" target="_blank" rel="noopener noreferrer"><small>Preprints</small><b>arXiv ↗</b><span>Browse cs.CL, cs.CV, cs.LG, cs.CR and other categories daily.</span></a><a class="res" href="https://www.connectedpapers.com" target="_blank" rel="noopener noreferrer"><small>Map</small><b>Connected Papers ↗</b><span>Graph of related prior and derivative work.</span></a><a class="res" href="https://unpaywall.org" target="_blank" rel="noopener noreferrer"><small>Access</small><b>Unpaywall ↗</b><span>Legal open-access copies.</span></a><a class="res" href="https://dblp.org" target="_blank" rel="noopener noreferrer"><small>Index</small><b>DBLP ↗</b><span>Complete publication lists for authors and venues.</span></a></div>
+</div></section>
+<section class="slide " data-title="Summary" aria-label="Summary" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Summary</p><h2>Summary</h2><ul class="sumlist"><li>Search systematically: it finds the key, recent and closest work, plus datasets, baselines and metrics.</li><li>Use several sources: Google Scholar, Semantic Scholar, IEEE Xplore, ACM DL, arXiv, DBLP (PubMed for biomedicine).</li><li>Build strings from concepts and synonyms: OR within a concept, AND between concepts, quotes for phrases.</li><li>Snowball backward (references) and forward (“Cited by”) from strong seed papers.</li><li>Get full text legally: library access, open-access copies, authors.</li><li>Keep a search log; stop when results saturate and you can state the gap.</li></ul><div class="nextcard"><a class="btn pri" href="04-selecting-and-judging-papers.html">Next: Selecting and Judging Papers</a><a class="btn" href="../practice.html#t3">More practice</a><a class="btn" href="../resources.html#t3">All resources</a><a class="btn" href="../milestones.html#m3">Milestone checklist</a><a class="btn" href="../index.html">All chapters</a></div>
+</div></section>
+</main>
+<footer class="deck-foot">
+  <button type="button" class="btn" id="prev">Previous</button>
+  <span class="counter" id="counter">1 / 21</span>
+  <button type="button" class="btn pri" id="next">Next</button>
+</footer>
+<aside id="slide-menu" hidden aria-label="Slide list"><div class="menu-head"><h3>Slides in this chapter</h3><button type="button" id="btn-menu-close" class="menu-close" aria-label="Close slide list">&#10005;</button></div></aside>
+<noscript><p style="padding:20px">This lesson needs JavaScript for the slides and the interactive tools.</p></noscript>
+<script src="../js/core.js"></script>
+<script src="../js/art.js"></script>
+<script src="../js/diagram.js"></script>
+<script src="../js/figs.js"></script>
+<script src="../js/latex.js"></script>
+<script src="../js/demos.js"></script>
+<script src="../js/quiz.js"></script>
+<script src="../js/page.js"></script>
+<script>window.DP_TOPIC = {"id": 3, "prev": "02-topics-and-research-questions.html", "next": "04-selecting-and-judging-papers.html"};</script>
+<script>mountPage();</script>
+<script src="../js/slides.js"></script>
+<script src="../js/annotate.js"></script>
+<script src="../js/lang.js"></script>
+<script src="../js/analytics.js"
+        data-endpoint="https://analytics-proxy.ayansarkar1829.workers.dev"
+        data-project="Thesis Research Guide"></script>
+<script src="../js/course-events.js"></script>
+</body>
+</html>

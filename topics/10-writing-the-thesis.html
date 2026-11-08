@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Writing the Thesis – Chapter 10 | Thesis: Undergraduate Research Guide</title>
+<meta name="description" content="Thesis structure and front matter, writing the introduction, methodology, results and discussion, the abstract, academic style, figures and tables, LaTeX, references and the writing and feedback process. Interactive slides, tools, worked examples and a quiz: chapter 10 of a free guide to doing a computer science thesis.">
+<meta name="keywords" content="how to write a thesis, thesis structure, thesis introduction, abstract writing, academic writing style, figures and tables, LaTeX thesis, Overleaf, IEEE references, supervisor feedback">
+<meta name="author" content="Thesis Research Guide">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#4338A0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E0C1A" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://ayan-1829.github.io/Thesis/topics/10-writing-the-thesis.html">
+<link rel="icon" type="image/svg+xml" href="../img/logo-mark.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16.png">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Thesis (Undergraduate Research)">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Writing the Thesis – Chapter 10 | Thesis: Undergraduate Research Guide">
+<meta property="og:description" content="Thesis structure and front matter, writing the introduction, methodology, results and discussion, the abstract, academic style, figures and tables, LaTeX, references and the writing and feedback process. Interactive slides, tools, worked examples and a quiz: chapter 10 of a free guide to doing a computer science thesis.">
+<meta property="og:url" content="https://ayan-1829.github.io/Thesis/topics/10-writing-the-thesis.html">
+<meta property="og:image" content="https://ayan-1829.github.io/Thesis/img/og/10-writing-the-thesis.png?v=2">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Writing the Thesis – Chapter 10 | Thesis: Undergraduate Research Guide">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Writing the Thesis – Chapter 10 | Thesis: Undergraduate Research Guide">
+<meta name="twitter:description" content="Thesis structure and front matter, writing the introduction, methodology, results and discussion, the abstract, academic style, figures and tables, LaTeX, references and the writing and feedback process. Interactive slides, tools, worked examples and a quiz: chapter 10 of a free guide to doing a computer science thesis.">
+<meta name="twitter:image" content="https://ayan-1829.github.io/Thesis/img/og/10-writing-the-thesis.png?v=2">
+<meta name="twitter:image:alt" content="Writing the Thesis – Chapter 10 | Thesis: Undergraduate Research Guide">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "Writing the Thesis", "description": "Thesis structure and front matter, writing the introduction, methodology, results and discussion, the abstract, academic style, figures and tables, LaTeX, references and the writing and feedback process.", "position": 10, "educationalLevel": "Undergraduate", "learningResourceType": "Lecture slides", "inLanguage": "en", "isAccessibleForFree": true, "teaches": ["A thesis follows introduction, literature review, methodology, results and discussion, conclusion — plus front and back matter.", "The introduction gives context, problem, gap, questions, contributions and an outline.", "Results say what happened; discussion says why and so what, including limitations.", "Write clearly and precisely; back every claim with numbers or tests.", "Number, caption and refer to every figure and table; use one reference style via BibTeX.", "Outline, draft, revise with feedback, check and proofread; write the abstract last."], "keywords": "how to write a thesis, thesis structure, thesis introduction, abstract writing, academic writing style, figures and tables, LaTeX thesis, Overleaf, IEEE references, supervisor feedback", "url": "https://ayan-1829.github.io/Thesis/topics/10-writing-the-thesis.html", "image": "https://ayan-1829.github.io/Thesis/img/og/10-writing-the-thesis.png", "isPartOf": {"@type": "Course", "name": "Thesis: Undergraduate Research in Computer Science", "url": "https://ayan-1829.github.io/Thesis/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Thesis", "item": "https://ayan-1829.github.io/Thesis/"}, {"@type": "ListItem", "position": 2, "name": "Chapter 10: Writing the Thesis", "item": "https://ayan-1829.github.io/Thesis/topics/10-writing-the-thesis.html"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Mono:wght@400;500;600&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="deck-page">
+<div class="sr-only" id="live" aria-live="polite"></div>
+<header class="deck-bar">
+  <a class="home-link" href="../index.html" aria-label="Home: all chapters"><img src="../img/logo-mark.svg" alt="" width="26" height="26"><span>Home</span></a>
+  <div class="deck-title"><span class="badge">10</span><span>Writing the Thesis</span></div>
+  <div class="deck-actions">
+    <button type="button" class="btn sm" id="btn-menu" aria-expanded="false" aria-controls="slide-menu" aria-label="Slides"><svg class="btn-ic" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><rect x="3" y="4.5" width="18" height="3" rx="1"></rect><rect x="3" y="10.5" width="18" height="3" rx="1"></rect><rect x="3" y="16.5" width="18" height="3" rx="1"></rect></svg><span>Slides</span></button>
+    <button type="button" class="btn sm" id="btn-theme" aria-pressed="false" aria-label="Toggle dark mode"><svg class="btn-ic" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"></path></svg><span>Dark mode</span></button>
+    <button type="button" class="btn sm" id="btn-fs" aria-pressed="false" aria-label="Full screen"><svg class="btn-ic" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"></path></svg><span>Full screen</span></button>
+  </div>
+</header>
+<div class="deck-progress"><i id="progress-fill"></i></div>
+<main class="deck" id="deck">
+<section class="slide title-slide" data-title="Writing the Thesis" aria-label="Writing the Thesis" tabindex="-1"><div class="slide-inner">
+<span class="topic-art" data-art="10" aria-hidden="true"></span>
+<span class="badge big">10</span>
+<p class="kicker">Chapter 10 of 21 · Part A · The research process</p>
+<h1>Writing the Thesis</h1>
+<p class="lead">Thesis structure and front matter, writing the introduction, methodology, results and discussion, the abstract, academic style, figures and tables, LaTeX, references and the writing and feedback process.</p>
+<div class="row"><a class="btn pri" href="#s=2">Start</a><a class="btn" href="../index.html">All chapters</a></div>
+</div></section>
+<section class="slide " data-title="Why this matters" aria-label="Why this matters" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Before we start</p><h2>Why this matters</h2><div class="hook"><p class="q">Excellent experiments, poorly written, read as a weak thesis. Examiners can only judge what they can understand.</p><p>Writing is not a final step: it is how you organise your thinking and show your evidence. A clear structure, a strong introduction and well-explained results can lift a thesis by a whole grade.</p><p>This chapter covers the structure of each chapter, the abstract, academic style, figures, LaTeX and references, and a writing process that finishes on time.</p></div>
+</div></section>
+<section class="slide " data-title="In this chapter" aria-label="In this chapter" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Outline · chapter 10</p><h2>In this chapter</h2><p class="muted">Select a section to jump to it.</p><ol class="outline-list"><li><a href="#s=4">Structure</a></li><li><a href="#s=6">The chapters</a></li><li><a href="#s=9">Writing well</a></li><li><a href="#s=11">LaTeX and references</a></li><li><a href="#s=13">Process and feedback</a></li></ol>
+</div></section>
+<section class="slide " data-title="The structure of a thesis" aria-label="The structure of a thesis" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 1 of 11</p><h2>The structure of a thesis</h2><figure class="fig" data-fig="thesis-hourglass"></figure>
+</div></section>
+<section class="slide " data-title="The structure of a thesis (cont.)" aria-label="The structure of a thesis (cont.)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 1 of 11</p><h2>The structure of a thesis (cont.)</h2><div class="scrollx"><table class="doc"><thead><tr><th>Chapter</th><th>Answers</th></tr></thead><tbody><tr><td>1 Introduction</td><td>What problem, why it matters, what you asked, what you contribute</td></tr><tr><td>2 Literature review</td><td>What is known, and the gap</td></tr><tr><td>3 Methodology</td><td>How you answered the questions</td></tr><tr><td>4 Results and discussion</td><td>What you found and what it means</td></tr><tr><td>5 Conclusion</td><td>The answers, limitations, future work</td></tr></tbody></table></div>
+</div></section>
+<section class="slide " data-title="Front and back matter" aria-label="Front and back matter" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Structure</p><h2>Front and back matter</h2><div class="cols "><div><p><b>Before chapter 1</b></p><ol><li>Title page (title, authors and IDs, supervisor, department, date)</li><li>Declaration of originality, signed</li><li>Approval page</li><li>Acknowledgements</li><li>Abstract</li><li>Table of contents, lists of figures and tables, abbreviations</li></ol></div><div><p><b>After the last chapter</b></p><ol><li>References, in one consistent style</li><li>Appendices: extra results, questionnaires, consent forms, datasheet, code listings</li></ol><p class="small muted">Follow your department’s template for margins, fonts and page order; the milestones page has a LaTeX starting point.</p></div></div>
+</div></section>
+<section class="slide " data-title="Writing the introduction" aria-label="Writing the introduction" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 3 of 11</p><h2>Writing the introduction</h2><ol class="steps"><li><b>Context</b><span>the field and why it matters</span></li><li><b>Problem</b><span>what is difficult or missing — with evidence</span></li><li><b>Gap</b><span>what existing work does not do</span></li><li><b>Research questions</b><span>what exactly you ask</span></li><li><b>Contributions</b><span>what you deliver, as a bulleted list</span></li><li><b>Outline</b><span>one line per chapter</span></li></ol><p>Readers decide in the introduction whether your thesis is worth reading. The contributions list should be checkable: “We release a dataset of 5,000 labelled comments”, not “we study sentiment”.</p>
+</div></section>
+<section class="slide " data-title="Methodology and results chapters" aria-label="Methodology and results chapters" tabindex="-1"><div class="slide-inner">
+<p class="kicker">The chapters</p><h2>Methodology and results chapters</h2><div class="vs"><div><h4>Methodology</h4><ul><li>data: source, size, cleaning, splits</li><li>proposed method with a diagram</li><li>baselines and why</li><li>metrics and evaluation setup</li><li>implementation details (in an appendix if long)</li></ul></div><div><h4>Results and discussion</h4><ul><li>main results table first</li><li>answer each RQ in turn, with evidence</li><li>ablation and error analysis</li><li>compare with earlier work: agree or disagree, and why</li><li>limitations and threats to validity</li></ul></div></div><div class="callout">Results say <b>what</b> happened; discussion says <b>why</b> and <b>so what</b>. Do not leave the interpretation to the reader.</div>
+</div></section>
+<section class="slide " data-title="Writing the abstract" aria-label="Writing the abstract" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Interactive</p><h2>Writing the abstract</h2><div data-demo="abstract-build"></div>
+</div></section>
+<section class="slide " data-title="Academic style" aria-label="Academic style" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 6 of 11</p><h2>Academic style</h2><div class="scrollx"><table class="doc"><thead><tr><th>Prefer</th><th>Avoid</th></tr></thead><tbody><tr><td>short, direct sentences</td><td>long chains of clauses</td></tr><tr><td>“We trained the model for 4 epochs.”</td><td>“The model was trained by us for a duration of four epochs.”</td></tr><tr><td>precise numbers: “improved macro-F1 by 3.1 points”</td><td>“significantly better” without a test</td></tr><tr><td>one term for one thing, defined once</td><td>switching between “dataset”, “corpus” and “data collection”</td></tr><tr><td>hedging where evidence is limited: “suggests”, “may”</td><td>“proves”, “always”, “perfect”</td></tr><tr><td>present tense for facts, past for what you did</td><td>random tense changes</td></tr></tbody></table></div><p class="small">Both “we” and the passive are accepted in computing; be consistent and follow your supervisor’s preference.</p>
+</div></section>
+<section class="slide " data-title="Figures and tables" aria-label="Figures and tables" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Writing well</p><h2>Figures and tables</h2><div class="cols "><div><ul><li>Every figure and table is <b>numbered</b>, has a <b>caption</b>, and is <b>referred to</b> in the text before it appears.</li><li>The caption says what to notice: “Our model (blue) needs half the training data to reach the baseline’s F1.”</li><li>Label axes with units; use readable font sizes; colour-blind-safe colours.</li><li>Tables: best values in bold, mean ± sd, units in headers.</li><li>Prefer vector graphics (PDF/SVG) for plots and diagrams.</li></ul></div><div><div class="callout">A reader skimming only the figures and captions should understand your main result.</div></div></div>
+</div></section>
+<section class="slide " data-title="Try LaTeX for a thesis chapter" aria-label="Try LaTeX for a thesis chapter" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 8 of 11</p><h2>Try LaTeX for a thesis chapter</h2><div data-demo="tex-play" data-sample="thesis" data-list="thesis,figtab,cite"></div>
+</div></section>
+<section class="slide " data-title="References" aria-label="References" tabindex="-1"><div class="slide-inner">
+<p class="kicker">LaTeX and references</p><h2>References</h2><div class="cols "><div><ul><li>Cite <b>every</b> idea, method, dataset, figure and quotation that is not yours.</li><li>Use one style (IEEE numeric is common in computing) through the whole thesis.</li><li>Let the tools format it: Zotero → BibTeX → <code>\cite{key}</code> → <code>\printbibliography</code>.</li><li>Check every entry: authors, title, venue, year, pages, DOI. Remove arXiv versions when a published version exists.</li></ul></div><div><div class="panel"><h4>IEEE style</h4><p class="small">[1] S. Keshav, “How to read a paper,” <i>ACM SIGCOMM Comput. Commun. Rev.</i>, vol. 37, no. 3, pp. 83–84, 2007.<br>[2] J. Devlin, M.-W. Chang, K. Lee, and K. Toutanova, “BERT: Pre-training of deep bidirectional transformers for language understanding,” in <i>Proc. NAACL-HLT</i>, 2019, pp. 4171–4186.</p></div></div></div>
+</div></section>
+<section class="slide " data-title="The writing process" aria-label="The writing process" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 10 of 11</p><h2>The writing process</h2><ol class="steps"><li><b>Outline</b><span>headings + one sentence each, agreed with the supervisor</span></li><li><b>Draft</b><span>write fast; do not polish yet</span></li><li><b>Figures first</b><span>the story is in the results</span></li><li><b>Revise</b><span>structure, then paragraphs, then sentences</span></li><li><b>Feedback</b><span>supervisor and a classmate</span></li><li><b>Check</b><span>references, numbering, similarity report</span></li><li><b>Proofread</b><span>on paper or read aloud</span></li></ol><p>Plan about <b>three months</b> for writing, with drafts sent chapter by chapter. Write the methodology and results first, the introduction and abstract last.</p>
+</div></section>
+<section class="slide " data-title="Handling supervisor feedback" aria-label="Handling supervisor feedback" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Process and feedback</p><h2>Handling supervisor feedback</h2><ul><li>Read all comments before changing anything; group them by type.</li><li>Fix the big ones (structure, missing analysis) before the small ones (wording).</li><li>Reply in a short list: comment → what you changed (or why not).</li><li>Do not argue in silence: if you disagree, explain with evidence.</li><li>Send the next version with changes highlighted (latexdiff, or Word track changes).</li></ul>
+</div></section>
+<section class="slide " data-title="Worked example 1" aria-label="Worked example 1" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 1 of 3</p><h2>Worked example 1</h2><div class="ex"><div class="qq">Write a contributions list for a thesis on code-mixed Bangla sentiment analysis.</div><details class="reveal"><summary>Show the solution</summary><div class="ans">(1) A dataset of 5,000 Facebook comments in Banglish, labelled for three sentiment classes, with an annotation guide (κ = 0.78). (2) A comparison of six models, showing that continued pre-training on code-mixed text improves macro-F1 by 3.1 points. (3) An error analysis showing that sarcasm accounts for 31% of the remaining errors. (4) Code and data released for research use.</div></details></div>
+</div></section>
+<section class="slide " data-title="Worked example 2" aria-label="Worked example 2" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 2 of 3</p><h2>Worked example 2</h2><div class="ex"><div class="qq">Improve the caption “Figure 4.2: Results.”</div><details class="reveal"><summary>Show the solution</summary><div class="ans">“Figure 4.2: Macro-F1 against the number of training examples. Our model (blue) reaches the baseline’s best score (dashed line) with 40% of the training data.” — it now says what is shown and what to notice.</div></details></div>
+</div></section>
+<section class="slide " data-title="Worked example 3" aria-label="Worked example 3" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 3 of 3</p><h2>Worked example 3</h2><div class="ex"><div class="qq">Rewrite: “It was found by us that the accuracy of the proposed model was significantly better.”</div><details class="reveal"><summary>Show the solution</summary><div class="ans">“Our model improved accuracy from 84.2% to 86.9% (mean of five runs; p = 0.01, paired t-test).” — active, precise, and “significantly” is backed by a test.</div></details></div>
+</div></section>
+<section class="slide " data-title="Practice (1 of 2)" aria-label="Practice (1 of 2)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Practice</p><h2>Practice (1 of 2)</h2><p class="muted">Try each one yourself first, then check the answer.</p><div class="ex"><div class="qq">1. List the five main chapters of a typical thesis.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Introduction; literature review; methodology; results and discussion; conclusion and future work.</div></details></div><div class="ex"><div class="qq">2. What goes in the introduction?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Context, problem with evidence, the gap, research questions, contributions, and an outline of the chapters.</div></details></div><div class="ex"><div class="qq">3. Give the five moves of an abstract.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Context, problem, approach, main results (with numbers), conclusion/implication.</div></details></div>
+</div></section>
+<section class="slide " data-title="Practice (2 of 2)" aria-label="Practice (2 of 2)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Practice</p><h2>Practice (2 of 2)</h2><p class="muted">Try each one yourself first, then check the answer.</p><div class="ex"><div class="qq">4. What is the difference between results and discussion?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Results report what happened (numbers, tables, figures); discussion explains why, compares with earlier work, and states the implications and limitations.</div></details></div><div class="ex"><div class="qq">5. Three rules for figures and tables.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Numbered and captioned; referred to in the text before they appear; readable labels with units (and best values marked in tables).</div></details></div><div class="ex"><div class="qq">6. Which chapters should you write first, and which last?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Methodology and results first (they are what you did); introduction, conclusion and abstract last (they describe what you found).</div></details></div>
+</div></section>
+<section class="slide " data-title="Quiz" aria-label="Quiz" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Check yourself</p><h2>Quiz</h2><div><div class="quiz-host" data-quiz-key="th10"></div><script type="application/json" class="quiz-json">[{"q": "The abstract is best written…", "o": ["first", "last", "by the supervisor", "in the appendix"], "a": 1, "w": "It summarises results you only have at the end."}, {"q": "The contributions list belongs in…", "o": ["the introduction", "the references", "the appendix", "the acknowledgements"], "a": 0, "w": "Readers need to know early what is new."}, {"q": "Discussion explains…", "o": ["how to install Python", "why the results look as they do and what they mean", "the title page", "nothing"], "a": 1, "w": "Interpretation is your job, not the reader’s."}, {"q": "A figure should be referred to in the text…", "o": ["never", "before it appears", "only in the appendix", "in the abstract"], "a": 1, "w": "The text guides the reader to it."}, {"q": "For an experimental finding, prefer…", "o": ["“proves”", "“shows” or “suggests”", "“always”", "“perfectly”"], "a": 1, "w": "Experiments support claims; they rarely prove them."}, {"q": "References should be formatted…", "o": ["by hand, each differently", "in one consistent style, by a tool", "only as URLs", "in footnotes only"], "a": 1, "w": "BibTeX or a reference manager keeps them consistent."}]</script></div>
+</div></section>
+<section class="slide " data-title="Further learning" aria-label="Further learning" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Resources</p><h2>Further learning</h2><p class="muted">Hand-picked material to go deeper. Links open in a new tab.</p><div class="res-grid"><a class="res" href="https://www.overleaf.com/learn/latex/How_to_Write_a_Thesis_in_LaTeX_(Part_1)%3A_Basic_Structure" target="_blank" rel="noopener noreferrer"><small>Guide</small><b>Overleaf: How to write a thesis in LaTeX ↗</b><span>Structure, front matter and chapters in LaTeX.</span></a><a class="res" href="https://www.microsoft.com/en-us/research/academic-program/write-great-research-paper/" target="_blank" rel="noopener noreferrer"><small>Guide</small><b>How to write a great research paper — Simon Peyton Jones ↗</b><span>Start with the idea; contributions up front.</span></a><div class="res book"><small>Book</small><b>Writing for Computer Science — Justin Zobel</b><span>Springer, 3rd ed. 2014. Style, structure, figures and editing.</span></div><div class="res book"><small>Book</small><b>How to Write a Better Thesis — Evans, Gruba &amp; Zobel</b><span>Springer, 3rd ed. 2014. Chapter by chapter advice.</span></div><a class="res" href="../milestones.html#template"><small>Tool</small><b>LaTeX thesis template</b><span>A starting template with front matter and chapters.</span></a><a class="res" href="https://retorque.re/zotero-better-bibtex/" target="_blank" rel="noopener noreferrer"><small>Tool</small><b>Zotero + Better BibTeX ↗</b><span>Automatic .bib export with stable keys.</span></a></div>
+</div></section>
+<section class="slide " data-title="Summary" aria-label="Summary" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Summary</p><h2>Summary</h2><ul class="sumlist"><li>A thesis follows introduction, literature review, methodology, results and discussion, conclusion — plus front and back matter.</li><li>The introduction gives context, problem, gap, questions, contributions and an outline.</li><li>Results say what happened; discussion says why and so what, including limitations.</li><li>Write clearly and precisely; back every claim with numbers or tests.</li><li>Number, caption and refer to every figure and table; use one reference style via BibTeX.</li><li>Outline, draft, revise with feedback, check and proofread; write the abstract last.</li></ul><div class="nextcard"><a class="btn pri" href="11-presenting-defending-publishing.html">Next: Presenting, Defending and Publishing</a><a class="btn" href="../practice.html#t10">More practice</a><a class="btn" href="../resources.html#t10">All resources</a><a class="btn" href="../milestones.html#m6">Milestone checklist</a><a class="btn" href="../index.html">All chapters</a></div>
+</div></section>
+</main>
+<footer class="deck-foot">
+  <button type="button" class="btn" id="prev">Previous</button>
+  <span class="counter" id="counter">1 / 23</span>
+  <button type="button" class="btn pri" id="next">Next</button>
+</footer>
+<aside id="slide-menu" hidden aria-label="Slide list"><div class="menu-head"><h3>Slides in this chapter</h3><button type="button" id="btn-menu-close" class="menu-close" aria-label="Close slide list">&#10005;</button></div></aside>
+<noscript><p style="padding:20px">This lesson needs JavaScript for the slides and the interactive tools.</p></noscript>
+<script src="../js/core.js"></script>
+<script src="../js/art.js"></script>
+<script src="../js/diagram.js"></script>
+<script src="../js/figs.js"></script>
+<script src="../js/latex.js"></script>
+<script src="../js/demos.js"></script>
+<script src="../js/quiz.js"></script>
+<script src="../js/page.js"></script>
+<script>window.DP_TOPIC = {"id": 10, "prev": "09-research-ethics-and-integrity.html", "next": "11-presenting-defending-publishing.html"};</script>
+<script>mountPage();</script>
+<script src="../js/slides.js"></script>
+<script src="../js/annotate.js"></script>
+<script src="../js/lang.js"></script>
+<script src="../js/analytics.js"
+        data-endpoint="https://analytics-proxy.ayansarkar1829.workers.dev"
+        data-project="Thesis Research Guide"></script>
+<script src="../js/course-events.js"></script>
+</body>
+</html>

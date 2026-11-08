@@ -1,0 +1,21 @@
+{
+  "name": "Thesis: Undergraduate Research Guide",
+  "short_name": "Thesis",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F6F5FA",
+  "theme_color": "#4338A0",
+  "icons": [
+    {
+      "src": "img/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

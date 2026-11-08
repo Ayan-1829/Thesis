@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Software Engineering Research – Chapter 20 | Thesis: Undergraduate Research Guide</title>
+<meta name="description" content="Testing, defect prediction, code quality, AI for code, mining software repositories and developer studies; experiments, mining, tool building, surveys and case studies; data, metrics, tools, venues and thesis ideas. Interactive slides, tools, worked examples and a quiz: chapter 20 of a free guide to doing a computer science thesis.">
+<meta name="keywords" content="software engineering thesis, software engineering research, mining software repositories, software testing research, defect prediction, code smells, AI code generation, program repair, Defects4J, ICSE FSE MSR">
+<meta name="author" content="Thesis Research Guide">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#4338A0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E0C1A" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://ayan-1829.github.io/Thesis/topics/20-software-engineering-research.html">
+<link rel="icon" type="image/svg+xml" href="../img/logo-mark.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16.png">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Thesis (Undergraduate Research)">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Software Engineering Research – Chapter 20 | Thesis: Undergraduate Research Guide">
+<meta property="og:description" content="Testing, defect prediction, code quality, AI for code, mining software repositories and developer studies; experiments, mining, tool building, surveys and case studies; data, metrics, tools, venues and thesis ideas. Interactive slides, tools, worked examples and a quiz: chapter 20 of a free guide to doing a computer science thesis.">
+<meta property="og:url" content="https://ayan-1829.github.io/Thesis/topics/20-software-engineering-research.html">
+<meta property="og:image" content="https://ayan-1829.github.io/Thesis/img/og/20-software-engineering-research.png?v=2">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Software Engineering Research – Chapter 20 | Thesis: Undergraduate Research Guide">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Software Engineering Research – Chapter 20 | Thesis: Undergraduate Research Guide">
+<meta name="twitter:description" content="Testing, defect prediction, code quality, AI for code, mining software repositories and developer studies; experiments, mining, tool building, surveys and case studies; data, metrics, tools, venues and thesis ideas. Interactive slides, tools, worked examples and a quiz: chapter 20 of a free guide to doing a computer science thesis.">
+<meta name="twitter:image" content="https://ayan-1829.github.io/Thesis/img/og/20-software-engineering-research.png?v=2">
+<meta name="twitter:image:alt" content="Software Engineering Research – Chapter 20 | Thesis: Undergraduate Research Guide">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "Software Engineering Research", "description": "Testing, defect prediction, code quality, AI for code, mining software repositories and developer studies; experiments, mining, tool building, surveys and case studies; data, metrics, tools, venues and thesis ideas.", "position": 20, "educationalLevel": "Undergraduate", "learningResourceType": "Lecture slides", "inLanguage": "en", "isAccessibleForFree": true, "teaches": ["SE research studies how software is built, tested and maintained, with tools and empirical evidence.", "Methods: experiments, repository mining, tool building with benchmarks, surveys/interviews, case studies.", "Know static analysis, testing (mutation, coverage), metrics, repository mining and AI-for-code evaluation.", "Select repositories and participants carefully; filter forks, bots and toy projects.", "Passing tests is not proof of correctness — check AI fixes manually.", "Venues: ICSE, ESEC/FSE, ASE, ISSTA, MSR, ICSME; journals TSE, TOSEM, EMSE."], "keywords": "software engineering thesis, software engineering research, mining software repositories, software testing research, defect prediction, code smells, AI code generation, program repair, Defects4J, ICSE FSE MSR", "url": "https://ayan-1829.github.io/Thesis/topics/20-software-engineering-research.html", "image": "https://ayan-1829.github.io/Thesis/img/og/20-software-engineering-research.png", "isPartOf": {"@type": "Course", "name": "Thesis: Undergraduate Research in Computer Science", "url": "https://ayan-1829.github.io/Thesis/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Thesis", "item": "https://ayan-1829.github.io/Thesis/"}, {"@type": "ListItem", "position": 2, "name": "Chapter 20: Software Engineering Research", "item": "https://ayan-1829.github.io/Thesis/topics/20-software-engineering-research.html"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Mono:wght@400;500;600&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="deck-page">
+<div class="sr-only" id="live" aria-live="polite"></div>
+<header class="deck-bar">
+  <a class="home-link" href="../index.html" aria-label="Home: all chapters"><img src="../img/logo-mark.svg" alt="" width="26" height="26"><span>Home</span></a>
+  <div class="deck-title"><span class="badge">20</span><span>Software Engineering Research</span></div>
+  <div class="deck-actions">
+    <button type="button" class="btn sm" id="btn-menu" aria-expanded="false" aria-controls="slide-menu" aria-label="Slides"><svg class="btn-ic" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><rect x="3" y="4.5" width="18" height="3" rx="1"></rect><rect x="3" y="10.5" width="18" height="3" rx="1"></rect><rect x="3" y="16.5" width="18" height="3" rx="1"></rect></svg><span>Slides</span></button>
+    <button type="button" class="btn sm" id="btn-theme" aria-pressed="false" aria-label="Toggle dark mode"><svg class="btn-ic" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"></path></svg><span>Dark mode</span></button>
+    <button type="button" class="btn sm" id="btn-fs" aria-pressed="false" aria-label="Full screen"><svg class="btn-ic" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"></path></svg><span>Full screen</span></button>
+  </div>
+</header>
+<div class="deck-progress"><i id="progress-fill"></i></div>
+<main class="deck" id="deck">
+<section class="slide title-slide" data-title="Software Engineering Research" aria-label="Software Engineering Research" tabindex="-1"><div class="slide-inner">
+<span class="topic-art" data-art="20" aria-hidden="true"></span>
+<span class="badge big">20</span>
+<p class="kicker">Chapter 20 of 21 · Part B · Research fields</p>
+<h1>Software Engineering Research</h1>
+<p class="lead">Testing, defect prediction, code quality, AI for code, mining software repositories and developer studies; experiments, mining, tool building, surveys and case studies; data, metrics, tools, venues and thesis ideas.</p>
+<div class="row"><a class="btn pri" href="#s=2">Start</a><a class="btn" href="../index.html">All chapters</a></div>
+</div></section>
+<section class="slide " data-title="Why this matters" aria-label="Why this matters" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Before we start</p><h2>Why this matters</h2><div class="hook"><p class="q">Millions of developers write code every day. How much of it is tested, reviewed, secure — and which practices actually help?</p><p>Software engineering research answers such questions with tools and evidence from real projects and real developers. With GitHub data and AI coding assistants, there are more open questions than ever.</p><p>This chapter introduces SE research: its problems, methods, data, metrics, tools and venues.</p></div>
+</div></section>
+<section class="slide " data-title="In this chapter" aria-label="In this chapter" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Outline · chapter 20</p><h2>In this chapter</h2><p class="muted">Select a section to jump to it.</p><ol class="outline-list"><li><a href="#s=4">The field</a></li><li><a href="#s=6">Methods</a></li><li><a href="#s=10">Data and evaluation</a></li><li><a href="#s=12">Tools and venues</a></li><li><a href="#s=14">Thesis ideas</a></li></ol>
+</div></section>
+<section class="slide " data-title="What software engineering research studies" aria-label="What software engineering research studies" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 1 of 12</p><h2>What software engineering research studies</h2><p><b>Software engineering</b> (SE) research studies how software is built, tested, maintained and used by teams — and how to do it better. It mixes <b>tools</b> (program analysis, test generation, AI coding assistants) with <b>empirical studies</b> of real projects and developers.</p><p class="small muted">Rest on a branch of the map for a description.</p><figure class="fig" data-fig="map-se"></figure>
+</div></section>
+<section class="slide " data-title="Typical research problems" aria-label="Typical research problems" tabindex="-1"><div class="slide-inner">
+<p class="kicker">The field</p><h2>Typical research problems</h2><div class="scrollx"><table class="doc"><thead><tr><th>Area</th><th>Example thesis question</th></tr></thead><tbody><tr><td>Testing</td><td>Do automatically generated unit tests find as many seeded bugs as student-written tests?</td></tr><tr><td>Defect prediction</td><td>Can code metrics from previous releases predict which files will have bugs in the next release?</td></tr><tr><td>Code quality</td><td>How common are code smells in open-source Android apps, and are they linked to more bug fixes?</td></tr><tr><td>AI for code</td><td>How often is code suggested by AI assistants insecure, and which prompts reduce it?</td></tr><tr><td>Mining software repositories</td><td>How long do pull requests wait for review in popular projects, and what predicts delay?</td></tr><tr><td>Requirements and process</td><td>How do small Bangladeshi software companies manage requirements changes?</td></tr><tr><td>Program repair</td><td>Can an LLM fix failing tests in Defects4J bugs, and how often are its fixes correct rather than test-passing?</td></tr></tbody></table></div>
+</div></section>
+<section class="slide " data-title="How SE research is done" aria-label="How SE research is done" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 3 of 12</p><h2>How SE research is done</h2><div class="scrollx"><table class="doc"><thead><tr><th>Method</th><th>Use for</th><th>Example</th></tr></thead><tbody><tr><td>Controlled experiment</td><td>does tool or technique X help?</td><td>two groups of students debug with and without a tool</td></tr><tr><td>Mining software repositories</td><td>what happens in real projects, at scale</td><td>analyse commits, issues and pull requests from GitHub</td></tr><tr><td>Tool building + benchmark</td><td>a new technique</td><td>a test generator evaluated on a bug benchmark</td></tr><tr><td>Survey and interviews</td><td>practice and opinions of developers</td><td>questionnaire of 100 local developers</td></tr><tr><td>Case study</td><td>one company or project in depth</td><td>adopting code review in one team</td></tr></tbody></table></div><p class="small">These are the designs of chapter 7 applied to software; most SE theses combine two of them.</p>
+</div></section>
+<section class="slide " data-title="Which SE method fits?" aria-label="Which SE method fits?" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Interactive</p><h2>Which SE method fits?</h2><div data-demo="se-game"></div>
+</div></section>
+<section class="slide " data-title="Key techniques to know" aria-label="Key techniques to know" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Methods</p><h2>Key techniques to know</h2><div class="tgrid"><div class="tcard"><h4>Static analysis</h4><p>Inspect code without running it: linters, SonarQube, type checkers, data-flow analysis.</p></div><div class="tcard"><h4>Testing techniques</h4><p>Unit, integration and mutation testing; coverage; fuzzing; property-based tests.</p></div><div class="tcard"><h4>Repository mining</h4><p>GitHub API, commit histories, issue trackers; linking commits to bugs (SZZ algorithm).</p></div><div class="tcard"><h4>Software metrics</h4><p>Size, complexity, churn, coupling — features for prediction.</p></div><div class="tcard"><h4>AI for code</h4><p>Code LLMs for generation, summarisation, review and repair — and their evaluation.</p></div><div class="tcard"><h4>Qualitative analysis</h4><p>Coding interview transcripts into themes (thematic analysis).</p></div></div>
+</div></section>
+<section class="slide " data-title="Popular models and tools in software-engineering research" aria-label="Popular models and tools in software-engineering research" tabindex="-1"><div style="zoom:0.96;" class="slide-inner">
+<p class="kicker">Methods</p><h2>Popular models and tools in software-engineering research</h2><div class="scrollx"><table class="doc"><thead><tr><th>Model / tool</th><th>What it is</th><th>Typical use</th></tr></thead><tbody><tr><td>CodeBERT, CodeT5</td><td>pretrained models of code</td><td>code search, summarisation, defect prediction</td></tr><tr><td>StarCoder 2, Code Llama, DeepSeek-Coder, Qwen-Coder</td><td>open code LLMs</td><td>code generation and repair experiments</td></tr><tr><td>GitHub Copilot and chat assistants</td><td>commercial AI coding tools</td><td>studies of developer use and code quality</td></tr><tr><td>SWE-agent and similar agents</td><td>LLM agents that edit repositories</td><td>issue fixing on SWE-bench</td></tr><tr><td>EvoSuite, Randoop</td><td>search-based and random test generators</td><td>baselines for test generation</td></tr><tr><td>Random forest on code metrics</td><td>classic defect-prediction model</td><td>baseline for bug prediction</td></tr><tr><td>SZZ algorithm</td><td>links bug fixes to the commits that caused them</td><td>building defect datasets from history</td></tr></tbody></table></div><div class="callout">When you evaluate AI for code, record the model version, the prompt and whether results are checked beyond passing tests.</div>
+</div></section>
+<section class="slide " data-title="Data and benchmarks" aria-label="Data and benchmarks" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 7 of 12</p><h2>Data and benchmarks</h2><div class="scrollx"><table class="doc"><thead><tr><th>Resource</th><th>Use</th></tr></thead><tbody><tr><td><a href="https://docs.github.com/en/rest" target="_blank" rel="noopener">GitHub REST API</a></td><td>repositories, commits, issues, pull requests</td></tr><tr><td><a href="https://github.com/rjust/defects4j" target="_blank" rel="noopener">Defects4J</a></td><td>real Java bugs with tests: testing and repair research</td></tr><tr><td>HumanEval, MBPP, SWE-bench</td><td>code-generation and issue-fixing benchmarks for AI</td></tr><tr><td>Software Heritage / GHTorrent-style datasets</td><td>large archives of source code and history</td></tr><tr><td>Stack Overflow data dump</td><td>developer questions and answers</td></tr><tr><td>PROMISE / defect datasets</td><td>defect prediction</td></tr></tbody></table></div>
+</div></section>
+<section class="slide " data-title="Evaluation" aria-label="Evaluation" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Data and evaluation</p><h2>Evaluation</h2><div class="cols "><div><div class="scrollx"><table class="doc"><thead><tr><th>Study</th><th>Measures</th></tr></thead><tbody><tr><td>Testing tools</td><td>bugs found, mutation score, coverage, time</td></tr><tr><td>Prediction</td><td>precision, recall, AUC; effort-aware metrics</td></tr><tr><td>AI code</td><td>pass@k, correctness beyond tests, security issues</td></tr><tr><td>Experiments with people</td><td>task time, correctness, perceived workload</td></tr><tr><td>Surveys</td><td>response rate, representative sample, validated questions</td></tr></tbody></table></div></div><div><ul><li>For mining studies, state how repositories were <b>selected</b> (stars, activity, language) and filter out forks and toy projects.</li><li>For AI code, check that test-passing fixes are really <b>correct</b>.</li></ul></div></div>
+</div></section>
+<section class="slide " data-title="Tools" aria-label="Tools" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 9 of 12</p><h2>Tools</h2><div class="tgrid"><div class="tcard"><h4>PyDriller / GitPython</h4><p>Mine Git histories in Python.</p></div><div class="tcard"><h4>SonarQube</h4><p>Code-quality and smell analysis.</p></div><div class="tcard"><h4>EvoSuite / Randoop</h4><p>Automatic Java test generation.</p></div><div class="tcard"><h4>PIT / mutmut</h4><p>Mutation testing for Java / Python.</p></div><div class="tcard"><h4>JaCoCo / coverage.py</h4><p>Code coverage.</p></div><div class="tcard"><h4>NVivo / Taguette</h4><p>Qualitative coding of interviews.</p></div></div>
+</div></section>
+<section class="slide " data-title="Where SE research is published" aria-label="Where SE research is published" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Tools and venues</p><h2>Where SE research is published</h2><div class="scrollx"><table class="doc"><thead><tr><th>Type</th><th>Venues</th></tr></thead><tbody><tr><td>Top conferences</td><td>ICSE, ESEC/FSE, ASE, ISSTA</td></tr><tr><td>Repository mining and maintenance</td><td>MSR, ICSME, SANER</td></tr><tr><td>Empirical SE</td><td>ESEM, EASE</td></tr><tr><td>Journals</td><td>IEEE TSE, ACM TOSEM, Empirical Software Engineering, JSS, IST</td></tr></tbody></table></div>
+</div></section>
+<section class="slide " data-title="Thesis ideas" aria-label="Thesis ideas" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 11 of 12</p><h2>Thesis ideas</h2><div class="ideas"><div class="idea starter"><span class="lvl">Starter</span><b>Code-smell study of local projects</b><p>Analyse open-source projects by Bangladeshi developers with SonarQube; relate smells to bug fixes.</p></div><div class="idea standard"><span class="lvl">Standard</span><b>Security of AI-generated code</b><p>Generate solutions to tasks with AI assistants and scan them for vulnerabilities; test safer prompting.</p></div><div class="idea standard"><span class="lvl">Standard</span><b>Generated vs human tests</b><p>Compare EvoSuite tests with developer tests by mutation score on real projects.</p></div><div class="idea standard"><span class="lvl">Standard</span><b>Developer practices survey</b><p>Survey and interview local developers on testing or code review; thematic analysis.</p></div><div class="idea ambitious"><span class="lvl">Ambitious</span><b>LLM program repair, verified</b><p>Evaluate LLM fixes on Defects4J with manual correctness checks beyond tests.</p></div></div>
+</div></section>
+<section class="slide " data-title="Getting started in four weeks" aria-label="Getting started in four weeks" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Thesis ideas</p><h2>Getting started in four weeks</h2><ol class="steps"><li><b>Week 1</b><span>read two MSR or ICSE papers close to your interest</span></li><li><b>Week 2</b><span>mine one repository with PyDriller; plot commit activity</span></li><li><b>Week 3</b><span>run a tool (SonarQube, EvoSuite) on a real project</span></li><li><b>Week 4</b><span>define the study design and sample; one-page idea</span></li></ol><div class="callout warn">Pitfalls: biased repository samples (only famous projects), forks and bots in the data, survey questions that lead the answer, trusting tests as proof that AI code is correct.</div>
+</div></section>
+<section class="slide " data-title="Worked example 1" aria-label="Worked example 1" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 1 of 2</p><h2>Worked example 1</h2><div class="ex"><div class="qq">Design a mining study: “Do projects with continuous integration have fewer bugs?”</div><details class="reveal"><summary>Show the solution</summary><div class="ans">Sample: 500 active GitHub Java projects (≥50 stars, ≥2 years of history, no forks), half adopting CI during their life. Measure bug-fix commits per KLOC before and after CI adoption (a before/after design within each project), control for size and activity, and discuss confounders (mature teams adopt CI).</div></details></div>
+</div></section>
+<section class="slide " data-title="Worked example 2" aria-label="Worked example 2" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 2 of 2</p><h2>Worked example 2</h2><div class="ex"><div class="qq">An LLM repairs 40% of Defects4J bugs because the tests now pass. Why is that not the full answer?</div><details class="reveal"><summary>Show the solution</summary><div class="ans">Tests are incomplete: a patch can pass them but be wrong (overfitting patches). Manually check a sample of patches for semantic correctness against the developer fix, and report the correct-fix rate separately.</div></details></div>
+</div></section>
+<section class="slide " data-title="Practice (1 of 2)" aria-label="Practice (1 of 2)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Practice</p><h2>Practice (1 of 2)</h2><p class="muted">Try each one yourself first, then check the answer.</p><div class="ex"><div class="qq">1. Name four research methods used in SE.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Controlled experiments, mining software repositories, tool building with benchmarks, surveys and interviews, case studies.</div></details></div><div class="ex"><div class="qq">2. What is mutation testing?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Seeding small artificial faults (mutants) into code and measuring how many the test suite detects — the mutation score.</div></details></div><div class="ex"><div class="qq">3. What is Defects4J used for?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">A benchmark of real Java bugs with tests, used for testing, fault localisation and program-repair research.</div></details></div>
+</div></section>
+<section class="slide " data-title="Practice (2 of 2)" aria-label="Practice (2 of 2)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Practice</p><h2>Practice (2 of 2)</h2><p class="muted">Try each one yourself first, then check the answer.</p><div class="ex"><div class="qq">4. Why filter forks and toy projects when mining GitHub?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">They duplicate data or do not represent real development, biasing the results.</div></details></div><div class="ex"><div class="qq">5. Name three top SE venues.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">ICSE, ESEC/FSE, ASE (also ISSTA, MSR; journals TSE, TOSEM).</div></details></div><div class="ex"><div class="qq">6. Give one risk in evaluating AI-generated code.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Passing tests does not prove correctness or security; benchmarks may be in training data; prompts and model versions must be recorded.</div></details></div>
+</div></section>
+<section class="slide " data-title="Quiz" aria-label="Quiz" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Check yourself</p><h2>Quiz</h2><div><div class="quiz-host" data-quiz-key="th20"></div><script type="application/json" class="quiz-json">[{"q": "MSR stands for…", "o": ["Mining Software Repositories", "Model Size Reduction", "Mean Squared Residual", "Mobile Security Research"], "a": 0, "w": "Both a research area and a conference."}, {"q": "Mutation score measures…", "o": ["how many seeded faults tests detect", "code length", "developer happiness", "compile time"], "a": 0, "w": "A measure of test-suite effectiveness."}, {"q": "PyDriller is used to…", "o": ["mine Git repositories", "train CNNs", "scan ports", "write LaTeX"], "a": 0, "w": "Extract commits, diffs and metrics."}, {"q": "A survey question “Don’t you agree code review is useful?” is…", "o": ["neutral", "leading", "perfect", "required"], "a": 1, "w": "It pushes respondents towards an answer."}, {"q": "The top SE conference is…", "o": ["ICSE", "CVPR", "SIGIR", "CCS"], "a": 0, "w": "The International Conference on Software Engineering."}, {"q": "SonarQube detects…", "o": ["code smells and quality issues", "tumours", "phishing emails", "Wi-Fi channels"], "a": 0, "w": "Static analysis for code quality."}]</script></div>
+</div></section>
+<section class="slide " data-title="Further learning" aria-label="Further learning" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Resources</p><h2>Further learning</h2><p class="muted">Hand-picked material to go deeper. Links open in a new tab.</p><div class="res-grid"><a class="res" href="https://www.msrconf.org" target="_blank" rel="noopener noreferrer"><small>Conference</small><b>MSR — Mining Software Repositories ↗</b><span>The main venue for repository mining, with data showcases.</span></a><a class="res" href="https://github.com/rjust/defects4j" target="_blank" rel="noopener noreferrer"><small>Data</small><b>Defects4J ↗</b><span>Real Java bugs for testing and repair research.</span></a><a class="res" href="https://github.com/ishepard/pydriller" target="_blank" rel="noopener noreferrer"><small>Tool</small><b>PyDriller ↗</b><span>Python framework for mining Git.</span></a><a class="res" href="https://docs.github.com/en/rest" target="_blank" rel="noopener noreferrer"><small>API</small><b>GitHub REST API ↗</b><span>Access repositories, issues and pull requests.</span></a><div class="res book"><small>Book</small><b>Experimentation in Software Engineering — Wohlin et al.</b><span>Springer, 2nd ed. 2024. Experiments, validity and analysis.</span></div><a class="res" href="https://www.sonarsource.com/products/sonarqube/" target="_blank" rel="noopener noreferrer"><small>Tool</small><b>SonarQube ↗</b><span>Code-quality analysis.</span></a></div>
+</div></section>
+<section class="slide " data-title="Summary" aria-label="Summary" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Summary</p><h2>Summary</h2><ul class="sumlist"><li>SE research studies how software is built, tested and maintained, with tools and empirical evidence.</li><li>Methods: experiments, repository mining, tool building with benchmarks, surveys/interviews, case studies.</li><li>Know static analysis, testing (mutation, coverage), metrics, repository mining and AI-for-code evaluation.</li><li>Select repositories and participants carefully; filter forks, bots and toy projects.</li><li>Passing tests is not proof of correctness — check AI fixes manually.</li><li>Venues: ICSE, ESEC/FSE, ASE, ISSTA, MSR, ICSME; journals TSE, TOSEM, EMSE.</li></ul><div class="nextcard"><a class="btn pri" href="21-human-computer-interaction.html">Next: Human–Computer Interaction</a><a class="btn" href="../practice.html#t20">More practice</a><a class="btn" href="../resources.html#t20">All resources</a><a class="btn" href="../index.html">All chapters</a></div>
+</div></section>
+</main>
+<footer class="deck-foot">
+  <button type="button" class="btn" id="prev">Previous</button>
+  <span class="counter" id="counter">1 / 22</span>
+  <button type="button" class="btn pri" id="next">Next</button>
+</footer>
+<aside id="slide-menu" hidden aria-label="Slide list"><div class="menu-head"><h3>Slides in this chapter</h3><button type="button" id="btn-menu-close" class="menu-close" aria-label="Close slide list">&#10005;</button></div></aside>
+<noscript><p style="padding:20px">This lesson needs JavaScript for the slides and the interactive tools.</p></noscript>
+<script src="../js/core.js"></script>
+<script src="../js/art.js"></script>
+<script src="../js/diagram.js"></script>
+<script src="../js/figs.js"></script>
+<script src="../js/latex.js"></script>
+<script src="../js/demos.js"></script>
+<script src="../js/quiz.js"></script>
+<script src="../js/page.js"></script>
+<script>window.DP_TOPIC = {"id": 20, "prev": "19-iot-networks-and-edge-computing.html", "next": "21-human-computer-interaction.html"};</script>
+<script>mountPage();</script>
+<script src="../js/slides.js"></script>
+<script src="../js/annotate.js"></script>
+<script src="../js/lang.js"></script>
+<script src="../js/analytics.js"
+        data-endpoint="https://analytics-proxy.ayansarkar1829.workers.dev"
+        data-project="Thesis Research Guide"></script>
+<script src="../js/course-events.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cybersecurity – Chapter 16 | Thesis: Undergraduate Research Guide</title>
+<meta name="description" content="Intrusion and malware detection, phishing, web and software security, cryptography, privacy, usable security and adversarial ML; threat models, legal and ethical limits, data, metrics, venues and thesis ideas. Interactive slides, tools, worked examples and a quiz: chapter 16 of a free guide to doing a computer science thesis.">
+<meta name="keywords" content="cybersecurity thesis, network security research, intrusion detection, malware detection, phishing detection, cryptography, post-quantum, privacy, OWASP, CIC-IDS2017, IEEE S&amp;P CCS USENIX NDSS">
+<meta name="author" content="Thesis Research Guide">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#4338A0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E0C1A" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://ayan-1829.github.io/Thesis/topics/16-cybersecurity.html">
+<link rel="icon" type="image/svg+xml" href="../img/logo-mark.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16.png">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Thesis (Undergraduate Research)">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Cybersecurity – Chapter 16 | Thesis: Undergraduate Research Guide">
+<meta property="og:description" content="Intrusion and malware detection, phishing, web and software security, cryptography, privacy, usable security and adversarial ML; threat models, legal and ethical limits, data, metrics, venues and thesis ideas. Interactive slides, tools, worked examples and a quiz: chapter 16 of a free guide to doing a computer science thesis.">
+<meta property="og:url" content="https://ayan-1829.github.io/Thesis/topics/16-cybersecurity.html">
+<meta property="og:image" content="https://ayan-1829.github.io/Thesis/img/og/16-cybersecurity.png?v=2">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cybersecurity – Chapter 16 | Thesis: Undergraduate Research Guide">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cybersecurity – Chapter 16 | Thesis: Undergraduate Research Guide">
+<meta name="twitter:description" content="Intrusion and malware detection, phishing, web and software security, cryptography, privacy, usable security and adversarial ML; threat models, legal and ethical limits, data, metrics, venues and thesis ideas. Interactive slides, tools, worked examples and a quiz: chapter 16 of a free guide to doing a computer science thesis.">
+<meta name="twitter:image" content="https://ayan-1829.github.io/Thesis/img/og/16-cybersecurity.png?v=2">
+<meta name="twitter:image:alt" content="Cybersecurity – Chapter 16 | Thesis: Undergraduate Research Guide">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "Cybersecurity", "description": "Intrusion and malware detection, phishing, web and software security, cryptography, privacy, usable security and adversarial ML; threat models, legal and ethical limits, data, metrics, venues and thesis ideas.", "position": 16, "educationalLevel": "Undergraduate", "learningResourceType": "Lecture slides", "inLanguage": "en", "isAccessibleForFree": true, "teaches": ["Security research studies attacks and defences: detection, software and web security, cryptography, privacy, usable security, adversarial ML.", "Start every study with a threat model and evaluate against adaptive attackers.", "Rare attacks make false-positive rate and precision more important than accuracy.", "Use recent data, split by time, and test across datasets.", "Test only with permission; disclose vulnerabilities responsibly.", "Venues: IEEE S&P, ACM CCS, USENIX Security, NDSS, plus ACSAC, RAID, ESORICS."], "keywords": "cybersecurity thesis, network security research, intrusion detection, malware detection, phishing detection, cryptography, post-quantum, privacy, OWASP, CIC-IDS2017, IEEE S&P CCS USENIX NDSS", "url": "https://ayan-1829.github.io/Thesis/topics/16-cybersecurity.html", "image": "https://ayan-1829.github.io/Thesis/img/og/16-cybersecurity.png", "isPartOf": {"@type": "Course", "name": "Thesis: Undergraduate Research in Computer Science", "url": "https://ayan-1829.github.io/Thesis/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Thesis", "item": "https://ayan-1829.github.io/Thesis/"}, {"@type": "ListItem", "position": 2, "name": "Chapter 16: Cybersecurity", "item": "https://ayan-1829.github.io/Thesis/topics/16-cybersecurity.html"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Mono:wght@400;500;600&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="deck-page">
+<div class="sr-only" id="live" aria-live="polite"></div>
+<header class="deck-bar">
+  <a class="home-link" href="../index.html" aria-label="Home: all chapters"><img src="../img/logo-mark.svg" alt="" width="26" height="26"><span>Home</span></a>
+  <div class="deck-title"><span class="badge">16</span><span>Cybersecurity</span></div>
+  <div class="deck-actions">
+    <button type="button" class="btn sm" id="btn-menu" aria-expanded="false" aria-controls="slide-menu" aria-label="Slides"><svg class="btn-ic" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><rect x="3" y="4.5" width="18" height="3" rx="1"></rect><rect x="3" y="10.5" width="18" height="3" rx="1"></rect><rect x="3" y="16.5" width="18" height="3" rx="1"></rect></svg><span>Slides</span></button>
+    <button type="button" class="btn sm" id="btn-theme" aria-pressed="false" aria-label="Toggle dark mode"><svg class="btn-ic" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"></path></svg><span>Dark mode</span></button>
+    <button type="button" class="btn sm" id="btn-fs" aria-pressed="false" aria-label="Full screen"><svg class="btn-ic" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"></path></svg><span>Full screen</span></button>
+  </div>
+</header>
+<div class="deck-progress"><i id="progress-fill"></i></div>
+<main class="deck" id="deck">
+<section class="slide title-slide" data-title="Cybersecurity" aria-label="Cybersecurity" tabindex="-1"><div class="slide-inner">
+<span class="topic-art" data-art="16" aria-hidden="true"></span>
+<span class="badge big">16</span>
+<p class="kicker">Chapter 16 of 21 · Part B · Research fields</p>
+<h1>Cybersecurity</h1>
+<p class="lead">Intrusion and malware detection, phishing, web and software security, cryptography, privacy, usable security and adversarial ML; threat models, legal and ethical limits, data, metrics, venues and thesis ideas.</p>
+<div class="row"><a class="btn pri" href="#s=2">Start</a><a class="btn" href="../index.html">All chapters</a></div>
+</div></section>
+<section class="slide " data-title="Why this matters" aria-label="Why this matters" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Before we start</p><h2>Why this matters</h2><div class="hook"><p class="q">An intrusion detector scores 99.9% accuracy on a public dataset — and is useless on a real network.</p><p>Security research is adversarial and practical: realistic threat models, recent data, low false-alarm rates and robustness to attackers who adapt. It also has strict legal and ethical limits.</p><p>This chapter maps the field and shows how to do security research that is both credible and responsible.</p></div>
+</div></section>
+<section class="slide " data-title="In this chapter" aria-label="In this chapter" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Outline · chapter 16</p><h2>In this chapter</h2><p class="muted">Select a section to jump to it.</p><ol class="outline-list"><li><a href="#s=4">The field</a></li><li><a href="#s=6">Methods</a></li><li><a href="#s=10">Data and evaluation</a></li><li><a href="#s=12">Tools and venues</a></li><li><a href="#s=14">Thesis ideas</a></li></ol>
+</div></section>
+<section class="slide " data-title="What security research studies" aria-label="What security research studies" tabindex="-1"><div style="zoom:0.93;" class="slide-inner">
+<p class="kicker">Part 1 of 12</p><h2>What security research studies</h2><p><b>Cybersecurity</b> research studies how systems are attacked and how to defend them: finding vulnerabilities, detecting intrusions and malware, designing secure protocols and cryptography, protecting privacy, and understanding the human side of security. It is <b>adversarial</b>: a defence is only as good as the strongest realistic attack against it.</p><p class="small muted">Rest on a branch of the map for a description.</p><figure class="fig" data-fig="map-sec"></figure>
+</div></section>
+<section class="slide " data-title="Typical research problems" aria-label="Typical research problems" tabindex="-1"><div class="slide-inner">
+<p class="kicker">The field</p><h2>Typical research problems</h2><div class="scrollx"><table class="doc"><thead><tr><th>Area</th><th>Example thesis question</th></tr></thead><tbody><tr><td>Intrusion detection</td><td>Does a model trained on one network’s traffic detect attacks on another network, and what reduces false alarms?</td></tr><tr><td>Malware analysis</td><td>Can static features of Android apps detect malware families not seen during training?</td></tr><tr><td>Phishing and fraud</td><td>Do URL and page features detect Bangla-language phishing sites better than global blocklists?</td></tr><tr><td>Web and software security</td><td>How common are OWASP Top 10 vulnerabilities in local government websites (with permission)?</td></tr><tr><td>Cryptography in practice</td><td>What is the performance cost of post-quantum key exchange on low-power IoT devices?</td></tr><tr><td>Privacy</td><td>Which personal data do popular Bangladeshi apps send to third parties?</td></tr><tr><td>Usable security</td><td>Why do users ignore SMS fraud warnings, and which wording works better?</td></tr><tr><td>Adversarial ML</td><td>How easily can small changes fool a malware or spam classifier?</td></tr></tbody></table></div>
+</div></section>
+<section class="slide " data-title="Thinking like a security researcher" aria-label="Thinking like a security researcher" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 3 of 12</p><h2>Thinking like a security researcher</h2><div class="cols "><div><ul><li>Start with a <b>threat model</b>: who is the attacker, what can they do, what do they want, what is trusted?</li><li>Evaluate against <b>adaptive attackers</b>, not only past attacks.</li><li>Measure <b>false positives</b>: a detector that floods analysts with alarms is useless.</li><li>Test on <b>realistic, recent</b> data; old benchmarks have known flaws.</li></ul></div><div><div class="callout warn">Work only on systems you own or have <b>written permission</b> to test. Unauthorised scanning or exploitation is illegal, even for research. Use labs, virtual machines and capture-the-flag environments.</div></div></div>
+</div></section>
+<section class="slide " data-title="Key methods to know" aria-label="Key methods to know" tabindex="-1"><div style="zoom:0.92;" class="slide-inner">
+<p class="kicker">Methods</p><h2>Key methods to know</h2><div class="tgrid"><div class="tcard"><h4>Cryptography</h4><p>Hashes, symmetric and public-key encryption, signatures, TLS; post-quantum algorithms.</p></div><div class="tcard"><h4>Network monitoring</h4><p>Packet capture, flow features, signature IDS (Snort, Suricata, Zeek) and anomaly detection.</p></div><div class="tcard"><h4>Static and dynamic analysis</h4><p>Inspect code or binaries without running them; run in a sandbox and observe behaviour.</p></div><div class="tcard"><h4>Fuzzing</h4><p>Feed random or mutated inputs to find crashes and bugs automatically.</p></div><div class="tcard"><h4>ML for security</h4><p>Classifiers for malware, phishing and intrusion — plus their robustness to evasion.</p></div><div class="tcard"><h4>Measurement studies</h4><p>Scanning and crawling (with permission) to measure how common a weakness is.</p></div></div>
+</div></section>
+<section class="slide " data-title="Popular models and algorithms in security" aria-label="Popular models and algorithms in security" tabindex="-1"><div style="zoom:0.97;" class="slide-inner">
+<p class="kicker">Methods</p><h2>Popular models and algorithms in security</h2><div class="scrollx"><table class="doc"><thead><tr><th>Model / algorithm</th><th>What it is</th><th>Typical use</th></tr></thead><tbody><tr><td>Random forest, XGBoost on flow features</td><td>classic ML on network-flow statistics</td><td>intrusion-detection baselines (e.g. CIC-IDS datasets)</td></tr><tr><td>Autoencoders, Isolation Forest</td><td>anomaly detectors</td><td>detect unseen attacks without labels</td></tr><tr><td>LSTM / CNN on traffic sequences</td><td>deep sequence models</td><td>attack and botnet detection over time</td></tr><tr><td>MalConv, CNNs on byte images</td><td>deep models reading raw executables</td><td>malware detection</td></tr><tr><td>BERT-based classifiers</td><td>transformers on URLs, emails and messages</td><td>phishing and spam detection</td></tr><tr><td>Graph neural networks</td><td>learn from call graphs and provenance graphs</td><td>malware and advanced-attack detection</td></tr><tr><td>Code LLMs</td><td>models that read and write code</td><td>vulnerability detection and repair (evaluate carefully)</td></tr><tr><td>AES, RSA, ECC; ML-KEM, ML-DSA</td><td>standard and post-quantum cryptography</td><td>secure communication; NIST’s post-quantum standards (2024)</td></tr></tbody></table></div><div class="callout">Simple tree models on good features are hard to beat in intrusion detection; deep models must earn their place against them, especially on new data.</div>
+</div></section>
+<section class="slide " data-title="Hashes and the avalanche effect" aria-label="Hashes and the avalanche effect" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Interactive</p><h2>Hashes and the avalanche effect</h2><div data-demo="avalanche"></div>
+</div></section>
+<section class="slide " data-title="Datasets and environments" aria-label="Datasets and environments" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 7 of 12</p><h2>Datasets and environments</h2><div class="scrollx"><table class="doc"><thead><tr><th>Resource</th><th>Use</th></tr></thead><tbody><tr><td><a href="https://www.unb.ca/cic/datasets/index.html" target="_blank" rel="noopener">CIC datasets (UNB)</a></td><td>CIC-IDS2017, CIC-DDoS2019 and others for intrusion detection</td></tr><tr><td>NSL-KDD</td><td>a classic but outdated IDS benchmark — use only with newer data</td></tr><tr><td>PhishTank, OpenPhish</td><td>phishing URLs</td></tr><tr><td>AndroZoo</td><td>millions of Android apps for malware research (on request)</td></tr><tr><td>VirusTotal</td><td>malware labels from many engines</td></tr><tr><td>Capture-the-flag (CTF) platforms</td><td>legal practice environments for attacks and defences</td></tr></tbody></table></div>
+</div></section>
+<section class="slide " data-title="Evaluation" aria-label="Evaluation" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Data and evaluation</p><h2>Evaluation</h2><div class="cols "><div><div class="scrollx"><table class="doc"><thead><tr><th>What</th><th>How</th></tr></thead><tbody><tr><td>Detection</td><td>precision, recall, F1, false-positive rate, ROC/AUC at realistic base rates</td></tr><tr><td>Generalisation</td><td>train on one dataset or time period, test on another</td></tr><tr><td>Robustness</td><td>success rate of evasion attacks</td></tr><tr><td>Performance</td><td>throughput, latency, overhead</td></tr><tr><td>Usable security</td><td>user studies: success, errors, time</td></tr></tbody></table></div></div><div><ul><li>Attacks are <b>rare</b>: a 1% false-positive rate on a million flows is 10,000 false alarms.</li><li>Avoid random splits of attack traffic recorded in one session — split by time.</li></ul></div></div>
+</div></section>
+<section class="slide " data-title="Tools" aria-label="Tools" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 9 of 12</p><h2>Tools</h2><div class="tgrid"><div class="tcard"><h4>Wireshark / Zeek</h4><p>Packet capture and network analysis.</p></div><div class="tcard"><h4>Suricata / Snort</h4><p>Signature-based intrusion detection.</p></div><div class="tcard"><h4>Burp Suite / OWASP ZAP</h4><p>Web application security testing.</p></div><div class="tcard"><h4>Ghidra</h4><p>Reverse engineering (NSA, free).</p></div><div class="tcard"><h4>AFL++ / libFuzzer</h4><p>Fuzzing.</p></div><div class="tcard"><h4>Kali Linux, VirtualBox</h4><p>A safe lab environment.</p></div></div>
+</div></section>
+<section class="slide " data-title="Where security research is published" aria-label="Where security research is published" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Tools and venues</p><h2>Where security research is published</h2><div class="scrollx"><table class="doc"><thead><tr><th>Type</th><th>Venues</th></tr></thead><tbody><tr><td>Top conferences (“big four”)</td><td>IEEE S&amp;P, ACM CCS, USENIX Security, NDSS</td></tr><tr><td>Other conferences</td><td>ACSAC, RAID, ESORICS, AsiaCCS, Euro S&amp;P</td></tr><tr><td>Journals</td><td>IEEE TIFS, IEEE TDSC, Computers &amp; Security, ACM TOPS</td></tr><tr><td>Good first venues</td><td>workshops and regional IEEE security conferences</td></tr></tbody></table></div>
+</div></section>
+<section class="slide " data-title="Thesis ideas" aria-label="Thesis ideas" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 11 of 12</p><h2>Thesis ideas</h2><div class="ideas"><div class="idea starter"><span class="lvl">Starter</span><b>Phishing detection for local sites</b><p>Collect Bangla phishing and legitimate URLs; compare URL-only and page-content models.</p></div><div class="idea standard"><span class="lvl">Standard</span><b>Cross-dataset intrusion detection</b><p>Train on CIC-IDS2017, test on a newer dataset; measure the drop and test domain adaptation.</p></div><div class="idea standard"><span class="lvl">Standard</span><b>Android app privacy measurement</b><p>Analyse permissions and third-party trackers in popular local apps.</p></div><div class="idea standard"><span class="lvl">Standard</span><b>Robustness of ML detectors</b><p>Craft evasion attacks against a malware or spam classifier and test defences.</p></div><div class="idea ambitious"><span class="lvl">Ambitious</span><b>Post-quantum on IoT</b><p>Benchmark post-quantum key exchange on microcontrollers: time, memory, energy.</p></div></div>
+</div></section>
+<section class="slide " data-title="Getting started in four weeks" aria-label="Getting started in four weeks" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Thesis ideas</p><h2>Getting started in four weeks</h2><ol class="steps"><li><b>Week 1</b><span>OWASP Top 10 and MITRE ATT&amp;CK overview</span></li><li><b>Week 2</b><span>set up a lab VM; capture and inspect traffic with Wireshark</span></li><li><b>Week 3</b><span>read 5 recent papers from the big four on your topic</span></li><li><b>Week 4</b><span>reproduce a simple detector on a public dataset; write a threat model and one-page idea</span></li></ol><div class="callout warn">Pitfalls: testing without permission, only old datasets (KDD99), random splits of session traffic, ignoring false positives, publishing a live vulnerability before disclosure.</div>
+</div></section>
+<section class="slide " data-title="Worked example 1" aria-label="Worked example 1" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 1 of 2</p><h2>Worked example 1</h2><div class="ex"><div class="qq">An IDS has 99% detection rate and 1% false-positive rate. The network sees 1,000,000 benign flows and 100 attacks a day. How many alerts are real?</div><details class="reveal"><summary>Show the solution</summary><div class="ans">True alerts ≈ 0.99 × 100 = 99. False alerts = 0.01 × 1,000,000 = 10,000. Precision ≈ 99 ÷ 10,099 ≈ 1%. Analysts would see almost only false alarms — false-positive rate matters more than accuracy.</div></details></div>
+</div></section>
+<section class="slide " data-title="Worked example 2" aria-label="Worked example 2" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 2 of 2</p><h2>Worked example 2</h2><div class="ex"><div class="qq">Write a threat model for a university exam-results portal.</div><details class="reveal"><summary>Show the solution</summary><div class="ans">Assets: grades, student personal data, admin accounts. Attackers: students wanting to change grades; outsiders seeking data. Capabilities: internet access, phishing, stolen passwords; not physical server access. Trusted: the hosting provider and the database server. Goals of defence: integrity of grades, confidentiality of data, availability during result publication.</div></details></div>
+</div></section>
+<section class="slide " data-title="Practice (1 of 2)" aria-label="Practice (1 of 2)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Practice</p><h2>Practice (1 of 2)</h2><p class="muted">Try each one yourself first, then check the answer.</p><div class="ex"><div class="qq">1. What is a threat model?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">A statement of who the attacker is, their goals and capabilities, what is trusted, and what must be protected.</div></details></div><div class="ex"><div class="qq">2. Why is the false-positive rate critical in intrusion detection?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Attacks are rare, so even a small false-positive rate creates huge numbers of false alarms that hide real attacks.</div></details></div><div class="ex"><div class="qq">3. What legal rule applies to security testing?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Only test systems you own or have explicit written permission to test; use labs, VMs and CTFs.</div></details></div>
+</div></section>
+<section class="slide " data-title="Practice (2 of 2)" aria-label="Practice (2 of 2)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Practice</p><h2>Practice (2 of 2)</h2><p class="muted">Try each one yourself first, then check the answer.</p><div class="ex"><div class="qq">4. What is the avalanche effect?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">A small change in the input (one bit) changes about half of the output bits of a good hash or cipher.</div></details></div><div class="ex"><div class="qq">5. Name the “big four” security conferences.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">IEEE S&P;, ACM CCS, USENIX Security, NDSS.</div></details></div><div class="ex"><div class="qq">6. Why is NSL-KDD alone a weak choice of dataset?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">It is old and has known artefacts; modern attacks and traffic differ, so results may not generalise. Use it only alongside newer datasets.</div></details></div>
+</div></section>
+<section class="slide " data-title="Quiz" aria-label="Quiz" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Check yourself</p><h2>Quiz</h2><div><div class="quiz-host" data-quiz-key="th16"></div><script type="application/json" class="quiz-json">[{"q": "Fuzzing means…", "o": ["feeding random or mutated inputs to find bugs", "encrypting files", "drawing diagrams", "labelling data"], "a": 0, "w": "Automated input generation finds crashes."}, {"q": "Before scanning a website for vulnerabilities you need…", "o": ["nothing", "written permission", "a faster laptop", "a VPN only"], "a": 1, "w": "Unauthorised testing is illegal."}, {"q": "MITRE ATT&CK is…", "o": ["a knowledge base of attacker tactics and techniques", "a malware family", "a journal", "a firewall"], "a": 0, "w": "It catalogues real-world adversary behaviour."}, {"q": "With rare attacks, the most misleading metric is…", "o": ["accuracy", "recall", "precision", "false-positive rate"], "a": 0, "w": "Predicting “benign” always gives near-100% accuracy."}, {"q": "Which is a top security conference?", "o": ["USENIX Security", "CVPR", "ACL", "CHI"], "a": 0, "w": "One of the big four."}, {"q": "Responsible disclosure means…", "o": ["publish exploits at once", "tell the vendor privately and allow time to fix", "sell the bug", "ignore it"], "a": 1, "w": "Protect users first."}]</script></div>
+</div></section>
+<section class="slide " data-title="Further learning" aria-label="Further learning" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Resources</p><h2>Further learning</h2><p class="muted">Hand-picked material to go deeper. Links open in a new tab.</p><div class="res-grid"><a class="res" href="https://owasp.org/www-project-top-ten/" target="_blank" rel="noopener noreferrer"><small>Guide</small><b>OWASP Top 10 ↗</b><span>The most critical web application risks.</span></a><a class="res" href="https://attack.mitre.org" target="_blank" rel="noopener noreferrer"><small>Knowledge base</small><b>MITRE ATT&amp;CK ↗</b><span>Adversary tactics and techniques.</span></a><a class="res" href="https://www.unb.ca/cic/datasets/index.html" target="_blank" rel="noopener noreferrer"><small>Data</small><b>CIC datasets (University of New Brunswick) ↗</b><span>Intrusion, DDoS, malware and other datasets.</span></a><a class="res" href="https://www.nist.gov/cyberframework" target="_blank" rel="noopener noreferrer"><small>Framework</small><b>NIST Cybersecurity Framework ↗</b><span>Identify, protect, detect, respond, recover.</span></a><a class="res book" href="https://www.cl.cam.ac.uk/~rja14/book.html" target="_blank" rel="noopener noreferrer"><small>Book</small><b>Security Engineering, 3rd ed. — Ross Anderson ↗</b><span>Free chapters on building dependable secure systems.</span></a><a class="res" href="https://picoctf.org" target="_blank" rel="noopener noreferrer"><small>Practice</small><b>picoCTF ↗</b><span>Free, legal capture-the-flag challenges.</span></a></div>
+</div></section>
+<section class="slide " data-title="Summary" aria-label="Summary" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Summary</p><h2>Summary</h2><ul class="sumlist"><li>Security research studies attacks and defences: detection, software and web security, cryptography, privacy, usable security, adversarial ML.</li><li>Start every study with a threat model and evaluate against adaptive attackers.</li><li>Rare attacks make false-positive rate and precision more important than accuracy.</li><li>Use recent data, split by time, and test across datasets.</li><li>Test only with permission; disclose vulnerabilities responsibly.</li><li>Venues: IEEE S&P;, ACM CCS, USENIX Security, NDSS, plus ACSAC, RAID, ESORICS.</li></ul><div class="nextcard"><a class="btn pri" href="17-biomedical-and-health-informatics.html">Next: Biomedical and Health Informatics</a><a class="btn" href="../practice.html#t16">More practice</a><a class="btn" href="../resources.html#t16">All resources</a><a class="btn" href="../index.html">All chapters</a></div>
+</div></section>
+</main>
+<footer class="deck-foot">
+  <button type="button" class="btn" id="prev">Previous</button>
+  <span class="counter" id="counter">1 / 22</span>
+  <button type="button" class="btn pri" id="next">Next</button>
+</footer>
+<aside id="slide-menu" hidden aria-label="Slide list"><div class="menu-head"><h3>Slides in this chapter</h3><button type="button" id="btn-menu-close" class="menu-close" aria-label="Close slide list">&#10005;</button></div></aside>
+<noscript><p style="padding:20px">This lesson needs JavaScript for the slides and the interactive tools.</p></noscript>
+<script src="../js/core.js"></script>
+<script src="../js/art.js"></script>
+<script src="../js/diagram.js"></script>
+<script src="../js/figs.js"></script>
+<script src="../js/latex.js"></script>
+<script src="../js/demos.js"></script>
+<script src="../js/quiz.js"></script>
+<script src="../js/page.js"></script>
+<script>window.DP_TOPIC = {"id": 16, "prev": "15-computer-vision-and-image-processing.html", "next": "17-biomedical-and-health-informatics.html"};</script>
+<script>mountPage();</script>
+<script src="../js/slides.js"></script>
+<script src="../js/annotate.js"></script>
+<script src="../js/lang.js"></script>
+<script src="../js/analytics.js"
+        data-endpoint="https://analytics-proxy.ayansarkar1829.workers.dev"
+        data-project="Thesis Research Guide"></script>
+<script src="../js/course-events.js"></script>
+</body>
+</html>

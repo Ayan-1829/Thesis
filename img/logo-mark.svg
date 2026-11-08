@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Thesis logo">
+  <rect x="0" y="0" width="64" height="64" rx="15" fill="#4338A0"/>
+  <path d="M9 19 Q20.5 14 32 19 V47 Q20.5 42 9 47 Z" fill="#FFFFFF"/>
+  <path d="M32 19 Q43.5 14 55 19 V47 Q43.5 42 32 47 Z" fill="#E4E1F7"/>
+  <path d="M14 25 H27 M14 30.5 H27 M14 36 H23" stroke="#4338A0" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="44" cy="37" r="8.2" fill="#4338A0" stroke="#F59A6B" stroke-width="3.4"/>
+  <path d="M49.8 43 L56 49.5" stroke="#F59A6B" stroke-width="4" stroke-linecap="round"/>
+</svg>

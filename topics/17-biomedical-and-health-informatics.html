@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biomedical and Health Informatics – Chapter 17 | Thesis: Undergraduate Research Guide</title>
+<meta name="description" content="Medical imaging, biosignals, clinical prediction, clinical text, bioinformatics and digital health; clinical collaboration, patient-level evaluation, ethics, datasets, metrics, venues and thesis ideas. Interactive slides, tools, worked examples and a quiz: chapter 17 of a free guide to doing a computer science thesis.">
+<meta name="keywords" content="biomedical informatics thesis, health informatics research, medical image analysis, ECG classification, clinical prediction model, sensitivity specificity, PhysioNet, MIMIC, bioinformatics, MICCAI, digital health">
+<meta name="author" content="Thesis Research Guide">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#4338A0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E0C1A" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://ayan-1829.github.io/Thesis/topics/17-biomedical-and-health-informatics.html">
+<link rel="icon" type="image/svg+xml" href="../img/logo-mark.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16.png">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Thesis (Undergraduate Research)">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Biomedical and Health Informatics – Chapter 17 | Thesis: Undergraduate Research Guide">
+<meta property="og:description" content="Medical imaging, biosignals, clinical prediction, clinical text, bioinformatics and digital health; clinical collaboration, patient-level evaluation, ethics, datasets, metrics, venues and thesis ideas. Interactive slides, tools, worked examples and a quiz: chapter 17 of a free guide to doing a computer science thesis.">
+<meta property="og:url" content="https://ayan-1829.github.io/Thesis/topics/17-biomedical-and-health-informatics.html">
+<meta property="og:image" content="https://ayan-1829.github.io/Thesis/img/og/17-biomedical-and-health-informatics.png?v=2">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Biomedical and Health Informatics – Chapter 17 | Thesis: Undergraduate Research Guide">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Biomedical and Health Informatics – Chapter 17 | Thesis: Undergraduate Research Guide">
+<meta name="twitter:description" content="Medical imaging, biosignals, clinical prediction, clinical text, bioinformatics and digital health; clinical collaboration, patient-level evaluation, ethics, datasets, metrics, venues and thesis ideas. Interactive slides, tools, worked examples and a quiz: chapter 17 of a free guide to doing a computer science thesis.">
+<meta name="twitter:image" content="https://ayan-1829.github.io/Thesis/img/og/17-biomedical-and-health-informatics.png?v=2">
+<meta name="twitter:image:alt" content="Biomedical and Health Informatics – Chapter 17 | Thesis: Undergraduate Research Guide">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "Biomedical and Health Informatics", "description": "Medical imaging, biosignals, clinical prediction, clinical text, bioinformatics and digital health; clinical collaboration, patient-level evaluation, ethics, datasets, metrics, venues and thesis ideas.", "position": 17, "educationalLevel": "Undergraduate", "learningResourceType": "Lecture slides", "inLanguage": "en", "isAccessibleForFree": true, "teaches": ["Biomedical informatics covers imaging, biosignals, clinical prediction, clinical text, bioinformatics and digital health.", "Work with a clinician; define the clinical use, which decides the metric and threshold.", "Split by patient, validate externally, report sensitivity, specificity, PPV/NPV, calibration and confidence intervals.", "Prevalence changes PPV dramatically: understand it before claiming a test is useful.", "Patient data needs approval, de-identification and agreements; never use public AI tools on it.", "Venues: MICCAI, ISBI, AMIA, JAMIA, ML4H, CHIL, Computing in Cardiology."], "keywords": "biomedical informatics thesis, health informatics research, medical image analysis, ECG classification, clinical prediction model, sensitivity specificity, PhysioNet, MIMIC, bioinformatics, MICCAI, digital health", "url": "https://ayan-1829.github.io/Thesis/topics/17-biomedical-and-health-informatics.html", "image": "https://ayan-1829.github.io/Thesis/img/og/17-biomedical-and-health-informatics.png", "isPartOf": {"@type": "Course", "name": "Thesis: Undergraduate Research in Computer Science", "url": "https://ayan-1829.github.io/Thesis/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Thesis", "item": "https://ayan-1829.github.io/Thesis/"}, {"@type": "ListItem", "position": 2, "name": "Chapter 17: Biomedical and Health Informatics", "item": "https://ayan-1829.github.io/Thesis/topics/17-biomedical-and-health-informatics.html"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Mono:wght@400;500;600&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="deck-page">
+<div class="sr-only" id="live" aria-live="polite"></div>
+<header class="deck-bar">
+  <a class="home-link" href="../index.html" aria-label="Home: all chapters"><img src="../img/logo-mark.svg" alt="" width="26" height="26"><span>Home</span></a>
+  <div class="deck-title"><span class="badge">17</span><span>Biomedical and Health Informatics</span></div>
+  <div class="deck-actions">
+    <button type="button" class="btn sm" id="btn-menu" aria-expanded="false" aria-controls="slide-menu" aria-label="Slides"><svg class="btn-ic" viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><rect x="3" y="4.5" width="18" height="3" rx="1"></rect><rect x="3" y="10.5" width="18" height="3" rx="1"></rect><rect x="3" y="16.5" width="18" height="3" rx="1"></rect></svg><span>Slides</span></button>
+    <button type="button" class="btn sm" id="btn-theme" aria-pressed="false" aria-label="Toggle dark mode"><svg class="btn-ic" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"></path></svg><span>Dark mode</span></button>
+    <button type="button" class="btn sm" id="btn-fs" aria-pressed="false" aria-label="Full screen"><svg class="btn-ic" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"></path></svg><span>Full screen</span></button>
+  </div>
+</header>
+<div class="deck-progress"><i id="progress-fill"></i></div>
+<main class="deck" id="deck">
+<section class="slide title-slide" data-title="Biomedical and Health Informatics" aria-label="Biomedical and Health Informatics" tabindex="-1"><div class="slide-inner">
+<span class="topic-art" data-art="17" aria-hidden="true"></span>
+<span class="badge big">17</span>
+<p class="kicker">Chapter 17 of 21 · Part B · Research fields</p>
+<h1>Biomedical and Health Informatics</h1>
+<p class="lead">Medical imaging, biosignals, clinical prediction, clinical text, bioinformatics and digital health; clinical collaboration, patient-level evaluation, ethics, datasets, metrics, venues and thesis ideas.</p>
+<div class="row"><a class="btn pri" href="#s=2">Start</a><a class="btn" href="../index.html">All chapters</a></div>
+</div></section>
+<section class="slide " data-title="Why this matters" aria-label="Why this matters" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Before we start</p><h2>Why this matters</h2><div class="hook"><p class="q">A test that is 95% sensitive and 95% specific sounds excellent. For a disease that affects 1 person in 100, most of its positive results are wrong.</p><p>Health research rewards students who understand both the computing and the clinical meaning of their numbers — and who handle patient data with care.</p><p>This chapter introduces biomedical informatics: problems, methods, data, the right metrics, ethics and venues.</p></div>
+</div></section>
+<section class="slide " data-title="In this chapter" aria-label="In this chapter" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Outline · chapter 17</p><h2>In this chapter</h2><p class="muted">Select a section to jump to it.</p><ol class="outline-list"><li><a href="#s=4">The field</a></li><li><a href="#s=6">Methods</a></li><li><a href="#s=10">Data and evaluation</a></li><li><a href="#s=12">Tools and venues</a></li><li><a href="#s=14">Thesis ideas</a></li></ol>
+</div></section>
+<section class="slide " data-title="What biomedical informatics research studies" aria-label="What biomedical informatics research studies" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 1 of 12</p><h2>What biomedical informatics research studies</h2><p><b>Biomedical and health informatics</b> applies computing to medicine and biology: analysing medical images and signals, predicting disease risk from records, processing clinical text, analysing genes and proteins, and building digital-health tools. Errors can harm patients, so evaluation and ethics matter even more than in other fields.</p><p class="small muted">Rest on a branch of the map for a description.</p><figure class="fig" data-fig="map-bio"></figure>
+</div></section>
+<section class="slide " data-title="Typical research problems" aria-label="Typical research problems" tabindex="-1"><div class="slide-inner">
+<p class="kicker">The field</p><h2>Typical research problems</h2><div class="scrollx"><table class="doc"><thead><tr><th>Area</th><th>Example thesis question</th></tr></thead><tbody><tr><td>Medical imaging</td><td>Can a CNN grade diabetic retinopathy from fundus images, and does it hold on images from a local hospital?</td></tr><tr><td>Biosignals</td><td>Can arrhythmia be detected from a single-lead ECG of a cheap wearable?</td></tr><tr><td>Clinical prediction</td><td>Which features predict dengue severity on admission, and is the model calibrated?</td></tr><tr><td>Clinical and health text</td><td>Can symptoms be extracted from Bangla patient messages to a telemedicine service?</td></tr><tr><td>Bioinformatics</td><td>Which gene-expression features distinguish two cancer subtypes?</td></tr><tr><td>Digital health and mHealth</td><td>Does an SMS reminder system improve vaccination follow-up in a pilot community?</td></tr><tr><td>Fairness and generalisation</td><td>Does a skin-lesion model perform equally on darker skin tones?</td></tr></tbody></table></div>
+</div></section>
+<section class="slide " data-title="Working with clinical problems" aria-label="Working with clinical problems" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 3 of 12</p><h2>Working with clinical problems</h2><div class="cols "><div><ul><li>Find a <b>clinical collaborator</b> (doctor, public-health expert): they define what matters and check plausibility.</li><li>Decide the <b>clinical use</b>: screening, diagnosis support, triage, prognosis? It decides the metric and threshold.</li><li>Use <b>patient-level splits</b> and, ideally, an <b>external</b> test set from another hospital.</li><li>Report <b>sensitivity and specificity</b> at a clinically chosen threshold, and calibration.</li></ul></div><div><div class="callout warn">Patient data needs ethics approval, de-identification and a data-use agreement. Never put identifiable patient data on a public cloud or into a public AI tool.</div></div></div>
+</div></section>
+<section class="slide " data-title="Key methods to know" aria-label="Key methods to know" tabindex="-1"><div style="zoom:0.96;" class="slide-inner">
+<p class="kicker">Methods</p><h2>Key methods to know</h2><div class="tgrid"><div class="tcard"><h4>Image models</h4><p>CNNs and U-Net for classification and segmentation of X-ray, CT, MRI, fundus and histopathology images.</p></div><div class="tcard"><h4>Signal processing</h4><p>Filtering, R-peak detection, spectral features; 1-D CNNs for ECG and EEG.</p></div><div class="tcard"><h4>Tabular prediction</h4><p>Logistic regression and gradient boosting with calibration; survival analysis (Cox models).</p></div><div class="tcard"><h4>Clinical NLP</h4><p>Named-entity recognition for symptoms, drugs and diseases; domain-specific language models.</p></div><div class="tcard"><h4>Bioinformatics</h4><p>Sequence alignment, gene-expression analysis, feature selection, protein structure tools.</p></div><div class="tcard"><h4>Interpretability</h4><p>Saliency maps, SHAP and simple models clinicians can check.</p></div></div>
+</div></section>
+<section class="slide " data-title="Popular models in biomedical informatics" aria-label="Popular models in biomedical informatics" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Methods</p><h2>Popular models in biomedical informatics</h2><div class="scrollx"><table class="doc"><thead><tr><th>Model</th><th>What it is</th><th>Typical use</th></tr></thead><tbody><tr><td>U-Net, nnU-Net</td><td>segmentation networks; nnU-Net configures itself automatically</td><td>organ and lesion segmentation — nnU-Net is the standard baseline</td></tr><tr><td>DenseNet, ResNet, EfficientNet</td><td>CNN classifiers</td><td>X-ray, skin-lesion and fundus classification (e.g. CheXNet uses DenseNet-121)</td></tr><tr><td>MedSAM, BiomedCLIP</td><td>medical foundation models</td><td>zero-shot segmentation and image–text tasks</td></tr><tr><td>1-D CNN / ResNet for signals</td><td>deep models on ECG and EEG</td><td>arrhythmia and seizure detection</td></tr><tr><td>BioBERT, PubMedBERT, ClinicalBERT</td><td>language models trained on biomedical text</td><td>clinical NER, literature mining</td></tr><tr><td>Logistic regression, XGBoost, Cox model</td><td>interpretable risk and survival models</td><td>clinical prediction with calibration</td></tr><tr><td>AlphaFold</td><td>protein-structure prediction</td><td>structural biology and drug discovery</td></tr></tbody></table></div><div class="callout">Clinicians trust what they can check: always compare a deep model with a simple, interpretable one.</div>
+</div></section>
+<section class="slide " data-title="Screening tests: why prevalence matters" aria-label="Screening tests: why prevalence matters" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Interactive</p><h2>Screening tests: why prevalence matters</h2><div data-demo="screening"></div>
+</div></section>
+<section class="slide " data-title="Datasets" aria-label="Datasets" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 7 of 12</p><h2>Datasets</h2><div class="scrollx"><table class="doc"><thead><tr><th>Resource</th><th>What it offers</th></tr></thead><tbody><tr><td><a href="https://physionet.org" target="_blank" rel="noopener">PhysioNet</a></td><td>ECG, EEG and clinical databases (MIMIC needs credentialed access and training)</td></tr><tr><td><a href="https://www.cancerimagingarchive.net" target="_blank" rel="noopener">The Cancer Imaging Archive</a></td><td>CT, MRI and pathology images</td></tr><tr><td><a href="https://grand-challenge.org" target="_blank" rel="noopener">Grand Challenge</a></td><td>medical-imaging challenges with data and leaderboards</td></tr><tr><td>HAM10000, ISIC</td><td>skin-lesion images</td></tr><tr><td>NIH ChestX-ray14, CheXpert</td><td>chest X-rays</td></tr><tr><td>NCBI GEO</td><td>gene-expression data</td></tr></tbody></table></div>
+</div></section>
+<section class="slide " data-title="Evaluation" aria-label="Evaluation" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Data and evaluation</p><h2>Evaluation</h2><div class="cols "><div><div class="scrollx"><table class="doc"><thead><tr><th>Metric</th><th>Clinical meaning</th></tr></thead><tbody><tr><td>Sensitivity (recall)</td><td>share of sick patients detected</td></tr><tr><td>Specificity</td><td>share of healthy patients correctly cleared</td></tr><tr><td>PPV / NPV</td><td>chance a positive / negative result is right — depends on prevalence</td></tr><tr><td>AUC-ROC</td><td>ranking quality over all thresholds</td></tr><tr><td>Calibration</td><td>do predicted risks match observed rates?</td></tr><tr><td>Dice / IoU</td><td>segmentation overlap</td></tr></tbody></table></div></div><div><ul><li>Report confidence intervals (bootstrap).</li><li>Test on an external site.</li><li>Analyse subgroups (age, sex, skin tone).</li><li>Follow reporting guidelines such as TRIPOD+AI for prediction models.</li></ul></div></div>
+</div></section>
+<section class="slide " data-title="Tools" aria-label="Tools" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 9 of 12</p><h2>Tools</h2><div class="tgrid"><div class="tcard"><h4>MONAI</h4><p>PyTorch framework for medical imaging.</p></div><div class="tcard"><h4>3D Slicer</h4><p>Viewing and annotating medical images.</p></div><div class="tcard"><h4>NeuroKit2 / WFDB</h4><p>Biosignal processing for ECG and EEG.</p></div><div class="tcard"><h4>lifelines / scikit-survival</h4><p>Survival analysis in Python.</p></div><div class="tcard"><h4>Biopython</h4><p>Sequence analysis.</p></div><div class="tcard"><h4>PubMed</h4><p>Search the biomedical literature.</p></div></div>
+</div></section>
+<section class="slide " data-title="Where biomedical informatics is published" aria-label="Where biomedical informatics is published" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Tools and venues</p><h2>Where biomedical informatics is published</h2><div class="scrollx"><table class="doc"><thead><tr><th>Type</th><th>Venues</th></tr></thead><tbody><tr><td>Medical imaging</td><td>MICCAI, ISBI, IEEE TMI, Medical Image Analysis</td></tr><tr><td>Health informatics</td><td>AMIA, MEDINFO, JAMIA, JBI (Journal of Biomedical Informatics)</td></tr><tr><td>ML for health</td><td>ML4H, CHIL, MLHC</td></tr><tr><td>Signals</td><td>Computing in Cardiology, IEEE EMBC, IEEE JBHI</td></tr><tr><td>Bioinformatics</td><td>ISMB, Bioinformatics (Oxford), BMC Bioinformatics</td></tr></tbody></table></div>
+</div></section>
+<section class="slide " data-title="Thesis ideas" aria-label="Thesis ideas" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Part 11 of 12</p><h2>Thesis ideas</h2><div class="ideas"><div class="idea starter"><span class="lvl">Starter</span><b>External validation of a published model</b><p>Test a public chest X-ray or skin-lesion model on another dataset; measure the drop and subgroup performance.</p></div><div class="idea standard"><span class="lvl">Standard</span><b>Wearable ECG arrhythmia detection</b><p>Single-lead ECG classification on PhysioNet data; test on noisy recordings.</p></div><div class="idea standard"><span class="lvl">Standard</span><b>Calibrated risk prediction</b><p>Predict severity of a local disease from admission data with a doctor; report calibration and decision thresholds.</p></div><div class="idea standard"><span class="lvl">Standard</span><b>Bangla health-message NLP</b><p>Extract symptoms from anonymised telemedicine messages.</p></div><div class="idea ambitious"><span class="lvl">Ambitious</span><b>Federated learning across hospitals</b><p>Simulate training across sites without sharing data; compare with central training.</p></div></div>
+</div></section>
+<section class="slide " data-title="Getting started in four weeks" aria-label="Getting started in four weeks" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Thesis ideas</p><h2>Getting started in four weeks</h2><ol class="steps"><li><b>Week 1</b><span>basics: sensitivity, specificity, PPV, ROC, calibration</span></li><li><b>Week 2</b><span>get access to a public dataset (PhysioNet training if needed)</span></li><li><b>Week 3</b><span>read 5 papers via PubMed and MICCAI; meet a clinician</span></li><li><b>Week 4</b><span>baseline model with patient-level split; one-page idea</span></li></ol><div class="callout warn">Pitfalls: image-level instead of patient-level splits, accuracy on rare diseases, no external test, models learning hospital or scanner artefacts, identifiable data on public tools.</div>
+</div></section>
+<section class="slide " data-title="Worked example 1" aria-label="Worked example 1" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 1 of 2</p><h2>Worked example 1</h2><div class="ex"><div class="qq">A test has 95% sensitivity and 95% specificity; prevalence is 1%. Out of 10,000 people, what is the PPV?</div><details class="reveal"><summary>Show the solution</summary><div class="ans">Sick: 100; detected: 95. Healthy: 9,900; false positives: 5% = 495. PPV = 95 ÷ (95 + 495) ≈ 16%. Only one in six positives is truly sick — so this test is for screening followed by confirmation, not diagnosis.</div></details></div>
+</div></section>
+<section class="slide " data-title="Worked example 2" aria-label="Worked example 2" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Worked example 2 of 2</p><h2>Worked example 2</h2><div class="ex"><div class="qq">A pneumonia model trained in hospital A has AUC 0.93 internally but 0.78 at hospital B. What could cause it, and what do you do?</div><details class="reveal"><summary>Show the solution</summary><div class="ans">Differences in scanners, patient populations, labelling practices or shortcut features (e.g. text markers on images). Report both results honestly, analyse errors, try normalisation, augmentation or fine-tuning with a small local sample, and discuss limitations.</div></details></div>
+</div></section>
+<section class="slide " data-title="Practice (1 of 2)" aria-label="Practice (1 of 2)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Practice</p><h2>Practice (1 of 2)</h2><p class="muted">Try each one yourself first, then check the answer.</p><div class="ex"><div class="qq">1. Define sensitivity and specificity.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Sensitivity: share of truly sick patients the test detects. Specificity: share of truly healthy patients the test clears.</div></details></div><div class="ex"><div class="qq">2. Why does PPV depend on prevalence?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">With a rare disease, even a small false-positive rate among the many healthy people produces more false than true positives.</div></details></div><div class="ex"><div class="qq">3. Why split by patient?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Several images or records from one patient in train and test let the model recognise the patient, inflating results.</div></details></div>
+</div></section>
+<section class="slide " data-title="Practice (2 of 2)" aria-label="Practice (2 of 2)" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Practice</p><h2>Practice (2 of 2)</h2><p class="muted">Try each one yourself first, then check the answer.</p><div class="ex"><div class="qq">4. What approvals does patient data need?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Ethics approval, de-identification, and a data-use agreement or credentialed access (e.g. PhysioNet for MIMIC).</div></details></div><div class="ex"><div class="qq">5. Name two medical-imaging venues.</div><details class="reveal"><summary>Show the answer</summary><div class="ans">MICCAI, ISBI (journals: IEEE TMI, Medical Image Analysis).</div></details></div><div class="ex"><div class="qq">6. What is calibration and why does it matter clinically?</div><details class="reveal"><summary>Show the answer</summary><div class="ans">Whether predicted probabilities match observed frequencies; doctors act on risk estimates, so a 30% prediction must mean about 30% risk.</div></details></div>
+</div></section>
+<section class="slide " data-title="Quiz" aria-label="Quiz" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Check yourself</p><h2>Quiz</h2><div><div class="quiz-host" data-quiz-key="th17"></div><script type="application/json" class="quiz-json">[{"q": "Specificity is…", "o": ["TN ÷ (TN + FP)", "TP ÷ (TP + FN)", "TP ÷ (TP + FP)", "accuracy"], "a": 0, "w": "The share of healthy patients correctly identified."}, {"q": "MIMIC data is accessed through…", "o": ["PhysioNet credentialing", "a public download with no rules", "Kaggle only", "email to any doctor"], "a": 0, "w": "It requires training and a data-use agreement."}, {"q": "External validation means testing on…", "o": ["the training data", "data from another site", "random noise", "the validation set"], "a": 1, "w": "It checks generalisation across hospitals."}, {"q": "MONAI is a framework for…", "o": ["medical imaging", "web security", "compilers", "networking"], "a": 0, "w": "PyTorch-based medical imaging tools."}, {"q": "For screening a dangerous disease, the priority metric is usually…", "o": ["sensitivity", "BLEU", "latency", "model size"], "a": 0, "w": "Missing a sick patient is the worst error."}, {"q": "Identifiable patient data may be uploaded to a public AI chatbot…", "o": ["always", "never", "if anonymous later", "on weekends"], "a": 1, "w": "It breaches privacy and data agreements."}]</script></div>
+</div></section>
+<section class="slide " data-title="Further learning" aria-label="Further learning" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Resources</p><h2>Further learning</h2><p class="muted">Hand-picked material to go deeper. Links open in a new tab.</p><div class="res-grid"><a class="res" href="https://physionet.org" target="_blank" rel="noopener noreferrer"><small>Data</small><b>PhysioNet ↗</b><span>Biosignal and clinical databases, with training for restricted data.</span></a><a class="res" href="https://www.cancerimagingarchive.net" target="_blank" rel="noopener noreferrer"><small>Data</small><b>The Cancer Imaging Archive ↗</b><span>Public medical images.</span></a><a class="res" href="https://grand-challenge.org" target="_blank" rel="noopener noreferrer"><small>Challenges</small><b>Grand Challenge ↗</b><span>Medical-imaging challenges with data.</span></a><a class="res" href="https://monai.io" target="_blank" rel="noopener noreferrer"><small>Tool</small><b>MONAI ↗</b><span>Medical imaging deep learning.</span></a><a class="res" href="https://www.tripod-statement.org" target="_blank" rel="noopener noreferrer"><small>Guideline</small><b>TRIPOD+AI ↗</b><span>Reporting guideline for clinical prediction models using AI.</span></a><a class="res" href="https://pubmed.ncbi.nlm.nih.gov" target="_blank" rel="noopener noreferrer"><small>Search</small><b>PubMed ↗</b><span>The biomedical literature.</span></a></div>
+</div></section>
+<section class="slide " data-title="Summary" aria-label="Summary" tabindex="-1"><div class="slide-inner">
+<p class="kicker">Summary</p><h2>Summary</h2><ul class="sumlist"><li>Biomedical informatics covers imaging, biosignals, clinical prediction, clinical text, bioinformatics and digital health.</li><li>Work with a clinician; define the clinical use, which decides the metric and threshold.</li><li>Split by patient, validate externally, report sensitivity, specificity, PPV/NPV, calibration and confidence intervals.</li><li>Prevalence changes PPV dramatically: understand it before claiming a test is useful.</li><li>Patient data needs approval, de-identification and agreements; never use public AI tools on it.</li><li>Venues: MICCAI, ISBI, AMIA, JAMIA, ML4H, CHIL, Computing in Cardiology.</li></ul><div class="nextcard"><a class="btn pri" href="18-data-science-and-information-retrieval.html">Next: Data Science, Data Mining and Information Retrieval</a><a class="btn" href="../practice.html#t17">More practice</a><a class="btn" href="../resources.html#t17">All resources</a><a class="btn" href="../index.html">All chapters</a></div>
+</div></section>
+</main>
+<footer class="deck-foot">
+  <button type="button" class="btn" id="prev">Previous</button>
+  <span class="counter" id="counter">1 / 22</span>
+  <button type="button" class="btn pri" id="next">Next</button>
+</footer>
+<aside id="slide-menu" hidden aria-label="Slide list"><div class="menu-head"><h3>Slides in this chapter</h3><button type="button" id="btn-menu-close" class="menu-close" aria-label="Close slide list">&#10005;</button></div></aside>
+<noscript><p style="padding:20px">This lesson needs JavaScript for the slides and the interactive tools.</p></noscript>
+<script src="../js/core.js"></script>
+<script src="../js/art.js"></script>
+<script src="../js/diagram.js"></script>
+<script src="../js/figs.js"></script>
+<script src="../js/latex.js"></script>
+<script src="../js/demos.js"></script>
+<script src="../js/quiz.js"></script>
+<script src="../js/page.js"></script>
+<script>window.DP_TOPIC = {"id": 17, "prev": "16-cybersecurity.html", "next": "18-data-science-and-information-retrieval.html"};</script>
+<script>mountPage();</script>
+<script src="../js/slides.js"></script>
+<script src="../js/annotate.js"></script>
+<script src="../js/lang.js"></script>
+<script src="../js/analytics.js"
+        data-endpoint="https://analytics-proxy.ayansarkar1829.workers.dev"
+        data-project="Thesis Research Guide"></script>
+<script src="../js/course-events.js"></script>
+</body>
+</html>
