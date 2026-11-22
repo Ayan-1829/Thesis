@@ -1067,3 +1067,10 @@ table.litm textarea{width:100%;min-width:120px;font:14px/1.35 var(--f-accessible
 .slide-inner .idea p{font:400 17px/1.45 var(--f-accessible);text-align:left;hyphens:none}
 .slide-inner .idea b{font-size:18px}
 body.deck-page .slide .idea p{font-size:var(--pj-sm)!important;line-height:1.45}
+/* ===== Phones: code and its output / preview stack top-to-bottom =====
+   Applies below 900px wide, and on phones turned sideways (a touch screen no taller than 540px):
+   big phones are 850-950px wide in landscape, so a width test alone kept the panes side by side.
+   Laptops, desktops and tablets keep the side-by-side layout. */
+@media (max-width:900px),(pointer:coarse) and (max-height:540px){
+  .cols,.cols.wl,.cols.wf,.cols.fw,.codeout,.tex-split{grid-template-columns:1fr}
+}
