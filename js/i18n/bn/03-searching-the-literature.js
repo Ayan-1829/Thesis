@@ -158,7 +158,7 @@ I18N_BN_ADD({
 "Keep a search log; stop when results saturate and you can state the gap.": "একটি search log রাখুন; ফলাফল পরিপূর্ণ হলে এবং ফাঁক বলতে পারলে থামুন।",
 "Next: Selecting and Judging Papers": "পরবর্তী: Paper বাছাই ও মূল্যায়ন",
 "All resources": "সব resource",
-"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
+"Found a mistake or something unclear? <a href=\"#feedback\" data-feedback=\"\">Send feedback</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"#feedback\" data-feedback=\"\">মতামত পাঠান</a>।",
 "OR widens the search to any of the synonyms.": "OR অনুসন্ধানকে যেকোনো সমার্থক শব্দে বিস্তৃত করে।",
 "Forward snowballing uses…": "সামনের snowballing ব্যবহার করে…",
 "the reference list": "reference তালিকা",

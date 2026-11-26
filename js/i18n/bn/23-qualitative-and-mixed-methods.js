@@ -192,7 +192,7 @@ I18N_BN_ADD({
 "Combine numbers and words with a named mixed-methods design, and report themes with quotes.": "নামসহ একটি mixed-methods design দিয়ে সংখ্যা ও কথা মেলান, এবং quote-সহ theme রিপোর্ট করুন।",
 "Next: Managing Your Thesis Year": "পরবর্তী: আপনার থিসিস বছর পরিচালনা",
 "All resources": "সব resource",
-"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
+"Found a mistake or something unclear? <a href=\"#feedback\" data-feedback=\"\">Send feedback</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"#feedback\" data-feedback=\"\">মতামত পাঠান</a>।",
 "“Why” questions about people’s experience need their own words.": "মানুষের অভিজ্ঞতা নিয়ে “কেন” প্রশ্নে তাদের নিজের কথা লাগে।",
 "Purposive sampling means…": "Purposive sampling মানে…",
 "choosing participants who have the experience you study": "যাঁদের অধ্যয়নের বিষয়ের অভিজ্ঞতা আছে তাঁদের বাছাই",

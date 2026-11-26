@@ -182,7 +182,7 @@ I18N_BN_ADD({
 "Balance seminal and recent work; use preprints with care; never cite AI chatbots or unverified references.": "মৌলিক ও সাম্প্রতিক কাজের ভারসাম্য রাখুন; preprint সাবধানে ব্যবহার করুন; AI chatbot বা যাচাইহীন reference কখনো উদ্ধৃত করবেন না।",
 "Next: Reading Papers and Managing Notes": "পরবর্তী: Paper পড়া ও নোট ব্যবস্থাপনা",
 "All resources": "সব resource",
-"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
+"Found a mistake or something unclear? <a href=\"#feedback\" data-feedback=\"\">Send feedback</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"#feedback\" data-feedback=\"\">মতামত পাঠান</a>।",
 "The PRISMA flow diagram reports identification, screening and inclusion.": "PRISMA flow diagram চিহ্নিতকরণ, যাচাই ও অন্তর্ভুক্তি জানায়।",
 "CORE A* refers to…": "CORE A* বোঝায়…",
 "a journal quartile": "একটি journal quartile",

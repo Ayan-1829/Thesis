@@ -167,7 +167,7 @@ I18N_BN_ADD({
 "Venues: KDD, ICDM, CIKM, SIGIR, WWW, WSDM, RecSys.": "Venue: KDD, ICDM, CIKM, SIGIR, WWW, WSDM, RecSys।",
 "Next: IoT, Networks and Edge Computing": "পরবর্তী: IoT, Network ও Edge Computing",
 "All resources": "সব resource",
-"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
+"Found a mistake or something unclear? <a href=\"#feedback\" data-feedback=\"\">Send feedback</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"#feedback\" data-feedback=\"\">মতামত পাঠান</a>।",
 "Assignment and update steps until stable.": "স্থির না হওয়া পর্যন্ত নির্ধারণ ও হালনাগাদ ধাপ।",
 "nDCG evaluates…": "nDCG মূল্যায়ন করে…",
 "ranking quality": "ranking-এর মান",

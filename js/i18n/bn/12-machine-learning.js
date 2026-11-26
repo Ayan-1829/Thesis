@@ -169,7 +169,7 @@ I18N_BN_ADD({
 "Start by reproducing one paper’s main result.": "একটি paper-এর প্রধান ফলাফল পুনরুৎপাদন করে শুরু করুন।",
 "Next: Artificial Intelligence and Generative AI": "পরবর্তী: Artificial Intelligence ও Generative AI",
 "All resources": "সব resource",
-"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
+"Found a mistake or something unclear? <a href=\"#feedback\" data-feedback=\"\">Send feedback</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"#feedback\" data-feedback=\"\">মতামত পাঠান</a>।",
 "The model memorises the training data.": "Model training data মুখস্থ করে।",
 "For tabular data a strong baseline is…": "Tabular data-র জন্য একটি শক্তিশালী baseline হলো…",
 "a GAN": "একটি GAN",

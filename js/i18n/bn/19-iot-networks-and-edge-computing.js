@@ -180,7 +180,7 @@ I18N_BN_ADD({
 "Venues: SIGCOMM, NSDI, INFOCOM, MobiCom, SenSys, IEEE IoT Journal.": "Venue: SIGCOMM, NSDI, INFOCOM, MobiCom, SenSys, IEEE IoT Journal।",
 "Next: Software Engineering Research": "পরবর্তী: Software Engineering গবেষণা",
 "All resources": "সব resource",
-"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
+"Found a mistake or something unclear? <a href=\"#feedback\" data-feedback=\"\">Send feedback</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"#feedback\" data-feedback=\"\">মতামত পাঠান</a>।",
 "Ideal for sparse sensor data over kilometres.": "কয়েক কিলোমিটার জুড়ে বিক্ষিপ্ত sensor data-র জন্য আদর্শ।",
 "ns-3 is a…": "ns-3 হলো একটি…",
 "image editor": "ছবি সম্পাদক",

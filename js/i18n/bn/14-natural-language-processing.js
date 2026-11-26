@@ -171,7 +171,7 @@ I18N_BN_ADD({
 "Venues: ACL, EMNLP, NAACL, COLING; read them free in the ACL Anthology.": "Venue: ACL, EMNLP, NAACL, COLING; ACL Anthology-তে বিনামূল্যে পড়ুন।",
 "Next: Computer Vision and Image Processing": "পরবর্তী: Computer Vision ও Image Processing",
 "All resources": "সব resource",
-"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
+"Found a mistake or something unclear? <a href=\"#feedback\" data-feedback=\"\">Send feedback</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"#feedback\" data-feedback=\"\">মতামত পাঠান</a>।",
 "An encoder model pretrained on Bangla text.": "বাংলা লেখায় pretrained একটি encoder model।",
 "Inter-annotator agreement is measured with…": "Annotator-দের সম্মতি মাপা হয়…",
 "Cohen’s κ": "Cohen’s κ দিয়ে",

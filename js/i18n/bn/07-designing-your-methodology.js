@@ -175,7 +175,7 @@ I18N_BN_ADD({
 "Name threats to validity and what you did about them; the proposal fixes the plan.": "Validity-র হুমকি ও আপনি কী করেছেন তা বলুন; proposal পরিকল্পনা স্থির করে।",
 "Next: Experiments, Statistics and Reproducibility": "পরবর্তী: Experiment, পরিসংখ্যান ও পুনরুৎপাদনযোগ্যতা",
 "All resources": "সব resource",
-"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
+"Found a mistake or something unclear? <a href=\"#feedback\" data-feedback=\"\">Send feedback</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"#feedback\" data-feedback=\"\">মতামত পাঠান</a>।",
 "The question decides the design, data and metrics.": "প্রশ্নই design, data ও metric ঠিক করে।",
 "“Can we build a system that does P?” calls for…": "“আমরা কি P করে এমন একটি system তৈরি করতে পারি?” — এর জন্য দরকার…",
 "a survey": "একটি survey",

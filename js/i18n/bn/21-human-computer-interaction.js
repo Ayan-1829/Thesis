@@ -178,7 +178,7 @@ I18N_BN_ADD({
 "Venues: CHI, UIST, CSCW, ASSETS, COMPASS; journals TOCHI, IJHCS.": "Venue: CHI, UIST, CSCW, ASSETS, COMPASS; journal TOCHI, IJHCS।",
 "Next: Computer Architecture and Digital Hardware Design": "পরবর্তী: Computer Architecture ও Digital Hardware Design",
 "All resources": "সব resource",
-"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
+"Found a mistake or something unclear? <a href=\"#feedback\" data-feedback=\"\">Send feedback</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"#feedback\" data-feedback=\"\">মতামত পাঠান</a>।",
 "ACM CHI.": "ACM CHI।",
 "Thematic analysis is used for…": "Thematic analysis ব্যবহৃত হয়…",
 "interview data": "interview data-র জন্য",

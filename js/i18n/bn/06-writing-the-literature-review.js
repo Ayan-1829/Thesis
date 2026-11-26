@@ -146,7 +146,7 @@ I18N_BN_ADD({
 "Describe your search briefly; a full systematic review is a method of its own.": "আপনার অনুসন্ধান সংক্ষেপে বর্ণনা করুন; পূর্ণ systematic review নিজেই একটি পদ্ধতি।",
 "Next: Designing Your Methodology": "পরবর্তী: আপনার Methodology নকশা",
 "All resources": "সব resource",
-"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
+"Found a mistake or something unclear? <a href=\"#feedback\" data-feedback=\"\">Send feedback</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"#feedback\" data-feedback=\"\">মতামত পাঠান</a>।",
 "The review is an argument leading to your question.": "Review একটি যুক্তি যা আপনার প্রশ্নে পৌঁছায়।",
 "Which sentence is synthesis?": "কোন বাক্যটি সংশ্লেষণ?",
 "Smith used SVM.": "Smith SVM ব্যবহার করেছেন।",

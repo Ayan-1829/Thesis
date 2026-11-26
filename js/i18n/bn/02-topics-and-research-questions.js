@@ -202,7 +202,7 @@ I18N_BN_ADD({
 "Secure the data and agree the topic with your supervisor in writing.": "Data নিশ্চিত করুন এবং supervisor-এর সাথে বিষয়টি লিখিতভাবে ঠিক করুন।",
 "Next: Searching the Literature": "পরবর্তী: সাহিত্য অনুসন্ধান",
 "All resources": "সব resource",
-"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
+"Found a mistake or something unclear? <a href=\"#feedback\" data-feedback=\"\">Send feedback</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"#feedback\" data-feedback=\"\">মতামত পাঠান</a>।",
 "It names data, method, comparison and outcome.": "এটি data, পদ্ধতি, তুলনা ও ফলাফলের নাম বলে।",
 "In FINER, “F” stands for…": "FINER-এ “F” মানে…",
 "Feasible: time, data, skills and compute are enough.": "Feasible: সময়, data, দক্ষতা ও compute যথেষ্ট।",

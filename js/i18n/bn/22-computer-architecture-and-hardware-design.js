@@ -183,7 +183,7 @@ I18N_BN_ADD({
 "Venues: ISCA, MICRO, HPCA, ASPLOS, FPGA, FCCM, DAC.": "Venue: ISCA, MICRO, HPCA, ASPLOS, FPGA, FCCM, DAC।",
 "Next: Qualitative and Mixed Methods": "পরবর্তী: Qualitative ও Mixed Methods",
 "All resources": "সব resource",
-"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
+"Found a mistake or something unclear? <a href=\"#feedback\" data-feedback=\"\">Send feedback</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"#feedback\" data-feedback=\"\">মতামত পাঠান</a>।",
 "Every block is used once per pass, so a bigger cache cannot help; prefetching can.": "প্রতি পাসে প্রতিটি block একবার ব্যবহৃত হয়, তাই বড় cache সাহায্য করতে পারে না; prefetching পারে।",
 "gem5 is a…": "gem5 হলো একটি…",
 "A full-system simulator used in most architecture research.": "বেশিরভাগ architecture গবেষণায় ব্যবহৃত full-system simulator।",

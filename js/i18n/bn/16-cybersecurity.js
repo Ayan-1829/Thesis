@@ -172,7 +172,7 @@ I18N_BN_ADD({
 "Venues: IEEE S&amp;P;, ACM CCS, USENIX Security, NDSS, plus ACSAC, RAID, ESORICS.": "Venue: IEEE S&amp;P;, ACM CCS, USENIX Security, NDSS, সাথে ACSAC, RAID, ESORICS।",
 "Next: Biomedical and Health Informatics": "পরবর্তী: Biomedical ও Health Informatics",
 "All resources": "সব resource",
-"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
+"Found a mistake or something unclear? <a href=\"#feedback\" data-feedback=\"\">Send feedback</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"#feedback\" data-feedback=\"\">মতামত পাঠান</a>।",
 "Automated input generation finds crashes.": "স্বয়ংক্রিয় input তৈরি crash খুঁজে পায়।",
 "Before scanning a website for vulnerabilities you need…": "Vulnerability-র জন্য একটি website scan করার আগে আপনার দরকার…",
 "nothing": "কিছুই না",

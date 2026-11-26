@@ -171,7 +171,7 @@ I18N_BN_ADD({
 "Outline, draft, revise with feedback, check and proofread; write the abstract last.": "রূপরেখা, খসড়া, feedback নিয়ে সংশোধন, যাচাই ও প্রুফ দেখা; abstract শেষে লিখুন।",
 "Next: Presenting, Defending and Publishing": "পরবর্তী: উপস্থাপন, প্রতিরক্ষা ও প্রকাশনা",
 "All resources": "সব resource",
-"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
+"Found a mistake or something unclear? <a href=\"#feedback\" data-feedback=\"\">Send feedback</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"#feedback\" data-feedback=\"\">মতামত পাঠান</a>।",
 "It summarises results you only have at the end.": "এটি এমন ফলাফলের সারসংক্ষেপ যা আপনি শুধু শেষে পান।",
 "The contributions list belongs in…": "অবদানের তালিকা থাকে…",
 "the introduction": "ভূমিকায়",

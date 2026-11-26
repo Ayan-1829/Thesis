@@ -165,7 +165,7 @@ I18N_BN_ADD({
 "Consider bias, misuse and responsible disclosure; agree authorship and acknowledge help.": "পক্ষপাত, অপব্যবহার ও responsible disclosure বিবেচনা করুন; লেখকত্ব ঠিক করুন এবং সাহায্য স্বীকার করুন।",
 "Next: Writing the Thesis": "পরবর্তী: থিসিস লেখা",
 "All resources": "সব resource",
-"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
+"Found a mistake or something unclear? <a href=\"#feedback\" data-feedback=\"\">Send feedback</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"#feedback\" data-feedback=\"\">মতামত পাঠান</a>।",
 "Report all runs, or justify any exclusion openly.": "সব run জানান, অথবা যেকোনো বাদ দেওয়ার যৌক্তিকতা খোলাখুলি দিন।",
 "Reusing a figure from a paper needs…": "একটি paper-এর figure পুনঃব্যবহারে দরকার…",
 "nothing": "কিছুই না",

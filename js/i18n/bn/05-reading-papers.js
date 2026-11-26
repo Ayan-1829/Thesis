@@ -157,7 +157,7 @@ I18N_BN_ADD({
 "Use one reference manager from day one; tag papers by theme and status.": "প্রথম দিন থেকে একটি reference manager ব্যবহার করুন; paper-গুলোকে বিষয় ও অবস্থা অনুযায়ী tag দিন।",
 "Next: Writing the Literature Review": "পরবর্তী: Literature Review লেখা",
 "All resources": "সব resource",
-"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
+"Found a mistake or something unclear? <a href=\"#feedback\" data-feedback=\"\">Send feedback</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"#feedback\" data-feedback=\"\">মতামত পাঠান</a>।",
 "A quick scan to decide whether to read on.": "আরও পড়বেন কিনা ঠিক করতে দ্রুত একটি স্ক্যান।",
 "The best section for thesis ideas is often…": "থিসিস ধারণার জন্য সেরা অংশ প্রায়ই…",
 "acknowledgements": "কৃতজ্ঞতা স্বীকার",

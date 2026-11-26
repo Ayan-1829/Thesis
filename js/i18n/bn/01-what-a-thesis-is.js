@@ -247,7 +247,7 @@ I18N_BN_ADD({
 "Start small, read every week, write as you go, version and back up everything.": "ছোট থেকে শুরু করুন, প্রতি সপ্তাহে পড়ুন, কাজের সাথে লিখুন, সবকিছু version ও backup করুন।",
 "Next: Choosing a Topic and Research Questions": "পরবর্তী: বিষয় ও গবেষণা প্রশ্ন বাছাই",
 "All resources": "সব resource",
-"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
+"Found a mistake or something unclear? <a href=\"#feedback\" data-feedback=\"\">Send feedback</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"#feedback\" data-feedback=\"\">মতামত পাঠান</a>।",
 "A thesis answers a question with evidence and states its contribution.": "একটি থিসিস প্রমাণ দিয়ে একটি প্রশ্নের উত্তর দেয় এবং এর অবদান উল্লেখ করে।",
 "Which is a research question?": "কোনটি একটি গবেষণা প্রশ্ন?",
 "Build a chatbot for the library": "লাইব্রেরির জন্য একটি chatbot তৈরি",

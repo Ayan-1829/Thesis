@@ -170,7 +170,7 @@ I18N_BN_ADD({
 "The lab-to-field gap is a rich source of thesis questions.": "Lab-থেকে-মাঠ ফাঁক থিসিস প্রশ্নের একটি সমৃদ্ধ উৎস।",
 "Next: Cybersecurity": "পরবর্তী: Cybersecurity",
 "All resources": "সব resource",
-"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
+"Found a mistake or something unclear? <a href=\"#feedback\" data-feedback=\"\">Send feedback</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"#feedback\" data-feedback=\"\">মতামত পাঠান</a>।",
 "Intersection over union.": "Intersection over union।",
 "YOLO is a family of…": "YOLO হলো একটি পরিবার…",
 "object detectors": "object detector-এর",

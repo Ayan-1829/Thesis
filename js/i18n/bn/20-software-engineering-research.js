@@ -179,7 +179,7 @@ I18N_BN_ADD({
 "Venues: ICSE, ESEC/FSE, ASE, ISSTA, MSR, ICSME; journals TSE, TOSEM, EMSE.": "Venue: ICSE, ESEC/FSE, ASE, ISSTA, MSR, ICSME; journal TSE, TOSEM, EMSE।",
 "Next: Human–Computer Interaction": "পরবর্তী: Human–Computer Interaction",
 "All resources": "সব resource",
-"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
+"Found a mistake or something unclear? <a href=\"#feedback\" data-feedback=\"\">Send feedback</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"#feedback\" data-feedback=\"\">মতামত পাঠান</a>।",
 "Both a research area and a conference.": "একটি গবেষণা ক্ষেত্র ও একটি conference দুটোই।",
 "Mutation score measures…": "Mutation score মাপে…",
 "how many seeded faults tests detect": "test কতগুলো রোপিত ত্রুটি শনাক্ত করে",

@@ -14,7 +14,7 @@ and managing the thesis year. Every chapter is a slide deck with figures, intera
 | 3 | [Searching the Literature](topics/03-searching-the-literature.html) | 22 |
 | 4 | [Selecting and Judging Papers](topics/04-selecting-and-judging-papers.html) | 21 |
 | 5 | [Reading Papers and Managing Notes](topics/05-reading-papers.html) | 21 |
-| 6 | [Writing the Literature Review](topics/06-writing-the-literature-review.html) | 22 |
+| 6 | [Writing the Literature Review](topics/06-writing-the-literature-review.html) | 21 |
 | 7 | [Designing Your Methodology](topics/07-designing-your-methodology.html) | 23 |
 | 8 | [Experiments, Statistics and Reproducibility](topics/08-experiments-and-evaluation.html) | 28 |
 | 9 | [Research Ethics and Integrity](topics/09-research-ethics-and-integrity.html) | 21 |
@@ -23,7 +23,7 @@ and managing the thesis year. Every chapter is a slide deck with figures, intera
 | 12 | [Machine Learning](topics/12-machine-learning.html) | 23 |
 | 13 | [Artificial Intelligence and Generative AI](topics/13-ai-and-generative-ai.html) | 22 |
 | 14 | [Natural Language Processing](topics/14-natural-language-processing.html) | 23 |
-| 15 | [Computer Vision and Image Processing](topics/15-computer-vision-and-image-processing.html) | 22 |
+| 15 | [Computer Vision and Image Processing](topics/15-computer-vision-and-image-processing.html) | 23 |
 | 16 | [Cybersecurity](topics/16-cybersecurity.html) | 22 |
 | 17 | [Biomedical and Health Informatics](topics/17-biomedical-and-health-informatics.html) | 22 |
 | 18 | [Data Science, Data Mining and Information Retrieval](topics/18-data-science-and-information-retrieval.html) | 22 |
@@ -36,7 +36,7 @@ and managing the thesis year. Every chapter is a slide deck with figures, intera
 
 Also: [a worked thesis](worked-thesis.html), [practice](practice.html), [quick reference](reference.html), [glossary](glossary.html),
 [milestone checklists and templates](milestones.html), [resources](resources.html), [course outline](course.html), [search](search.html)
-and the [changelog](changelog.html). Version 1.1, last updated 26 November 2026.
+and the [changelog](changelog.html). Version 1.2, last updated 26 November 2026.
 
 Static HTML, CSS and JavaScript; no build step is needed to view it. Independent teaching notes, free to use for study.
-Found a mistake? [Open an issue](https://github.com/Ayan-1829/Thesis/issues/new).
+Found a mistake? Use the Feedback button at the top of any page of the site.

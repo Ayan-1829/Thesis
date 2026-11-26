@@ -158,7 +158,7 @@ I18N_BN_ADD({
 "Venues: MICCAI, ISBI, AMIA, JAMIA, ML4H, CHIL, Computing in Cardiology.": "Venue: MICCAI, ISBI, AMIA, JAMIA, ML4H, CHIL, Computing in Cardiology।",
 "Next: Data Science, Data Mining and Information Retrieval": "পরবর্তী: Data Science, Data Mining ও Information Retrieval",
 "All resources": "সব resource",
-"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
+"Found a mistake or something unclear? <a href=\"#feedback\" data-feedback=\"\">Send feedback</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"#feedback\" data-feedback=\"\">মতামত পাঠান</a>।",
 "The share of healthy patients correctly identified.": "সুস্থ রোগীদের যে অংশ সঠিকভাবে চিহ্নিত হয়।",
 "MIMIC data is accessed through…": "MIMIC data অ্যাক্সেস করা হয়…",
 "PhysioNet credentialing": "PhysioNet credentialing-এর মাধ্যমে",

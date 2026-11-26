@@ -153,7 +153,7 @@ I18N_BN_ADD({
 "Look after yourself and use the people and services around you.": "নিজের যত্ন নিন এবং চারপাশের মানুষ ও সেবা কাজে লাগান।",
 "Thesis milestones": "থিসিস milestone",
 "All resources": "সব resource",
-"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
+"Found a mistake or something unclear? <a href=\"#feedback\" data-feedback=\"\">Send feedback</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"#feedback\" data-feedback=\"\">মতামত পাঠান</a>।",
 "Add buffers and plan backwards.": "Buffer যোগ করুন এবং পেছন থেকে পরিকল্পনা করুন।",
 "The best thing to bring to a supervisor meeting is…": "Supervisor মিটিংয়ে নিয়ে যাওয়ার সবচেয়ে ভালো জিনিস…",
 "decisions you need, with evidence": "প্রমাণসহ প্রয়োজনীয় সিদ্ধান্ত",

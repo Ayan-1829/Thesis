@@ -200,7 +200,7 @@ I18N_BN_ADD({
 "Make every number reproducible: Git, environment, seeds, scripts, README.": "প্রতিটি সংখ্যা পুনরুৎপাদনযোগ্য করুন: Git, environment, seed, script, README।",
 "Next: Research Ethics and Integrity": "পরবর্তী: গবেষণা নৈতিকতা ও সততা",
 "All resources": "সব resource",
-"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
+"Found a mistake or something unclear? <a href=\"#feedback\" data-feedback=\"\">Send feedback</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"#feedback\" data-feedback=\"\">মতামত পাঠান</a>।",
 "Tuning on test data leaks it into the model.": "Test data-তে tuning সেটিকে model-এ ফাঁস করে।",
 "For time-series data you should split…": "Time-series data-র জন্য split করা উচিত…",
 "randomly": "random-ভাবে",

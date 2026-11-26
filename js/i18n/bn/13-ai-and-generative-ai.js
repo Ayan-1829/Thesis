@@ -183,7 +183,7 @@ I18N_BN_ADD({
 "A good AI thesis measures or improves something well defined — not a demo.": "একটি ভালো AI থিসিস সুনির্দিষ্ট কিছু মাপে বা উন্নত করে — demo নয়।",
 "Next: Natural Language Processing": "পরবর্তী: Natural Language Processing",
 "All resources": "সব resource",
-"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
+"Found a mistake or something unclear? <a href=\"#feedback\" data-feedback=\"\">Send feedback</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"#feedback\" data-feedback=\"\">মতামত পাঠান</a>।",
 "Retrieve documents, then generate an answer from them.": "নথি উদ্ধার করুন, তারপর সেগুলো থেকে উত্তর তৈরি করুন।",
 "LoRA is used to…": "LoRA ব্যবহৃত হয়…",
 "fine-tune large models cheaply": "কম খরচে বড় model fine-tune করতে",
