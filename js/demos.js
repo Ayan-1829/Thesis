@@ -615,11 +615,18 @@ DEMOS['ttest'] = (root) => {
   const kIn = numInput(k, { min: 2, step: 1, 'aria-label': 'Folds k', oninput: (e) => { k = Math.max(2, parseInt(e.target.value, 10) || 2); paint(); } });
   const kBox = h('div', { class: 'row tight', style: { display: 'none' } }, field('Folds k (test share = 1/k)', kIn));
   const modeSeg = seg([{ v: 'runs', l: 'Independent runs or test sets' }, { v: 'cv', l: 'Cross-validation folds' }], mode, (v) => { mode = v; kBox.style.display = v === 'cv' ? '' : 'none'; paint(); });
-  /* every token must be a number: a typo is reported, never skipped */
+  /* every value must be a number: a typo or a blank field (1,,3 from a spreadsheet) is reported, never skipped,
+     so it cannot shift the pairs. Commas, semicolons, tabs (a pasted spreadsheet row) and line breaks (a pasted
+     column) separate values, and two of them in a row leave a blank; spaces only separate. */
   const parse = (s, name) => {
-    const toks = s.split(/[\s,;]+/).filter((x) => x !== ''), bad = [];
-    const vals = toks.map((t, i) => { const v = Number(t); if (t === '' || !Number.isFinite(v)) bad.push(`“${esc(t)}” (value ${i + 1})`); return v; });
-    return { vals, err: bad.length ? `${name}: ${bad.join(', ')} ${bad.length > 1 ? 'are not numbers' : 'is not a number'}.` : '' };
+    const t = s.replace(/\r\n?/g, '\n').replace(/[ \t]*([,;])[ \t]*\n?/g, '$1').replace(/^\s+/, '').replace(/[\s,;]+$/, '');
+    const toks = t === '' ? [] : t.split(/ *[,;\n\t] */).reduce((acc, f) => acc.concat(f === '' ? [''] : f.split(/ +/)), []);
+    const bad = [], blank = [];
+    const vals = toks.map((x, i) => { const v = Number(x); if (x === '') blank.push(i + 1); else if (!Number.isFinite(v)) bad.push(`“${esc(x)}” (value ${i + 1})`); return v; });
+    const errs = [];
+    if (blank.length) errs.push(`${name}: value${blank.length > 1 ? 's' : ''} ${blank.join(', ')} ${blank.length > 1 ? 'are' : 'is'} blank.`);
+    if (bad.length) errs.push(`${name}: ${bad.join(', ')} ${bad.length > 1 ? 'are not numbers' : 'is not a number'}.`);
+    return { vals, err: errs.join(' ') };
   };
   const esc = (t) => t.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const mean = (x) => x.reduce((p, q) => p + q, 0) / x.length, sd = (x) => { const m = mean(x); return Math.sqrt(x.reduce((p, q) => p + (q - m) ** 2, 0) / (x.length - 1)); };
@@ -627,18 +634,25 @@ DEMOS['ttest'] = (root) => {
   const pf = (p) => (p < 0.0001 ? '&lt; 0.0001' : fmt(p, 4));
   function paint() {
     const PA = parse(a.value, 'Method A'), PB = parse(b.value, 'Method B'), A = PA.vals, B = PB.vals;
-    if (PA.err || PB.err) { out.innerHTML = `<b class="bad">${[PA.err, PB.err].filter(Boolean).join(' ')}</b><p class="small">Fix the entry; no result is shown until every value is a number, so a typo cannot shift the pairs.</p>`; return; }
+    if (PA.err || PB.err) { out.innerHTML = `<b class="bad">${[PA.err, PB.err].filter(Boolean).join(' ')}</b><p class="small">Fix the entry; no result is shown until every value is a number, so a typo or a blank cannot shift the pairs.</p>`; return; }
     if (A.length !== B.length || A.length < 2) { out.innerHTML = `<b class="bad">Method A has ${A.length} value${A.length === 1 ? '' : 's'} and Method B has ${B.length}.</b><p class="small">Give the same number (at least 2) of paired results — one per seed or fold, in the same order.</p>`; return; }
     const d = A.map((x, i) => r10(x - B[i])), n = d.length, md = r10(mean(d)), s = r10(sd(d)), df = n - 1;
     let html = `<p>A: <b>${fmt(mean(A))} ± ${fmt(sd(A))}</b> · B: <b>${fmt(mean(B))} ± ${fmt(sd(B))}</b> (mean ± sd, n = ${n} pairs)</p>`;
+    const cv = mode === 'cv';
+    if (cv && n % k !== 0) {
+      out.innerHTML = html + `<b class="bad">A ${k}-fold run gives ${k} pairs per repetition, so ${n} pair${n === 1 ? ' is' : 's are'} not a whole number of repetitions.</b>` +
+        `<p class="small">Enter every fold of every repetition: ${k}, ${2 * k}, ${3 * k} … pairs (${n < k ? `${k - n} more for one repetition` : `${k - n % k} more, or ${n % k} fewer`}), or check that k is right. The correction assumes complete repetitions, so no result is shown.</p>`;
+      return;
+    }
     if (s === 0) {
       out.innerHTML = html + (md === 0 ? '<p><b>A and B are identical in every pair.</b> There is no difference to test.</p>'
         : `<p><b>${md > 0 ? 'A' : 'B'} exceeded ${md > 0 ? 'B' : 'A'} by exactly ${fmt(Math.abs(md), 4)} in all ${n} pairs.</b></p><p>The differences have zero variance, so t, p and the effect size cannot be computed, and the tool gives no significance verdict. Report the consistent difference as it is; with so few pairs, run more seeds or folds before drawing a conclusion.</p>`);
       return;
     }
-    const cv = mode === 'cv', se = cv ? s * Math.sqrt(1 / n + 1 / (k - 1)) : s / Math.sqrt(n);
+    const se = cv ? s * Math.sqrt(1 / n + 1 / (k - 1)) : s / Math.sqrt(n);
     const t = md / se, p = tPvalue(t, df), tc = tCrit(df, 0.05), lo = md - tc * se, hi = md + tc * se;
     html += `<p>Mean difference A − B = <b>${fmt(md, 4)}</b>, 95% confidence interval <b>[${fmt(lo, 4)}, ${fmt(hi, 4)}]</b>, sd of differences = ${fmt(s, 4)}.</p>` +
+      (cv ? `<p class="small">${n} pairs = ${n / k} complete repetition${n / k > 1 ? 's' : ''} of ${k}-fold cross-validation.</p>` : '') +
       `<p>${cv ? 'Corrected resampled t-test (Nadeau and Bengio)' : 'Paired t-test'}: t = <b>${fmt(t, 2)}</b>, df = ${df}, two-sided p = <b>${pf(p)}</b>. ` +
       (p < 0.05 ? '<b class="good">Significant at the 5% level.</b>' : '<b>Not significant at the 5% level</b> — the data do not show that one method is better.') + ` Effect size d<sub>z</sub> = ${fmt(md / s, 2)}.</p>`;
     if (cv) {

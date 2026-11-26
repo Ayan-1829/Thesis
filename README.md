@@ -36,7 +36,7 @@ and managing the thesis year. Every chapter is a slide deck with figures, intera
 
 Also: [a worked thesis](worked-thesis.html), [practice](practice.html), [quick reference](reference.html), [glossary](glossary.html),
 [milestone checklists and templates](milestones.html), [resources](resources.html), [course outline](course.html), [search](search.html)
-and the [changelog](changelog.html). Version 1.2, last updated 26 November 2026.
+and the [changelog](changelog.html). Version 1.3, last updated 26 November 2026.
 
 Static HTML, CSS and JavaScript; no build step is needed to view it. Independent teaching notes, free to use for study.
 Found a mistake? Use the Feedback button at the top of any page of the site.
