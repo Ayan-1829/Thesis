@@ -2,6 +2,9 @@
 I18N_BN_ADD({
 "Biomedical and Health Informatics": "Biomedical ও Health Informatics",
 "Medical imaging, biosignals, clinical prediction, clinical text, bioinformatics and digital health; clinical collaboration, patient-level evaluation, ethics, datasets, metrics, venues and thesis ideas.": "Medical imaging, biosignal, clinical পূর্বাভাস, clinical লেখা, bioinformatics ও digital health; clinical সহযোগিতা, রোগী-স্তরের মূল্যায়ন, নৈতিকতা, dataset, metric, venue ও থিসিস ধারণা।",
+"A test is 95% sensitive and 95% specific, and it says you have a rare disease. Should you panic? Surprisingly, you are probably fine.": "একটি test 95% sensitive আর 95% specific, আর এটি বলছে আপনার একটি বিরল রোগ আছে। আতঙ্কিত হবেন? আশ্চর্যজনকভাবে, সম্ভবত আপনি ঠিকই আছেন।",
+"When a disease affects 1 person in 100, most positive results from that test are wrong. Health research rewards students who understand both the computing and the clinical meaning of their numbers — and who treat patient data with care.": "যে রোগ 100 জনে 1 জনের হয়, সেখানে ওই test-এর বেশিরভাগ positive ফলই ভুল। স্বাস্থ্য গবেষণা পুরস্কৃত করে তাদের, যারা নিজেদের সংখ্যার computing আর clinical দুই অর্থই বোঝে — আর রোগীর data যত্ন নিয়ে সামলায়।",
+"This chapter covers problems, methods, data, the right metrics, ethics and venues in biomedical informatics.": "এই chapter-এ আছে biomedical informatics-এর সমস্যা, পদ্ধতি, data, সঠিক metric, নৈতিকতা আর প্রকাশের স্থান।",
 "In this chapter": "এই অধ্যায়ে",
 "Select a section to jump to it.": "কোনো অংশে যেতে সেটি বাছুন।",
 "The field": "ক্ষেত্রটি",
@@ -155,6 +158,7 @@ I18N_BN_ADD({
 "Venues: MICCAI, ISBI, AMIA, JAMIA, ML4H, CHIL, Computing in Cardiology.": "Venue: MICCAI, ISBI, AMIA, JAMIA, ML4H, CHIL, Computing in Cardiology।",
 "Next: Data Science, Data Mining and Information Retrieval": "পরবর্তী: Data Science, Data Mining ও Information Retrieval",
 "All resources": "সব resource",
+"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
 "The share of healthy patients correctly identified.": "সুস্থ রোগীদের যে অংশ সঠিকভাবে চিহ্নিত হয়।",
 "MIMIC data is accessed through…": "MIMIC data অ্যাক্সেস করা হয়…",
 "PhysioNet credentialing": "PhysioNet credentialing-এর মাধ্যমে",
@@ -195,8 +199,5 @@ I18N_BN_ADD({
 "Information from notes and messages.": "নোট ও বার্তা থেকে তথ্য।",
 "Genes and populations.": "Gene ও জনগোষ্ঠী।",
 "Genes, proteins, sequences.": "Gene, protein, sequence।",
-"Apps, SMS, telemedicine.": "App, SMS, telemedicine।",
-"A test is 95% sensitive and 95% specific, and it says you have a rare disease. Should you panic? Surprisingly, you are probably fine.": "একটি test 95% sensitive আর 95% specific, আর এটি বলছে আপনার একটি বিরল রোগ আছে। আতঙ্কিত হবেন? আশ্চর্যজনকভাবে, সম্ভবত আপনি ঠিকই আছেন।",
-"When a disease affects 1 person in 100, most positive results from that test are wrong. Health research rewards students who understand both the computing and the clinical meaning of their numbers — and who treat patient data with care.": "যে রোগ 100 জনে 1 জনের হয়, সেখানে ওই test-এর বেশিরভাগ positive ফলই ভুল। স্বাস্থ্য গবেষণা পুরস্কৃত করে তাদের, যারা নিজেদের সংখ্যার computing আর clinical দুই অর্থই বোঝে — আর রোগীর data যত্ন নিয়ে সামলায়।",
-"This chapter covers problems, methods, data, the right metrics, ethics and venues in biomedical informatics.": "এই chapter-এ আছে biomedical informatics-এর সমস্যা, পদ্ধতি, data, সঠিক metric, নৈতিকতা আর প্রকাশের স্থান।"
+"Apps, SMS, telemedicine.": "App, SMS, telemedicine।"
 });

@@ -2,6 +2,9 @@
 I18N_BN_ADD({
 "Writing the Thesis": "থিসিস লেখা",
 "Thesis structure and front matter, writing the introduction, methodology, results and discussion, the abstract, academic style, figures and tables, LaTeX, references and the writing and feedback process.": "থিসিসের কাঠামো ও প্রারম্ভিক অংশ, ভূমিকা, methodology, ফলাফল ও আলোচনা লেখা, abstract, একাডেমিক শৈলী, figure ও table, LaTeX, reference এবং লেখা ও feedback-এর প্রক্রিয়া।",
+"Excellent experiments, explained in tangled sentences, read like a weak thesis. Examiners can only grade what they can understand — and they often read it late at night, tired.": "চমৎকার experiment, জট পাকানো বাক্যে ব্যাখ্যা করলে, দুর্বল thesis-এর মতো পড়ায়। examiner শুধু ততটুকুই মূল্যায়ন করতে পারেন যতটা বোঝেন — আর তাঁরা প্রায়ই পড়েন গভীর রাতে, ক্লান্ত অবস্থায়।",
+"Writing is how you organise your thinking and show your evidence. A clear structure, a strong introduction and well-explained results can lift a thesis by a whole grade.": "লেখার মাধ্যমেই আপনি চিন্তা সাজান আর প্রমাণ দেখান। স্পষ্ট কাঠামো, শক্তিশালী introduction আর ভালোভাবে ব্যাখ্যা করা ফল একটি thesis-কে পুরো এক grade ওপরে তুলতে পারে।",
+"This chapter covers structure, the abstract, academic style, figures, LaTeX, references and a writing process that finishes on time.": "এই chapter-এ আছে কাঠামো, abstract, একাডেমিক লেখার ধরন, figure, LaTeX, reference আর সময়মতো শেষ হওয়া লেখার প্রক্রিয়া।",
 "In this chapter": "এই অধ্যায়ে",
 "Select a section to jump to it.": "কোনো অংশে যেতে সেটি বাছুন।",
 "Structure": "কাঠামো",
@@ -144,6 +147,14 @@ I18N_BN_ADD({
 "last": "শেষে",
 "by the supervisor": "supervisor-এর দ্বারা",
 "in the appendix": "appendix-এ",
+"Bring this to your supervisor": "এটি আপনার supervisor-এর কাছে নিয়ে যান",
+"For your next supervisor meeting": "Supervisor-এর সাথে পরের মিটিংয়ের জন্য",
+"Bring this": "এটি নিয়ে যান",
+"A full draft of one chapter (usually the methodology) and your abstract of 150–300 words.": "একটি অধ্যায়ের পূর্ণ খসড়া (সাধারণত methodology) এবং ১৫০–৩০০ শব্দের abstract।",
+"See an acceptable example": "একটি গ্রহণযোগ্য উদাহরণ দেখুন",
+"Methodology draft of 9 pages: data collection, labelling guide and agreement (κ = 0.74), split, models, training details, evaluation and statistics. Abstract: context, problem, approach, results with numbers, conclusion — 212 words.": "৯ পাতার methodology খসড়া: data সংগ্রহ, labelling guide ও agreement (κ = 0.74), split, model, training-এর বিবরণ, evaluation ও পরিসংখ্যান। Abstract: প্রেক্ষাপট, সমস্যা, পদ্ধতি, সংখ্যাসহ ফলাফল, উপসংহার — ২১২ শব্দ।",
+"See this step in the worked thesis": "Worked thesis-এ এই ধাপটি দেখুন",
+"Milestone checklist": "Milestone চেকলিস্ট",
 "Guide": "নির্দেশিকা",
 "Structure, front matter and chapters in LaTeX.": "LaTeX-এ কাঠামো, প্রারম্ভিক অংশ ও অধ্যায়।",
 "Start with the idea; contributions up front.": "ধারণা দিয়ে শুরু করুন; অবদান সামনে।",
@@ -160,7 +171,7 @@ I18N_BN_ADD({
 "Outline, draft, revise with feedback, check and proofread; write the abstract last.": "রূপরেখা, খসড়া, feedback নিয়ে সংশোধন, যাচাই ও প্রুফ দেখা; abstract শেষে লিখুন।",
 "Next: Presenting, Defending and Publishing": "পরবর্তী: উপস্থাপন, প্রতিরক্ষা ও প্রকাশনা",
 "All resources": "সব resource",
-"Milestone checklist": "Milestone চেকলিস্ট",
+"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
 "It summarises results you only have at the end.": "এটি এমন ফলাফলের সারসংক্ষেপ যা আপনি শুধু শেষে পান।",
 "The contributions list belongs in…": "অবদানের তালিকা থাকে…",
 "the introduction": "ভূমিকায়",
@@ -194,8 +205,5 @@ I18N_BN_ADD({
 "Narrowest: exactly what you did.": "সবচেয়ে সংকীর্ণ: আপনি ঠিক কী করেছেন।",
 "Narrow: what you found.": "সংকীর্ণ: আপনি কী পেয়েছেন।",
 "Widens: what it means, compared with earlier work, limitations.": "প্রসারিত হয়: এর অর্থ কী, আগের কাজের তুলনায়, সীমাবদ্ধতা।",
-"Broad again: answers, implications, future work.": "আবার বিস্তৃত: উত্তর, তাৎপর্য, ভবিষ্যৎ কাজ।",
-"Excellent experiments, explained in tangled sentences, read like a weak thesis. Examiners can only grade what they can understand — and they often read it late at night, tired.": "চমৎকার experiment, জট পাকানো বাক্যে ব্যাখ্যা করলে, দুর্বল thesis-এর মতো পড়ায়। examiner শুধু ততটুকুই মূল্যায়ন করতে পারেন যতটা বোঝেন — আর তাঁরা প্রায়ই পড়েন গভীর রাতে, ক্লান্ত অবস্থায়।",
-"Writing is how you organise your thinking and show your evidence. A clear structure, a strong introduction and well-explained results can lift a thesis by a whole grade.": "লেখার মাধ্যমেই আপনি চিন্তা সাজান আর প্রমাণ দেখান। স্পষ্ট কাঠামো, শক্তিশালী introduction আর ভালোভাবে ব্যাখ্যা করা ফল একটি thesis-কে পুরো এক grade ওপরে তুলতে পারে।",
-"This chapter covers structure, the abstract, academic style, figures, LaTeX, references and a writing process that finishes on time.": "এই chapter-এ আছে কাঠামো, abstract, একাডেমিক লেখার ধরন, figure, LaTeX, reference আর সময়মতো শেষ হওয়া লেখার প্রক্রিয়া।"
+"Broad again: answers, implications, future work.": "আবার বিস্তৃত: উত্তর, তাৎপর্য, ভবিষ্যৎ কাজ।"
 });

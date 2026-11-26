@@ -2,6 +2,9 @@
 I18N_BN_ADD({
 "IoT, Networks and Edge Computing": "IoT, Network ও Edge Computing",
 "IoT systems, energy efficiency, edge AI, wireless and mobile networks, SDN and network measurement; simulation versus testbeds, metrics such as latency, delivery ratio and energy, tools, venues and thesis ideas.": "IoT system, শক্তি-দক্ষতা, edge AI, wireless ও mobile network, SDN ও network পরিমাপ; simulation বনাম testbed, latency, delivery ratio ও শক্তির মতো metric, tool, venue ও থিসিস ধারণা।",
+"A flood sensor that warns the village ten minutes after the water arrives is not a sensor. It is a very expensive diary.": "যে বন্যা-sensor পানি আসার দশ মিনিট পরে গ্রামকে সতর্ক করে, তা sensor নয়। তা একটি খুব দামি ডায়েরি।",
+"Networking and IoT research is about real limits — delay, bandwidth, energy, cost — measured in simulation and on real devices. Agriculture, water and transport give many local problems to solve.": "networking আর IoT গবেষণা আসল সীমাবদ্ধতা নিয়ে — delay, bandwidth, শক্তি, খরচ — যা simulation আর আসল device-এ মাপা হয়। কৃষি, পানি আর পরিবহন সমাধান করার মতো অনেক স্থানীয় সমস্যা দেয়।",
+"This chapter introduces networking, IoT and edge computing research: methods, tools, metrics, venues and ideas.": "এই chapter networking, IoT আর edge computing গবেষণার পরিচয় দেয়: পদ্ধতি, tool, metric, প্রকাশের স্থান আর ধারণা।",
 "In this chapter": "এই অধ্যায়ে",
 "Select a section to jump to it.": "কোনো অংশে যেতে সেটি বাছুন।",
 "The field": "ক্ষেত্রটি",
@@ -177,6 +180,7 @@ I18N_BN_ADD({
 "Venues: SIGCOMM, NSDI, INFOCOM, MobiCom, SenSys, IEEE IoT Journal.": "Venue: SIGCOMM, NSDI, INFOCOM, MobiCom, SenSys, IEEE IoT Journal।",
 "Next: Software Engineering Research": "পরবর্তী: Software Engineering গবেষণা",
 "All resources": "সব resource",
+"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
 "Ideal for sparse sensor data over kilometres.": "কয়েক কিলোমিটার জুড়ে বিক্ষিপ্ত sensor data-র জন্য আদর্শ।",
 "ns-3 is a…": "ns-3 হলো একটি…",
 "image editor": "ছবি সম্পাদক",
@@ -211,8 +215,5 @@ I18N_BN_ADD({
 "ML on microcontrollers.": "Microcontroller-এ ML।",
 "How networks are run.": "Network কীভাবে চালানো হয়।",
 "Programmable networks.": "Programmable network।",
-"Latency, loss, throughput in practice.": "বাস্তবে latency, loss, throughput।",
-"A flood sensor that warns the village ten minutes after the water arrives is not a sensor. It is a very expensive diary.": "যে বন্যা-sensor পানি আসার দশ মিনিট পরে গ্রামকে সতর্ক করে, তা sensor নয়। তা একটি খুব দামি ডায়েরি।",
-"Networking and IoT research is about real limits — delay, bandwidth, energy, cost — measured in simulation and on real devices. Agriculture, water and transport give many local problems to solve.": "networking আর IoT গবেষণা আসল সীমাবদ্ধতা নিয়ে — delay, bandwidth, শক্তি, খরচ — যা simulation আর আসল device-এ মাপা হয়। কৃষি, পানি আর পরিবহন সমাধান করার মতো অনেক স্থানীয় সমস্যা দেয়।",
-"This chapter introduces networking, IoT and edge computing research: methods, tools, metrics, venues and ideas.": "এই chapter networking, IoT আর edge computing গবেষণার পরিচয় দেয়: পদ্ধতি, tool, metric, প্রকাশের স্থান আর ধারণা।"
+"Latency, loss, throughput in practice.": "বাস্তবে latency, loss, throughput।"
 });

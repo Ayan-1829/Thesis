@@ -2,6 +2,9 @@
 I18N_BN_ADD({
 "Artificial Intelligence and Generative AI": "Artificial Intelligence ও Generative AI",
 "Search, planning, reasoning, reinforcement learning, LLMs, retrieval-augmented generation and agents; evaluating AI systems reliably; tools, venues, thesis ideas and how to start.": "Search, planning, reasoning, reinforcement learning, LLM, retrieval-augmented generation ও agent; AI system নির্ভরযোগ্যভাবে মূল্যায়ন; tool, venue, থিসিস ধারণা এবং কীভাবে শুরু করবেন।",
+"“My thesis is a ChatGPT chatbot.” “Lovely. What is the research question?” “…It chats.”": "“আমার thesis একটি ChatGPT chatbot।” “চমৎকার। research question কী?” “…এটা chat করে।”",
+"Generative AI made it easy to build impressive demos that answer no question. Good AI research measures reliability, compares methods fairly and explains the failures.": "Generative AI এমন চোখধাঁধানো demo বানানো সহজ করে দিয়েছে, যা কোনো প্রশ্নের উত্তর দেয় না। ভালো AI গবেষণা নির্ভরযোগ্যতা মাপে, পদ্ধতিগুলোর ন্যায্য তুলনা করে আর ব্যর্থতা ব্যাখ্যা করে।",
+"This chapter covers classical AI (search, planning, reasoning) and modern generative AI, with evaluation habits that make results credible.": "এই chapter-এ আছে ক্লাসিক AI (search, planning, reasoning) আর আধুনিক generative AI, সঙ্গে এমন মূল্যায়নের অভ্যাস যা ফলকে বিশ্বাসযোগ্য করে।",
 "In this chapter": "এই অধ্যায়ে",
 "Select a section to jump to it.": "কোনো অংশে যেতে সেটি বাছুন।",
 "The field": "ক্ষেত্রটি",
@@ -153,8 +156,8 @@ I18N_BN_ADD({
 "Your LLM scores 92% on a public benchmark released two years ago. Why be careful?": "আপনার LLM দুই বছর আগে প্রকাশিত একটি public benchmark-এ 92% পায়। কেন সাবধান হবেন?",
 "The benchmark may be in the model’s training data (contamination), so the score may reflect memorisation. Test on a new, private set written after the model’s training cut-off, or check for overlap.": "Benchmark-টি model-এর training data-তে থাকতে পারে (contamination), তাই score মুখস্থবিদ্যা প্রতিফলিত করতে পারে। Model-এর training cut-off-এর পরে লেখা নতুন, ব্যক্তিগত set-এ পরীক্ষা করুন, বা overlap যাচাই করুন।",
 "Try each one yourself first, then check the answer.": "প্রথমে নিজে চেষ্টা করুন, তারপর উত্তর মিলিয়ে নিন।",
-"1. Name four areas of AI beyond machine learning.": "1. Machine learning-এর বাইরে AI-এর চারটি ক্ষেত্রের নাম লিখুন।",
-"Search and planning; knowledge representation and reasoning; agents and multi-agent systems; natural language and vision; reinforcement learning; generative AI.": "Search ও planning; knowledge representation ও reasoning; agent ও multi-agent system; natural language ও vision; reinforcement learning; generative AI।",
+"1. Name four areas of AI that are not machine learning.": "১. AI-এর এমন চারটি ক্ষেত্রের নাম বলুন যেগুলো machine learning নয়।",
+"Classical search (BFS, A*); automated planning; knowledge representation and logical reasoning; constraint satisfaction; multi-agent systems and game theory. (Reinforcement learning and generative AI are machine learning, so they do not count here.)": "Classical search (BFS, A*); automated planning; knowledge representation ও logical reasoning; constraint satisfaction; multi-agent system ও game theory। (Reinforcement learning ও generative AI হলো machine learning, তাই এখানে গণ্য নয়।)",
 "2. Why prefer open models for a thesis?": "2. থিসিসের জন্য open model কেন পছন্দ করবেন?",
 "They can be run and fine-tuned locally, versions are fixed, results are reproducible and data stays private.": "এগুলো স্থানীয়ভাবে চালানো ও fine-tune করা যায়, version স্থির, ফলাফল পুনরুৎপাদনযোগ্য এবং data ব্যক্তিগত থাকে।",
 "3. What is RAG?": "3. RAG কী?",
@@ -180,6 +183,7 @@ I18N_BN_ADD({
 "A good AI thesis measures or improves something well defined — not a demo.": "একটি ভালো AI থিসিস সুনির্দিষ্ট কিছু মাপে বা উন্নত করে — demo নয়।",
 "Next: Natural Language Processing": "পরবর্তী: Natural Language Processing",
 "All resources": "সব resource",
+"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
 "Retrieve documents, then generate an answer from them.": "নথি উদ্ধার করুন, তারপর সেগুলো থেকে উত্তর তৈরি করুন।",
 "LoRA is used to…": "LoRA ব্যবহৃত হয়…",
 "fine-tune large models cheaply": "কম খরচে বড় model fine-tune করতে",
@@ -220,8 +224,5 @@ I18N_BN_ADD({
 "Models that produce text, images and code.": "যে model লেখা, ছবি ও code তৈরি করে।",
 "Large language models.": "Large language model।",
 "Answers grounded in retrieved documents.": "উদ্ধার করা নথিতে ভিত্তি করা উত্তর।",
-"Hallucination, bias, misuse.": "Hallucination, পক্ষপাত, অপব্যবহার।",
-"“My thesis is a ChatGPT chatbot.” “Lovely. What is the research question?” “…It chats.”": "“আমার thesis একটি ChatGPT chatbot।” “চমৎকার। research question কী?” “…এটা chat করে।”",
-"Generative AI made it easy to build impressive demos that answer no question. Good AI research measures reliability, compares methods fairly and explains the failures.": "Generative AI এমন চোখধাঁধানো demo বানানো সহজ করে দিয়েছে, যা কোনো প্রশ্নের উত্তর দেয় না। ভালো AI গবেষণা নির্ভরযোগ্যতা মাপে, পদ্ধতিগুলোর ন্যায্য তুলনা করে আর ব্যর্থতা ব্যাখ্যা করে।",
-"This chapter covers classical AI (search, planning, reasoning) and modern generative AI, with evaluation habits that make results credible.": "এই chapter-এ আছে ক্লাসিক AI (search, planning, reasoning) আর আধুনিক generative AI, সঙ্গে এমন মূল্যায়নের অভ্যাস যা ফলকে বিশ্বাসযোগ্য করে।"
+"Hallucination, bias, misuse.": "Hallucination, পক্ষপাত, অপব্যবহার।"
 });

@@ -2,6 +2,9 @@
 I18N_BN_ADD({
 "Designing Your Methodology": "আপনার Methodology নকশা",
 "Choosing a research design, the experimental pipeline, describing a proposed method, choosing baselines and metrics, threats to validity and writing the research proposal.": "Research design বাছাই, experimental pipeline, প্রস্তাবিত পদ্ধতির বর্ণনা, baseline ও metric বাছাই, validity-র হুমকি এবং research proposal লেখা।",
+"“My model gets 94% accuracy!” The examiner asks: “Compared with what, on which data, and would it be 94% tomorrow?” The room goes quiet.": "“আমার model 94% accuracy পায়!” examiner জিজ্ঞেস করেন: “কীসের তুলনায়, কোন data-তে, আর কালও কি 94% হবে?” ঘর নিশ্চুপ।",
+"A methodology answers those questions before you start, so that your result means something. Without it, even a correct result cannot convince anyone.": "একটি methodology শুরুর আগেই এই প্রশ্নগুলোর উত্তর দেয়, যাতে আপনার ফলের একটি অর্থ থাকে। এটি ছাড়া সঠিক ফলও কাউকে বিশ্বাস করাতে পারে না।",
+"This chapter shows how to choose a design, describe your method, pick fair baselines and metrics, and anticipate threats to validity.": "এই chapter দেখায় কীভাবে একটি design বাছবেন, পদ্ধতি বর্ণনা করবেন, ন্যায্য baseline ও metric বাছবেন, আর validity-র হুমকি আগে থেকে ভাববেন।",
 "In this chapter": "এই অধ্যায়ে",
 "Select a section to jump to it.": "কোনো অংশে যেতে সেটি বাছুন।",
 "Designs": "Design",
@@ -149,6 +152,14 @@ I18N_BN_ADD({
 "the research question": "গবেষণা প্রশ্ন থেকে",
 "the supervisor’s laptop": "supervisor-এর laptop থেকে",
 "the number of pages": "পৃষ্ঠার সংখ্যা দিয়ে",
+"Bring this to your supervisor": "এটি আপনার supervisor-এর কাছে নিয়ে যান",
+"For your next supervisor meeting": "Supervisor-এর সাথে পরের মিটিংয়ের জন্য",
+"Bring this": "এটি নিয়ে যান",
+"A one-page evaluation plan: research design, data and split, baselines, metrics, the statistical comparison and the main threats to validity.": "এক পাতার evaluation plan: research design, data ও split, baseline, metric, পরিসংখ্যানগত তুলনা এবং validity-র প্রধান ঝুঁকি।",
+"See an acceptable example": "একটি গ্রহণযোগ্য উদাহরণ দেখুন",
+"Controlled experiment. 5,000 comments, 70/15/15 split stratified by class and grouped by Facebook page. Baselines: majority class, TF-IDF + logistic regression, BanglaBERT fine-tuned. Metric: macro-F1 (classes are imbalanced). 5 seeds; mean ± sd; paired t-test over seeds plus a bootstrap CI on the test set. Threats: label noise (two annotators, κ), one platform only.": "Controlled experiment। ৫,০০০ মন্তব্য, class অনুযায়ী stratified এবং Facebook page অনুযায়ী grouped 70/15/15 split। Baseline: majority class, TF-IDF + logistic regression, fine-tuned BanglaBERT। Metric: macro-F1 (class-গুলো imbalanced)। ৫টি seed; mean ± sd; seed জুড়ে paired t-test এবং test set-এ bootstrap CI। ঝুঁকি: label noise (দুজন annotator, κ), শুধু একটি platform।",
+"See this step in the worked thesis": "Worked thesis-এ এই ধাপটি দেখুন",
+"Milestone checklist": "Milestone চেকলিস্ট",
 "Guide": "নির্দেশিকা",
 "Definitions and code for classification, regression and ranking metrics.": "শ্রেণিবিন্যাস, regression ও ranking metric-এর সংজ্ঞা ও code।",
 "What a sound ML experiment should report.": "একটি সঠিক ML experiment-এ কী জানানো উচিত।",
@@ -164,7 +175,7 @@ I18N_BN_ADD({
 "Name threats to validity and what you did about them; the proposal fixes the plan.": "Validity-র হুমকি ও আপনি কী করেছেন তা বলুন; proposal পরিকল্পনা স্থির করে।",
 "Next: Experiments, Statistics and Reproducibility": "পরবর্তী: Experiment, পরিসংখ্যান ও পুনরুৎপাদনযোগ্যতা",
 "All resources": "সব resource",
-"Milestone checklist": "Milestone চেকলিস্ট",
+"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
 "The question decides the design, data and metrics.": "প্রশ্নই design, data ও metric ঠিক করে।",
 "“Can we build a system that does P?” calls for…": "“আমরা কি P করে এমন একটি system তৈরি করতে পারি?” — এর জন্য দরকার…",
 "a survey": "একটি survey",
@@ -208,8 +219,5 @@ I18N_BN_ADD({
 "Cleaning and transforms — the same for every method.": "পরিষ্কার ও রূপান্তর — প্রতিটি পদ্ধতির জন্য একই।",
 "What is new, described fully.": "কী নতুন, পূর্ণভাবে বর্ণিত।",
 "Metrics, several runs, statistics, ablation, error analysis.": "Metric, একাধিক run, পরিসংখ্যান, ablation, error analysis।",
-"Trivial, classic, state-of-the-art and ablations — tuned equally.": "তুচ্ছ, ক্লাসিক, state-of-the-art ও ablation — সমানভাবে tune করা।",
-"“My model gets 94% accuracy!” The examiner asks: “Compared with what, on which data, and would it be 94% tomorrow?” The room goes quiet.": "“আমার model 94% accuracy পায়!” examiner জিজ্ঞেস করেন: “কীসের তুলনায়, কোন data-তে, আর কালও কি 94% হবে?” ঘর নিশ্চুপ।",
-"A methodology answers those questions before you start, so that your result means something. Without it, even a correct result cannot convince anyone.": "একটি methodology শুরুর আগেই এই প্রশ্নগুলোর উত্তর দেয়, যাতে আপনার ফলের একটি অর্থ থাকে। এটি ছাড়া সঠিক ফলও কাউকে বিশ্বাস করাতে পারে না।",
-"This chapter shows how to choose a design, describe your method, pick fair baselines and metrics, and anticipate threats to validity.": "এই chapter দেখায় কীভাবে একটি design বাছবেন, পদ্ধতি বর্ণনা করবেন, ন্যায্য baseline ও metric বাছবেন, আর validity-র হুমকি আগে থেকে ভাববেন।"
+"Trivial, classic, state-of-the-art and ablations — tuned equally.": "তুচ্ছ, ক্লাসিক, state-of-the-art ও ablation — সমানভাবে tune করা।"
 });

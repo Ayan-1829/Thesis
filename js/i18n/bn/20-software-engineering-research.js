@@ -2,6 +2,9 @@
 I18N_BN_ADD({
 "Software Engineering Research": "Software Engineering গবেষণা",
 "Testing, defect prediction, code quality, AI for code, mining software repositories and developer studies; experiments, mining, tool building, surveys and case studies; data, metrics, tools, venues and thesis ideas.": "Testing, defect prediction, code-এর মান, code-এর জন্য AI, software repository mining ও developer গবেষণা; experiment, mining, tool তৈরি, survey ও case study; data, metric, tool, venue ও থিসিস ধারণা।",
+"Every developer swears by a favourite practice — tests first, pair programming, AI assistants, tabs over spaces. Ask for evidence and the room gets loud.": "প্রত্যেক developer কোনো প্রিয় অভ্যাসের নামে শপথ করেন — আগে test, pair programming, AI assistant, space-এর বদলে tab। প্রমাণ চাইলেই ঘর গরম হয়ে ওঠে।",
+"Software engineering research settles such arguments with tools and data from real projects and real developers. With GitHub and AI coding assistants, there are more open questions than ever.": "software engineering গবেষণা এমন তর্ক মেটায় আসল project আর আসল developer-দের tool ও data দিয়ে। GitHub আর AI coding assistant-এর যুগে খোলা প্রশ্ন আগের চেয়ে বেশি।",
+"This chapter introduces SE research: problems, methods, data, metrics, tools and venues.": "এই chapter SE গবেষণার পরিচয় দেয়: সমস্যা, পদ্ধতি, data, metric, tool আর প্রকাশের স্থান।",
 "In this chapter": "এই অধ্যায়ে",
 "Select a section to jump to it.": "কোনো অংশে যেতে সেটি বাছুন।",
 "The field": "ক্ষেত্রটি",
@@ -176,6 +179,7 @@ I18N_BN_ADD({
 "Venues: ICSE, ESEC/FSE, ASE, ISSTA, MSR, ICSME; journals TSE, TOSEM, EMSE.": "Venue: ICSE, ESEC/FSE, ASE, ISSTA, MSR, ICSME; journal TSE, TOSEM, EMSE।",
 "Next: Human–Computer Interaction": "পরবর্তী: Human–Computer Interaction",
 "All resources": "সব resource",
+"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
 "Both a research area and a conference.": "একটি গবেষণা ক্ষেত্র ও একটি conference দুটোই।",
 "Mutation score measures…": "Mutation score মাপে…",
 "how many seeded faults tests detect": "test কতগুলো রোপিত ত্রুটি শনাক্ত করে",
@@ -215,8 +219,5 @@ I18N_BN_ADD({
 "Fixing bugs automatically.": "স্বয়ংক্রিয়ভাবে bug ঠিক করা।",
 "People and teams.": "মানুষ ও দল।",
 "Evidence from GitHub at scale.": "বড় মাত্রায় GitHub থেকে প্রমাণ।",
-"Surveys and interviews.": "Survey ও interview।",
-"Every developer swears by a favourite practice — tests first, pair programming, AI assistants, tabs over spaces. Ask for evidence and the room gets loud.": "প্রত্যেক developer কোনো প্রিয় অভ্যাসের নামে শপথ করেন — আগে test, pair programming, AI assistant, space-এর বদলে tab। প্রমাণ চাইলেই ঘর গরম হয়ে ওঠে।",
-"Software engineering research settles such arguments with tools and data from real projects and real developers. With GitHub and AI coding assistants, there are more open questions than ever.": "software engineering গবেষণা এমন তর্ক মেটায় আসল project আর আসল developer-দের tool ও data দিয়ে। GitHub আর AI coding assistant-এর যুগে খোলা প্রশ্ন আগের চেয়ে বেশি।",
-"This chapter introduces SE research: problems, methods, data, metrics, tools and venues.": "এই chapter SE গবেষণার পরিচয় দেয়: সমস্যা, পদ্ধতি, data, metric, tool আর প্রকাশের স্থান।"
+"Surveys and interviews.": "Survey ও interview।"
 });

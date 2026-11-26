@@ -2,6 +2,9 @@
 I18N_BN_ADD({
 "Selecting and Judging Papers": "Paper বাছাই ও মূল্যায়ন",
 "Screening search results in stages with inclusion and exclusion criteria, the PRISMA flow, judging venues (CORE ranks, journal quartiles, predatory venues) and judging the quality of a paper itself.": "Inclusion ও exclusion মানদণ্ড দিয়ে ধাপে ধাপে অনুসন্ধানের ফলাফল যাচাই, PRISMA flow, venue মূল্যায়ন (CORE rank, journal quartile, predatory venue) এবং paper-এর নিজের মান মূল্যায়ন।",
+"Your search returned 1,800 papers. You have one month and a limited supply of tea. You cannot read them all — and you shouldn’t.": "আপনার search ফেরত দিয়েছে 1,800টি paper। হাতে এক মাস আর সীমিত চা। সব পড়া সম্ভব নয় — আর উচিতও নয়।",
+"Screening in stages with written criteria, judging the venue and judging the paper itself turns a mountain into a reading list. Done well, it saves weeks and keeps weak or fake sources out of your thesis.": "লিখিত মানদণ্ড দিয়ে ধাপে ধাপে বাছাই, প্রকাশের স্থান যাচাই আর paper-টিকে নিজে যাচাই করা একটি পাহাড়কে একটি পাঠ-তালিকায় বদলে দেয়। ভালোভাবে করলে সপ্তাহের পর সপ্তাহ বাঁচে, আর দুর্বল বা ভুয়া উৎস thesis থেকে দূরে থাকে।",
+"This chapter turns a long list of results into a short list you can trust and defend.": "এই chapter ফলাফলের একটি লম্বা তালিকাকে এমন ছোট তালিকায় বদলায়, যার ওপর ভরসা করা আর যার পক্ষে যুক্তি দেওয়া যায়।",
 "In this chapter": "এই অধ্যায়ে",
 "Select a section to jump to it.": "কোনো অংশে যেতে সেটি বাছুন।",
 "Screening": "যাচাই",
@@ -156,6 +159,14 @@ I18N_BN_ADD({
 "report how records were screened and selected": "record কীভাবে যাচাই ও নির্বাচন করা হয়েছে তা জানাতে",
 "rank journals": "journal-এর rank করতে",
 "detect plagiarism": "plagiarism শনাক্ত করতে",
+"Bring this to your supervisor": "এটি আপনার supervisor-এর কাছে নিয়ে যান",
+"For your next supervisor meeting": "Supervisor-এর সাথে পরের মিটিংয়ের জন্য",
+"Bring this": "এটি নিয়ে যান",
+"Your inclusion and exclusion criteria and a PRISMA-style count: found, screened, read in full, included.": "আপনার inclusion ও exclusion criteria এবং PRISMA-ধাঁচের গণনা: পাওয়া, screen করা, পুরো পড়া, অন্তর্ভুক্ত।",
+"See an acceptable example": "একটি গ্রহণযোগ্য উদাহরণ দেখুন",
+"Include: peer-reviewed or arXiv with code, 2018 or later, sentiment or emotion on Bangla or Bangla–English text. Exclude: no evaluation, no dataset description, predatory venues. Counts: 549 found → 418 after duplicates → 61 after titles and abstracts → 24 read in full → 17 included.": "অন্তর্ভুক্ত: peer-reviewed বা code-সহ arXiv, ২০১৮ বা পরে, বাংলা বা বাংলা–ইংরেজি text-এ sentiment বা emotion। বাদ: কোনো evaluation নেই, dataset-এর বর্ণনা নেই, predatory venue। গণনা: ৫৪৯টি পাওয়া → duplicate বাদে ৪১৮ → title ও abstract দেখে ৬১ → ২৪টি পুরো পড়া → ১৭টি অন্তর্ভুক্ত।",
+"See this step in the worked thesis": "Worked thesis-এ এই ধাপটি দেখুন",
+"Milestone checklist": "Milestone চেকলিস্ট",
 "Templates for reporting screening and selection.": "যাচাই ও নির্বাচন জানানোর template।",
 "Search a conference to see its rank.": "একটি conference খুঁজে তার rank দেখুন।",
 "Journal quartiles by subject category.": "বিষয় বিভাগ অনুযায়ী journal quartile।",
@@ -171,7 +182,7 @@ I18N_BN_ADD({
 "Balance seminal and recent work; use preprints with care; never cite AI chatbots or unverified references.": "মৌলিক ও সাম্প্রতিক কাজের ভারসাম্য রাখুন; preprint সাবধানে ব্যবহার করুন; AI chatbot বা যাচাইহীন reference কখনো উদ্ধৃত করবেন না।",
 "Next: Reading Papers and Managing Notes": "পরবর্তী: Paper পড়া ও নোট ব্যবস্থাপনা",
 "All resources": "সব resource",
-"Milestone checklist": "Milestone চেকলিস্ট",
+"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
 "The PRISMA flow diagram reports identification, screening and inclusion.": "PRISMA flow diagram চিহ্নিতকরণ, যাচাই ও অন্তর্ভুক্তি জানায়।",
 "CORE A* refers to…": "CORE A* বোঝায়…",
 "a journal quartile": "একটি journal quartile",
@@ -202,8 +213,5 @@ I18N_BN_ADD({
 "verify the paper exists and says that": "paper-টি আছে এবং সেটি তা বলে কিনা যাচাই করা",
 "ignore all AI": "সব AI উপেক্ষা করা",
 "cite the chatbot": "chatbot-কে উদ্ধৃত করা",
-"AI tools can invent references; always verify.": "AI tool reference বানিয়ে দিতে পারে; সবসময় যাচাই করুন।",
-"Your search returned 1,800 papers. You have one month and a limited supply of tea. You cannot read them all — and you shouldn’t.": "আপনার search ফেরত দিয়েছে 1,800টি paper। হাতে এক মাস আর সীমিত চা। সব পড়া সম্ভব নয় — আর উচিতও নয়।",
-"Screening in stages with written criteria, judging the venue and judging the paper itself turns a mountain into a reading list. Done well, it saves weeks and keeps weak or fake sources out of your thesis.": "লিখিত মানদণ্ড দিয়ে ধাপে ধাপে বাছাই, প্রকাশের স্থান যাচাই আর paper-টিকে নিজে যাচাই করা একটি পাহাড়কে একটি পাঠ-তালিকায় বদলে দেয়। ভালোভাবে করলে সপ্তাহের পর সপ্তাহ বাঁচে, আর দুর্বল বা ভুয়া উৎস thesis থেকে দূরে থাকে।",
-"This chapter turns a long list of results into a short list you can trust and defend.": "এই chapter ফলাফলের একটি লম্বা তালিকাকে এমন ছোট তালিকায় বদলায়, যার ওপর ভরসা করা আর যার পক্ষে যুক্তি দেওয়া যায়।"
+"AI tools can invent references; always verify.": "AI tool reference বানিয়ে দিতে পারে; সবসময় যাচাই করুন।"
 });

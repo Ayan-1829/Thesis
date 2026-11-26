@@ -2,6 +2,9 @@
 I18N_BN_ADD({
 "Searching the Literature": "সাহিত্য অনুসন্ধান",
 "Where to search (Google Scholar, Semantic Scholar, IEEE Xplore, ACM, arXiv, DBLP, PubMed), building Boolean search strings, filters, snowballing, getting full text legally and keeping a search log.": "কোথায় খুঁজবেন (Google Scholar, Semantic Scholar, IEEE Xplore, ACM, arXiv, DBLP, PubMed), Boolean search string তৈরি, filter, snowballing, বৈধভাবে পূর্ণ লেখা পাওয়া এবং একটি search log রাখা।",
+"Three months into your brilliant new method, you find a paper from last year that did exactly the same thing. Better. With a nicer figure.": "আপনার দুর্দান্ত নতুন পদ্ধতির তিন মাস পর আপনি গত বছরের একটি paper খুঁজে পান, যা হুবহু একই কাজ করেছে। আরও ভালোভাবে। আরও সুন্দর figure সহ।",
+"A systematic search prevents that heartbreak and hands you the datasets, baselines and metrics you need. It also shows examiners that your claim of novelty rests on evidence.": "একটি পদ্ধতিগত search সেই হৃদয়ভঙ্গ ঠেকায়, আর আপনার দরকারি dataset, baseline আর metric হাতে তুলে দেয়। এটি examiner-দেরও দেখায় যে আপনার নতুনত্বের দাবি প্রমাণের ওপর দাঁড়িয়ে।",
+"This chapter shows where to search, how to write search strings, how to follow citations and how to record what you did.": "এই chapter দেখায় কোথায় খুঁজবেন, search string কীভাবে লিখবেন, citation কীভাবে অনুসরণ করবেন আর যা করলেন তা কীভাবে লিখে রাখবেন।",
 "In this chapter": "এই অধ্যায়ে",
 "Select a section to jump to it.": "কোনো অংশে যেতে সেটি বাছুন।",
 "Where to search": "কোথায় খুঁজবেন",
@@ -124,6 +127,14 @@ I18N_BN_ADD({
 "Date, database, exact query, filters, number of results, number kept — so the search can be repeated and described in the thesis.": "তারিখ, database, হুবহু query, filter, ফলাফলের সংখ্যা, রাখা সংখ্যা — যাতে অনুসন্ধান পুনরাবৃত্তি ও থিসিসে বর্ণনা করা যায়।",
 "To include synonyms you join them with…": "সমার্থক শব্দ অন্তর্ভুক্ত করতে এগুলো যুক্ত করবেন…",
 "quotes": "উদ্ধৃতিচিহ্ন দিয়ে",
+"Bring this to your supervisor": "এটি আপনার supervisor-এর কাছে নিয়ে যান",
+"For your next supervisor meeting": "Supervisor-এর সাথে পরের মিটিংয়ের জন্য",
+"Bring this": "এটি নিয়ে যান",
+"Your search log: databases, the exact query strings, dates, filters and the number of results, plus the 10 most relevant papers found so far.": "আপনার search log: database, হুবহু query string, তারিখ, filter ও ফলাফলের সংখ্যা, এবং এখন পর্যন্ত পাওয়া সবচেয়ে প্রাসঙ্গিক ১০টি পেপার।",
+"See an acceptable example": "একটি গ্রহণযোগ্য উদাহরণ দেখুন",
+"12 Mar · Google Scholar · (“code-mixed” OR “code-switched” OR Banglish) AND sentiment AND (Bangla OR Bengali) · 2018–2026 · 412 results, first 100 screened · 14 kept. 12 Mar · IEEE Xplore · same string · 37 results · 6 kept (3 duplicates). Snowballing from the two most cited papers: 5 more.": "১২ মার্চ · Google Scholar · (“code-mixed” OR “code-switched” OR Banglish) AND sentiment AND (Bangla OR Bengali) · ২০১৮–২০২৬ · ৪১২টি ফলাফল, প্রথম ১০০টি screen করা · ১৪টি রাখা। ১২ মার্চ · IEEE Xplore · একই string · ৩৭টি ফলাফল · ৬টি রাখা (৩টি duplicate)। সবচেয়ে বেশি cited দুটি পেপার থেকে snowballing: আরও ৫টি।",
+"See this step in the worked thesis": "Worked thesis-এ এই ধাপটি দেখুন",
+"Milestone checklist": "Milestone চেকলিস্ট",
 "Guide": "নির্দেশিকা",
 "Google Scholar search help ↗": "Google Scholar অনুসন্ধান সহায়তা ↗",
 "Operators, alerts, “Cited by” and library links.": "Operator, alert, “Cited by” ও লাইব্রেরি link।",
@@ -147,7 +158,7 @@ I18N_BN_ADD({
 "Keep a search log; stop when results saturate and you can state the gap.": "একটি search log রাখুন; ফলাফল পরিপূর্ণ হলে এবং ফাঁক বলতে পারলে থামুন।",
 "Next: Selecting and Judging Papers": "পরবর্তী: Paper বাছাই ও মূল্যায়ন",
 "All resources": "সব resource",
-"Milestone checklist": "Milestone চেকলিস্ট",
+"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
 "OR widens the search to any of the synonyms.": "OR অনুসন্ধানকে যেকোনো সমার্থক শব্দে বিস্তৃত করে।",
 "Forward snowballing uses…": "সামনের snowballing ব্যবহার করে…",
 "the reference list": "reference তালিকা",
@@ -182,8 +193,5 @@ I18N_BN_ADD({
 "Follow references backward and “Cited by” forward from the best papers.": "সেরা paper থেকে reference পিছনে ও “Cited by” সামনে অনুসরণ করুন।",
 "A strong, recent paper close to your question.": "আপনার প্রশ্নের কাছাকাছি একটি শক্তিশালী, সাম্প্রতিক paper।",
 "Found in the seed’s reference list (backward snowballing).": "Seed-এর reference তালিকায় পাওয়া (পিছনের snowballing)।",
-"Found with “Cited by” in Google Scholar or Semantic Scholar (forward snowballing).": "Google Scholar বা Semantic Scholar-এ “Cited by” দিয়ে পাওয়া (সামনের snowballing)।",
-"Three months into your brilliant new method, you find a paper from last year that did exactly the same thing. Better. With a nicer figure.": "আপনার দুর্দান্ত নতুন পদ্ধতির তিন মাস পর আপনি গত বছরের একটি paper খুঁজে পান, যা হুবহু একই কাজ করেছে। আরও ভালোভাবে। আরও সুন্দর figure সহ।",
-"A systematic search prevents that heartbreak and hands you the datasets, baselines and metrics you need. It also shows examiners that your claim of novelty rests on evidence.": "একটি পদ্ধতিগত search সেই হৃদয়ভঙ্গ ঠেকায়, আর আপনার দরকারি dataset, baseline আর metric হাতে তুলে দেয়। এটি examiner-দেরও দেখায় যে আপনার নতুনত্বের দাবি প্রমাণের ওপর দাঁড়িয়ে।",
-"This chapter shows where to search, how to write search strings, how to follow citations and how to record what you did.": "এই chapter দেখায় কোথায় খুঁজবেন, search string কীভাবে লিখবেন, citation কীভাবে অনুসরণ করবেন আর যা করলেন তা কীভাবে লিখে রাখবেন।"
+"Found with “Cited by” in Google Scholar or Semantic Scholar (forward snowballing).": "Google Scholar বা Semantic Scholar-এ “Cited by” দিয়ে পাওয়া (সামনের snowballing)।"
 });

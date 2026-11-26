@@ -2,6 +2,9 @@
 I18N_BN_ADD({
 "Research Ethics and Integrity": "গবেষণা নৈতিকতা ও সততা",
 "Fabrication, falsification and plagiarism; quoting, paraphrasing and citing; using AI tools responsibly; consent and privacy in research with people; data licences; fairness and harm; authorship.": "জালিয়াতি (fabrication), বিকৃতি (falsification) ও plagiarism; উদ্ধৃতি, নিজের ভাষায় লেখা ও citation; দায়িত্বশীলভাবে AI tool ব্যবহার; মানুষ নিয়ে গবেষণায় সম্মতি ও গোপনীয়তা; data licence; ন্যায্যতা ও ক্ষতি; লেখকত্ব।",
+"A thesis is submitted with excellent results. A year later, someone notices that the test set was used for tuning and two paragraphs came from a blog. The degree suddenly feels very nervous.": "চমৎকার ফল নিয়ে একটি thesis জমা পড়ে। এক বছর পর কেউ লক্ষ করে, test set tuning-এ ব্যবহার হয়েছিল আর দুটি অনুচ্ছেদ এসেছিল একটি blog থেকে। ডিগ্রিটা হঠাৎ খুব নার্ভাস।",
+"Ethics is not a form signed at the end; it shapes how you collect data, run experiments, use AI tools and write. Most problems are not deliberate cheating but shortcuts and carelessness.": "নৈতিকতা শেষে সই করা কোনো ফর্ম নয়; এটি ঠিক করে আপনি কীভাবে data সংগ্রহ করবেন, experiment চালাবেন, AI tool ব্যবহার করবেন আর লিখবেন। বেশিরভাগ সমস্যা ইচ্ছাকৃত প্রতারণা নয়, বরং শর্টকাট আর অসাবধানতা।",
+"This chapter lists the rules that protect you, your participants and the trust in your results.": "এই chapter সেই নিয়মগুলো তালিকা করে, যা আপনাকে, আপনার অংশগ্রহণকারীদের আর আপনার ফলের প্রতি আস্থাকে রক্ষা করে।",
 "In this chapter": "এই অধ্যায়ে",
 "Select a section to jump to it.": "কোনো অংশে যেতে সেটি বাছুন।",
 "Integrity": "সততা",
@@ -139,6 +142,14 @@ I18N_BN_ADD({
 "acceptable cleaning": "গ্রহণযোগ্য পরিষ্কার করা",
 "paraphrasing": "paraphrase",
 "required": "আবশ্যক",
+"Bring this to your supervisor": "এটি আপনার supervisor-এর কাছে নিয়ে যান",
+"For your next supervisor meeting": "Supervisor-এর সাথে পরের মিটিংয়ের জন্য",
+"Bring this": "এটি নিয়ে যান",
+"A short ethics note: where the data comes from, consent or terms of use, how you anonymise and store it, and how you will declare AI-tool use.": "একটি সংক্ষিপ্ত ethics নোট: data কোথা থেকে আসে, consent বা terms of use, কীভাবে anonymise ও সংরক্ষণ করবেন, এবং AI-tool ব্যবহার কীভাবে ঘোষণা করবেন।",
+"See an acceptable example": "একটি গ্রহণযোগ্য উদাহরণ দেখুন",
+"Public Facebook comments collected through the platform’s permitted tools; usernames and profile links removed before labelling; stored on a university drive; only comment text and labels released, under a research-only licence. AI use: Grammarly for grammar; no AI-written text; declared in the acknowledgements.": "Platform-এর অনুমোদিত tool দিয়ে সংগ্রহ করা public Facebook মন্তব্য; labelling-এর আগে username ও profile link সরানো; বিশ্ববিদ্যালয়ের drive-এ সংরক্ষিত; শুধু মন্তব্যের text ও label প্রকাশ, research-only licence-এ। AI ব্যবহার: grammar-এর জন্য Grammarly; AI-লিখিত কোনো text নেই; acknowledgements-এ ঘোষিত।",
+"See this step in the worked thesis": "Worked thesis-এ এই ধাপটি দেখুন",
+"Milestone checklist": "Milestone চেকলিস্ট",
 "Principles for computing professionals, including researchers.": "গবেষকসহ computing পেশাজীবীদের নীতিমালা।",
 "Guide": "নির্দেশিকা",
 "Guidance on authorship, misconduct and AI in publishing.": "লেখকত্ব, অসদাচরণ ও প্রকাশনায় AI নিয়ে নির্দেশনা।",
@@ -154,7 +165,7 @@ I18N_BN_ADD({
 "Consider bias, misuse and responsible disclosure; agree authorship and acknowledge help.": "পক্ষপাত, অপব্যবহার ও responsible disclosure বিবেচনা করুন; লেখকত্ব ঠিক করুন এবং সাহায্য স্বীকার করুন।",
 "Next: Writing the Thesis": "পরবর্তী: থিসিস লেখা",
 "All resources": "সব resource",
-"Milestone checklist": "Milestone চেকলিস্ট",
+"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
 "Report all runs, or justify any exclusion openly.": "সব run জানান, অথবা যেকোনো বাদ দেওয়ার যৌক্তিকতা খোলাখুলি দিন।",
 "Reusing a figure from a paper needs…": "একটি paper-এর figure পুনঃব্যবহারে দরকার…",
 "nothing": "কিছুই না",
@@ -182,8 +193,5 @@ I18N_BN_ADD({
 "impossible": "অসম্ভব",
 "reusing your own earlier text without citing it": "উদ্ধৃতি ছাড়া নিজের আগের লেখা পুনঃব্যবহার",
 "citing yourself": "নিজেকে উদ্ধৃত করা",
-"Cite your earlier work when you reuse it.": "নিজের আগের কাজ পুনঃব্যবহার করলে উদ্ধৃত করুন।",
-"A thesis is submitted with excellent results. A year later, someone notices that the test set was used for tuning and two paragraphs came from a blog. The degree suddenly feels very nervous.": "চমৎকার ফল নিয়ে একটি thesis জমা পড়ে। এক বছর পর কেউ লক্ষ করে, test set tuning-এ ব্যবহার হয়েছিল আর দুটি অনুচ্ছেদ এসেছিল একটি blog থেকে। ডিগ্রিটা হঠাৎ খুব নার্ভাস।",
-"Ethics is not a form signed at the end; it shapes how you collect data, run experiments, use AI tools and write. Most problems are not deliberate cheating but shortcuts and carelessness.": "নৈতিকতা শেষে সই করা কোনো ফর্ম নয়; এটি ঠিক করে আপনি কীভাবে data সংগ্রহ করবেন, experiment চালাবেন, AI tool ব্যবহার করবেন আর লিখবেন। বেশিরভাগ সমস্যা ইচ্ছাকৃত প্রতারণা নয়, বরং শর্টকাট আর অসাবধানতা।",
-"This chapter lists the rules that protect you, your participants and the trust in your results.": "এই chapter সেই নিয়মগুলো তালিকা করে, যা আপনাকে, আপনার অংশগ্রহণকারীদের আর আপনার ফলের প্রতি আস্থাকে রক্ষা করে।"
+"Cite your earlier work when you reuse it.": "নিজের আগের কাজ পুনঃব্যবহার করলে উদ্ধৃত করুন।"
 });

@@ -71,7 +71,19 @@ const TOPIC_ART = (() => {
        <circle cx="282" cy="236" r="40" class="ta-soft1"/>${Array.from({ length: 8 }, (_, i) => { const a = i * Math.PI / 4; return `<rect x="${282 + Math.cos(a) * 44 - 9}" y="${236 + Math.sin(a) * 44 - 9}" width="18" height="18" rx="3" class="ta-ac" transform="rotate(${i * 45} ${282 + Math.cos(a) * 44} ${236 + Math.sin(a) * 44})"/>`; }).join('')}<circle cx="282" cy="236" r="14" class="ta-card"/>`,
     /* 21. HCI: a phone and a person */
     21: `${bg}<rect x="196" y="66" width="110" height="200" rx="18" class="ta-card"/><rect x="212" y="94" width="78" height="44" rx="6" class="ta-soft1"/>${lines(212, 152, 78, 2, 20)}<rect x="212" y="208" width="78" height="30" rx="15" class="ta-acc"/>
-       <circle cx="130" cy="130" r="30" class="ta-ac"/><path d="M78,262 Q78,180 130,180 Q182,180 182,262 Z" class="ta-ac"/>`
+       <circle cx="130" cy="130" r="30" class="ta-ac"/><path d="M78,262 Q78,180 130,180 Q182,180 182,262 Z" class="ta-ac"/>`,
+    /* 22. architecture: a chip with pins and a cache grid */
+    22: `${bg}${[0, 1, 2, 3, 4].map((i) => `<path d="M${136 + i * 32},70 V96 M${136 + i * 32},234 V260 M106,${101 + i * 32} H132 M268,${101 + i * 32} H294" class="ta-line"/>`).join('')}
+       <rect x="120" y="86" width="160" height="160" rx="14" class="ta-fill-ink"/><rect x="138" y="104" width="124" height="124" rx="8" class="ta-card"/>
+       ${[0, 1, 2, 3].map((r) => [0, 1, 2, 3].map((c) => `<rect x="${148 + c * 28}" y="${114 + r * 28}" width="22" height="22" rx="4" class="${(r * 4 + c) % 5 === 1 ? 'ta-acc' : 'ta-soft1'}"/>`).join('')).join('')}`,
+    /* 23. qualitative methods: two speech bubbles and sticky-note codes */
+    23: `${bg}<path d="M70,86 h150 a14,14 0 0 1 14,14 v58 a14,14 0 0 1 -14,14 h-104 l-26,24 v-24 h-20 a14,14 0 0 1 -14,-14 v-58 a14,14 0 0 1 14,-14 Z" class="ta-card"/>${lines(84, 106, 120, 3, 18)}
+       <path d="M330,176 h-120 a14,14 0 0 0 -14,14 v44 a14,14 0 0 0 14,14 h84 l22,20 v-20 h14 a14,14 0 0 0 14,-14 v-44 a14,14 0 0 0 -14,-14 Z" class="ta-soft2"/>${lines(212, 194, 96, 2, 18, 'ta-card')}
+       <rect x="258" y="62" width="56" height="50" rx="4" class="ta-acc" transform="rotate(8 286 87)"/><rect x="112" y="226" width="56" height="50" rx="4" class="ta-ac" transform="rotate(-7 140 251)"/>`,
+    /* 24. managing the thesis: a calendar and a clock */
+    24: `${bg}<rect x="74" y="88" width="170" height="160" rx="12" class="ta-card"/><rect x="74" y="88" width="170" height="36" rx="12" class="ta-fill-ink"/><path d="M110,76 V100 M208,76 V100" class="ta-line"/>
+       ${[0, 1, 2].map((r) => [0, 1, 2, 3].map((c) => `<rect x="${90 + c * 38}" y="${138 + r * 34}" width="26" height="22" rx="4" class="${r === 1 && c === 2 ? 'ta-acc' : 'ta-soft1'}"/>`).join('')).join('')}
+       <circle cx="282" cy="214" r="58" class="ta-ac"/><circle cx="282" cy="214" r="46" class="ta-card"/><path d="M282,214 V180 M282,214 L306,226" class="ta-line"/>`
   };
 })();
 

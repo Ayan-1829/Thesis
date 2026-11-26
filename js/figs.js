@@ -199,6 +199,12 @@ FIGS['map-iot'] = () => treeMap('Networks & IoT', 'Moving data efficiently and r
   ['Edge computing', 'Processing near the data.', [['Offloading', 'Device, edge or cloud?'], ['TinyML', 'ML on microcontrollers.']]],
   ['Network systems', 'How networks are run.', [['SDN', 'Programmable networks.'], ['Measurement', 'Latency, loss, throughput in practice.']]]], 'Map of networking and IoT research');
 
+FIGS['map-arch'] = () => treeMap('Architecture & hardware', 'Making computers fast, efficient and correct.', [
+  ['Processors', 'How instructions run.', [['Pipelines', 'Overlapping instructions.'], ['Branch prediction', 'Guessing the next instruction.']]],
+  ['Memory', 'Feeding the processor.', [['Caches', 'Small, fast copies of data.'], ['Prefetching', 'Fetching data before it is needed.']]],
+  ['Accelerators', 'Hardware for one job.', [['FPGA / ASIC', 'Custom circuits for ML, crypto.'], ['GPUs', 'Massively parallel processors.']]],
+  ['Digital logic', 'Building circuits right.', [['Arithmetic & approximate', 'Adders, multipliers, low power.'], ['HDL & verification', 'Verilog, testbenches, formal checks.']]]], 'Map of computer architecture and hardware research');
+
 FIGS['map-se'] = () => treeMap('Software engineering', 'How software is built and maintained.', [
   ['Quality & testing', 'Finding and preventing bugs.', [['Test generation', 'Automatic tests, fuzzing.'], ['Defect prediction', 'Which code will break?']]],
   ['Maintenance', 'Keeping code healthy.', [['Code smells', 'Signs of poor design.'], ['Refactoring', 'Improving code safely.']]],

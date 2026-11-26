@@ -593,23 +593,69 @@ function lgamma(z) { const g = [76.18009172947146, -86.50532032941677, 24.014098
 function ibeta(x, a, b) { if (x <= 0) return 0; if (x >= 1) return 1; const bt = Math.exp(lgamma(a + b) - lgamma(a) - lgamma(b) + a * Math.log(x) + b * Math.log(1 - x)); return x < (a + 1) / (a + b + 2) ? bt * betacf(a, b, x) / a : 1 - bt * betacf(b, a, 1 - x) / b; }
 const tPvalue = (t, df) => ibeta(df / (df + t * t), df / 2, 0.5);
 
+/* two-sided t critical value (bisection on the p-value) */
+function tCrit(df, alpha) { let lo = 0, hi = 1000; for (let i = 0; i < 100; i++) { const m = (lo + hi) / 2; if (tPvalue(m, df) > alpha) lo = m; else hi = m; } return (lo + hi) / 2; }
+/* exact two-sided Wilcoxon signed-rank p-value (zero differences dropped, tied ranks averaged) */
+function wilcoxonExact(d) {
+  const x = d.filter((v) => v !== 0), n = x.length;
+  if (n === 0) return { n, p: 1, w: 0 };
+  const idx = x.map((v, i) => i).sort((i, j) => Math.abs(x[i]) - Math.abs(x[j])), r2 = new Array(n);
+  for (let i = 0; i < n;) { let j = i; while (j + 1 < n && Math.abs(x[idx[j + 1]]) === Math.abs(x[idx[i]])) j++; for (let k = i; k <= j; k++) r2[idx[k]] = i + j + 2; i = j + 1; }   /* doubled ranks */
+  const tot = r2.reduce((s, r) => s + r, 0), cnt = new Array(tot + 1).fill(0); cnt[0] = 1;
+  r2.forEach((r) => { for (let s = tot; s >= r; s--) cnt[s] += cnt[s - r]; });
+  const w = x.reduce((s, v, i) => s + (v > 0 ? r2[i] : 0), 0), all = 2 ** n;
+  let lo = 0, hi = 0; cnt.forEach((c, s) => { if (s <= w) lo += c; if (s >= w) hi += c; });
+  return { n, p: Math.min(1, 2 * Math.min(lo, hi) / all), w: w / 2 };
+}
+
 DEMOS['ttest'] = (root) => {
   const a = h('textarea', { rows: 2, class: 'wide', 'aria-label': 'Method A results' }), b = h('textarea', { rows: 2, class: 'wide', 'aria-label': 'Method B results' }), out = outBox();
   a.value = '0.80, 0.82, 0.81, 0.79, 0.83'; b.value = '0.78, 0.80, 0.80, 0.77, 0.80';
-  const nums = (s) => s.split(/[\s,;]+/).map(Number).filter((x) => Number.isFinite(x));
+  let mode = 'runs', k = 10;
+  const kIn = numInput(k, { min: 2, step: 1, 'aria-label': 'Folds k', oninput: (e) => { k = Math.max(2, parseInt(e.target.value, 10) || 2); paint(); } });
+  const kBox = h('div', { class: 'row tight', style: { display: 'none' } }, field('Folds k (test share = 1/k)', kIn));
+  const modeSeg = seg([{ v: 'runs', l: 'Independent runs or test sets' }, { v: 'cv', l: 'Cross-validation folds' }], mode, (v) => { mode = v; kBox.style.display = v === 'cv' ? '' : 'none'; paint(); });
+  /* every token must be a number: a typo is reported, never skipped */
+  const parse = (s, name) => {
+    const toks = s.split(/[\s,;]+/).filter((x) => x !== ''), bad = [];
+    const vals = toks.map((t, i) => { const v = Number(t); if (t === '' || !Number.isFinite(v)) bad.push(`“${esc(t)}” (value ${i + 1})`); return v; });
+    return { vals, err: bad.length ? `${name}: ${bad.join(', ')} ${bad.length > 1 ? 'are not numbers' : 'is not a number'}.` : '' };
+  };
+  const esc = (t) => t.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const mean = (x) => x.reduce((p, q) => p + q, 0) / x.length, sd = (x) => { const m = mean(x); return Math.sqrt(x.reduce((p, q) => p + (q - m) ** 2, 0) / (x.length - 1)); };
+  const r10 = (x) => Math.round(x * 1e10) / 1e10;     /* 0.81 − 0.80 and 0.82 − 0.81 must count as equal */
+  const pf = (p) => (p < 0.0001 ? '&lt; 0.0001' : fmt(p, 4));
   function paint() {
-    const A = nums(a.value), B = nums(b.value);
-    if (A.length !== B.length || A.length < 2) { out.innerHTML = '<b class="bad">Give the same number (at least 2) of paired results for A and B — one per seed or fold, in the same order.</b>'; return; }
-    const d = A.map((x, i) => x - B[i]), n = d.length, md = mean(d), s = sd(d), t = md / (s / Math.sqrt(n)), df = n - 1, p = s > 0 ? tPvalue(t, df) : (md === 0 ? 1 : 0);
-    out.innerHTML = `<p>A: <b>${fmt(mean(A))} ± ${fmt(sd(A))}</b> · B: <b>${fmt(mean(B))} ± ${fmt(sd(B))}</b> (mean ± sd, n = ${n})</p>` +
-      `<p>Mean difference A − B = <b>${fmt(md, 4)}</b>, sd of differences = ${fmt(s, 4)}, t = <b>${fmt(t, 2)}</b>, df = ${df}, two-sided p = <b>${p < 0.0001 ? '&lt; 0.0001' : fmt(p, 4)}</b>.</p>` +
-      `<p>${p < 0.05 ? `<b class="good">The difference is statistically significant at the 5% level.</b>` : '<b>Not significant at the 5% level</b> — you cannot claim one method is better.'} Effect size (Cohen’s d for paired data) = ${fmt(md / s, 2)}.</p>` +
-      `<p class="small muted">${n < 6 ? 'With few runs the test has little power; consider more seeds or folds, or the Wilcoxon signed-rank test if the differences are far from normal.' : 'Check that the differences are roughly normal; otherwise use the Wilcoxon signed-rank test.'}</p>`;
+    const PA = parse(a.value, 'Method A'), PB = parse(b.value, 'Method B'), A = PA.vals, B = PB.vals;
+    if (PA.err || PB.err) { out.innerHTML = `<b class="bad">${[PA.err, PB.err].filter(Boolean).join(' ')}</b><p class="small">Fix the entry; no result is shown until every value is a number, so a typo cannot shift the pairs.</p>`; return; }
+    if (A.length !== B.length || A.length < 2) { out.innerHTML = `<b class="bad">Method A has ${A.length} value${A.length === 1 ? '' : 's'} and Method B has ${B.length}.</b><p class="small">Give the same number (at least 2) of paired results — one per seed or fold, in the same order.</p>`; return; }
+    const d = A.map((x, i) => r10(x - B[i])), n = d.length, md = r10(mean(d)), s = r10(sd(d)), df = n - 1;
+    let html = `<p>A: <b>${fmt(mean(A))} ± ${fmt(sd(A))}</b> · B: <b>${fmt(mean(B))} ± ${fmt(sd(B))}</b> (mean ± sd, n = ${n} pairs)</p>`;
+    if (s === 0) {
+      out.innerHTML = html + (md === 0 ? '<p><b>A and B are identical in every pair.</b> There is no difference to test.</p>'
+        : `<p><b>${md > 0 ? 'A' : 'B'} exceeded ${md > 0 ? 'B' : 'A'} by exactly ${fmt(Math.abs(md), 4)} in all ${n} pairs.</b></p><p>The differences have zero variance, so t, p and the effect size cannot be computed, and the tool gives no significance verdict. Report the consistent difference as it is; with so few pairs, run more seeds or folds before drawing a conclusion.</p>`);
+      return;
+    }
+    const cv = mode === 'cv', se = cv ? s * Math.sqrt(1 / n + 1 / (k - 1)) : s / Math.sqrt(n);
+    const t = md / se, p = tPvalue(t, df), tc = tCrit(df, 0.05), lo = md - tc * se, hi = md + tc * se;
+    html += `<p>Mean difference A − B = <b>${fmt(md, 4)}</b>, 95% confidence interval <b>[${fmt(lo, 4)}, ${fmt(hi, 4)}]</b>, sd of differences = ${fmt(s, 4)}.</p>` +
+      `<p>${cv ? 'Corrected resampled t-test (Nadeau and Bengio)' : 'Paired t-test'}: t = <b>${fmt(t, 2)}</b>, df = ${df}, two-sided p = <b>${pf(p)}</b>. ` +
+      (p < 0.05 ? '<b class="good">Significant at the 5% level.</b>' : '<b>Not significant at the 5% level</b> — the data do not show that one method is better.') + ` Effect size d<sub>z</sub> = ${fmt(md / s, 2)}.</p>`;
+    if (cv) {
+      const tn = md / (s / Math.sqrt(n)), pn = tPvalue(tn, df);
+      html += `<p class="small">An ordinary paired t-test on the same folds would give t = ${fmt(tn, 2)}, p = ${pf(pn)}. It treats the folds as independent, but they share most of their training data, so it overstates the evidence. The correction widens the standard error by the test/train ratio 1/${k - 1}.</p>` +
+        `<p class="small muted">Enter every fold of every repetition (e.g. 10 × 10 = 100 values for repeated 10-fold CV). The Wilcoxon test does not fix the dependence between folds, so it is not shown here.</p>`;
+    } else {
+      const W = wilcoxonExact(d);
+      html += `<p class="small">Wilcoxon signed-rank (exact): p = ${pf(W.p)}` + (W.n < n ? ` (${n - W.n} zero difference${n - W.n > 1 ? 's' : ''} dropped)` : '') + '.' +
+        (W.n <= 5 ? ` <b>With ${W.n} non-zero pairs its smallest possible p is ${fmt(2 / 2 ** W.n, 4)}, so it can never reach 0.05 — you need at least 6 pairs.</b>` : '') + '</p>' +
+        `<p class="small muted">Use this mode when each pair is independent: separate test sets, or seeds on one fixed split. Seeds alone measure training randomness only, not how much the score would change on a different test sample — add a bootstrap confidence interval over the test items for that.</p>`;
+    }
+    out.innerHTML = html;
   }
   a.addEventListener('input', paint); b.addEventListener('input', paint); paint();
-  root.append(demoBox('Paired t-test', 'Paste the results of two methods on the same seeds or folds (same order). The tool reports means, the paired t-test and the effect size.',
-    field('Method A', a), field('Method B', b), out));
+  root.append(demoBox('Paired t-test', 'Paste the results of two methods on the same seeds or folds (same order). Choose what the pairs are: the test differs for cross-validation folds.',
+    h('div', { class: 'row tight' }, modeSeg.el), kBox, field('Method A', a), field('Method B', b), out));
 };
 
 /* ---------- chapter 9 ---------- */
@@ -909,3 +955,59 @@ DEMOS['sus'] = (root) => {
   root.append(demoBox('SUS questionnaire', 'Answer each statement from 1 (strongly disagree) to 5 (strongly agree). Odd items count positively, even items negatively; the sum is scaled to 0–100.', list, out,
     h('div', { class: 'row tight' }, h('button', { type: 'button', class: 'btn sm', onclick: () => { scores.push(score()); const m = scores.reduce((a, b) => a + b, 0) / scores.length; avg.innerHTML = `${scores.length} participant${scores.length > 1 ? 's' : ''} recorded · mean SUS <b>${m.toFixed(1)}</b> (${word(m)})`; } }, 'Add as a participant')), avg));
 };
+
+/* ---------- chapter 22: computer architecture — a cache-size experiment ---------- */
+DEMOS['cache-sim'] = (root) => {
+  /* address traces (byte addresses, 8-byte elements) for three small workloads */
+  const N = 32, traces = {
+    'Matrix multiply (32×32)': (() => { const t = [], A = 0, B = 1 << 16, C = 2 << 16; for (let i = 0; i < N; i++) for (let j = 0; j < N; j++) for (let k = 0; k < N; k++) t.push(A + (i * N + k) * 8, B + (k * N + j) * 8, C + (i * N + j) * 8); return t; })(),
+    'Streaming sum (512 KB, 2 passes)': (() => { const t = []; for (let p = 0; p < 2; p++) for (let i = 0; i < 65536; i++) t.push(i * 8); return t; })(),
+    'Linked list (1,024 nodes, 4 passes)': (() => { const n = 1024, perm = range(n); for (let i = n - 1; i > 0; i--) { const j = (i * 7919 + 13) % (i + 1); [perm[i], perm[j]] = [perm[j], perm[i]]; } const t = []; for (let p = 0; p < 4; p++) perm.forEach((x) => t.push(x * 32, x * 32 + 8)); return t; })()
+  };
+  const SIZES = [1, 2, 4, 8, 16, 32, 64];
+  let block = 64, ways = 2;
+  function missRate(trace, kb) {
+    const lines = kb * 1024 / block, sets = Math.max(1, lines / ways), cache = Array.from({ length: sets }, () => []);
+    let miss = 0;
+    for (const a of trace) {
+      const blk = Math.floor(a / block), s = cache[blk % sets], i = s.indexOf(blk);
+      if (i >= 0) { s.splice(i, 1); s.push(blk); } else { miss++; s.push(blk); if (s.length > ways) s.shift(); }   /* LRU */
+    }
+    return miss / trace.length;
+  }
+  const out = h('div'), note = outBox();
+  function paint() {
+    const res = Object.entries(traces).map(([name, tr]) => [name, SIZES.map((kb) => missRate(tr, kb))]);
+    const mx = Math.max(...res.flatMap(([, r]) => r));
+    out.innerHTML = '<div class="scrollx"><table class="doc cache-tbl"><thead><tr><th>L1 size</th>' + res.map(([name]) => `<th>${name}</th>`).join('') + '</tr></thead><tbody>' +
+      SIZES.map((kb, i) => `<tr><td><b>${kb} KB</b></td>` + res.map(([, r]) => `<td><span class="cbar"><i style="width:${Math.max(2, Math.round(100 * r[i] / mx))}%"></i></span> ${(r[i] * 100).toFixed(1)}%</td>`).join('') + '</tr>').join('') + '</tbody></table></div>';
+    note.innerHTML = `Held fixed: <b>${block}-byte blocks, ${ways === 1 ? 'direct-mapped' : ways + '-way set-associative'}, LRU</b>. Only the cache size changes. Look for the size at which each working set fits: matrix B (8 KB) is re-read for every row of A, so matrix multiply drops sharply once it fits; the stream is never reused in time, so it misses once per block (8 ÷ ${block} = ${(800 / block).toFixed(1)}%) at every size; the list’s 32 KB of nodes fits at 32 KB. Now choose “direct”: the three matrices collide in the same sets, and a bigger cache no longer helps.`;
+  }
+  const bs = seg([16, 32, 64, 128].map((v) => ({ v, l: v + ' B' })), block, (v) => { block = v; paint(); });
+  const ws = seg([1, 2, 4, 8].map((v) => ({ v, l: v === 1 ? 'direct' : v + '-way' })), ways, (v) => { ways = v; paint(); });
+  paint();
+  root.append(demoBox('Cache-size experiment', 'A small cache simulator runs three workloads with L1 data-cache sizes from 1 KB to 64 KB and reports the miss rate. This is the shape of a real architecture experiment: one variable changes, everything else is held fixed.',
+    h('div', { class: 'row tight' }, field('Block size', bs.el), field('Associativity', ws.el)), out, note));
+};
+
+/* ---------- chapter 23: qualitative methods ---------- */
+DEMOS['interview-game'] = (root) => scoreGame(root, 'Judge the interview question', 'You are interviewing students about how they use AI assistants for programming. Judge each question.', [
+  { t: 'Can you walk me through the last time you used an AI assistant for an assignment?', a: 'G', w: 'Open, concrete and about a real event.' },
+  { t: 'Don’t you think AI assistants make students lazy?', a: 'L', w: 'It suggests the answer you want. Ask: “How, if at all, has using AI changed how you work?”' },
+  { t: 'How often do you use ChatGPT and do you trust its code?', a: 'D', w: 'Two questions in one; the answer will mix them. Ask them separately.' },
+  { t: 'Do you use AI assistants?', a: 'C', w: 'Yes/no gives little. Use it only as a screening question, then open up.' },
+  { t: 'You mentioned you “double-check everything”. What does that look like?', a: 'G', w: 'A good probe: it builds on the participant’s own words.' },
+  { t: 'Most of your classmates said AI helps them. Do you agree?', a: 'L', w: 'Social pressure pushes the participant to agree.' },
+  { t: 'What happened the last time an AI suggestion did not work, and what did you do then?', a: 'G', w: 'Asks for a concrete story, including problems.' }],
+  [{ v: 'G', l: 'Good' }, { v: 'L', l: 'Leading' }, { v: 'D', l: 'Double-barrelled' }, { v: 'C', l: 'Closed' }]);
+
+/* ---------- chapter 24: managing the thesis ---------- */
+DEMOS['setback-game'] = (root) => scoreGame(root, 'Helpful response or not?', 'Something goes wrong in your thesis year. Judge each response.', [
+  { t: 'Your method loses to the baseline. You analyse where and why it loses and report it honestly.', a: 'Y', w: 'A well-analysed negative result answers the research question.' },
+  { t: 'Your method loses to the baseline, so you stop reporting the baseline.', a: 'N', w: 'Hiding a baseline is misleading and examiners will notice.' },
+  { t: 'Your supervisor has not replied for two weeks. You send a short email with one specific question and a proposed meeting time.', a: 'Y', w: 'Short, specific requests are easy to answer.' },
+  { t: 'Training does not converge. You first check that the model can overfit 20 examples.', a: 'Y', w: 'A classic sanity check: if it cannot learn 20 items, the pipeline has a bug.' },
+  { t: 'You are six weeks behind, so you skip writing until all experiments are finished.', a: 'N', w: 'Writing in parallel shows gaps early; leaving it to the end makes the delay worse.' },
+  { t: 'Your two supervisors give conflicting advice. You write both options down and ask them to agree in one meeting.', a: 'Y', w: 'Make the conflict visible and let them resolve it together.' },
+  { t: 'Your group partner has stopped contributing. You say nothing and do the work yourself until the defence.', a: 'N', w: 'Raise it early with the partner, then the supervisor; record who did what.' }],
+  [{ v: 'Y', l: 'Helpful' }, { v: 'N', l: 'Not helpful' }]);

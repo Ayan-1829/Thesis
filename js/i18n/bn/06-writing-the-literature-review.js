@@ -2,6 +2,9 @@
 I18N_BN_ADD({
 "Writing the Literature Review": "Literature Review লেখা",
 "The purpose of a literature review, synthesis instead of summary, organising by theme, method or time, comparison tables, stating the research gap, writing well, and systematic versus narrative reviews.": "Literature review-এর উদ্দেশ্য, সারসংক্ষেপের বদলে সংশ্লেষণ, বিষয়, পদ্ধতি বা সময় অনুযায়ী সাজানো, তুলনামূলক table, গবেষণার ফাঁক বলা, ভালোভাবে লেখা, এবং systematic বনাম narrative review।",
+"Thirty paragraphs, each starting “X et al. proposed…”. The examiner sighs: “This is a shopping list, not a literature review.”": "ত্রিশটি অনুচ্ছেদ, প্রতিটি শুরু “X et al. proposed…” দিয়ে। examiner দীর্ঘশ্বাস ফেলেন: “এটা বাজারের ফর্দ, literature review নয়।”",
+"A literature review is an argument: here is what the field knows, here is how it fits together, and here is the missing piece — which my thesis supplies.": "literature review একটি যুক্তি: এই ক্ষেত্রটি যা জানে, তা কীভাবে একসঙ্গে মেলে, আর কোন টুকরোটি নেই — যা আমার thesis জোগায়।",
+"This chapter shows how to turn your notes and literature matrix into that argument.": "এই chapter দেখায় আপনার নোট আর literature matrix-কে কীভাবে সেই যুক্তিতে রূপ দেবেন।",
 "In this chapter": "এই অধ্যায়ে",
 "Select a section to jump to it.": "কোনো অংশে যেতে সেটি বাছুন।",
 "Purpose": "উদ্দেশ্য",
@@ -121,6 +124,14 @@ I18N_BN_ADD({
 "the gap your thesis fills": "আপনার থিসিস যে ফাঁক পূরণ করে তা দিয়ে",
 "the abstract": "abstract",
 "a thank-you note": "একটি ধন্যবাদ বার্তা দিয়ে",
+"Bring this to your supervisor": "এটি আপনার supervisor-এর কাছে নিয়ে যান",
+"For your next supervisor meeting": "Supervisor-এর সাথে পরের মিটিংয়ের জন্য",
+"Bring this": "এটি নিয়ে যান",
+"A one-page outline of your literature review organised by theme, ending in one paragraph that states the gap.": "Theme অনুযায়ী সাজানো আপনার literature review-এর এক পাতার রূপরেখা, শেষে gap বলা একটি অনুচ্ছেদ।",
+"See an acceptable example": "একটি গ্রহণযোগ্য উদাহরণ দেখুন",
+"Themes: (1) sentiment for formal Bangla; (2) code-mixed South Asian text; (3) domain-adaptive pre-training. Gap: models for formal Bangla are strong, and domain-adaptive pre-training helps other languages, but no study tests it for sentiment in Latin-script Banglish, and no labelled Banglish sentiment dataset is public.": "Theme: (১) formal বাংলার জন্য sentiment; (২) code-mixed দক্ষিণ এশীয় text; (৩) domain-adaptive pre-training। Gap: formal বাংলার model শক্তিশালী, এবং domain-adaptive pre-training অন্য ভাষায় সাহায্য করে, কিন্তু Latin-script Banglish-এর sentiment-এ কোনো study এটি পরীক্ষা করেনি, এবং কোনো labelled Banglish sentiment dataset প্রকাশ্যে নেই।",
+"See this step in the worked thesis": "Worked thesis-এ এই ধাপটি দেখুন",
+"Milestone checklist": "Milestone চেকলিস্ট",
 "SAGE, 2nd ed. 2018. Analysis, synthesis and argument.": "SAGE, 2nd ed. 2018। বিশ্লেষণ, সংশ্লেষণ ও যুক্তি।",
 "Reporting guideline for systematic reviews.": "Systematic review-এর reporting নির্দেশিকা।",
 "Guide": "নির্দেশিকা",
@@ -135,7 +146,7 @@ I18N_BN_ADD({
 "Describe your search briefly; a full systematic review is a method of its own.": "আপনার অনুসন্ধান সংক্ষেপে বর্ণনা করুন; পূর্ণ systematic review নিজেই একটি পদ্ধতি।",
 "Next: Designing Your Methodology": "পরবর্তী: আপনার Methodology নকশা",
 "All resources": "সব resource",
-"Milestone checklist": "Milestone চেকলিস্ট",
+"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
 "The review is an argument leading to your question.": "Review একটি যুক্তি যা আপনার প্রশ্নে পৌঁছায়।",
 "Which sentence is synthesis?": "কোন বাক্যটি সংশ্লেষণ?",
 "Smith used SVM.": "Smith SVM ব্যবহার করেছেন।",
@@ -167,8 +178,5 @@ I18N_BN_ADD({
 "Sections that group and compare the work.": "কাজগুলো দলবদ্ধ ও তুলনা করা অনুচ্ছেদ।",
 "The few papers nearest to your thesis, compared in a table.": "আপনার থিসিসের সবচেয়ে কাছের কয়েকটি paper, একটি table-এ তুলনা করা।",
 "What has not been done, and why it matters.": "কী করা হয়নি, এবং কেন তা গুরুত্বপূর্ণ।",
-"How your thesis fills the gap.": "আপনার থিসিস কীভাবে ফাঁকটি পূরণ করে।",
-"Thirty paragraphs, each starting “X et al. proposed…”. The examiner sighs: “This is a shopping list, not a literature review.”": "ত্রিশটি অনুচ্ছেদ, প্রতিটি শুরু “X et al. proposed…” দিয়ে। examiner দীর্ঘশ্বাস ফেলেন: “এটা বাজারের ফর্দ, literature review নয়।”",
-"A literature review is an argument: here is what the field knows, here is how it fits together, and here is the missing piece — which my thesis supplies.": "literature review একটি যুক্তি: এই ক্ষেত্রটি যা জানে, তা কীভাবে একসঙ্গে মেলে, আর কোন টুকরোটি নেই — যা আমার thesis জোগায়।",
-"This chapter shows how to turn your notes and literature matrix into that argument.": "এই chapter দেখায় আপনার নোট আর literature matrix-কে কীভাবে সেই যুক্তিতে রূপ দেবেন।"
+"How your thesis fills the gap.": "আপনার থিসিস কীভাবে ফাঁকটি পূরণ করে।"
 });

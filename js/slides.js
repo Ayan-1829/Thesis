@@ -16,6 +16,8 @@
     slides[cur].scrollTop = 0;
     counter.textContent = n + ' / ' + total;
     bar.style.width = (n / total * 100) + '%';
+    /* furthest slide reached, shown as progress on the home page */
+    if (typeof Store !== 'undefined' && cfg.id) { var seen = Store.sub('seen', cfg.id) || { max: 0 }; if (n > seen.max || seen.total !== total) Store.setSub('seen', cfg.id, { max: Math.max(n, Math.min(seen.max, total)), total: total }); }
     prevBtn.textContent = n === 1 ? (cfg.prev ? 'Previous topic' : 'Start') : 'Previous';
     prevBtn.disabled = n === 1 && !cfg.prev;
     nextBtn.textContent = n === total ? (cfg.next ? (cfg.nextLabel || 'Next topic') : 'Finish') : 'Next';

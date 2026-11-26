@@ -2,6 +2,9 @@
 I18N_BN_ADD({
 "What a Thesis Is and How It Works": "থিসিস কী এবং কীভাবে কাজ করে",
 "Research versus development, the contributions a thesis can make, kinds of research, the research cycle, working with a supervisor, planning the year and what examiners look for.": "গবেষণা বনাম development, একটি থিসিস কী অবদান রাখতে পারে, গবেষণার ধরন, গবেষণা চক্র, supervisor-এর সাথে কাজ, বছরের পরিকল্পনা এবং পরীক্ষকরা কী দেখেন।",
+"Two students build the same face-recognition app. One gets a B on the project. The other writes a thesis that other researchers cite. The code was almost identical.": "দুজন ছাত্র একই face-recognition app বানায়। একজন project-এ পায় B। অন্যজন লেখে এমন একটি thesis, যা অন্য গবেষকেরা cite করেন। কোড প্রায় একই ছিল।",
+"The second student asked a question — <i>does it still work for faces with masks, and why not?</i> — measured it fairly against existing methods and explained the answer. That is research.": "দ্বিতীয় ছাত্র একটি প্রশ্ন করেছিল — <i>মাস্ক পরা মুখেও কি এটি কাজ করে, আর না করলে কেন?</i> — বিদ্যমান পদ্ধতির সঙ্গে ন্যায্যভাবে মেপেছিল আর উত্তরটি ব্যাখ্যা করেছিল। এটাই গবেষণা।",
+"This chapter explains what a thesis is, what it contributes, how the year runs and how to work with your supervisor.": "এই chapter ব্যাখ্যা করে thesis কী, এটি কী অবদান রাখে, বছরটি কীভাবে চলে আর supervisor-এর সঙ্গে কীভাবে কাজ করবেন।",
 "In this chapter": "এই অধ্যায়ে",
 "Select a section to jump to it.": "কোনো অংশে যেতে সেটি বাছুন।",
 "What research is": "গবেষণা কী",
@@ -219,6 +222,14 @@ I18N_BN_ADD({
 "new knowledge supported by evidence": "প্রমাণ-সমর্থিত নতুন জ্ঞান",
 "a long literature list": "দীর্ঘ একটি সাহিত্য-তালিকা",
 "learning a new language": "একটি নতুন ভাষা শেখা",
+"Bring this to your supervisor": "এটি আপনার supervisor-এর কাছে নিয়ে যান",
+"For your next supervisor meeting": "Supervisor-এর সাথে পরের মিটিংয়ের জন্য",
+"Bring this": "এটি নিয়ে যান",
+"A half-page note: three areas that interest you, why each one does, and the questions you want to ask your supervisor about how theses work in your department (deadlines, groups, assessment).": "আধা পাতার একটি নোট: আপনার আগ্রহের তিনটি ক্ষেত্র, প্রতিটি কেন আগ্রহের, এবং আপনার বিভাগে থিসিস কীভাবে চলে (ডেডলাইন, গ্রুপ, মূল্যায়ন) সে বিষয়ে supervisor-কে যে প্রশ্নগুলো করতে চান।",
+"See an acceptable example": "একটি গ্রহণযোগ্য উদাহরণ দেখুন",
+"Areas: (1) NLP for Bangla — I use Bangla daily online and see how badly tools handle it; (2) medical imaging — a relative’s X-ray was misread; (3) software testing — I enjoyed the testing course. Questions: How many students per thesis group? When is the proposal defence? Is a paper expected?": "ক্ষেত্র: (১) বাংলার জন্য NLP — আমি প্রতিদিন অনলাইনে বাংলা ব্যবহার করি এবং দেখি tool-গুলো কত খারাপভাবে তা সামলায়; (২) medical imaging — এক আত্মীয়ের X-ray ভুল পড়া হয়েছিল; (৩) software testing — testing কোর্সটি আমার ভালো লেগেছিল। প্রশ্ন: প্রতি থিসিস গ্রুপে কতজন শিক্ষার্থী? Proposal defence কবে? পেপার কি প্রত্যাশিত?",
+"See this step in the worked thesis": "Worked thesis-এ এই ধাপটি দেখুন",
+"Milestone checklist": "Milestone চেকলিস্ট",
 "Essay": "প্রবন্ধ",
 "A classic talk on choosing important problems and working on them.": "গুরুত্বপূর্ণ সমস্যা বাছাই ও তা নিয়ে কাজ করা নিয়ে একটি ক্লাসিক বক্তৃতা।",
 "Guide": "নির্দেশিকা",
@@ -236,7 +247,7 @@ I18N_BN_ADD({
 "Start small, read every week, write as you go, version and back up everything.": "ছোট থেকে শুরু করুন, প্রতি সপ্তাহে পড়ুন, কাজের সাথে লিখুন, সবকিছু version ও backup করুন।",
 "Next: Choosing a Topic and Research Questions": "পরবর্তী: বিষয় ও গবেষণা প্রশ্ন বাছাই",
 "All resources": "সব resource",
-"Milestone checklist": "Milestone চেকলিস্ট",
+"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
 "A thesis answers a question with evidence and states its contribution.": "একটি থিসিস প্রমাণ দিয়ে একটি প্রশ্নের উত্তর দেয় এবং এর অবদান উল্লেখ করে।",
 "Which is a research question?": "কোনটি একটি গবেষণা প্রশ্ন?",
 "Build a chatbot for the library": "লাইব্রেরির জন্য একটি chatbot তৈরি",
@@ -272,8 +283,5 @@ I18N_BN_ADD({
 "Plan how you will answer: data, method, baselines, metrics (chapter 7).": "কীভাবে উত্তর দেবেন তার পরিকল্পনা করুন: data, পদ্ধতি, baseline, metric (অধ্যায় 7)।",
 "Collect the evidence carefully and reproducibly (chapter 8).": "যত্ন সহকারে ও পুনরুৎপাদনযোগ্যভাবে প্রমাণ সংগ্রহ করুন (অধ্যায় 8)।",
 "Decide what the evidence shows and how sure you are: statistics, ablation, errors.": "প্রমাণ কী দেখায় এবং আপনি কতটা নিশ্চিত তা ঠিক করুন: পরিসংখ্যান, ablation, ভুল।",
-"Explain it so others can check and build on it (chapters 10–11). New questions start the next loop.": "এমনভাবে ব্যাখ্যা করুন যাতে অন্যরা যাচাই করে এর ওপর কাজ করতে পারে (অধ্যায় 10–11)। নতুন প্রশ্ন পরের চক্র শুরু করে।",
-"Two students build the same face-recognition app. One gets a B on the project. The other writes a thesis that other researchers cite. The code was almost identical.": "দুজন ছাত্র একই face-recognition app বানায়। একজন project-এ পায় B। অন্যজন লেখে এমন একটি thesis, যা অন্য গবেষকেরা cite করেন। কোড প্রায় একই ছিল।",
-"The second student asked a question — <i>does it still work for faces with masks, and why not?</i> — measured it fairly against existing methods and explained the answer. That is research.": "দ্বিতীয় ছাত্র একটি প্রশ্ন করেছিল — <i>মাস্ক পরা মুখেও কি এটি কাজ করে, আর না করলে কেন?</i> — বিদ্যমান পদ্ধতির সঙ্গে ন্যায্যভাবে মেপেছিল আর উত্তরটি ব্যাখ্যা করেছিল। এটাই গবেষণা।",
-"This chapter explains what a thesis is, what it contributes, how the year runs and how to work with your supervisor.": "এই chapter ব্যাখ্যা করে thesis কী, এটি কী অবদান রাখে, বছরটি কীভাবে চলে আর supervisor-এর সঙ্গে কীভাবে কাজ করবেন।"
+"Explain it so others can check and build on it (chapters 10–11). New questions start the next loop.": "এমনভাবে ব্যাখ্যা করুন যাতে অন্যরা যাচাই করে এর ওপর কাজ করতে পারে (অধ্যায় 10–11)। নতুন প্রশ্ন পরের চক্র শুরু করে।"
 });

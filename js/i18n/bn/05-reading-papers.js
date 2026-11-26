@@ -2,6 +2,9 @@
 I18N_BN_ADD({
 "Reading Papers and Managing Notes": "Paper পড়া ও নোট ব্যবস্থাপনা",
 "How a paper is built, the three-pass reading method, questions to ask, reading results critically, one-paper summaries, the literature matrix, reference managers and getting through hard papers.": "একটি paper কীভাবে গঠিত, তিন-ধাপে পড়ার পদ্ধতি, পড়ার সময় প্রশ্ন, ফলাফল সমালোচনামূলকভাবে পড়া, এক-paper সারসংক্ষেপ, literature matrix, reference manager এবং কঠিন paper পার হওয়া।",
+"You read a 12-page paper carefully, word by word, for three hours. A week later, all you remember is that Figure 2 was blue.": "আপনি একটি 12 পৃষ্ঠার paper তিন ঘণ্টা ধরে মনোযোগ দিয়ে, শব্দে শব্দে পড়লেন। এক সপ্তাহ পর মনে আছে শুধু Figure 2 নীল ছিল।",
+"Researchers don’t read papers like novels. They read in passes, with questions, and write notes they can use later — that is how they get through dozens of papers without drowning.": "গবেষকেরা উপন্যাসের মতো paper পড়েন না। তাঁরা কয়েক দফায়, প্রশ্ন নিয়ে পড়েন, আর এমন নোট লেখেন যা পরে কাজে লাগে — এভাবেই তাঁরা ডুবে না গিয়ে ডজন ডজন paper পার হন।",
+"This chapter gives you a reading method, a note template and a literature matrix.": "এই chapter আপনাকে দেয় একটি পড়ার পদ্ধতি, একটি নোটের ছাঁচ আর একটি literature matrix।",
 "In this chapter": "এই অধ্যায়ে",
 "Select a section to jump to it.": "কোনো অংশে যেতে সেটি বাছুন।",
 "Reading strategy": "পড়ার কৌশল",
@@ -132,6 +135,14 @@ I18N_BN_ADD({
 "one day": "এক দিন",
 "one week": "এক সপ্তাহ",
 "no time": "কোনো সময় না",
+"Bring this to your supervisor": "এটি আপনার supervisor-এর কাছে নিয়ে যান",
+"For your next supervisor meeting": "Supervisor-এর সাথে পরের মিটিংয়ের জন্য",
+"Bring this": "এটি নিয়ে যান",
+"Three completed rows of your literature matrix: problem, data, method, results and limitations for each paper.": "আপনার literature matrix-এর তিনটি পূর্ণ সারি: প্রতিটি পেপারের problem, data, method, results ও limitation।",
+"See an acceptable example": "একটি গ্রহণযোগ্য উদাহরণ দেখুন",
+"Paper 1 (2021): Bangla sentiment, 8k formal news comments, BiLSTM, F1 0.71; limitation: formal script only. Paper 2 (2022): code-mixed hate speech, 5k comments, mBERT, F1 0.76; limitation: no Banglish sentiment. Paper 3 (2023): BanglaBERT fine-tuning on 6 tasks, strong on formal text; limitation: not tested on Latin-script Bangla.": "Paper 1 (২০২১): বাংলা sentiment, ৮ হাজার formal সংবাদ-মন্তব্য, BiLSTM, F1 0.71; limitation: শুধু formal script। Paper 2 (২০২২): code-mixed hate speech, ৫ হাজার মন্তব্য, mBERT, F1 0.76; limitation: Banglish sentiment নেই। Paper 3 (২০২৩): ৬টি task-এ BanglaBERT fine-tuning, formal text-এ শক্তিশালী; limitation: Latin-script বাংলায় পরীক্ষা করা হয়নি।",
+"See this step in the worked thesis": "Worked thesis-এ এই ধাপটি দেখুন",
+"Milestone checklist": "Milestone চেকলিস্ট",
 "The three-pass method in three pages.": "তিন পৃষ্ঠায় তিন-ধাপ পদ্ধতি।",
 "Saving, annotating, groups and BibTeX export.": "সংরক্ষণ, টীকা, group ও BibTeX export।",
 "Stable citation keys and automatic .bib export for LaTeX.": "LaTeX-এর জন্য স্থির citation key ও স্বয়ংক্রিয় .bib export।",
@@ -146,7 +157,7 @@ I18N_BN_ADD({
 "Use one reference manager from day one; tag papers by theme and status.": "প্রথম দিন থেকে একটি reference manager ব্যবহার করুন; paper-গুলোকে বিষয় ও অবস্থা অনুযায়ী tag দিন।",
 "Next: Writing the Literature Review": "পরবর্তী: Literature Review লেখা",
 "All resources": "সব resource",
-"Milestone checklist": "Milestone চেকলিস্ট",
+"Found a mistake or something unclear? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">Report it on GitHub</a>.": "কোনো ভুল বা অস্পষ্ট কিছু পেয়েছেন? <a href=\"https://github.com/Ayan-1829/Thesis/issues/new\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub-এ জানান</a>।",
 "A quick scan to decide whether to read on.": "আরও পড়বেন কিনা ঠিক করতে দ্রুত একটি স্ক্যান।",
 "The best section for thesis ideas is often…": "থিসিস ধারণার জন্য সেরা অংশ প্রায়ই…",
 "acknowledgements": "কৃতজ্ঞতা স্বীকার",
@@ -175,8 +186,5 @@ I18N_BN_ADD({
 "Mark quotes so they are never mistaken for your words.": "উদ্ধৃতি চিহ্নিত করুন যাতে কখনো আপনার নিজের লেখা বলে ভুল না হয়।",
 "A quick scan of the whole paper.": "পুরো paper-এর দ্রুত স্ক্যান।",
 "Understand the content, not every detail.": "বিষয়বস্তু বুঝুন, প্রতিটি খুঁটিনাটি নয়।",
-"Only for the few papers your thesis builds on.": "শুধু সেই কয়েকটি paper-এর জন্য যার ওপর আপনার থিসিস দাঁড়িয়ে।",
-"You read a 12-page paper carefully, word by word, for three hours. A week later, all you remember is that Figure 2 was blue.": "আপনি একটি 12 পৃষ্ঠার paper তিন ঘণ্টা ধরে মনোযোগ দিয়ে, শব্দে শব্দে পড়লেন। এক সপ্তাহ পর মনে আছে শুধু Figure 2 নীল ছিল।",
-"Researchers don’t read papers like novels. They read in passes, with questions, and write notes they can use later — that is how they get through dozens of papers without drowning.": "গবেষকেরা উপন্যাসের মতো paper পড়েন না। তাঁরা কয়েক দফায়, প্রশ্ন নিয়ে পড়েন, আর এমন নোট লেখেন যা পরে কাজে লাগে — এভাবেই তাঁরা ডুবে না গিয়ে ডজন ডজন paper পার হন।",
-"This chapter gives you a reading method, a note template and a literature matrix.": "এই chapter আপনাকে দেয় একটি পড়ার পদ্ধতি, একটি নোটের ছাঁচ আর একটি literature matrix।"
+"Only for the few papers your thesis builds on.": "শুধু সেই কয়েকটি paper-এর জন্য যার ওপর আপনার থিসিস দাঁড়িয়ে।"
 });
